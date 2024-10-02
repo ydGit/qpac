@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj814uhn24g4n"]
+
+[ext_resource type="Texture2D" uid="uid://vy31g3q6ivk5" path="res://png/ruler.png" id="1_y16fx"]
+[ext_resource type="Texture2D" uid="uid://bj07k2ka4juup" path="res://png/spring.png" id="2_bt3kf"]
+[ext_resource type="Texture2D" uid="uid://dao13so6ewiwp" path="res://png/body.png" id="3_2m1e2"]
+[ext_resource type="Script" path="res://scenes/spring.gd" id="3_34a6h"]
+[ext_resource type="Texture2D" uid="uid://drtr8dsb0s5qb" path="res://png/background.png" id="4_imft3"]
+
+[node name="oscillator" type="Node2D"]
+
+[node name="ruler" type="Sprite2D" parent="."]
+position = Vector2(608, 373)
+texture = ExtResource("1_y16fx")
+
+[node name="spring" type="Sprite2D" parent="."]
+position = Vector2(259, 204)
+texture = ExtResource("2_bt3kf")
+script = ExtResource("3_34a6h")
+
+[node name="body" type="Sprite2D" parent="spring"]
+top_level = true
+position = Vector2(576, 200)
+texture = ExtResource("3_2m1e2")
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(577, 327)
+scale = Vector2(0.961475, 1.22426)
+texture = ExtResource("4_imft3")

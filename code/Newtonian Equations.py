@@ -269,7 +269,7 @@ plt.grid()
 plt.legend(loc="upper left")
 plt.show()
 
-plt.close()
+#plt.close()
 
 
 # # Exercise: Implement/improve simple summation method using conservation of energy to ensure that the amplitude of oscillations does not grow
