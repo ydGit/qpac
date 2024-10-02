@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://diephuhrcq3fv"]
+
+[ext_resource type="Texture2D" uid="uid://vy31g3q6ivk5" path="res://png/ruler.png" id="1_3fsnu"]
+[ext_resource type="Texture2D" uid="uid://bj07k2ka4juup" path="res://png/spring.png" id="2_ddc0v"]
+[ext_resource type="Texture2D" uid="uid://dao13so6ewiwp" path="res://png/body.png" id="3_lrgjk"]
+[ext_resource type="Script" path="res://scenes/body.gd" id="4_x43y3"]
+[ext_resource type="Texture2D" uid="uid://drtr8dsb0s5qb" path="res://png/background.png" id="5_8oe22"]
+
+[node name="oscillator" type="Node2D"]
+
+[node name="ruler" type="Sprite2D" parent="."]
+position = Vector2(577, 373)
+texture = ExtResource("1_3fsnu")
+
+[node name="spring" type="Sprite2D" parent="."]
+position = Vector2(112, 251)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ddc0v")
+
+[node name="body" type="Sprite2D" parent="spring"]
+top_level = true
+position = Vector2(274, 254)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_lrgjk")
+script = ExtResource("4_x43y3")
+
+[node name="spring2" type="Sprite2D" parent="."]
+position = Vector2(1045, 253)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ddc0v")
+
+[node name="body" type="Sprite2D" parent="spring2"]
+top_level = true
+position = Vector2(887, 253)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_lrgjk")
+script = ExtResource("4_x43y3")
+stretch = -0.02
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(577, 326)
+scale = Vector2(0.961475, 1.22426)
+texture = ExtResource("5_8oe22")
