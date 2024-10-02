@@ -2,12 +2,14 @@ extends Sprite2D
 
 @export var stiffness: float = 10.0  # Newton / m
 @export var mass: float = 9  # kilogram, mass of the object
-@export var stretch: float = 0.02  # initial stretch
+@export var amplitude: float = 0.02  # initial stretch
+@export var side: int = 1  # which side of the spring the body is on
 
 var osc_freq = 2*PI*sqrt(stiffness/mass)
 var time = 0
 var phase = 0
 var stretch_scale = 0
+var d = 0
 
 var draw_scale = 3200
 
@@ -30,14 +32,14 @@ func _ready():
 func _process(delta):
 	time += delta
 	phase = cos(osc_freq*time)
+	d = draw_scale * amplitude * phase
 	# move body
-	self.transform.origin = Vector2(initial_position[0]+draw_scale * stretch * phase, 
-									initial_position[1])
+	self.transform.origin = Vector2(initial_position[0]+d, initial_position[1])
 	# move spring center
-	get_parent().transform.origin = Vector2(spring_initial_position[0]+ draw_scale * stretch * phase/2.0, 
+	get_parent().transform.origin = Vector2(spring_initial_position[0]+ d/2.0, 
 									spring_initial_position[1])
 	# strech the spring
-	stretch_scale = 1 + draw_scale * stretch * phase / initial_position[0]
+	stretch_scale = 1 + side * d / initial_position[0]
 	get_parent().scale = Vector2(spring_initial_scale[0]*stretch_scale, spring_initial_scale[1])
 	
 	

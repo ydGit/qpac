@@ -13,29 +13,29 @@ position = Vector2(577, 373)
 texture = ExtResource("1_3fsnu")
 
 [node name="spring" type="Sprite2D" parent="."]
-position = Vector2(112, 251)
+position = Vector2(106, 253)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_ddc0v")
 
 [node name="body" type="Sprite2D" parent="spring"]
 top_level = true
-position = Vector2(274, 254)
+position = Vector2(262, 253)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_lrgjk")
 script = ExtResource("4_x43y3")
 
 [node name="spring2" type="Sprite2D" parent="."]
-position = Vector2(1045, 253)
+position = Vector2(1050, 255)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_ddc0v")
 
 [node name="body" type="Sprite2D" parent="spring2"]
 top_level = true
-position = Vector2(887, 253)
+position = Vector2(893, 254)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_lrgjk")
 script = ExtResource("4_x43y3")
-stretch = -0.02
+side = -1
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -1
