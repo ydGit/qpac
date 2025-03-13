@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://drctclfdsbjre"]
+
+[ext_resource type="Script" path="res://scenes/oscillator.gd" id="1_68yln"]
+[ext_resource type="Texture2D" uid="uid://bj07k2ka4juup" path="res://png/spring.png" id="2_rm6s7"]
+[ext_resource type="Texture2D" uid="uid://dao13so6ewiwp" path="res://png/body.png" id="3_84imw"]
+[ext_resource type="Texture2D" uid="uid://1efga7jrtbqv" path="res://png/wall.png" id="4_i52h6"]
+
+[node name="oscillator" type="Node2D"]
+script = ExtResource("1_68yln")
+x0 = 0.04
+
+[node name="spring" type="Sprite2D" parent="."]
+position = Vector2(423, 215)
+texture = ExtResource("2_rm6s7")
+
+[node name="body_edge" type="Sprite2D" parent="."]
+position = Vector2(212, 220)
+
+[node name="body" type="Sprite2D" parent="body_edge"]
+position = Vector2(-99, -4)
+texture = ExtResource("3_84imw")
+
+[node name="wall_edge" type="Node2D" parent="."]
+position = Vector2(633, 212)
+
+[node name="wall" type="Sprite2D" parent="wall_edge"]
+position = Vector2(11, 4)
+texture = ExtResource("4_i52h6")

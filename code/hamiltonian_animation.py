@@ -15,9 +15,10 @@ initial position x0 and initial momentum p0.
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from numpy.random import normal
 
 
-def xi_osc(xi0, k, m, t):
+def xi_osc(xi0, k, m, t, rand_avg=0, rand_std=0):
     """
     Calculate state (position and momentum) of the oscillator
     given initial state xi0=(x0,p0), parameters of the oscillator

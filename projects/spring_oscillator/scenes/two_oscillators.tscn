@@ -1,44 +1,37 @@
-[gd_scene load_steps=6 format=3 uid="uid://diephuhrcq3fv"]
+[gd_scene load_steps=7 format=3 uid="uid://diephuhrcq3fv"]
 
 [ext_resource type="Texture2D" uid="uid://vy31g3q6ivk5" path="res://png/ruler.png" id="1_3fsnu"]
+[ext_resource type="Script" path="res://scenes/coupled_oscillators.gd" id="1_jreww"]
 [ext_resource type="Texture2D" uid="uid://bj07k2ka4juup" path="res://png/spring.png" id="2_ddc0v"]
-[ext_resource type="Texture2D" uid="uid://dao13so6ewiwp" path="res://png/body.png" id="3_lrgjk"]
-[ext_resource type="Script" path="res://scenes/body.gd" id="4_x43y3"]
+[ext_resource type="PackedScene" uid="uid://bos550uv320hs" path="res://scenes/oscillatorA.tscn" id="3_xka5b"]
+[ext_resource type="PackedScene" uid="uid://drctclfdsbjre" path="res://scenes/oscillatorB.tscn" id="4_wnki6"]
 [ext_resource type="Texture2D" uid="uid://drtr8dsb0s5qb" path="res://png/background.png" id="5_8oe22"]
 
-[node name="oscillator" type="Node2D"]
+[node name="coupled_oscillators" type="Node2D"]
+script = ExtResource("1_jreww")
+
+[node name="spring" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(548, 257)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ddc0v")
 
 [node name="ruler" type="Sprite2D" parent="."]
 position = Vector2(577, 373)
 texture = ExtResource("1_3fsnu")
-
-[node name="spring" type="Sprite2D" parent="."]
-position = Vector2(106, 253)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_ddc0v")
-
-[node name="body" type="Sprite2D" parent="spring"]
-top_level = true
-position = Vector2(262, 253)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_lrgjk")
-script = ExtResource("4_x43y3")
-
-[node name="spring2" type="Sprite2D" parent="."]
-position = Vector2(1050, 255)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_ddc0v")
-
-[node name="body" type="Sprite2D" parent="spring2"]
-top_level = true
-position = Vector2(893, 254)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_lrgjk")
-script = ExtResource("4_x43y3")
-side = -1
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(577, 326)
 scale = Vector2(0.961475, 1.22426)
 texture = ExtResource("5_8oe22")
+
+[node name="oscillatorLeft" parent="." instance=ExtResource("3_xka5b")]
+position = Vector2(125, 155)
+scale = Vector2(0.5, 0.5)
+
+[node name="oscillatorRight" parent="." instance=ExtResource("4_wnki6")]
+visible = false
+position = Vector2(647, 148)
+scale = Vector2(0.5, 0.5)
+x0 = -0.04

@@ -18,14 +18,21 @@ var current_scale
 
 var initial_position
 
+var spring_left_end
+var spring_right_end
+
 var spring_initial_scale
 var spring_initial_position
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	initial_position = self.transform.get_origin()
+	
 	spring_initial_scale = get_parent().transform.get_scale()
 	spring_initial_position = get_parent().transform.get_origin()
+	
+	spring_left_end = get_parent().get_node("spring_left_end").transform.get_origin()
+	spring_right_end = get_parent().get_node("spring_right_end").transform.get_origin()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -128,7 +128,7 @@ plt.figure(figsize=[8,6])
 plt.plot(ts, xs, 'r-', alpha=0.4)
 plt.xlabel("Time (s)")
 plt.ylabel("Position (m)")
-plt.title("Oscillatory motion")
+plt.title("Oscillatory motion: Position in time")
 
 plt.grid(1)
 plt.show()
@@ -145,7 +145,7 @@ plt.figure(figsize=[8,6])
 plt.plot(ts, vs, 'r-', alpha=0.4)
 plt.xlabel("Time (s)")
 plt.ylabel("Velocity (m/s)")
-plt.title("Oscillatory motion")
+plt.title("Oscillatory motion: Velocity in time")
 
 plt.grid(1)
 plt.show()
@@ -164,7 +164,7 @@ plt.plot(ts, vs, 'b-', alpha=0.4, label="V")  # velocity, blue curve
 
 plt.xlabel("Time (s)")
 plt.ylabel("Position (red) and velocity (blue)")
-plt.title("Oscillatory motion")
+plt.title("Oscillatory motion: X and V in time")
 plt.legend(loc="upper left")
 
 plt.grid(1)
@@ -183,7 +183,7 @@ plt.figure(figsize=[8,6])
 plt.plot(xs, ps, 'b-', alpha=0.4)
 plt.xlabel("Position (m)")
 plt.ylabel("Momentum (kg*m/s)")
-plt.title("Oscillatory motion")
+plt.title("Oscillatory motion: Phase Space Representation")
 
 plt.grid(1)
 plt.show()
@@ -261,12 +261,13 @@ plt.figure(figsize=[8,6])
 rk_xs = rk_soln[:, 0]
 rk_vs = rk_soln[:, 1]
 
-plt.plot(ts, rk_xs, label='X')
-plt.plot(ts, rk_vs, label='V')
+plt.plot(ts, rk_xs, 'r.-', label='X', alpha=0.3)
+plt.plot(ts, rk_vs, 'b.-', label='V', alpha=0.3)
 
 plt.xlabel('time (s)')
 plt.grid()
 plt.legend(loc="upper left")
+plt.title("Oscillator Motion Using Runge-Kutta Method")
 plt.show()
 
 #plt.close()
