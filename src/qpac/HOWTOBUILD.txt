@@ -1,0 +1,7 @@
+1. Install texlive-full
+2. run
+   pdflatex -shell-escape main.tex
+3. To build for printing (embedding the fonts)
+   do normal build
+   open pdf in adobe. Print using Foxit PDF printer. Make sure the size is 6x9.
+   Make sure that fonts are embedded.

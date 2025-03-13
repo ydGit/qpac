@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="5.9000001in"
+   height="8.8999996in"
+   viewBox="0 0 149.86 226.06"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="background.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="51.778862"
+     inkscape:cy="447.33956"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer3"
+     showgrid="true"
+     units="in"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid58"
+       units="in"
+       spacingx="2.5399999"
+       spacingy="2.5399999" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-70.939974)"
+     sodipodi:insensitive="true"
+     style="display:none" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="margins"
+     transform="translate(0,-2.5399904)"
+     style="display:none">
+    <rect
+       id="rect3750"
+       width="25.4"
+       height="226.06"
+       x="0"
+       y="2.5400143"
+       style="fill:#828282;fill-opacity:0.6039604;stroke-width:1.03117371" />
+    <rect
+       id="rect3750-5"
+       width="25.4"
+       height="226.06"
+       x="124.46"
+       y="2.5399976"
+       style="fill:#828282;fill-opacity:0.6039604;stroke-width:1.03117371" />
+    <rect
+       id="rect3750-1"
+       width="25.4"
+       height="149.86"
+       x="203.2"
+       y="-149.86"
+       style="fill:#828282;fill-opacity:0.6039604;stroke-width:0.83958143"
+       transform="rotate(90)" />
+    <rect
+       id="rect3750-1-2"
+       width="25.4"
+       height="149.86"
+       x="2.5399976"
+       y="-149.86"
+       style="fill:#828282;fill-opacity:0.6039604;stroke-width:0.83958143"
+       transform="rotate(90)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="dedication">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.52679539px;line-height:27.45000076;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';letter-spacing:1.44084942px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28816983"
+       x="63.133255"
+       y="97.761627"
+       id="text17984-9-8-8-2-8-3"
+       transform="scale(0.99151727,1.0085553)"><tspan
+         sodipodi:role="line"
+         id="tspan17982-8-1-0-7-5-3"
+         x="63.133255"
+         y="97.761627"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:27.45000076;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0.49530578px;fill:#000000;fill-opacity:1;stroke-width:0.28816983">Dedicated to </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.52679539px;line-height:27.45000076;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';letter-spacing:1.44084942px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28816983"
+       x="54.895111"
+       y="104.89787"
+       id="text17984-9-8-8-2-8-3-7"
+       transform="scale(0.99151727,1.0085553)"><tspan
+         sodipodi:role="line"
+         id="tspan17982-8-1-0-7-5-3-7"
+         x="54.895111"
+         y="104.89787"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:27.45000076;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';letter-spacing:0.49530581px;fill:#000000;fill-opacity:1;stroke-width:0.28816983">Vladimir Zenkovich</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+"""
+Functions to process source files to generate statistics about the book.
+"""
+from pathlib import Path
+
+def process_tex_file
