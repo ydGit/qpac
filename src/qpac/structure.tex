@@ -401,6 +401,25 @@ rightmargin=0cm,
 linewidth=4pt,
 innerbottommargin=5pt]{cBox}
 
+% Prerequisite box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+%rightline=false,
+%leftline=true,
+%topline=false,
+%bottomline=false,
+backgroundcolor=magenta!8,
+linecolor=black!20,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=10pt,
+leftmargin=0cm,
+rightmargin=0cm,
+%linewidth=4pt,
+roundcorner=2,
+innerbottommargin=0pt]{prBox}
+
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 %% \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}\faPencilSquareO\\}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}
@@ -621,6 +640,10 @@ addtohook={%
 \newcommand{\qs}[1]{|{#1}\rangle}  % quantum state
 \newcommand{\ket}[1]{|{#1}\rangle}  % quantum state
 \newcommand{\bra}[1]{\langle{#1}|}  % quantum state
+\newcommand{\braket}[2]{\langle{#1}|{#2\rangle}}  % quantum bracket
+\newcommand{\ketbra}[2]{|{#1}\rangle\langle{#2}|}  % quantum bracket
+
+
 \newcommand{\ms}[1]{\overset{\rightharpoonup}{#1}}
 %\newcommand{\op}[1]{\overset{\land}{#1}}
 %\newcommand{\op}[1]{\overset{\sqfrown}{#1}}
@@ -639,6 +662,7 @@ addtohook={%
 %\newcommand{\proj}[1]{\overset{\leftrightarrow}{#1}}  % vector space
 
 \newcommand{\bem}[1]{{\bf\emph{#1}}}
+
 \newenvironment{mybio}[1]{\begin{bBox}\begin{bioT}\faBook\,\,\bem{#1}\\}
                          {\vspace{0.1cm}\end{bioT}\end{bBox}}
 \newenvironment{myrem}[1]{\begin{rBox}\faExclamationCircle\,\,\bem{#1}\\}
@@ -647,6 +671,10 @@ addtohook={%
 \newenvironment{mydef}[1]{\begin{dBox}\begin{definitionT}\faHandORight\,\,\bem{#1}\\}{\vspace{0.2cm}\end{definitionT}\end{dBox}}
 
 \newenvironment{analogy}{\begin{tBox}\faSunO\,\,\bem{Analogy}\\}{\vspace{0.1cm}\end{tBox}}
+
+
+\newenvironment{myprereq}[1]{\begin{prBox}\begin{bioT}\faCheckSquareO\,\,\bem{#1}\\}
+		{\vspace{0.1cm}\end{bioT}\end{prBox}}
 
 \newcommand{\chhc}{\color{blue!10!black}}
 
