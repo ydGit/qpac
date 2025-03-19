@@ -1,6 +1,21 @@
 \graphicspath{{../04ClassicalPhysics/pics/}}
 
 \chapter{Classical Physics}\label{ch:ClassicalPhysics}
+\begin{quoting}
+	I think we may ultimately reach the stage when
+	it is possible to set up quantum theory without any reference to classical theory,
+	just as we already have reached the stage where we can set up the Einstein
+	gravitational theory without any reference to the Newtonian theory. But
+	from the point of view of teaching students, I think one would always
+	have to proceed by stages -- not expect too much from them, teach them
+	first the elementary theories and gradually develop their minds; and
+	that will always involve working from the classical theory
+	first.
+	
+	P. A. M. Dirac, Lectures on Quantum Field Theory, Belfer Graduate
+	School of Science, Yeshiva University, New York, 1966, p.43.
+\end{quoting}
+
 \lettrine[lines=2]{\color{darkocre}T}{he} concept of
 \emph{operators}\index{Operator} extends the idea of functions. An unary numeric
 function $f$ takes some numeric value $x$ as an input  and produces
@@ -10,9 +25,21 @@ f\,x=y\quad \textrm{ or } \quad x\overset{f}{\longrightarrow} y\,.
 \]
 In mathematical jargon, $f$ \emph{maps} $x$ into $y$.
 
+\begin{myprereq}{Prerequisite Knowledge}
+	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
+	
+	\begin{itemize}
+		\item \phantom{phantom}
+		\vspace{-0.5cm}
+		\item State
+		\item Dynamical equations
+	\end{itemize}	
+\end{myprereq}
+
+
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=1.0]{arrowsOperatorGeneral}
+  \includegraphics[scale=1.0]{defaultFigureTemplate}
   \caption{Operators extend the idea of functions. (a) An unary
     function $f$ can be applied to a number $x$ to produce
     another number $y$. (b) An unary operator $\op{F}$ can be applied to a vector
@@ -21,6 +48,8 @@ In mathematical jargon, $f$ \emph{maps} $x$ into $y$.
 \end{figure}
 
 \section{System}\label{sec:System}
+
+
 An action of an operator $F$ on arrows can be represented symbolically
 as an equation:
 \[

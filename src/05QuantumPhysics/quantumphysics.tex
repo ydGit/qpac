@@ -65,6 +65,13 @@ based on two vectors:
 \[
 \ketbra{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
+\subsection{Physical Realization of Qubits}
+Recall that harmonic oscillator is any physical system with Hamiltonian
+\[
+H = \frac{p^2}{2m}+\frac{kx^2}{2}\,.
+\] 
+Many concrete physical systems can be described using this Hamiltonian and thus provide specific \emph{realizations} of 
+the oscillator model. Similarly, many concrete physical systems realize the idea of a qubit.
 
 \section{Interacting Qubits}\label{sec:InteractingQubits}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
@@ -72,6 +79,23 @@ based on two vectors:
 \[
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
+\subsection{Computational Basis}
+\[
+\ket{\Upsilon}_1 = \ket{0}\ket{0},\,\ket{\Upsilon}_2 = \ket{0}\ket{1},\,
+\ket{\Upsilon}_3 = \ket{1}\ket{0},\,\ket{\Upsilon}_4 = \ket{1}\ket{1}\,.
+\]
+Q: Are there other states, which are also basis and product? Smth like
+\[
+\ket{\Xi}=\ket{+}\ket{+}\,.
+\]
+
+\subsection{Bell States}
+\[
+\ket{\Phi}^{+}\,,\quad\ket{\Phi}^{-}\,,\quad
+\ket{\Psi}^{+}\,,\quad\ket{\Psi}^{-}\,.
+\]
+
+
 \subsection{GHZ State}\label{sec:GHZState}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
 based on two vectors:
