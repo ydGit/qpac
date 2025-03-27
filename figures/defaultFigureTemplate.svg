@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,9 +38,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.8483146"
-     inkscape:cx="300.4983"
-     inkscape:cy="119.33503"
+     inkscape:zoom="2.1867583"
+     inkscape:cx="125.35876"
+     inkscape:cy="39.187849"
      inkscape:window-width="2560"
      inkscape:window-height="1411"
      inkscape:window-x="-9"
@@ -327,7 +327,7 @@
      transform="translate(112.80709,2.2285892)">
     <text
        xml:space="preserve"
-       style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.88056px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.134992;word-spacing:0px"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.134992"
        x="-87.047211"
        y="6.3551407"
        id="text133659"><tspan
@@ -335,7 +335,7 @@
          id="tspan133657"
          x="-87.047211"
          y="6.3551407"
-         style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-size:3.88056px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;stroke-width:0.134992">Reflective Cavity</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.134992">Reflective Cavity</tspan></text>
     <g
        id="g136274"
        transform="matrix(0,0.75540967,0.75540967,0,-204.73013,1.8285736)">
@@ -856,7 +856,7 @@
        d="m 29.717202,-75.591293 a 7.3559079,7.3559079 0 0 1 -7.312266,7.355778 7.3559079,7.3559079 0 0 1 -7.399032,-7.268496 7.3559079,7.3559079 0 0 1 7.224471,-7.442025 7.3559079,7.3559079 0 0 1 7.484755,7.180191" />
     <text
        xml:space="preserve"
-       style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.88056px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.134992;word-spacing:0px"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.134992"
        x="-57.394409"
        y="23.580511"
        id="text285951"><tspan
@@ -864,10 +864,10 @@
          id="tspan285949"
          x="-57.394409"
          y="23.580511"
-         style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-size:3.88056px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;stroke-width:0.134992">EMF modes</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.134992">EMF modes</tspan></text>
     <text
        xml:space="preserve"
-       style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.88056px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.134992;word-spacing:0px"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.134992"
        x="-103.32815"
        y="20.67955"
        id="text285955"><tspan
@@ -875,7 +875,7 @@
          id="tspan285953"
          x="-103.32815"
          y="20.67955"
-         style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-size:3.88056px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;stroke-width:0.134992">&quot;Atom&quot;</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.134992">&quot;Atom&quot;</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.209416;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1170)"
        d="m -74.3319,7.19528 0.0641,3.314403"
@@ -969,7 +969,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.88056px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.134992;word-spacing:0px"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.134992"
        x="-48.030922"
        y="4.2532535"
        id="text3232"><tspan
@@ -977,6 +977,10 @@
          id="tspan3230"
          x="-48.030922"
          y="4.2532535"
-         style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-size:3.88056px;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;stroke-width:0.134992">This is 11pt Gentium Book Basic</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.134992">This is 9pt Gentium Book Basic</tspan></text>
+    <path
+       d="m -32.513553,32.285053 c 1.365458,-1.003285 1.579608,-2.133171 0.988797,-2.771942 -0.574532,-0.621174 -1.467502,-0.436522 -2.22012,-0.506267 -0.268335,-0.02489 -1.705714,-0.169288 -1.970448,-0.301507 -0.113959,-0.05691 -0.376577,-0.342937 -0.461757,-0.503159 -0.120272,-0.226085 -0.08806,-0.728583 0.106997,-1.671542 0.137757,-0.665885 0.06822,-1.070588 -0.251319,-1.462544 -0.220024,-0.269988 -0.233567,-0.628417 -0.02669,-0.707807 0.08728,-0.03353 0.0627,-0.07677 -0.08806,-0.154577 -0.44913,-0.231858 -0.541544,-0.470695 -0.388012,-1.002636 0.120269,-0.416018 -0.03773,-0.674031 -0.426524,-0.696764 -0.623563,-0.03657 -1.035104,-0.274453 -1.101092,-0.636566 -0.05284,-0.289561 -0.004,-0.383415 0.465426,-0.893015 0.882888,-0.958606 0.533918,-0.664569 1.617133,-1.829531 0.400767,-0.431126 0.433883,-0.558236 0.496325,-0.690327 -0.332418,-0.884468 -0.53773,-0.932976 -0.255132,-2.026822 0.06664,-0.258013 0.134196,-0.528649 0.150112,-0.601474 0.05718,-0.261825 0.44138,-1.208345 0.57874,-1.426012 0.324,-0.513145 0.192953,-0.568614 1.074441,-1.724438 1.291705,-1.693784 2.416646,-2.250507 4.375644,-2.7106394 2.406903,-0.5653412 5.241059,-0.2820344 7.381576,1.0118144 1.679688,1.015432 3.286355,2.847659 3.811194,4.773625 0.585983,2.150344 -0.09056,5.019976 -1.699036,6.610095 -0.196414,0.19417 -0.402135,0.38183 -0.564689,0.606627 -0.380078,0.525616 -0.747801,1.129574 -0.891358,1.763276 -0.463538,2.04611 0.496961,3.388706 1.220275,7.513159 z"
+       id="path2"
+       style="stroke-width:0.0141214" />
   </g>
 </svg>

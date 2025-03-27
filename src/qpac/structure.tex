@@ -420,6 +420,27 @@ rightmargin=0cm,
 roundcorner=2,
 innerbottommargin=0pt]{prBox}
 
+
+% Example box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+%rightline=false,
+%leftline=true,
+%topline=false,
+%bottomline=false,
+backgroundcolor=cyan!8,
+linecolor=black!20,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=10pt,
+leftmargin=0cm,
+rightmargin=0cm,
+%linewidth=4pt,
+roundcorner=2,
+innerbottommargin=0pt]{exBox}
+
+
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
 \newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 %% \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}\faPencilSquareO\\}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}
@@ -671,6 +692,7 @@ addtohook={%
 \newenvironment{mydef}[1]{\begin{dBox}\begin{definitionT}\faHandORight\,\,\bem{#1}\\}{\vspace{0.2cm}\end{definitionT}\end{dBox}}
 
 \newenvironment{analogy}{\begin{tBox}\faSunO\,\,\bem{Analogy}\\}{\vspace{0.1cm}\end{tBox}}
+\newenvironment{myExample}{\begin{exBox}\faCommentO\,\,\bem{Example}\\}{\vspace{0.1cm}\end{exBox}}
 
 
 \newenvironment{myprereq}[1]{\begin{prBox}\begin{bioT}\faCheckSquareO\,\,\bem{#1}\\}
