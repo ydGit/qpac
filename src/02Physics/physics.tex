@@ -84,7 +84,14 @@ For $\tau > t$ we determine the future state, while for $\tau < t$ we determine 
 \end{myExample}
 It must be emphasized again, that the final state $\xi_f=\xi_\tau$ is determined by two factors: the initial state $\xi_i=\xi_t$ and the laws of physics encoded in the evolution function $U_{\tau, t}$. 
 
-The laws of physics are timeless, as illustrated by the Coulomb's law of interaction between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts and as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{evolutionOperatorBox}
+	\caption{Evolution operator transforms an initial state into the final state in time $\Delta t$.}
+	\label{fig:evolutionOperatorBox}
+\end{figure}
+
+The laws of physics are timeless\footnote{Technical term is \emph{time-translation invariant.}}, as illustrated by the Coulomb's law of interaction between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts and as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
 \[
 U_{\tau, t}\,\xi_i  = U_{\tau', t'}\,\xi_i
 \]
@@ -131,6 +138,13 @@ Finally, dividing both sides by $\delta t$ and using the $\partial$-notation, we
 	\label{eq:SchrodingerTypeEq}
 \end{equation}
 The equation (\ref{eq:SchrodingerTypeEq}) is a general form of state evolution equations used in physics. It appears in many cases where the dynamics of a system is described as a \emph{continuous deterministic evolution}. 
+\begin{mybio}{Deterministic Evolution Equations}
+	Equations similar to (\ref{eq:SchrodingerTypeEq}) can be found in many physical theories. In quantum theory it is Schrodinger equation, which can be written as follows:
+	\[
+	\partial_t\ket{\Psi} = -i\hat{H}\,\ket{\Psi}\,.
+	\]
+\end{mybio}
+
 
 \section{Classical and Quantum}
 Mathematics is a remarkably effective and universal discipline, its

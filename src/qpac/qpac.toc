@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {2.3}Deterministic Evolution}{21}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Classical and Quantum}{24}{section.2.4}%
 \contentsline {section}{\numberline {2.5}State}{24}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Measurement}{24}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Atoms}{24}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Particles}{24}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Polarization and Spin}{25}{section.2.9}%
+\contentsline {section}{\numberline {2.6}Measurement}{25}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Atoms}{25}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Particles}{26}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Polarization and Spin}{26}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Mathematics}{27}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Arrows}{27}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Dirac Notation}{27}{subsection.3.1.1}%
@@ -64,5 +64,5 @@
 \contentsline {section}{\numberline {8.2}Mathematics}{47}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Greek Alphabet}{47}{subsection.8.2.1}%
 \contentsline {chapter}{\numberline {9}Solutions}{49}{chapter.9}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{51}{section*.27}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{51}{section*.28}%
 \contentsfinish 
