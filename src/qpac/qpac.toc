@@ -54,8 +54,9 @@
 \contentsline {section}{\numberline {6.4}Stimulated Emission}{40}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Lasers}{40}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Photoeffect}{40}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Conductors}{40}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Entanglement}{40}{section.6.8}%
+\contentsline {section}{\numberline {6.7}Black Body Radiation}{40}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Conductors}{40}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Entanglement}{40}{section.6.9}%
 \contentsline {chapter}{\numberline {7}Implications}{43}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Appendix}{45}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Physics}{45}{section.8.1}%

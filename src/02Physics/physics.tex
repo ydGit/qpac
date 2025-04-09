@@ -57,32 +57,33 @@ results can be applied in a wide range of fields.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{commonSensePerception}
-	\caption{Observer in classical view of the world is detached, separated from the "true" reality.}
+	\caption{Observers in classical view of the world are detached, separated from the "true" reality which they try to comprehend.}
 	\label{fig:commonSensePerception}
 \end{figure}
 
 
 \section{Deterministic Evolution}
-The completeness of a state is a very strong constraint. Not only it means "everything there is to know at a given moment", but also "know state now -- know state always." The latter is an expression of \emph{determinism}: the knowledge of a system is completely determined once the state and its law of evolution are known.
+The completeness of a state is a very strong constraint. Not only it means "everything there is to know at a given moment", but also "know state now -- know state always." The latter is an expression of \emph{determinism}: the complete knowledge of a system is fully determined at all times once an initial state is known. However, state by itself  is not sufficient to satisfy the latter requirement, it must be supplemented by the so called \emph{dynamical equations}. These equations are specific to a physical system and encapsulate the laws that govern internal interactions. EXAMPLE?
 
-  However, state by itself  is not sufficient to satisfy the latter requirement, it must be supplemented by the so called \emph{dynamical equations}. These equations are specific to a physical system and encapsulate the laws that govern internal interactions. EXAMPLE?
-
-Denoting the mathematical representation of the state as $\xi$, the evolution of the state between the moments of time $T=t$ and $T=\tau$ may be written as a functional dependence:
+Denoting the mathematical representation of the state as $\xi$, the evolution of the state between the moments of time $T=t$ and $T=t+\Delta t$ may be written as a functional dependence:
 \[
-\xi_\tau = U_{\tau, t}\,\xi_t\,.
+\xi_{t+\Delta t} = U_{t+\Delta t, t}\,\xi_t\,.
 \]
-For $\tau > t$ we determine the future state, while for $\tau < t$ we determine the state in the past (relative to the moment $t$).
+For $\Delta t > 0$ we determine the future state, while for $\Delta t < 0$ we determine the state in the past (relative to the moment $t$).
 \begin{myExample}
 	For circular motion the state is the angle $\xi=\phi$, and the evolution is given by a simple formula
 	\[
-	\phi_\tau = U_{\tau, t}\,\phi_t=\omega (\tau - t) + \phi_t\,.	
+	\phi_{t+\Delta t} = U_{t+\Delta t, t}\,\phi_t=\omega \Delta t + \phi_t\,.	
 	\]
-	Notice that in this case the evolution function depends on the time \emph{difference} $\tau-t$ and not on each moment of time separately:
+	Notice that in this case the evolution function depends on the time \emph{difference} $\Delta t$ and not on each moment of time separately:
 	\[
-	U_{\tau, t} = U_{\tau-t}\,.
+	U_{t+\Delta t, t} = U_{\Delta t}\,.
 	\]
 \end{myExample}
-It must be emphasized again, that the final state $\xi_f=\xi_\tau$ is determined by two factors: the initial state $\xi_i=\xi_t$ and the laws of physics encoded in the evolution function $U_{\tau, t}$. 
+It must be emphasized again, that the final state $\xi_f=\xi_{t+\Delta t}$ is determined by two factors: the initial state $\xi_i=\xi_t$ and the laws of physics encoded in the evolution function $U_{t+\Delta t, t}$. 
+\[
+\xi_f\, \overset{U_{\Delta t}}{\xleftarrow{\hspace*{2cm}}}\, \xi_i
+\]
 
 \begin{figure}[htbp]
 	\centering
@@ -91,7 +92,7 @@ It must be emphasized again, that the final state $\xi_f=\xi_\tau$ is determined
 	\label{fig:evolutionOperatorBox}
 \end{figure}
 
-The laws of physics are timeless\footnote{Technical term is \emph{time-translation invariant.}}, as illustrated by the Coulomb's law of interaction between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts and as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
+The laws of physics are timeless\footnote{Technical term is \emph{time-translation invariant.}}, as illustrated by the Coulomb's law for the force between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
 \[
 U_{\tau, t}\,\xi_i  = U_{\tau', t'}\,\xi_i
 \]
