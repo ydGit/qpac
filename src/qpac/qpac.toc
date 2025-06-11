@@ -26,6 +26,7 @@
 \contentsline {section}{\numberline {3.3}Operators}{29}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Functions, Operators, and Functionals}{29}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Spaces}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Application: Circular Motion}{29}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Classical Physics}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}System}{32}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Oscillator}{33}{section.4.2}%

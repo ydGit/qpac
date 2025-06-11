@@ -78,6 +78,32 @@ and
 \ketbra{\phi}{\phi}\,.
 \]
 
+\section{Application: Circular Motion}
+Let us examine how the concepts and tools discussed above can be applied to a simple case of circular motion.  
+
+Consider a  particle moving in a circle with the radius $R$, as shown in Figure X. If we choose the center of the circle as the reference point, we can specify the position of the particle using an arrow $\ket{r}$. During motion the direction of this arrow is constantly changing, but its length $R$ remains the same.  
+
+After a short time interval $\delta t$, the position of the particle changes by $\delta\ket{r}$:
+\[
+\ket{r_t}\quad\rightarrow\quad \ket{r_{t+\delta t}} = \ket{r_t}+\delta\ket{r}\,.
+\]
+
+The length of the path covered by the particle during the time interval $\delta t$ can be approximated by the length of the arc  $\delta L=R\delta\theta=v\delta t$. The arrow $\delta\ket{r}$ can be written as $\delta L\ket{u}$ where $\ket{u}$ is the vector of unit length pointing in the direction of motion. This unit vector can be constructed from $\ket{r}$ by scaling it down by $R$ and then rotating counter-clockwise with the operator $\op{J}$: 
+\[
+\delta\ket{r}=R\delta\theta\op{J}\left(\frac{\ket{r}}{R}\right)\,.
+\]
+Since $\op{J}$ is a linear operator, the $R$ cancels and we can write
+\[
+\frac{\delta\ket{r}}{\delta t}=\frac{\delta\theta}{\delta t}\op{J}\ket{r}\qquad\Longrightarrow\qquad
+\partial_t\ket{r}=\omega\op{J}\ket{r}\,,
+\]
+where we introduced the angular speed $\omega=\partial_t\theta$. Finally, by applying the $\op{J}$ operator to both sides of the last equation, we can cast it into the "Schrodinger" form:
+\[
+\op{J}\partial_t\ket{r}=-\omega\ket{r}\,.
+\]  
+
+
+
 \section*{Chapter Highlights}
 {\setstretch{1.5}\chhc
   \it
