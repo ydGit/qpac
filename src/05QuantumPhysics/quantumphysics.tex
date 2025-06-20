@@ -60,17 +60,14 @@ If the energy of the ground and excited states are $E_g$ and $E_e$, respectively
 \[
 \op{H} = E_g\ketbra{g}{g}+E_e\ketbra{e}{e}\,.
 \]
-It requires an energy $\Delta E=E_e-E_g$ to excite the qubit from the lower energy state to the the higher energy state. This energy may come from a quantum of electromagnetic field oscillating with frequency $\omega=\Delta E/\hbar$.
+It requires an energy $\Delta E=E_e-E_g$ to excite the qubit from the lower energy state to the higher energy state. This energy may come from a quantum of electromagnetic field oscillating with frequency $\omega=\Delta E/\hbar$.
 
-\subsection{Flipping Operators}
-Transition between the states of a qubit can be described mathematically using operators that map one state into another. For example, an operator $\op{F}$ that \emph{flips} states acts must do the following:
+\subsection{Flipping Operator}
+Transition between the states of a qubit can be described mathematically using operators that map one state into another. For example, an operator $\op{F}$ that \emph{flips} states must do the following:
 \[
-\op{F}\,\ket{0}=\ket{1}\,,
+\op{F}\,\ket{0}=\ket{1}\,,\quad \op{F}\,\ket{1}=\ket{0}\,.
 \]
-\[
-\op{F}\,\ket{1}=\ket{0}\,.
-\]
-Such an operator can be easily built from the tensor products:
+Such operator can be easily built from the tensor products:
 \[
 \op{F} = \ketbra{1}{0}+\ketbra{0}{1}\,.
 \]
