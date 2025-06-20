@@ -127,7 +127,36 @@ Here we used $v_m=gT=\sqrt{2Hg}$ -- the maximal speed of the body at the end of 
 
 
 \subsection*{Assorted Examples}
-Examples of functionals given above involve evaluation of sums to find  total quantities of various kinds. 
+Examples of functionals given above involve evaluation of sums in order to find  \emph{total quantities} of various kinds:
+\[
+Q = \int \delta x f_x\,.
+\]
+The total quantity $Q$ depends on the behavior of the input function $f_x$ over an extended range of $x$ values. Simpler forms of functionals can also be used. For example:
+\[
+\mathcal{M}\, f = f_0
+\]
+returns the value of the input function $f_x$ at zero. This functional, despite its trivial look, is very useful and widely used in physics and mathematics. Its rigorous mathematical form is called \emph{Dirac delta function}\,.
+\begin{mybio}{Dirac Delta Function}
+	The idea of delta function is simple: it describes the density of mass (or charge, probability, and so on) for a point-like particle. Formally, such density can be written as $\delta_x$.
+	
+	Since the total mass (charge, probability) is finite, the summation of the density over the region where the particle might be must be a fixed number:
+	\[
+	m = \int \delta x \delta_x\,.
+	\]
+\end{mybio}
+
+Another example of a simple functional is the maximum of a function:
+\[
+\mathcal{X}\,f = \textrm{max}\,f_x\,.
+\]
+Finally, one can map any function $f_x$ into a number like so:
+\[
+\mathcal{R}\,f = \frac{f_1}{1!} + \frac{f_{1/2}}{2!} + \frac{f_{1/3}}{3!}+\ldots+\frac{f_{1/n}}{n!}+\ldots\,.
+\]
+For $f=\sin$ we obtain $\mathcal{R}\,\sin\approx 1.1479$.
+\begin{exercise}
+	For the functionals $\mathcal{M}$, $\mathcal{X}$, and $\mathcal{R}$ check whether they are \emph{linear}.
+\end{exercise}
 
 \section{Spaces}
 

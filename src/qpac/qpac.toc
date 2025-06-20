@@ -5,7 +5,9 @@
 \contentsline {subsection}{\numberline {1.2.1}Three Ages of Quantum}{13}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}Who Needs Quantum Physics?}{14}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Why is Quantum Physics Hard?}{14}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Language}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}Mathematics}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Language}{15}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Concepts}{15}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Quantum Versus Classical}{15}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Quantum Puzzle}{16}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Physics}{19}{chapter.2}%
@@ -26,52 +28,52 @@
 \contentsline {section}{\numberline {3.3}Operators}{29}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Super-operators}{29}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Functionals}{29}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Spaces}{31}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Application: Circular Motion}{31}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Classical Physics}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Oscillator}{35}{section.4.2}%
-\contentsline {section}{\numberline {4.3}State}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Dynamics}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Hamiltonian}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Lagrangian}{36}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Field}{36}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Ideal Versus Real}{36}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Quantum Physics}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Quantum System}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Quantum State}{37}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}States Overlap}{37}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Quantum Dynamics}{38}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Quantum Hamiltonian}{38}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Quantum Oscillator}{38}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Quantum Bit}{38}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Physical Realization of Qubits}{38}{subsection.5.6.1}%
-\contentsline {section}{\numberline {5.7}Interacting Qubits}{38}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Computational Basis}{39}{subsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.7.2}Bell States}{39}{subsection.5.7.2}%
-\contentsline {subsection}{\numberline {5.7.3}GHZ State}{39}{subsection.5.7.3}%
-\contentsline {section}{\numberline {5.8}Quantum Field}{39}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Applications}{41}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Hydrogen-like Atoms}{41}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Franck-Hertz Experiment}{41}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Stoke's Rule}{41}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Quantum Dots}{41}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Spontaneous Emission}{42}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Stimulated Emission}{42}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Lasers}{42}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Photoeffect}{42}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Black Body Radiation}{42}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Conductors}{42}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}Heat Capacity}{42}{subsection.6.8.1}%
-\contentsline {section}{\numberline {6.9}Entanglement}{43}{section.6.9}%
-\contentsline {chapter}{\numberline {7}Implications}{45}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Appendix}{47}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Physics}{47}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Black Body Radiation}{47}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Notation}{47}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Constants}{48}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Mathematics}{49}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Greek Alphabet}{49}{subsection.8.2.1}%
-\contentsline {chapter}{\numberline {9}Solutions}{51}{chapter.9}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{53}{section*.35}%
+\contentsline {section}{\numberline {3.5}Spaces}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Application: Circular Motion}{32}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Classical Physics}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Oscillator}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}State}{37}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Dynamics}{37}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Hamiltonian}{37}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Lagrangian}{38}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Field}{38}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Ideal Versus Real}{38}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Quantum Physics}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Quantum System}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Quantum State}{39}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}States Overlap}{39}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Quantum Dynamics}{40}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Quantum Hamiltonian}{40}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Quantum Oscillator}{40}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Quantum Bit}{40}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Physical Realization of Qubits}{40}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}Interacting Qubits}{40}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Computational Basis}{41}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Bell States}{41}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}GHZ State}{41}{subsection.5.7.3}%
+\contentsline {section}{\numberline {5.8}Quantum Field}{41}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Applications}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Hydrogen-like Atoms}{43}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Franck-Hertz Experiment}{43}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Stoke's Rule}{43}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Quantum Dots}{43}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Spontaneous Emission}{44}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Stimulated Emission}{44}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Lasers}{44}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Photoeffect}{44}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Black Body Radiation}{44}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Conductors}{44}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Heat Capacity}{44}{subsection.6.8.1}%
+\contentsline {section}{\numberline {6.9}Entanglement}{45}{section.6.9}%
+\contentsline {chapter}{\numberline {7}Implications}{47}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Appendix}{49}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Physics}{49}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Black Body Radiation}{49}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Notation}{49}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Constants}{50}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Mathematics}{51}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Greek Alphabet}{51}{subsection.8.2.1}%
+\contentsline {chapter}{\numberline {9}Solutions}{53}{chapter.9}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{55}{section*.35}%
 \contentsfinish 
