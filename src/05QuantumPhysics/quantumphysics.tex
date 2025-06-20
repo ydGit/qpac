@@ -52,6 +52,51 @@ based on two vectors:
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
 
+
+\section{Quantum Bit}\label{sec:Qubit}
+Any quantum system with two active states is called a \emph{qubit}. The state with lower energy is usually called \emph{ground state} and denoted as $\ket{g}$ or $\ket{0}$ (zero). The state with higher energy is usually called \emph{excited state} and denoted as $\ket{e}$ or $\ket{1}$ (one). The notation $\ket{0}\,,\ket{1}$ is used in the field of quantum information and computation.
+
+If the energy of the ground and excited states are $E_g$ and $E_e$, respectively, then the Hamiltonian of a qubit can be written using projectors
+\[
+\op{H} = E_g\ketbra{g}{g}+E_e\ketbra{e}{e}\,.
+\]
+It requires an energy $\Delta E=E_e-E_g$ to excite the qubit from the lower energy state to the the higher energy state. This energy may come from a quantum of electromagnetic field oscillating with frequency $\omega=\Delta E/\hbar$.
+
+\subsection{Flipping Operators}
+Transition between the states of a qubit can be described mathematically using operators that map one state into another. For example, an operator $\op{F}$ that \emph{flips} states acts must do the following:
+\[
+\op{F}\,\ket{0}=\ket{1}\,,
+\]
+\[
+\op{F}\,\ket{1}=\ket{0}\,.
+\]
+Such an operator can be easily built from the tensor products:
+\[
+\op{F} = \ketbra{1}{0}+\ketbra{0}{1}\,.
+\]
+Each term in this sum is useful in quantum theory. The first term is called \emph{raising operator} and is denoted as 
+$ \op{\sigma}_\plus=\ketbra{1}{0}$. The second term is called \emph{lowering operator} and is denoted as $ \op{\sigma}_\minus=\ketbra{0}{1}$. Apparently, the raising operator excites the qubit from the ground state, while the lowering operator brings the qubit down from the excited state.
+
+\begin{exercise}
+	Calculate (a) $\op{\sigma}_\plus \op{\sigma}_\plus$; (b) $\op{\sigma}_\minus \op{\sigma}_\minus$; (c) $\op{\sigma}_\plus \op{\sigma}_\minus$; (d) $\op{\sigma}_\minus \op{\sigma}_\plus$.
+\end{exercise}
+
+\begin{exercise}
+	Show that  $\op{\sigma}_\plus \op{\sigma}_\minus+\op{\sigma}_\minus \op{\sigma}_\plus=\op{I}$, where $\op{I}$ is the identity operator.
+\end{exercise}
+
+\begin{exercise}
+	Show that the qubit Hamiltonian can be written in terms of the raising and lowering operators as follows:
+	
+	\[
+	\op{H} = \hbar\omega\left(\op{\sigma}_\plus \op{\sigma}_\minus+\epsilon\op{I} \right)\,,
+	\]
+	where $\epsilon=E_g/\Delta E$.
+\end{exercise}
+
+\subsection{Number Operator}
+The operator $\op{n}=\op{\sigma}_\plus \op{\sigma}_\minus$ is called \emph{number operator} for the following reason. 
+
 \section{Quantum Oscillator}\label{sec:QuantumOscillator}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
 based on two vectors:
@@ -59,12 +104,8 @@ based on two vectors:
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
 
-\section{Quantum Bit}\label{sec:Qubit}
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
-\[
-\ketbra{\sigma}\,\vec{a}\,\vec{b}=x\,.
-\]
+
+
 \subsection{Physical Realization of Qubits}
 Recall that harmonic oscillator is any physical system with Hamiltonian
 \[
