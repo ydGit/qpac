@@ -52,13 +52,13 @@
 \contentsline {subsection}{\numberline {5.6.1}Hamiltonian Operator}{43}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}Ladder Operators}{45}{subsection.5.6.2}%
 \contentsline {subsection}{\numberline {5.6.3}Conjugation}{46}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Canonical Commutation}{47}{subsection.5.6.4}%
-\contentsline {section}{\numberline {5.7}Physical Realization of Qubits}{47}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Interacting Qubits}{47}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Computational Basis}{47}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.6.4}Canonical Commutation}{48}{subsection.5.6.4}%
+\contentsline {section}{\numberline {5.7}Physical Realization of Qubits}{48}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Interacting Qubits}{48}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Computational Basis}{48}{subsection.5.8.1}%
 \contentsline {subsection}{\numberline {5.8.2}Bell States}{48}{subsection.5.8.2}%
 \contentsline {subsection}{\numberline {5.8.3}GHZ State}{48}{subsection.5.8.3}%
-\contentsline {section}{\numberline {5.9}Quantum Field}{48}{section.5.9}%
+\contentsline {section}{\numberline {5.9}Quantum Field}{49}{section.5.9}%
 \contentsline {chapter}{\numberline {6}Applications}{51}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Hydrogen-like Atoms}{51}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Franck-Hertz Experiment}{51}{subsection.6.1.1}%

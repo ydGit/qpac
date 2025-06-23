@@ -255,21 +255,45 @@ where the number operator $\op{n}=\op{a}_\plus\op{a}_\minus$.
 \subsection{Conjugation}
 The raising operator $\op{a}_\plus$ can be written in terms of the tensor products:
 \[
-\op{a}_\plus=\int \sqrt{k+1}\ketbra{k+1}{k}\,.
+\op{a}_\plus=\int_0 \sqrt{k+1}\ketbra{k+1}{k}\,.
 \]
 If we limit the lowering operator to states $\ket{m}$ with $m>0$, then it also allows a simple representation
 \[
-\op{a}_\minus=\int \sqrt{m}\ketbra{m-1}{m}\,.
+\op{a}_\minus=\int_1 \sqrt{m}\ketbra{m-1}{m}\,.
 \]
 By changing the summation variable $m-1=k$ (and, therefore, $m=k+1$), we can re-write the summation over $k=0,1,2\ldots$:
 \[
-\op{a}_\minus=\int \sqrt{k+1}\ketbra{k}{k+1}\,.
+\op{a}_\minus=\int_0 \sqrt{k+1}\ketbra{k}{k+1}\,.
 \]
 Now the expression for $\op{a}_\minus$ became similar to the expression for $\op{a}_\plus$, with the exception that the order of states in the tensor product is flipped:
 \[
 \ketbra{k+1}{k}\leftrightarrow \ketbra{k}{k+1}\,.
 \]
 This change of order of factors in a tensor product is called \emph{conjugation}. The operators $\op{a}_\minus$ and $\op{a}_\plus$ are therefore related to each other via the \emph{conjugation operation}. These operators are said to be \emph{conjugates} of each other. 
+
+The relation of conjugation gives some insight into what the lowering operator $\op{a}_\minus$ does to the vacuum state:
+\[
+\op{a}_\minus\,\ket{0}=\int_0  \sqrt{k+1}\ket{k}\braket{k+1}{0}=0\int_0\sqrt{k+1}\ket{k}=0\ket{\infty}\,,
+\]
+where we introduced a vector 
+\[
+\ket{\infty}=\ket{0}+\sqrt{2}\ket{1}+\sqrt{3}\ket{2}+\ldots+\sqrt{n+1}\ket{n}+\ldots
+\]
+Obviously, $\ket{\infty}\ne\ket{0}$. The overall factor of zero negates any possible contributions of $\ket{\infty}$, making the product $0\ket{\infty}$ a special "zero vector" $\ket{z_0}$, with the natural property
+\[
+\ket{k}+\ket{z_0}=\ket{k}\,.
+\]
+The vector $\ket{z_0}$ does not correspond to any physical state, but represents a mathematical "zero vector". Since for all mathematical manipulations the vectors $0\ket{\infty}$ and $0\ket{0}$ are equivalent,
+we can express the action of the lowering operator $\op{a}_\minus$ on the vacuum state as follows:
+\[
+\op{a}_\minus\,\ket{0}=0\ket{0}\,.
+\]
+Finally, the action of the number operator $\op{n}=\op{a}_\plus\op{a}_\minus$ on the vacuum state can be evaluated:
+\[
+\op{a}_\plus\op{a}_\minus\,\ket{0}=\op{a}_\plus(\op{a}_\minus\,\ket{0})=0(\op{a}_\plus\,\ket{0})=0\ket{1}=0\ket{0}\,,
+\]
+here we used the mathematical equivalence of states $0\ket{1}$ and $0\ket{0}$.
+
 
 \subsection{Canonical Commutation}
 
