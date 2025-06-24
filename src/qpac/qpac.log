@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  23 JUN 2025 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  24 JUN 2025 08:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2856,14 +2856,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-[48]
-Package mdframed Info: mdframed works in twoside mode on input line 356.
+Package mdframed Info: mdframed works in twoside mode on input line 297.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 356.
- [49]) (../06Applications/applications.tex [50]
+(mdframed)              on input line 297.
+Package mdframed Info: mdframed works in twoside mode on input line 319.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 319.
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
+
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 352.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 352.
+[49]
+Package mdframed Info: mdframed works in twoside mode on input line 359.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 359.
+Package mdframed Info: mdframed works in twoside mode on input line 362.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 362.
+Package mdframed Info: mdframed works in twoside mode on input line 375.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 375.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+[51]
+Package mdframed Info: mdframed works in twoside mode on input line 462.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 462.
+ [52]) (../06Applications/applications.tex [53] [54
+
+]
 Chapter 6.
-<pics/chapterImageApplications.pdf, id=908, 427.81808pt x 86.28212pt>
+<pics/chapterImageApplications.pdf, id=932, 427.81808pt x 86.28212pt>
 File: pics/chapterImageApplications.pdf Graphic file (type pdf)
 <use pics/chapterImageApplications.pdf>
 Package pdftex.def Info: pics/chapterImageApplications.pdf  used on input line 
@@ -2877,10 +2914,8 @@ Package mdframed Info: mdframed works in twoside mode on input line 7.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
-[51
-
- <./pics/chapterImageApplications.pdf>] [52] [53])
-(../07Implications/implications.tex [54]
+[55 <./pics/chapterImageApplications.pdf>] [56] [57])
+(../07Implications/implications.tex [58]
 Chapter 7.
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
@@ -2894,9 +2929,9 @@ Package mdframed Info: mdframed works in twoside mode on input line 8.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 8.
-[55
+[59
 
-]) (../08Appendix/appendix.tex [56]
+]) (../08Appendix/appendix.tex [60]
 Chapter 8.
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
@@ -2906,21 +2941,21 @@ Package lettrine.sty Info: Targeted height = 18.57677pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}W);
 (lettrine.sty)             reported on input line 6.
-(../08Appendix/course_notation.tex [57
+(../08Appendix/course_notation.tex [61
 
 ]) (../08Appendix/physical_constants.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 1--24
 
  []
 
-[58] (../08Appendix/greek_alphabet.tex [59])) (../09Solutions/solutions.tex
-[60]
+[62] (../08Appendix/greek_alphabet.tex [63])) (../09Solutions/solutions.tex
+[64]
 Chapter 9.
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
-<../09Solutions/pics//defaultFigureTemplate.pdf, id=969, 348.69095pt x 126.4336
+<../09Solutions/pics//defaultFigureTemplate.pdf, id=993, 348.69095pt x 126.4336
 pt>
 File: ../09Solutions/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../09Solutions/pics//defaultFigureTemplate.pdf>
@@ -2946,9 +2981,9 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 24--27
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 27.
-[61
+[65
 
- <../09Solutions/pics//defaultFigureTemplate.pdf>]) [62]
+ <../09Solutions/pics//defaultFigureTemplate.pdf>]) [66]
 runsystem(makeindex qpac.idx)...executed safely (allowed).
 
  (./qpac.ind
@@ -2957,7 +2992,7 @@ File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 1.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
 )
-[63
+[67
 
 
 
@@ -2975,11 +3010,11 @@ Package logreq Info: Writing requests to 'qpac.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49884 strings out of 476025
- 973366 string characters out of 5790016
- 1868388 words of memory out of 5000000
- 68724 multiletter control sequences out of 15000+600000
- 767172 words of font info for 462 fonts, out of 8000000 for 9000
+ 49946 strings out of 476025
+ 974701 string characters out of 5790016
+ 1870388 words of memory out of 5000000
+ 68753 multiletter control sequences out of 15000+600000
+ 769637 words of font info for 477 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,13n,99p,1001b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesom
@@ -3004,10 +3039,10 @@ al/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/
 dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
 ype1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb>
-Output written on qpac.pdf (63 pages, 1341834 bytes).
+Output written on qpac.pdf (67 pages, 1352297 bytes).
 PDF statistics:
- 1472 PDF objects out of 1728 (max. 8388607)
- 1141 compressed objects within 12 object streams
- 218 named destinations out of 1000 (max. 500000)
- 123801 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1498 PDF objects out of 1728 (max. 8388607)
+ 1163 compressed objects within 12 object streams
+ 229 named destinations out of 1000 (max. 500000)
+ 129945 words of extra memory for PDF output out of 154059 (max. 10000000)
 

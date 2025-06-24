@@ -294,9 +294,115 @@ Finally, the action of the number operator $\op{n}=\op{a}_\plus\op{a}_\minus$ on
 \]
 here we used the mathematical equivalence of states $0\ket{1}$ and $0\ket{0}$.
 
+\begin{mybio}{Dagger Notation}
+	The relation of conjugation between operators is denoted using a special notation. For example, if we denote the lowering operator $\op{a}_\minus$ simply as $\op{a}$, then its conjugate operator-- raising operator-- is denoted using a special "dagger" symbol as the superscript:
+	\[
+	\op{a}_\plus = \op{a}^\dagger\,.
+	\]
+	The use of dagger notation is standard in quantum theory. 
+	
+	Let's use the dagger notation to summarize the basis facts about the ladder operators, the number operator, and the Hamiltonian of quantum oscillator.
+	First, raising and lowering properties:
+	\[
+	\op{a}\,\ket{n}=\sqrt{n}\ket{n-1}\,,\qquad\op{a}^\dagger\,\ket{n}=\sqrt{n+1}\ket{n+1}\,.
+	\]
+	Second, number operator and commutator:
+	\[
+	\op{a}^\dagger\,\op{a}\,\ket{n}=n\ket{n}\,,\qquad \op{a}\,\op{a}^\dagger-\op{a}^\dagger\,\op{a}=\op{I}\,.
+	\]
+	Finally, conjugation relation between the ladder operators:
+	\[
+	\op{a}\overset{\dagger}{\longrightarrow}\op{a}^\dagger\,.
+	\]
+\end{mybio}
+\subsection*{Normal Order}
+\begin{exercise}
+	Ladder operators are used many important applications of quantum theory. Often one encounters expressions with several operators in no particular order, for example $\op{X}=\op{a}^\dagger\,\op{a}^2\,\op{a}^\dagger\,\op{a}$. For calculations it is necessary to rearrange these operators into a \emph{normal order} where all raising operators appear on the left, before the lowering operators.
+	
+	Use the commutation relation $\op{a}\,\op{a}^\dagger-\op{a}^\dagger\,\op{a}=\op{I}$ to put $\op{X}$ into a normal order.
+\end{exercise}
+
 
 \subsection{Canonical Commutation}
+The Hamiltonian operator for quantum harmonic oscillator can be written in different ways. One way relies on energy eigen-values $E_k$:
+\[
+\op{H}=\int_0 E_k\ketbra{k}{k}\,.
+\]
+Another way utilizes raising and lowering operators:
+\[
+\op{H}=\hbar\omega \op{a}^\dagger\,\op{a}+E_0\op{I}\,.
+\]
+However, the starting point was the expression in terms of position and momentum. The question then becomes whether we can introduce \emph{position and momentum operators} such that for harmonic oscillator we get
+\[
+\op{H}=\frac{\op{p}^2}{2m}+\frac{m\omega^2\op{x}^2}{2}\,.
+\]
+We already saw in Exercise X the hint that some relationship must exist between the operators $\op{a}$, $\op{a}^\dagger$ and $\op{x}$, $\op{p}$. Such relationship must be linear in order to transform the expression for $\op{H}$ quadratic in terms of raising and lowering operator
+\[
+\op{H}=E_0\op{a}\,\op{a}^\dagger+(\hbar\omega-E_0)\op{a}^\dagger\,\op{a}=\square\,\op{a}\,\op{a}^\dagger+\square\, \op{a}^\dagger\,\op{a}
+\]
+into the expression quadratic in terms of position and momentum
+\[
+\op{H}=\square\, \op{p}^2+\square\, \op{x}^2\,.
+\]
+We are thus looking for a linear transformation
+\[
+\op{x} = A\,\op{a}+B\,\op{a}^\dagger\quad\textrm{ and }\quad \op{p}=C\,\op{a}+D\,\op{a}^\dagger
+\]
+which will lead to the Hamiltonian operator $\op{H}=E_0\op{a}\,\op{a}^\dagger+(\hbar\omega-E_0)\op{a}^\dagger\,\op{a}$.
+\begin{exercise}
+	Show that the Hamiltonian operator for harmonic oscillator in terms of the unknown coefficients $A, B, C$ and $D$ has the form:
+	\begin{align*}
+	\op{H}= & \left(\frac{C^2}{2m}+\frac{m\omega^2A^2}{2}\right)\op{a}^2+\left(\frac{D^2}{2m}+\frac{m\omega^2B^2}{2}\right)\op{a}^\dagger+\\
+	+& \left(\frac{CD}{2m}+\frac{m\omega^2 AB}{2} \right)\op{a}\,\op{a}^\dagger+\left(\frac{CD}{2m}+\frac{m\omega^2 AB}{2} \right)\op{a}^\dagger\,\op{a}\,.
+\end{align*}
+\end{exercise}
+\begin{exercise}
+	Using the result of the previous exercise, show that it implies that $E_0=\hbar\omega/2$.
+\end{exercise}
+\begin{exercise}
+	Using the results of the two previous exercises, show that the four unknown coefficients $A, B, C$ and $D$ satisfy the following equations:
+	\[
+	C^2=-(m\omega A)^2\,,
+	\]
+	\[
+	D^2=-(m\omega B)^2\,,
+	\]
+	and
+	\[
+	CD+(m\omega)^2AB=m\hbar\omega\,.
+	\]
+\end{exercise}
+\begin{exercise}
+	Using the result of the previous exercise, show that $CD=(m\omega)^2AB$ (convince yourself that $CD$ can't be $CD=-(m\omega)^2AB$!). Then show that one possible solution is the set of coefficients:
+	\[
+	A=B=\sqrt{\frac{\hbar}{2m\omega}}\,,
+	\]
+	and
+	\[
+	C=-D=-\op{J}\sqrt{\frac{\hbar m\omega}{2}}\,.
+	\]
+\end{exercise}
 
+With the steps outlined above, we obtain the following expressions for the operators of position and momentum:
+\[
+\op{x}=\sqrt{\frac{\hbar}{2m\omega}}\left(\op{a}^\dagger+\op{a}\right)
+\]
+and
+\[
+\op{p}=\op{J}\sqrt{\frac{\hbar m\omega}{2}}\left(\op{a}^\dagger-\op{a}\right)\,.
+\]
+Using these relations, it is now easy to find so called \emph{canonical commutation relation} for the basic physical operators of position and momentum. First, we find
+\[
+\op{x}\op{p}=\op{J}\frac{\hbar}{2}\left(\op{a}^\dagger\op{a}^\dagger-\op{a}\op{a}+\op{a}\op{a}^\dagger-\op{a}^\dagger\op{a}\right),
+\]
+then
+\[
+\op{p}\op{x}=\op{J}\frac{\hbar}{2}\left(\op{a}^\dagger\op{a}^\dagger-\op{a}\op{a}+\op{a}^\dagger\op{a}-\op{a}\op{a}^\dagger\right).
+\]
+Subtracting the latter equation from the former, we arrive at
+\[
+\lbrack \op{x},\op{p}\rbrack=\op{x}\op{p}-\op{p}\op{x}=\op{J}\hbar\lbrack \op{a},\op{a}^\dagger\rbrack=\op{J}\hbar\,.
+\]
 
 \section{Physical Realization of Qubits}
 Recall that harmonic oscillator is any physical system with Hamiltonian
