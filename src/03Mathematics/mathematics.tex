@@ -52,6 +52,7 @@ Symbolically, we will denote vectors by placing an arrow over letters:
 To arrive at the idea of vectors we will start with simple geometrical
 objects -- arrows in a plane, as illustrated in the Figure \ref{fig:arrowsSpace}.
 
+
 \section{Operators}
 
 To arrive at the idea of vectors we will start with simple geometrical
@@ -65,6 +66,74 @@ and
 \]
 
 \subsection{Super-operators}
+
+
+
+An action of an operator $F$ on arrows can be represented symbolically
+as an equation:
+\[
+F\,\vec{a}=\vec{b}\:.
+\]
+Often a ``hat'' is placed on top of an operator\footnote{In Quantum
+	Mechanics, for example.}, to emphasize that it is different from
+numeric function:
+\[
+\colorboxed{red}{
+	\op{F}\,\vec{a}=\vec{b}\:.
+}
+\]
+
+\begin{mybio}{Simple Operators}\\
+	It is easy to come up with examples of operators:
+	
+	\begin{itemize}
+		\item\phantom{x}
+		
+		\item Unit operator (or \emph{identity} operator), such that
+		\[
+		\op{I}\,\vec{a}=\vec{a}\,.
+		\]
+		
+		\item ``Zeroing'' operator that maps every vector into a zero
+		vector:
+		\[
+		\op{0}\, \vec{a} = \vec{0}\,.
+		\]
+		
+	\end{itemize}
+\end{mybio}
+
+
+To fully describe an operator, we must describe how it acts \emph{on
+	every} arrow. 
+
+\begin{flushleft}
+	{\bf Examples}
+\end{flushleft}
+Let us take a closer look at a couple of operators. While studying
+these examples we must keep in mind that the relations between
+components are \emph{specific to basis} and will change if we change the
+basis. The question of how exactly the relation between components
+changes will be addressed later in Section
+\ref{sec:ComponentTransformation} for the simplest types of operators.
+
+
+\begin{mybio}{Matrix}
+	Here is an example of matrix:
+	\[
+	\op{S} =
+	\begin{pmatrix}
+		S_{11} & S_{12}\\
+		S_{21} & S_{22}
+	\end{pmatrix} =
+	\begin{pmatrix}
+		\alpha & 0\\
+		0 & \alpha
+	\end{pmatrix}\,.
+	\]
+	Similar approach can be used to find the components of any linear operator.
+\end{mybio}
+
 
 \section{Functionals}
 Another important type of function is called \emph{functional}. A functional maps a function into a number. Let's consider several examples.

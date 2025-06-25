@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="4.3575058in"
    height="4.3535118in"
    viewBox="0 0 110.68065 110.5792"
    version="1.1"
    id="svg1702"
-   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="systemExamples.svg">
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="systemExamples.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs1696">
     <marker
@@ -489,18 +489,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3529183"
-     inkscape:cx="188.44476"
-     inkscape:cy="102.47362"
+     inkscape:zoom="1.6553287"
+     inkscape:cx="184.25343"
+     inkscape:cy="225.03083"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="2560"
-     inkscape:window-height="1411"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -508,7 +508,9 @@
      inkscape:pagecheckerboard="0"
      units="in"
      width="6in"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata1699">
     <rdf:RDF>
@@ -956,35 +958,35 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0896101"
-       x="30.511753"
-       y="19.974955"
+       x="32.099255"
+       y="21.033289"
        id="text2530-1-6-9"><tspan
          sodipodi:role="line"
          id="tspan2528-0-1-6"
-         x="30.511753"
-         y="19.974955"
+         x="32.099255"
+         y="21.033289"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.0896101">(a)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0896101"
-       x="89.14167"
-       y="19.929621"
+       x="90.729172"
+       y="20.987955"
        id="text2530-1-6-9-4"><tspan
          sodipodi:role="line"
          id="tspan2528-0-1-6-8"
-         x="89.14167"
-         y="19.929621"
+         x="90.729172"
+         y="20.987955"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.0896101">(b)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0896101"
-       x="118.09366"
-       y="19.822889"
+       x="119.68117"
+       y="20.881224"
        id="text2530-1-6-9-4-0"><tspan
          sodipodi:role="line"
          id="tspan2528-0-1-6-8-4"
-         x="118.09366"
-         y="19.822889"
+         x="119.68117"
+         y="20.881224"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.0896101">(c)</tspan></text>
     <text
        xml:space="preserve"
@@ -1054,15 +1056,15 @@
          style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-stretch:normal;font-style:italic;font-variant:normal;font-weight:normal;stroke-width:0.0896101">(g)</tspan></text>
     <text
        xml:space="preserve"
-       style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.58438px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.0896101;word-spacing:0px"
-       x="101.29507"
-       y="97.395271"
+       style="font-style:normal;font-weight:normal;font-size:3.58438px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0896101"
+       x="99.178398"
+       y="96.336937"
        id="text2530-1-6-9-4-6-2"><tspan
          sodipodi:role="line"
          id="tspan2528-0-1-6-8-1-0"
-         x="101.29507"
-         y="97.395271"
-         style="-inkscape-font-specification:Gentium Book Basic;font-family:Gentium Book Basic;font-stretch:normal;font-style:italic;font-variant:normal;font-weight:normal;stroke-width:0.0896101">(h)</tspan></text>
+         x="99.178398"
+         y="96.336937"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.0896101">(h)</tspan></text>
     <text
        xml:space="preserve"
        style="fill:#000000;fill-opacity:1;font-family:Gentium Book Basic;font-size:3.58438px;font-style:normal;font-weight:normal;letter-spacing:0px;line-height:1.25;stroke:none;stroke-width:0.0896101;word-spacing:0px"
@@ -1417,20 +1419,20 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.22146;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2951-6)"
-       d="m 141.12545,112.1401 c 0,0 0.36224,-2.25613 0.0662,-3.57074 -0.26006,-1.15444 -0.9362,-2.57591 -1.47144,-3.21367"
+       d="m 139.00877,111.08176 c 0,0 0.36224,-2.25613 0.0662,-3.57074 -0.26006,-1.15444 -0.9362,-2.57591 -1.47144,-3.21367"
        id="path15624-2"
        sodipodi:nodetypes="csc" />
     <circle
        style="fill:#e7af82;fill-opacity:1;fill-rule:evenodd;stroke:#945d1a;stroke-width:0.342685;stroke-opacity:1"
        id="path7014-5-8-7-4"
-       cx="123.21799"
-       cy="112.19501"
+       cx="121.10133"
+       cy="111.13667"
        r="2.5309403" />
     <circle
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#726b5f;stroke-width:0.265334;stroke-miterlimit:4;stroke-dasharray:0.530667, 0.530667;stroke-dashoffset:0;stroke-opacity:1"
        id="path7014-5-8-7-4-9"
-       cx="123.4127"
-       cy="111.84756"
+       cx="121.29604"
+       cy="110.78922"
        r="15.698486" />
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#a7a095;stroke-width:0.265334;stroke-miterlimit:4;stroke-dasharray:0.530667, 0.530667;stroke-dashoffset:0;stroke-opacity:1"
@@ -1450,8 +1452,8 @@
     <circle
        style="fill:#be82e7;fill-opacity:1;fill-rule:evenodd;stroke:#6b1a94;stroke-width:0.210231;stroke-opacity:1"
        id="path7014-5-8-7-4-3"
-       cx="138.77335"
-       cy="109.18382"
+       cx="136.65671"
+       cy="108.1255"
        r="1.5526874" />
     <g
        id="g27001"
