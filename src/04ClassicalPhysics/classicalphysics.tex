@@ -239,50 +239,48 @@ their future values from their initial values. State is an important
 concept not only mechanics, but in other areas of physics.
 Let's elaborate, using the oscillator as an example.
 
-Suppose that at the moment of time $t_{0}$the position of the oscillator
+Suppose that at the moment of time $t_{0}$ the position of an oscillator
 is $x_{0}$ and its velocity is $v_{0}$. To find their values at
-some later time $t>t_{0}$, we can go iteratevly in small steps, calculating
+some later time $t>t_{0}$, we can go iteratively in small steps, calculating
 how much the position and the velocity change after each successive
 tiny interval of time $\delta t$. The first iteration results in
 the updated value of position
-\begin{equation}
+\[
 	x_{1}=x_{0}+v_{0}\delta t.
-\end{equation}
-
+\]
 The second, and every other, iteration looks very similar:
-\begin{equation}
+\[
 	x_{2}=x_{1}+v\delta t\,.
-\end{equation}
-
+\]
 Now it is important to realize that we can no longer use the same initial
-velocity $v_{0}$in the second iteration, because the velocity itself
+velocity $v_{0}$ in the second iteration, because the velocity itself
 changes. Thus, we must update the value of the velocity as well. This
 is done by using acceleration:
-\begin{equation}
-	v_{1}=v_{0}+a_{0}\delta t.
-\end{equation}
-
-Once this is done, we can find the second iteration of the position:
+\[
+	v_{1}=v_{0}+a_{0}\,.
+\]
+After that, we can find the second iteration of the position:
 $x_{2}=x_{1}+v_{1}\delta t$. To keep this scheme going, we must be
 able to update the value of the acceleration, because it is also changing.
 It appears then, we need some quantity that allows to find the next
 step:
-\begin{equation}
-	a_{1}=a_{0}+b_{0}\delta t,
-\end{equation}
-but, fortunately, \emph{this is not required!} At this point we can use the laws of motion.
-For example, the Newton's second law allows us to find the acceleration,
-if we know the force acting on the object:
+\[
+	a_{1}=a_{0}+b_{0}\delta t\,.
+\]
+Fortunately, \emph{this is not needed!} At this point we can use the laws of motion.
+For example, Newton's second law gives the acceleration in terms of the known force acting on the object:
 \begin{equation}
 	a=\frac{F}{m}.
 \end{equation}
+{\it Forces don't depend on acceleration}
 
-All physical forces, it appears, depend on positions (distances) and,
-sometimes, velocities of bodies. The force of the spring $F=-kx$, for example,
+All known forces in physics depend on positions or distances and--
+sometimes-- velocities of bodies. For example, the force of the spring $F=-kx$
 depends only on the coordinate $x$. The force of gravitational interaction $F=GMm/r^2$
-and the Coulomb force between two charges $F=kQq/r^2$ both depend on the distance
+and the Coulomb force between two charges $F=kQq/r^2$ depend on the distance
 $r$ between the bodies. The force acting on an electron moving through
-a magnetic field $F=qvB$ depends on the electron's velocity (and the field's strength $B$). 
+a magnetic field--known as Lorentz force\index{Lorentz!force}-- equals $F=qvB$ and 
+depends on the electron's velocity (and the field's strength $B$). 
 No known forces depend on acceleration. This fact leads to an important conclusion:
 It is enough to know position and velocity of an object at time $t_{0}$,
 in order to find their values at any later moment of time $t>t_{0}$.
@@ -338,19 +336,21 @@ and the velocity will change due to the action of the spring:
 v_1 = v_0 -\frac{kx_0}{m}\,.
 \]
 Thus, after a single tick of the clock the state of the oscillator
-will evolve from $(x_0, v_0)$ to $(x_1, v_1)$. At this point we can
-keep repeat the steps to calculate the state after any number of
+will evolve from $\ket{\xi}_0=(x_0, v_0)$ to $\ket{\xi}_1=(x_1, v_1)$. At this point we can
+keep repeating the steps to calculate the state after any number of
 ticks, up to the desired time $t=N\delta t$.
 
-We can now formalize the recipe for evolution of the state and write a
-mathematical function
+We can now formalize the recipe for evolution of the state, writing it as a mathematical relation:
 \[
-(x_{new}, v_{new}) = f\, (x_{old}, v_{old}) = (x_{old}+v_{old}\delta
-t, v_{old} - kx_{old}/m)\,.
+\ket{\xi}_{new} = f\,\ket{\xi}_{old}\,,
+\]
+where 
+\[
+\ket{\xi}_{new}=(x_{new}, v_{new}) = (x_{old}+v_{old}\delta t, v_{old} - kx_{old}/m)\,.
 \]
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.9]{newtonianStateEvolution}
+	\includegraphics[scale=0.65]{newtonianStateEvolution}
 	\caption{First row: Position (red curve, left axis) and velocity (blue
 		curve, right axis) as functions of time. Second row: Velocity vs position.
 		(a) Calculations with time step of 1 millisecond. (b) Calculations
@@ -358,7 +358,7 @@ t, v_{old} - kx_{old}/m)\,.
 	\label{fig:newtonianStateEvolution}
 \end{figure}
 
-Using this simple approach, we can calculate the state $(x, v)$ of the
+Using this simple approach, we can calculate the state $\ket{\xi}=(x, v)$ of the
 oscillator for any moment in the future or past. Figure
 \ref{fig:newtonianStateEvolution} shows two example results. The first
 result, in the column (a), demonstrates that we must be careful with
@@ -367,23 +367,124 @@ the inherent error of the method accumulates quickly, resulting in
 wrong behavior, such as the gradual increase of velocity and
 oscillation amplitude. The column (b) of Figure
 \ref{fig:newtonianStateEvolution} demonstrates the expected behavior
-of the oscillator -- periodic change of position with constant amplitude.
+of the oscillator -- periodic change of position and velocity with constant amplitudes.
 
 \section{Dynamics}\label{sec:Dynamics}
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation.
+\emph{Dynamics} is the study of state evolution of various systems subject to known interactions. 
+Physical systems of interest can be mechanical, like the ones given in example above (WHERE? REF), or  "non-mechanical" like electromagnetic field or even gravitational field. One can also explore dynamics of quantum systems.
+ 
+The central equation in dynamics describes the state change in time due to known \emph{laws of dynamics}:
+\[
+\partial_t\,\ket{\xi}=\op{D}_{int}\,\ket{\xi}\,.
+\]
+We will explore three main variants of classical dynamics: Newtonian, Hamiltonian, and Lagrangian. They will prepare us for better understanding \emph{quantum dynamics}.
+
+Newtonian dynamics is based on the notion of \emph{force} as the driver of interaction:
+\[
+(\partial_t\,x,\,\partial_t\, v)=(v, F/m)\,.
+\]
+Both Hamiltonian and Lagrangian mechanics rely on the notion of energy. 
 
 \section{Hamiltonian}\label{sec:Hamiltonian}
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation.
+\emph{Hamiltonian} is the expression for total energy of a system in terms of position and momentum. For example, using the non-relativistic expression for momentum $p=mv$, the Hamiltonian of  an oscillator can be written as
+\begin{equation}
+	H = \frac{p^2}{2m} + \frac{kx^2}{2}\,.
+	\label{eq:OscillatorHamiltonian}
+\end{equation}
+
+Hamiltonian, denoted simply as $H$, still means the total energy. The only difference between $H$ and $E$  is the emphasis on the use of momentum in $H$ instead of velocity.
+
+{\it Momentum is more fundamental than velocity.}
+
+Although velocity feels more intuitive and closer related to our visual perception of motion, momentum is a more \emph{fundamental quantity} in physics. There is a \emph{conservation of energy and momentum} law, but there is no law of the conservation of velocity.
+
+\subsection{Phase Space}
+Hamiltonian dynamics uses position $x$  and momentum $p$  to study motion. For an isolated system with conserved energy (constant Hamiltonian), the expression for the Hamiltonian establishes the relationship between $x$ and $p$  for all moments of time. For example, using the Hamiltonian for an oscillator (\ref{eq:OscillatorHamiltonian}), we can rewrite it as follows:
+\begin{equation}
+	1=\frac{p^2}{(2mH)}+\frac{x^2}{(2H/k)}\,.
+	\label{eq:phaseSpaceEllipse}
+\end{equation}
+This has the same form as the equation of an ellipse in Cartesian axes $(x,y)$:
+\[
+1=\frac{y^2}{b^2}+\frac{x^2}{a^2}\,.
+\]
+The area of such an ellipse with the semi-axes $a$ and $b$ is $A=\pi ab$. For $a=b$ an ellipse becomes a circle with the area $A=\pi R^2$.
+
+The equation (\ref{eq:phaseSpaceEllipse}) describes an ellipse in a special $xp$-plane, every point of which can be specified by a pair of values $(x,p)$. Such a plane is called \emph{phase space}. It plays an important role in Hamiltonian dynamics.
+
+The maximum value of the momentum is $p_{max}=\sqrt{2mH}$ and the maximum value for the displacement of the body is $x_{max}=\sqrt{2H/k}$. It turns out, the \emph{area of the ellipse in the phase space is directly proportional to the total energy of the oscillator}:
+\[
+A=\pi x_{max}p_{max}=2\pi H\sqrt{m/k}\,,
+\] 
+or
+\[
+H=\frac{A}{2\pi}\sqrt{\frac{k}{m}}\,.
+\]
+This important relationship will be used later when we will study quantum properties of the oscillator.
+
+\subsection{Hamiltonian Equations}
+Hamiltonian dynamics tracks the time dependence of position $x_t$ and momentum $p_t$. The pair of values $(x,p)$ represents the \emph{state in Hamiltonian dynamics}. Indeed, since there is a unique relationship between the momentum and velocity (e.g. $p=mv$ for non-relativistic speeds $v\ll c$, $c$ — speed of light), the knowledge of $\ket{\xi}=(x,p)$ is equivalent to  the knowledge of $\ket{\xi}=(x,v)$ which is the state in Newtonian dynamics. Put differently, the pair $(x,p)$ provides the same complete description of the system as $(x, v)$.
+
+The main difference between Newtonian and Hamiltonian approaches, is that in the latter the equations for the rate of change of $x$ and $p$ are \emph{explicitly tied to the Hamiltonian}— to the form of the energy expressed in terms of position and momentum. In other words, the equations for $\partial_t\,x$ and $\partial_t\,p$ are written in the following  form:
+\[
+\partial_t\, x = \op{X}\,H\,\quad\textrm{ and }\quad \partial_t\, p = \op{P}\,H\,.
+\]
+where $\op{X}$ and $\op{P}$ are some \emph{rules} for calculating velocity $v=\partial_t\, x$  and force $F=\partial_t\,p$ from Hamiltonian $H$. Mathematically, $\op{X}$ and $\op{P}$ must be \emph{operators}: they take the function $H(x,p)$ and calculate the functions $v(x,p)$ and $F(x,p)$.
+
+Let’s use the oscillator model to see how exactly these equations look like. 
+
+\begin{exercise}
+	Show that for an oscillator $v=p/m=\partial_p\, H$ and $F=-kx=-\partial_x\, H$.
+\end{exercise}
+Using the results of the exercise, we can conclude that for the oscillator the equations of Hamiltonian dynamics are
+\begin{align}
+	\label{eq:HamiltonianEquationsA}
+	\partial_t\,x & =  \partial_p\, H\,,\\
+	\partial_t\,p & = -\partial_x\, H\,. 
+	\label{eq:HamiltonianEquationsB}
+\end{align}
+The equations (\ref{eq:HamiltonianEquationsA}) and (\ref{eq:HamiltonianEquationsB}) are called \emph{Hamiltonian equations of motion}.
+
+\begin{exercise}
+	In special theory of relativity it is shown that the energy $E$ and momentum $p$ of any particle are related to its mass $m$ as follows:
+	\[
+	m^2=E^2-p^2\,.
+	\]
+	(Special units must be used for this equation to hold. In these special units all velocities are measured as the fractions of the speed of light, while energy, momentum, and mass are all measured in the same units.)
+	
+	Starting from the Hamiltonian of a relativistic particle 
+	\[
+	H^2=p^2+m^2\,,
+	\]
+	show that the momentum depends on velocity as
+	\[
+	p=\frac{mv}{\sqrt{1-v^2}}\,.
+	\]
+	Then show that momentum and energy are related as $p=Ev$.
+\end{exercise}
+
+\subsection{Solving Oscillator Equations}
+We will now find the exact time dependence of both position $x_t$ and momentum $p_t$ of the oscillator. To do that, we will need to take another look at the evolution of the state of the oscillator in phase space.
+
+The state of an oscillator corresponds to a point in the phase space. This point can be mathematically represented either as a vector $\ket{\xi}$ connecting the origin and the point, or as a pair of values $(x,p)$ . Two descriptions are equally valid. Moreover, the pair of values $(x,p)$  can be considered as the components of the vector $\ket{\xi}$. 
+
+As the time progresses, the position and momentum of the oscillator change, but the tip of the arrow $\ket{\xi}$ remains on the ellipse, corresponding to a constant energy $H$. The axes of "ordinary" phase space have different physical units, whereas the "usual" Cartesian axes $(x,y)$ have the same units and are equivalent in their meaning. It is convenient to temporarily introduce \emph{normalized} energy, position, and momentum.
+
+First, let us express the energy of the oscillator in terms of the rest-energy of the electron $E_e=m_e c^2$. Then the Hamiltonian of the oscillator (its total energy) can be written as $H=\bar{H}E_e$. If the rest-energy and Hamiltonian are measured in Joules, then $\bar{H}$ is a number without units. (COOKIES?)
 
 \section{Lagrangian}\label{sec:Lagrangian}
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation.
+State is $\ket{\xi}=(q, u)$ where $q$ is the generalized coordinate and $u=\partial_t\, q$ is \emph{generalized velocity}.
+Generalized momentum:
+\[
+\pi = \partial_u\,L\,,
+\]
+Euler-Lagrange equation:
+\[
+\partial_t\,\pi = \partial_q\,L\,.
+\]
 
 \section{Field}\label{sec:Field}
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation.
+In physics, \emph{field} is a \emph{dynamical system} with infinite number of degrees of freedom. It's dynamics can be studied using either Lagrangian or Hamiltonian approach.
 
 \section{Ideal Versus Real}\label{sec:IdealVsReal}
 An action of an operator $F$ on arrows can be represented symbolically
