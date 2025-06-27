@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="3.4055486in"
-   height="2.7542109in"
-   viewBox="0 0 86.500933 69.956957"
+   width="2.8896196in"
+   height="2.637296in"
+   viewBox="0 0 73.396337 66.987316"
    version="1.1"
    id="svg1702"
    inkscape:version="1.2 (dc2aeda, 2022-05-15)"
@@ -645,17 +645,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2229591"
-     inkscape:cx="248.16857"
-     inkscape:cy="216.2787"
+     inkscape:zoom="2.4459182"
+     inkscape:cx="114.88528"
+     inkscape:cy="111.00126"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="1496"
-     inkscape:window-height="905"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -681,7 +681,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-51.371353,-27.224949)">
+     transform="translate(-53.508199,-27.754116)">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.221111px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 74.758133,27.754116 V 44.61751 h 40.456507"
@@ -846,7 +846,7 @@
        sodipodi:nodetypes="ccccccccccccccccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
        x="84.645752"
        y="37.176228"
        id="text2530"><tspan
@@ -854,7 +854,7 @@
          id="tspan2528"
          x="84.645752"
          y="37.176228"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">k</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">k</tspan></text>
     <rect
        style="opacity:0.644;fill:#cff5ff;fill-opacity:1;stroke:#0f5a16;stroke-width:0.222956;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2247-0-8-7"
@@ -864,7 +864,7 @@
        y="38.545284" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
        x="96.950989"
        y="42.456249"
        id="text2534"><tspan
@@ -872,7 +872,7 @@
          id="tspan2532"
          x="96.950989"
          y="42.456249"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">m</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">m</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path2251-52-6-0-7-91"
@@ -899,73 +899,81 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="57.034626"
-       y="39.960545"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="58.332706"
+       y="39.311504"
        id="text3236"><tspan
          sodipodi:role="line"
          id="tspan3234"
-         x="57.034626"
-         y="39.960545"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">System</tspan></text>
+         x="58.332706"
+         y="39.311504"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">System</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="119.91374"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="119.6974"
        y="39.496494"
        id="text3292"><tspan
          sodipodi:role="line"
          id="tspan3290"
-         x="119.91374"
+         x="119.6974"
          y="39.496494"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">State</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">State</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="52.027531"
-       y="67.984291"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="54.082825"
+       y="67.767937"
        id="text3296"><tspan
          sodipodi:role="line"
          id="tspan3294"
-         x="52.027531"
-         y="67.984291"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">Kinetic energy (K)</tspan></text>
+         x="54.082825"
+         y="67.767937"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic'"
+   id="tspan39726">Kinetic energy</tspan> (K)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="99.230644"
-       y="68.680374"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="97.824387"
+       y="68.247681"
        id="text3300"><tspan
          sodipodi:role="line"
          id="tspan3298"
-         x="99.230644"
-         y="68.680374"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">Potential energy (P)</tspan></text>
+         x="97.824387"
+         y="68.247681"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic'"
+   id="tspan39730">Potential energy</tspan> (P)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="53.958836"
-       y="90.042923"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="53.850662"
+       y="89.177536"
        id="text3489"><tspan
          sodipodi:role="line"
          id="tspan3487"
-         x="53.958836"
-         y="90.042923"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">Hamiltonian (H)</tspan></text>
+         x="53.850662"
+         y="89.177536"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic'"
+   id="tspan39734">Hamiltonian</tspan> (H)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="99.798294"
-       y="90.258804"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="99.690117"
+       y="89.393417"
        id="text3493"><tspan
          sodipodi:role="line"
          id="tspan3491"
-         x="99.798294"
-         y="90.258804"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">Lagrangian (L)</tspan></text>
+         x="99.690117"
+         y="89.393417"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic'"
+   id="tspan39738">Lagrangian</tspan> (L)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
        x="82.162514"
        y="78.449333"
        id="text3497"><tspan
@@ -973,7 +981,7 @@
          id="tspan3495"
          x="82.162514"
          y="78.449333"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">System</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">System</tspan></text>
     <rect
        style="opacity:0.835443;fill:none;stroke:#000000;stroke-width:0.469;stroke-opacity:1"
        id="rect3551"
@@ -1000,29 +1008,29 @@
        id="path5124" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="103.90888"
-       y="95.907227"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="104.01706"
+       y="94.392792"
        id="text5130"><tspan
          sodipodi:role="line"
          id="tspan5128"
-         x="103.90888"
-         y="95.907227"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">L=K-P</tspan></text>
+         x="104.01706"
+         y="94.392792"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">L=K-P</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
-       x="61.721241"
-       y="96.123573"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       x="60.09864"
+       y="94.284622"
        id="text5134"><tspan
          sodipodi:role="line"
          id="tspan5132"
-         x="61.721241"
-         y="96.123573"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">H=K+P</tspan></text>
+         x="60.09864"
+         y="94.284622"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">H=K+P</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
        x="59.341427"
        y="62.999104"
        id="text5138"><tspan
@@ -1030,10 +1038,10 @@
          id="tspan5136"
          x="59.341427"
          y="62.999104"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">K=(H+L)/2</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">K=(H+L)/2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.72942px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:'Gentium Book Basic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.118236"
        x="105.63965"
        y="62.782757"
        id="text5144"><tspan
@@ -1041,6 +1049,6 @@
          id="tspan5142"
          x="105.63965"
          y="62.782757"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.118236">K=(H-L)/2</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic';stroke-width:0.118236">K=(H-L)/2</tspan></text>
   </g>
 </svg>

@@ -272,7 +272,9 @@ For example, Newton's second law gives the acceleration in terms of the known fo
 \begin{equation}
 	a=\frac{F}{m}.
 \end{equation}
-{\it Forces don't depend on acceleration}
+\begin{important}
+	Forces don't depend on acceleration.
+\end{important}
 
 All known forces in physics depend on positions or distances and--
 sometimes-- velocities of bodies. For example, the force of the spring $F=-kx$
@@ -394,7 +396,9 @@ Both Hamiltonian and Lagrangian mechanics rely on the notion of energy.
 
 Hamiltonian, denoted simply as $H$, still means the total energy. The only difference between $H$ and $E$  is the emphasis on the use of momentum in $H$ instead of velocity.
 
-{\it Momentum is more fundamental than velocity.}
+\begin{important}
+	Momentum is more fundamental than velocity.
+\end{important}
 
 Although velocity feels more intuitive and closer related to our visual perception of motion, momentum is a more \emph{fundamental quantity} in physics. There is a \emph{conservation of energy and momentum} law, but there is no law of the conservation of velocity.
 
@@ -472,7 +476,279 @@ As the time progresses, the position and momentum of the oscillator change, but 
 
 First, let us express the energy of the oscillator in terms of the rest-energy of the electron $E_e=m_e c^2$. Then the Hamiltonian of the oscillator (its total energy) can be written as $H=\bar{H}E_e$. If the rest-energy and Hamiltonian are measured in Joules, then $\bar{H}$ is a number without units. (COOKIES?)
 
+Next, we will introduce a "scale" for position of the oscillator. Specifically, we will denote $x_e=\sqrt{2E_e/k}$ as the amplitude of the oscillation when the total energy is equal to $E_e$. This amplitude is measured in meters. Then the displacement can be written as $x=\bar{x}x_e$, where $\bar{x}$ is a number without units.
+
+Finally,  we will introduce a "scale" for momentum of the oscillator: $p_e=\sqrt{2mE_e}$ as the amplitude of the oscillation when the total energy is equal to $E_e$ . (\emph{Note}: the mass $m$  in $\sqrt{2mE_e}$ is the mass of the body attached to the spring, \emph{not} the mass of the electron) The "scale" $p_e$  is measured in kilograms times meters per second -- the usual units for momentum. Therefore, the momentum of the oscillator can be written as $p=\bar{p}p_e$, where $\bar{p}$ is a number without units. 
+
+Substituting $H=\bar{H}E_e$ , $p=\bar{p}p_e$, and $x=\bar{x}x_e$  into the expression for the Hamiltonian, we obtain
+\[
+\bar{H}E_e=\frac{p_e^2}{2m}\bar{p}^2+\frac{kx_e^2}{2}\bar{x}^2=E_e\bar{p}^2+E_e\bar{x}^2\,,
+\]
+from which follows a very simple relationship between pure numbers: $\bar{H}=\bar{p}^2+\bar{x}^2$. This equation describes a circle in \emph{normalized phase space} $(\bar{x}, \bar{p})$ . The tip of the \emph{normalized state} vector $\ket{\bar{\xi}}=(\bar{x}, \bar{p})$ performs clock-wise circular motion. If we denote the magnitude of the angular speed of this motion as $\omega$, then we can use the familiar equation for the circular motion:
+\[
+\partial_t\,\ket{\bar{\xi}} = -\omega\op{J}\ket{\bar{\xi}}\,.
+\]
+The minus sign in the right-hand side is due to the clock-wise rotation of the state vector $\ket{\bar{\xi}}$.
+
+The left side of the last equation is a two-component vector $(\partial_t\,\bar{x}, \partial_t\,\bar{p})$. The right hand side is also a vector with components $-\omega\op{J}\ket{\bar{\xi}}=(\omega\bar{p}, -\omega\bar{x})$. The equality of vectors means the equality of their components: 
+\[
+\partial_t\,\bar{x}=\omega\bar{p}\quad\textrm{ and }\quad\partial_t\,\bar{p}=-\omega\bar{x}\,.
+\]
+Let’s examine the equality $\partial_t\,\bar{x}=\omega\bar{p}$. The left hand side can be expanded as follows: 
+\[
+\partial_t \bar{x}=\frac{\delta \bar{x}}{\delta t}=\frac{\delta (x/x_e)}{\delta t}=\frac{1}{x_e}\frac{\delta x}{\delta t}=\frac{v}{x_e}\,.
+\]
+The right hand side can be written as $\omega \bar{p}=\omega\frac{p}{p_e}=\frac{\omega m v}{p_e}$. We showed that 
+\[
+\frac{v}{x_e}=\frac{\omega m v}{p_e}
+\]
+and consequently, $\omega = p_e/(mx_e)$. The conclusion is very important: \emph{The angular speed of rotation of normalized state arrow  for harmonic oscillator is constant}. The oscillator returns into its initial state with the period $T=2\pi/\omega$.
+
+When we plug in the expression for $x_e$ and $p_e$ in terms of the energy $E_e$ and the parameters of the oscillator $k$ and $m$, we will arrive at the following equations for the frequency and period of oscillatory motion:
+\[
+\omega=\sqrt{\frac{k}{m}}\quad\textrm{ and }\quad T=2\pi\sqrt{\frac{m}{k}}\,.
+\]
+Now we can write the components of the normalized state vector as
+\[
+\bar{x}=\sqrt{\bar{H}}\cos\,(\omega t)\quad\textrm{ and }\quad \bar{p}=-\sqrt{\bar{H}}\sin\,(\omega t)\,.
+\]
+The minus sign for momentum comes from the fact that the "circular motion" in normalized phase space is clockwise and $\omega < 0$.
+
+Going back to "normal" energy, position, and momentum is easy. Indeed, we first find $x_t =x_e \sqrt{H/H_e}\cos\,(\omega t)$ which simplifies to simple harmonic motion:
+\[
+x_t =\sqrt{2H/k}\cos\,(\omega t)\,.
+\] 
+Similarly for momentum: $p_t=-\sqrt{2mH}\sin\,(\omega t)$.
+
+\begin{exercise}
+	Show that for harmonic oscillator
+	\[
+	\Delta x = \sqrt{\langle x^2\rangle-(\langle x\rangle)^2} = \sqrt{H/k}\,,
+	\]
+	and
+	\[
+	\Delta p = \sqrt{\langle p^2\rangle-(\langle p\rangle)^2} = \sqrt{mH}\,.
+	\]
+	Then show that $\Delta x\Delta p=H/\omega$.
+\end{exercise}
+
 \section{Lagrangian}\label{sec:Lagrangian}
+\emph{Lagrangian} of a physical system is a special function of its coordinates and velocity that captures some aspect of energy, not covered by the total energy or Hamiltonian. For many systems Lagrangian describes the \emph{imbalance} of kinetic energy over the potential energy. For example, the Lagrangian of the oscillator is
+\begin{equation}
+	L = E_k - E_p = \frac{mv^2}{2}-\frac{kx^2}{2}\,.
+	\label{eq:oscillatorLagrangian}
+\end{equation}
+\begin{important}
+	Unlike total energy, Lagrangian is generally not conserved.
+\end{important}
+\begin{exercise}
+	Using the results for $x_t$ and $p_t$ from Hamiltonian dynamics for the oscillator, find the explicit form of its Lagrangian as the function of time.
+\end{exercise}
+The units for Lagrangian are the same as the units for energy or
+Hamiltonian (Joules in International System SI), but the meaning and the role
+of Lagrangian is what sets it apart from other functions of the state of a mechanical system.
+Lagrangian is used to find the \emph{equations of motion} for the system. For each independent coordinate (e.g. $x$, $y$, or $z$) one finds a separate equation of motion using Lagrangian. Let’s see how this works for the oscillator.
+
+The first step is to extract momentum $p=mv$ from the Lagrangian. Looking at the expression (\ref{eq:oscillatorLagrangian}), we find $p=\partial_v\,L$. Next, we should find the "force" acting on the body. The force will allow us write down Newton’s second law in the form $F=\partial_t\,p$. Again, from the expression (\ref{eq:oscillatorLagrangian}), we find $F=-kx=\partial_x\,L$.
+
+Finally, rewriting $F=\partial_t\,p$  in terms of the Lagrangian, we arrive at Euler-Lagrange equation:
+\[
+\partial_t\,\left(\partial_v\,L\right)=\partial_x\,L\,.
+\]
+The dynamical equations for a general system will have the same form.
+
+\begin{mybio}{Lagrangian in Qoordinates}
+	The power of Lagrange approach to mechanics lies in its indifference to the type of coordinates used to describe mechanical system. It is often convenient to use some \emph{generalized coordinate} $q$ instead of Cartesian coordinate $x$ (or $y$ and $z$). \emph{Generalized velocity} is then $\nu=\partial_t\,q$. In terms of generalized variables, Euler-Lagrange equations still have the same form:
+	\[
+	\partial_t\,\pi = \partial_q\,L
+	\]
+	where $\pi=\partial_\nu\, L$ is \emph{generalized momentum}.
+\end{mybio}
+
+\subsection{Stationary Action Principle}
+Euler-Lagrange equations — the equations of motion for a system with specified Lagrangian $L(x,v)$ — are more rigorously derived using an important physical principle known as the \emph{Stationary Action Principle}. Sometimes it is called \emph{"principle of least action"} and has a special case known as \emph{"principle of least time"}. However, the proper name is the stationary action principle.
+To understand the idea behind the stationary action principle we must recall the concept of a functional, and in particular the \emph{action functional} .
+
+Although mathematically Lagrange function $L(x,v)$ depends on two inputs --
+position and velocity -- it is usually transformed into a function of
+time only $L_t$ and then used to calculate an imporant physical
+quantity called \emph{action}. We will study a specific example of
+this below.
+
+Simply speaking, action is the \emph{imbalance of energies accumulated
+	during the particular motion of a system}. In practice it works as
+follows: One chooses a particular way a mechanical system moves by
+choosing a particular dependence of position on time $x_t$. This
+function immediately determines the velocity $v(t) = \partial_t
+x$. Then we can calculate kinetic and potential energies and
+corresponding Lagrange function as a function of time
+\[
+L_t = E_k(t) - E_p(t)\,.
+\]
+With this function, we can calculate action -- the total accumulated
+imbalance of energies -- during a specific period of time:
+\[
+A = \int \delta t L_t\,.
+\]
+\begin{mybio}{Stationary Time Principle}
+	When a system has constant Lagrange function, then
+	the total action becomes proportional to total time. In this case
+	the principle of least action is known as the \emph{principle of
+		extreme (least or maximal) time}.
+\end{mybio}
+One can try \emph{any type of physically allowable motion} $x_t$  and
+calculate the total action $A$. Different ways of motion will result in different
+values for the total action. Turns out, there is one unique function
+$x^*_t$ for which the value of action $A$ is \emph{stationary} or
+\emph{extreme} -- either maximal or minimal and \emph{insensitive to small
+deviations} of the motion $x_t$ from its "true" form $x^*_t$. This
+is the essense of the \emph{stationary action principle}. It is better
+to demonstrate it using an example.
+
+\subsubsection{Vertical Motion}
+Consider a body moving vertically. We can imagine two different
+scenarios: 1) Motion with constant acceleration (e.g. free fall) and
+2) Motion with constant speed.
+
+If the initial height is $h$, velocity zero, and the acceleration $a$, then the
+position along the vertical axis $y$ and corresponding velocity are
+known:
+\[
+y_a = h - at^2/2\,,\qquad v_a = -at\,.
+\]
+The body will reach the ``ground'' ($y=0$) at time $T=\sqrt{2h/a}$.
+
+Imagine the second body that begins and ends its motion simultaneously
+with the first body but moving with constant speed $u=h/T$. Then we
+can write
+\[
+y_c = h - ut\,,\qquad v_c = -u\,.
+\]
+
+Let's denote the first type of motion as $q_1(t)$ and the second as
+$q_0(t)$. We can consider other types of motion, as long as they start
+at $y=h$ when $t=0$ and end at $y=0$ when $t=h$. For example, we can
+consider the following motion:
+\[
+q_\alpha(t) = \alpha q_1 + (1-\alpha) q_0\,,\qquad \alpha \in\lbrack
+0, 1\rbrack\,.
+\]
+It is an type of motion somewhere in between the two variants
+mentioned above. For the value
+$\alpha=0$ of the parameter we recover the motion with constant speed
+$q_0(t)$, while for $\alpha=1$ we get the uniformly accelerated motion
+$q_1(t)$ with zero initial velocity.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.7]{lagrange_vertical}
+	\caption{Different types of vertical motion in Lagrange
+		picture. Particles start and stop at the same times and in the
+		same places, moving between initial and final configurations
+		according to different equation $q(t)$.}
+	\label{fig:lagrange_vertical}
+\end{figure}
+
+
+It is not difficult to see that the velocity for this general motion
+is given by similar combination of velocities:
+\[
+v_\alpha(t) = \alpha v_a + (1-\alpha)v_c\,.
+\]
+
+Let's calculate the Lagrange function for a body moving freely,
+without any forces acting on it. Then the Lagrange function is simply
+its kinetic energy:
+\[
+L(t) = \frac{mv_\alpha^2}{2} = \frac{m}{2}\left\lbrack\alpha^2v_a^2+(1-\alpha)^2v_c^2+2\alpha(1-\alpha)v_av_c\right\rbrack\,.
+\]
+Plugging in the expressions for velocity, we arrive at
+\[
+L(t) = \frac{m}{2}\left\lbrack\alpha^2a^2t^2+(1-\alpha)^2u^2+2\alpha(1-\alpha)aut\right\rbrack\,.
+\]
+Now we can calculate the total action accumulated during the motion
+from $t=0$ to $t=T$:
+\[
+A = \int L(t)\delta t = \alpha^2S_1 + (1-\alpha)^2S_2+\alpha(1-\alpha)S_3\,.
+\]
+Here we denoted
+\[
+S_1 = \frac{ma^2}{2}\int t^2\delta t\,,\qquad  S_2 = mu^2\int \delta t
+\,,\qquad S_3= 2mau \int t\delta t\,.
+\]
+Examining the expression for the total action, we see that $A$ depends
+on the ``mixing'' parameter $\alpha$ in a quadratic way:
+\[
+A(\alpha) = (S_1+S_2-S_3)\alpha^2 + (S_3-2S_2)\alpha  + S_2\,.
+\]
+The sums can be evaluated:
+\[
+S_1 = \frac{ma^2}{2}\frac{T^3}{3}\,,\qquad S_2 =
+mu^2T=\frac{mh^2}{T}\,,\qquad S_3 = mauT^2 = mahT\,.
+\]
+Recalling that $T=\sqrt{2h/a}$ and therefore $h=aT^2/2$, we find
+\[
+S_3 - 2S_2 = (ma^2T^3/2) - 2ma^2T^4/(4T) = 0\,.
+\]
+The coefficient in front of $\alpha^2$ is
+\[
+S_1 + S_2 - S_3 = \frac{ma^2T^3}{6} + \frac{ma^2T^3}{4} -
+\frac{ma^2T^3}{2} = -\frac{ma^2T^3}{12}\,.
+\]
+Finally, the total action depends in the parameter $\alpha$ as
+\[
+A = \frac{ma^2T^3}{12}(3-\alpha^2)\,.
+\]
+To find the condition for extremal/stationary action, we need to find
+$\alpha$ that maximizes or minimizes the action. Since $A(\alpha)$ is
+the inverted parabola with maximum at $\alpha=0$, the maximal action
+is achieved for the motion $q_0(t)$ with constant speed without
+acceleration and forces.
+\begin{exercise}
+	Consider the Lagrange function for a body moving under the force of
+	gravity:
+	\[
+	L = \frac{mv^2}{2} - mgq\,.
+	\]
+	Calculate $L(t)$ for $q_\alpha(t)$ and then calculate total action
+	accumulated between $t=0$ and $t=T$. Find $\alpha$ for which the
+	action $A(\alpha)$ becomes stationary.
+\end{exercise}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{systemDescriptions}
+	\caption{System can be described either by kinetic and potential
+		energies, or Hamiltonian, or Lagrangian.}
+	\label{fig:systemDescriptions}
+\end{figure}
+\begin{exercise}
+	Consider the following ways of traveling from the height $y=h$ to the ground $y=0$ in time $T$:
+	\[
+	q_1(t) = h - gt^2/2\,,
+	\]
+	\[
+	q_2(t) = h(1 - t/T)\,,
+	\]
+	\[
+	q_3(t) = h\left(1-\sin\frac{\pi t}{2T}\right)\,,
+	\]
+	\[
+	q_4(t) = h\frac{ee^{-t/T}-1}{e-1}\,,
+	\]
+	and
+	\[
+	q_5(t) = h(1 - t/T)^2\,.
+	\]
+\end{exercise}
+\subsection{Summary of Three Mechanics}
+Let's review what we've learned about three different approaches to study dynamics.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.7]{threeMechanics}
+	\caption{Summary of three different approaches to problems of motion.}
+	\label{fig:threeMechanics}
+\end{figure}
+
 State is $\ket{\xi}=(q, u)$ where $q$ is the generalized coordinate and $u=\partial_t\, q$ is \emph{generalized velocity}.
 Generalized momentum:
 \[
