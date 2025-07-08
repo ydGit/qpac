@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.77781746"
-     inkscape:cx="394.05132"
-     inkscape:cy="359.98163"
+     inkscape:zoom="1.5556349"
+     inkscape:cx="249.73726"
+     inkscape:cy="278.34294"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="0"
@@ -497,14 +497,14 @@
        rx="1.9914025"
        ry="0.056834459" />
     <rect
-       style="fill:#caccbf;fill-opacity:0.565331;stroke:none;stroke-width:0.161211;stroke-dasharray:0.161211, 0.161211;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#caccbf;fill-opacity:0.565331;stroke:none;stroke-width:0.169931;stroke-dasharray:0.169931, 0.169931;stroke-dashoffset:0;stroke-opacity:1"
        id="rect35565-7-4"
        width="158.11397"
-       height="10.715743"
+       height="11.906307"
        x="2.8429861"
        y="65.240112"
        rx="1.9959122"
-       ry="0.067557149" />
+       ry="0.075063035" />
     <rect
        style="fill:#caccbf;fill-opacity:0.565331;stroke:none;stroke-width:0.147921;stroke-dasharray:0.147921, 0.147921;stroke-dashoffset:0;stroke-opacity:1"
        id="rect35565-7-4-5"
@@ -1956,7 +1956,7 @@
          x="75.173653"
          y="61.405918">Stationary Action Principle</tspan></text>
     <g
-       transform="matrix(0.466155,0,0,0.466155,91.821062,70.451393)"
+       transform="matrix(0.466155,0,0,0.466155,91.821062,71.509727)"
        ns9:version="1.11.1"
        ns9:texconverter="pdflatex"
        ns9:pdfconverter="inkscape"
@@ -2102,7 +2102,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.466155,0,0,0.466155,71.815304,70.598353)"
+       transform="matrix(0.466155,0,0,0.466155,71.815304,71.656687)"
        ns9:version="1.11.1"
        ns9:texconverter="pdflatex"
        ns9:pdfconverter="inkscape"

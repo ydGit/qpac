@@ -73,7 +73,9 @@ Such operator can be easily built from the tensor products:
 \]
 Each term in this sum is useful in quantum theory. The first term is called \emph{raising operator} and is denoted as 
 $ \op{\sigma}_\plus=\ketbra{1}{0}$. The second term is called \emph{lowering operator} and is denoted as $ \op{\sigma}_\minus=\ketbra{0}{1}$. Apparently, the raising operator excites the qubit from the ground state, while the lowering operator brings the qubit down from the excited state.
-
+\begin{exercise}
+	Calculate $\op{F}^2$.
+\end{exercise}
 \begin{exercise}
 	Calculate (a) $\op{\sigma}_\plus \op{\sigma}_\plus$; (b) $\op{\sigma}_\minus \op{\sigma}_\minus$; (c) $\op{\sigma}_\plus \op{\sigma}_\minus$; (d) $\op{\sigma}_\minus \op{\sigma}_\plus$.
 \end{exercise}
@@ -93,6 +95,18 @@ $ \op{\sigma}_\plus=\ketbra{1}{0}$. The second term is called \emph{lowering ope
 
 \subsection{Number Operator}
 The operator $\op{n}=\op{\sigma}_\plus \op{\sigma}_\minus$ is called \emph{number operator} for the following reason. First, note that $\op{\sigma}_\plus \op{\sigma}_\minus=\ketbra{1}{1}$ is the projector on the excited state of qubit.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{qubitNumberOperatorMeaning}
+	\caption{Qubits initially in the ground state $\ket{0}$ travel through a cavity resonator with an electromagnetic field mode attuned to the qubits transition energy $\Delta E=\hbar\omega$. After interaction, the state of each qubit changes to $\ket{\Psi_t}$. Then the qubits are "measured"/separated into two groups, based on their final state.}
+	\label{fig:qubitNumberOperatorMeaning}
+\end{figure}
+
+Next, consider an experiment schematically shown in Figure \ref{fig:qubitNumberOperatorMeaning}. In this experiment a large number $N$ of qubits start in the ground state $\ket{0}$ and go through a region (cavity) where they can interact with an oscillating electromagnetic field (mode). After leaving the cavity, each qubit goes through a special device which splits the beam into two parts, depending on the measured state of a qubit. The top detector detects $N_1$ qubits in state $\ket{1}$, the bottom detector detects $N_2$ qubits in ground state. The $N_1$  qubits correspond to the number of energy quanta absorbed from cavity. This number can be expressed as
+\[
+N_1=N |a_1|^2=N\bra{\Psi_t}\op{n}\ket{\Psi_t}\,.
+\]  
+In other words, the expectation value of the operator $\op{n}$ determines the number of energy quanta absorbed from the mode of electromagnetic field inside the cavity.
  
 
 \section{Quantum Oscillator}\label{sec:QuantumOscillator}

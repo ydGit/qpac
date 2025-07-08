@@ -15,15 +15,83 @@
 \lettrine[lines=2]{\color{darkocre}Q}{uantum physics is a century-old branch of physics. Its success} is unparalleled and yet quantum physics is unfinished in one sense: There is no clear and widely adopted consensus on what some of quantum ideas "really mean."
 
 \section{What Is Quantum Physics?}
-There are many characterizations of quantum physics.  In essence, quantum physics is the part of physics which focuses on \emph{quantum systems} -- physical systems showing quantum behavior.
+There are many characterizations of quantum physics.  In essence, quantum physics is the part of physics which focuses on \emph{quantum systems} -- physical systems showing \emph{quantum behavior}. So, what effects or phenomena are quantum?
 
 
 \section{Brief Historical Context}
-The year 1900 is usually considered the birth year of quantum physics. On December 14 of 1900, at the meeting ????, the German physicist Max Karl Ernst Ludwig Planck presented his theoretical explanation of the spectrum of electromagnetic radiation emitted by hot bodies.  
+The year 1900 is usually considered the birth year of quantum physics. On December 14 of 1900, at the meeting ????, the German physicist Max Karl Ernst Ludwig Planck presented his theoretical explanation of the \emph{spectrum} of electromagnetic radiation emitted by hot bodies. In his work he introduced what is now known as \emph{Planck's constant}  $h$, which has a physical meaning of \emph{elementary quantum of action}.
+\begin{mybio}{Niels Bohr On $h$}
+	The Danish physicist Niels Bohr, one of the founders of quantum physics, wrote: 
+	
+	\emph{
+	"A new epoch in physical science was inaugurated, however, by Planck’s discovery of the elementary quantum of action, which revealed a feature of wholeness inherent in atomic processes, going far beyond the ancient idea of the limited divisibility of matter."
+}
+	
+	(Atomics Physics and Human Knowledge, Quantum Physics and Philosopy, Complimentarity and Causality.)
+\end{mybio}
+Let's take a look at what happened before and after Planck's discovery.
 
-1802 
+\subsubsection*{Pre-History: Spectroscopy and Molecular Theory}
+The evolution of physics in the century preceding quantum era is fascinating. It is important to know some of pre-history in order to appreciate the context in which quantum physics was born. We will highlight two big advancements, one in experimental, and the other in theoretical departments. 
+
+\subsubsection*{Spectroscopy}
+First, the methods of \emph{spectroscopy}--study of energy distribution across various wavelengths of visible and invisible light--experienced significant development. Already in 1802 an English chemist and physicist William Hyde Wollaston observed that\footnote{Wollaston William Hyde 1802 XII. \emph{A method of examining refractive and dispersive powers, by prismatic reflection}, Phil. Trans. R. Soc. {\bf 92}: 365–380 } "If a beam of day-light be admitted into a dark room by a crevice 1/20 of inch broad\footnote{1/20 in = 1.27 mm.}, and received by the eye at the distance of 10 or 12 feet\footnote{10-12 feet = 3-3.7 m.}, through a prism of flint glass" one can see four colors (red, yellowish green, blue, and violet) separated by \emph{dark lines}. Soon many more dark lines in the optical spectrum of the Sun were discovered and systematically studied by a German physicist Joseph Ritter von Fraunhofer. Today these \emph{Fraunhofer lines} are understood to result from the \emph{absorption} of radiation by different atoms in the atmospheres of the Sun and earth.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{spectraTypes}
+	\caption{Various types of spectra observed from different substances. (a); (b); (c); (d). See text for explanation.}
+	\label{fig:spectraTypes}
+\end{figure}
+
+
+The energy absorbed by a substance can be \emph{emitted}. The study of \emph{emission spectra} from various bodies revealed a great deal of complexity and provided a lot of information about bodies' material composition and state. 
+
+There are four basic types of spectra one can observe, as illustrated in Figure \ref{fig:spectraTypes}. In a typical spectroscopic observation radiation from an excited object is sent through a \emph{dispersive} component, such as a prism or a diffraction grating\footnote{See Visual Glossary}. A beam of radiation is spread out according to colors and light of different color falls at different place of a detector (eye, photographic plate, or an electronic camera).
+
+Light emitted by atoms consists of very definite colors which show up as \emph{emission lines} in spectra, as shown in Figure \ref{fig:spectraTypes}(a). Exact locations of such lines tell which atom emits the radiation. Simpler atoms, such as hydrogen or helium, have simpler spectra.
+
+Spectra of excited molecules contain many closely placed lines. Sometimes multiple lines coalesce into a \emph{band}, as in Figure \ref{fig:spectraTypes}(b).
+
+Radiation from large hot bodies, like Sun, reveals both discrete and continuous color distribution; see Figure \ref{fig:spectraTypes}(c). All colors are present in the spectrum, and dark Fraunhofer lines indicate that some of the radiation has been absorbed on its way to the detector by atoms and molecules.
+
+Finally, an important radiation type corresponds to an \emph{idealized} object, called \emph{black body} -- a theoretical material which does not relfect any incident radiation. In other words, \emph{black body absorbs all incoming radiation}. Of course, black body also emits radiation, otherwise it would never stop accumulating energy from incident light. Therefore, black body \emph{is not truly black}, its perceived color depends on the temperature of the body. Emission spectrum of black-body, called \emph{black body radiation} or \emph{normal spectrum}, is of great interest, because it approximates emission spectrum from \emph{any material} kept at a constant temperature.
+At the end of the 19th century, black body radiation was actively studied both experimentally and theoretically. 
+
+\begin{mybio}{Max Planck And Black Body Radiation}
+	Since black-body radiation spectrum does not depend on particular material, it has a universal nature. This fascinated Max Planck, as he wrote in his Scientific Autobiography\footnote{Max Planck, \emph{Scientific Autobiography and Other Papers}, Williams \& Norgate, 1950, pp. 34-35.}:
+	
+	\emph{"Thus, this so-called Normal Spectral Energy Distribution represents something absolute, and since I had always regarded the search for the absolute as the lofties goal of all scientific activity, I eagerly set to work."}
+	
+	\[
+	\delta E = \rho\delta \nu = \frac{8\pi h\nu^3\delta\nu}{c^3}\frac{1}{e^{h\nu/kT}-1}\,.
+	\]
+\end{mybio}
+
+The spectrum of black body radiation was the first type of spectrum to receive a theoretical explanation and an explicit formula. Spectra of atoms and molecules were properly studied only after the development of quantum mechanics.
+
+Spectroscopy of the 19th century\footnote{William McGucken, \emph{Nineteenth-Century Spectroscopy}, The Johns Hopkins Press, 1969.}
+
+\subsubsection*{Molecular Theory}
+Second advancement of pre-quantum physics was connected with the hypothesis of atoms and molecules. Although atomistic ideas had been known for about two millenia, even in the 19th century far from every physicist was convinced that atoms and molecules were objects just as real as everyday things. There was no \emph{direct evidence} for the existence of atoms and molecules, and the main support for the atomistic views came from \emph{indirect evidence}, like the many useful results that followed from molecular theory. For example, the behavior of gases (diffusion, viscosity, laws connecting pressure and temperature, heat capacity, etc.) was especially well explained. Two major figures in this field were the Scottish physicis James Clerk Maxwell and the German physicist Ludwig Boltzmann.
+
+In September of 1899, at the congress of the German Society of Natural Scientists and Physicians,  Ludwig Boltzmann presented a review titled \emph{"The Recent Development of Method In Theoretical Physics."}\footnote{\emph{The Monist}, January, 1901, Vol. {\bf 11}, No. 2, pp. 226-257.} He highlighted the rapid development of physics in the 19th century and discussed major experimental and theoretical results.
+
+\begin{mybio}{Boltzmann's Prediction}
+	\emph{"I have to mention finally the relations which obtain according to the molecular theory between the principle of entropy and the calculus of probabilies, concerning the real significance of which there may be some difference of opinion, but which, no unprejudiced person will deny, are eminently qualify to extend our intellectual horizon and to suggest new combinations both of ideas and experiments."}
+\end{mybio}
+Boltzmann's anticipation that "the principle of entropy and the calculus of probabilities" will lead to "new combinations both of ideas and experiments" was fully confirmed by Max Planck in about a year!
+
+
 \subsection{Three Ages of Quantum}
-The evolution of quantum science and technology can be roughly divided into three stages: "Old quantum physics", modern quantum physics, and information-age quantum physics.
+The evolution of quantum science and technology can be roughly divided into three stages: (a) "Old quantum physics" (b) modern quantum physics, and (c) information-age quantum physics (see Figure \ref{fig:quantumTechnologyEvolution}).
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{quantumTechnologyEvolution}
+	\caption{Three stages of quantum science and technology: (a) Observation of large groups of objects (atoms, molecules); (b) Study of interaction between single particles (one atom + one photon); (c) Connecting tens and hundreds of quantum systems using \emph{entanglement}.}
+	\label{fig:quantumTechnologyEvolution}
+\end{figure}
+
+
 
 \subsubsection*{Old Quantum Physics}
 
@@ -136,13 +204,13 @@ mapping from this set into the Boolean set $B$.
 To illustrate the concepts of functions, operators, their structures and
 properties, we will be using schematics\index{Schematic} like the one
 shown in the Figure \ref{fig:schematicExample}.
-\begin{SCfigure}%[htbp]
-  %\centering
+\begin{figure}[htbp]
+  \centering
   \includegraphics[scale=1.0]{defaultFigureTemplate}
   \caption{Schematics can be used to represent functions, operators,
     their compositions and structure.}
   \label{fig:schematicExample}
-\end{SCfigure}
+\end{figure}
 
 A simple schematic element is represented as a box with inputs
 and outputs. A box can have a name (label) which describes what the
