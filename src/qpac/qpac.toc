@@ -22,14 +22,19 @@
 \contentsline {section}{\numberline {2.8}Particles}{30}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Polarization and Spin}{30}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Mathematics}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Arrows}{31}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Dirac Notation}{31}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Scalar Product}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Operators}{33}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Super-operators}{33}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Functionals}{34}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Spaces}{37}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Application: Circular Motion}{37}{section.3.6}%
+\contentsline {section}{\numberline {3.1}Numberlikes}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Functions}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Partial Application}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Linearity}{31}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Kalcoolus}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Arrows}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Dirac Notation}{32}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Scalar Product}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Operators}{32}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Super-operators}{32}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Functionals}{34}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Spaces}{37}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Application: Circular Motion}{37}{section.3.9}%
 \contentsline {chapter}{\numberline {4}Classical Physics}{39}{chapter.4}%
 \contentsline {section}{\numberline {4.1}System}{40}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Configuration}{42}{subsection.4.1.1}%
