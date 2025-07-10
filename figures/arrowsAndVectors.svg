@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="39.326042mm"
+   height="29.271875mm"
+   viewBox="0 0 39.326042 29.271876"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="arrowsAndVectors.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="94.25"
+     inkscape:cy="113"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-5" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.5094565,-8.821515)">
+    <ellipse
+       style="fill:#cee9c5;fill-opacity:1;stroke:#b2d6b9;stroke-width:0.518841;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="circle69"
+       cx="29.172478"
+       cy="23.457453"
+       rx="19.403601"
+       ry="14.376517" />
+    <circle
+       style="fill:#c5d6e9;fill-opacity:1;stroke:#ffffff;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path68"
+       cx="22.359459"
+       cy="23.5236"
+       r="9.6572914" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-size:3.21881px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style';fill:none;fill-opacity:1;stroke:#dddddd;stroke-width:0.0451273;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="17.250685"
+       y="25.476847"
+       id="text68"><tspan
+         sodipodi:role="line"
+         id="tspan68"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0451273"
+         x="17.250685"
+         y="25.476847">arrows</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.238327;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#TriangleStart-7)"
+       d="m 17.524995,22.851704 h 8.951267"
+       id="path69"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-size:3.21881px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style';fill:none;fill-opacity:1;stroke:#dddddd;stroke-width:0.0451273;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="34.398643"
+       y="25.476847"
+       id="text69"><tspan
+         sodipodi:role="line"
+         id="tspan69"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0451273"
+         x="34.398643"
+         y="25.476847">vectors</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.83576,22.961361 v 3.373437"
+       id="path70" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 44.352947,22.762923 1.190625,1.885156 -1.097416,1.900781"
+       id="path71" />
+  </g>
+</svg>
