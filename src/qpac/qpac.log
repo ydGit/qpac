@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  10 JUL 2025 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  11 JUL 2025 08:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2434,113 +2434,105 @@ Package mdframed Info: mdframed works in twoside mode on input line 7.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
-<../03Mathematics/pics//functionAsBox.pdf, id=825, 174.22812pt x 196.94778pt>
+[31
+
+ <./pics/chapterImageArrows.pdf>]
+<../03Mathematics/pics//functionAsBox.pdf, id=842, 174.22812pt x 196.94778pt>
 File: ../03Mathematics/pics//functionAsBox.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//functionAsBox.pdf>
 Package pdftex.def Info: ../03Mathematics/pics//functionAsBox.pdf  used on inpu
-t line 31.
+t line 38.
 (pdftex.def)             Requested size: 174.22769pt x 196.94728pt.
-<../03Mathematics/pics//functionTypes.pdf, id=826, 316.56473pt x 173.23593pt>
+<../03Mathematics/pics//functionTypes.pdf, id=843, 316.56473pt x 173.23593pt>
 File: ../03Mathematics/pics//functionTypes.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//functionTypes.pdf>
 Package pdftex.def Info: ../03Mathematics/pics//functionTypes.pdf  used on inpu
-t line 39.
+t line 46.
 (pdftex.def)             Requested size: 316.56395pt x 173.2355pt.
-[31
 
- <./pics/chapterImageArrows.pdf>] [32 <../03Mathematics/pics//functionAsBox.pdf
-> <../03Mathematics/pics//functionTypes.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../03Mathematics/pics//funct
-ionTypes.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
->]
-
-LaTeX Warning: Reference `fig:arrowsSpace' on page 33 undefined on input line 5
-7.
+LaTeX Warning: Reference `fig:arrowsSpace' on page 32 undefined on input line 6
+4.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 59.
+(hyperref)                removing `math shift' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 59.
+(hyperref)                removing `\Delta' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 59.
+(hyperref)                removing `\delta' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\partial' on input line 59.
+(hyperref)                removing `\partial' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 59.
+(hyperref)                removing `math shift' on input line 66.
 
-<../03Mathematics/pics//arrowsAndVectors.pdf, id=945, 111.89343pt x 83.28656pt>
+<../03Mathematics/pics//arrowsAndVectors.pdf, id=845, 111.89343pt x 83.28656pt>
 
 File: ../03Mathematics/pics//arrowsAndVectors.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//arrowsAndVectors.pdf>
 Package pdftex.def Info: ../03Mathematics/pics//arrowsAndVectors.pdf  used on i
-nput line 70.
+nput line 77.
 (pdftex.def)             Requested size: 111.89316pt x 83.28633pt.
+[32 <../03Mathematics/pics//functionAsBox.pdf>]
 
-LaTeX Warning: Reference `fig:arrowsSpace' on page 33 undefined on input line 8
-5.
+LaTeX Warning: Reference `fig:arrowsSpace' on page 33 undefined on input line 9
+2.
 
 
-Underfull \vbox (badness 1194) has occurred while \output is active []
+Underfull \vbox (badness 6927) has occurred while \output is active []
 
- [33 <../03Mathematics/pics//arrowsAndVectors.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 116.
+ [33 <../03Mathematics/pics//functionTypes.pdf> <../03Mathematics/pics//arrowsA
+ndVectors.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../03Mathematics/pics//arrow
+sAndVectors.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+>]
+Package mdframed Info: mdframed works in twoside mode on input line 123.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 116.
+(mdframed)              on input line 123.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
-
-LaTeX Warning: Reference `sec:ComponentTransformation' on page 34 undefined on 
-input line 148.
-
 [34]
-Package mdframed Info: mdframed works in twoside mode on input line 151.
+
+LaTeX Warning: Reference `sec:ComponentTransformation' on page 35 undefined on 
+input line 155.
+
+Package mdframed Info: mdframed works in twoside mode on input line 158.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 151.
- [35{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Package mdframed Info: mdframed works in twoside mode on input line 222.
+(mdframed)              on input line 158.
+[35{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}]
+[36]
+Package mdframed Info: mdframed works in twoside mode on input line 235.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 222.
-Package mdframed Info: mdframed works in twoside mode on input line 238.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 238.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(mdframed)              on input line 235.
  [37{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}
 ]
-Package mdframed Info: Not enough space on this page on input line 245.
-Package mdframed Info: mdframed works in twoside mode on input line 256.
+Package mdframed Info: mdframed works in twoside mode on input line 252.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 256.
- [38])
-(../04ClassicalPhysics/classicalphysics.tex [39] [40
-
-]
+(mdframed)              on input line 252.
+Package mdframed Info: mdframed works in twoside mode on input line 270.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 270.
+ [38] [39]) (../04ClassicalPhysics/classicalphysics.tex [40]
 Chapter 4.
-<pics/chapterImageOperators.pdf, id=1004, 428.76743pt x 86.28516pt>
+<pics/chapterImageOperators.pdf, id=1000, 428.76743pt x 86.28516pt>
 File: pics/chapterImageOperators.pdf Graphic file (type pdf)
 <use pics/chapterImageOperators.pdf>
 Package pdftex.def Info: pics/chapterImageOperators.pdf  used on input line 3.
@@ -2553,7 +2545,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 28.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 28.
-<../04ClassicalPhysics/pics//defaultFigureTemplate.pdf, id=1005, 348.69095pt x 
+<../04ClassicalPhysics/pics//defaultFigureTemplate.pdf, id=1001, 348.69095pt x 
 126.4336pt>
 File: ../04ClassicalPhysics/pics//defaultFigureTemplate.pdf Graphic file (type 
 pdf)
@@ -2569,8 +2561,10 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 42--46
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./pics/chapterImageOperators.pdf>]
-<../04ClassicalPhysics/pics//systemExamples.pdf, id=1022, 314.91695pt x 314.628
+ [41
+
+ <./pics/chapterImageOperators.pdf>]
+<../04ClassicalPhysics/pics//systemExamples.pdf, id=1018, 314.91695pt x 314.628
 3pt>
 File: ../04ClassicalPhysics/pics//systemExamples.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//systemExamples.pdf>
@@ -2579,7 +2573,7 @@ n input line 56.
 (pdftex.def)             Requested size: 314.91617pt x 314.62752pt.
  [42 <../04ClassicalPhysics/pics//defaultFigureTemplate.pdf>] [43 <../04Classic
 alPhysics/pics//systemExamples.pdf>]
-<../04ClassicalPhysics/pics//coupledSystem.pdf, id=1092, 255.09113pt x 203.7220
+<../04ClassicalPhysics/pics//coupledSystem.pdf, id=1088, 255.09113pt x 203.7220
 3pt>
 File: ../04ClassicalPhysics/pics//coupledSystem.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//coupledSystem.pdf>
@@ -2593,7 +2587,7 @@ Underfull \vbox (badness 5260) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45 <../04ClassicalPhysics/pics//coupledSystem.pdf>]
-<../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf, id=1134, 140.46991pt 
+<../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf, id=1130, 140.46991pt 
 x 140.18353pt>
 File: ../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf Graphic file (typ
 e pdf)
@@ -2601,7 +2595,7 @@ e pdf)
 Package pdftex.def Info: ../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pd
 f  used on input line 176.
 (pdftex.def)             Requested size: 140.46954pt x 140.18318pt.
-<../04ClassicalPhysics/pics//Oscillator.pdf, id=1135, 184.68765pt x 68.9489pt>
+<../04ClassicalPhysics/pics//Oscillator.pdf, id=1131, 184.68765pt x 68.9489pt>
 File: ../04ClassicalPhysics/pics//Oscillator.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//Oscillator.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//Oscillator.pdf  used on in
@@ -2623,7 +2617,7 @@ LaTeX Font Warning: Font shape `U/fontawesometwo/b/it' undefined
 (Font)              using `U/fontawesometwo/m/n' instead on input line 275.
 
 [48] [49]
-<../04ClassicalPhysics/pics//newtonianStateEvolution.pdf, id=1195, 520.04414pt 
+<../04ClassicalPhysics/pics//newtonianStateEvolution.pdf, id=1191, 520.04414pt 
 x 390.01501pt>
 File: ../04ClassicalPhysics/pics//newtonianStateEvolution.pdf Graphic file (typ
 e pdf)
@@ -2694,7 +2688,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 593.
  [59]
-<../04ClassicalPhysics/pics//lagrange_vertical.pdf, id=1285, 462.52798pt x 346.
+<../04ClassicalPhysics/pics//lagrange_vertical.pdf, id=1281, 462.52798pt x 346.
 89601pt>
 File: ../04ClassicalPhysics/pics//lagrange_vertical.pdf Graphic file (type pdf)
 
@@ -2722,7 +2716,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 706.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 706.
-<../04ClassicalPhysics/pics//systemDescriptions.pdf, id=1313, 208.83281pt x 190
+<../04ClassicalPhysics/pics//systemDescriptions.pdf, id=1309, 208.83281pt x 190
 .59738pt>
 File: ../04ClassicalPhysics/pics//systemDescriptions.pdf Graphic file (type pdf
 )
@@ -2739,7 +2733,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [62 <../04ClassicalPhysics/pics//systemDescriptions.pdf>]
 Package mdframed Info: Not enough space on this page on input line 742.
-<../04ClassicalPhysics/pics//threeMechanics.pdf, id=1353, 450.3638pt x 336.1531
+<../04ClassicalPhysics/pics//threeMechanics.pdf, id=1348, 450.3638pt x 336.1531
 pt>
 File: ../04ClassicalPhysics/pics//threeMechanics.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//threeMechanics.pdf>
@@ -2750,7 +2744,7 @@ n input line 747.
 (../05QuantumPhysics/quantumphysics.tex [64 <../04ClassicalPhysics/pics//threeM
 echanics.pdf>]
 Chapter 5.
-<pics/chapterImageTensors.pdf, id=1421, 429.01144pt x 86.2211pt>
+<pics/chapterImageTensors.pdf, id=1417, 429.01144pt x 86.2211pt>
 File: pics/chapterImageTensors.pdf Graphic file (type pdf)
 <use pics/chapterImageTensors.pdf>
 Package pdftex.def Info: pics/chapterImageTensors.pdf  used on input line 3.
@@ -2782,7 +2776,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 87.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 87.
-<../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf, id=1441, 323.61462pt
+<../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf, id=1437, 323.61462pt
  x 101.5264pt>
 File: ../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf Graphic file (ty
 pe pdf)
@@ -2796,7 +2790,7 @@ Overfull \hbox (5.62625pt too wide) in paragraph at lines 100--101
  []
 
 [67 <../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf>]
-<../05QuantumPhysics/pics//phaseSpaceQuantum.pdf, id=1462, 313.0569pt x 142.897
+<../05QuantumPhysics/pics//phaseSpaceQuantum.pdf, id=1458, 313.0569pt x 142.897
 84pt>
 File: ../05QuantumPhysics/pics//phaseSpaceQuantum.pdf Graphic file (type pdf)
 <use ../05QuantumPhysics/pics//phaseSpaceQuantum.pdf>
@@ -2905,7 +2899,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 476.
  [79]) (../06Applications/applications.tex [80]
 Chapter 6.
-<pics/chapterImageApplications.pdf, id=1574, 427.81808pt x 86.28212pt>
+<pics/chapterImageApplications.pdf, id=1570, 427.81808pt x 86.28212pt>
 File: pics/chapterImageApplications.pdf Graphic file (type pdf)
 <use pics/chapterImageApplications.pdf>
 Package pdftex.def Info: pics/chapterImageApplications.pdf  used on input line 
@@ -2928,14 +2922,14 @@ LaTeX Warning: Command \r invalid in math mode on input line 48.
 
 LaTeX Warning: Command \r invalid in math mode on input line 48.
 
-<../06Applications/pics//hydrogenAtom.pdf, id=1592, 252.14091pt x 220.62747pt>
+<../06Applications/pics//hydrogenAtom.pdf, id=1588, 252.14091pt x 220.62747pt>
 File: ../06Applications/pics//hydrogenAtom.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtom.pdf>
 Package pdftex.def Info: ../06Applications/pics//hydrogenAtom.pdf  used on inpu
 t line 69.
 (pdftex.def)             Requested size: 151.2857pt x 132.37749pt.
 [82 <../06Applications/pics//hydrogenAtom.pdf>]
-<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1606, 317.52397pt x 203.543
+<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1602, 317.52397pt x 203.543
 69pt>
 File: ../06Applications/pics//hydrogenAtomOrbits.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtomOrbits.pdf>
@@ -2986,7 +2980,7 @@ Underfull \vbox (badness 1314) has occurred while \output is active []
 
  [87]
 Package mdframed Info: Not enough space on this page on input line 286.
-<../06Applications/pics//cavityQED.pdf, id=1806, 348.69095pt x 126.4336pt>
+<../06Applications/pics//cavityQED.pdf, id=1802, 348.69095pt x 126.4336pt>
 File: ../06Applications/pics//cavityQED.pdf Graphic file (type pdf)
 <use ../06Applications/pics//cavityQED.pdf>
 Package pdftex.def Info: ../06Applications/pics//cavityQED.pdf  used on input l
@@ -3038,7 +3032,7 @@ File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
-<../09Solutions/pics//defaultFigureTemplate.pdf, id=1909, 348.69095pt x 126.433
+<../09Solutions/pics//defaultFigureTemplate.pdf, id=1905, 348.69095pt x 126.433
 6pt>
 File: ../09Solutions/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../09Solutions/pics//defaultFigureTemplate.pdf>
@@ -3094,11 +3088,11 @@ Package logreq Info: Writing requests to 'qpac.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50466 strings out of 476025
- 988487 string characters out of 5790016
+ 50465 strings out of 476025
+ 988518 string characters out of 5790016
  1869388 words of memory out of 5000000
  69035 multiletter control sequences out of 15000+600000
- 802397 words of font info for 557 fonts, out of 8000000 for 9000
+ 802768 words of font info for 559 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,13n,99p,1173b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesom
@@ -3123,10 +3117,10 @@ al/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/
 dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
 ype1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msbm10.pfb>
-Output written on qpac.pdf (101 pages, 1877243 bytes).
+Output written on qpac.pdf (101 pages, 1878400 bytes).
 PDF statistics:
- 2495 PDF objects out of 2984 (max. 8388607)
- 1939 compressed objects within 20 object streams
- 345 named destinations out of 1000 (max. 500000)
+ 2490 PDF objects out of 2984 (max. 8388607)
+ 1934 compressed objects within 20 object streams
+ 341 named destinations out of 1000 (max. 500000)
  142465 words of extra memory for PDF output out of 154059 (max. 10000000)
 

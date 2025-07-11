@@ -16,7 +16,14 @@
 \end{myprereq}
 
 \section{Numberlikes}
-Physics without numbers is unimaginable.
+Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}. The concept of a number became increasingly less intuitive, more abstract and powerful.
+
+Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but allow more powerful manipulations and can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
+
+The essential characteristic of numbers is the ability to \emph{add} two of them, to get a third number:
+\[
+x\,\boxplus\, y = z\,.
+\]
 
 
 \section{Functions}
@@ -168,14 +175,18 @@ changes will be addressed later in Section
 \section{Functionals}
 Another important type of function is called \emph{functional}. A functional maps a function into a number. Let's consider several examples.
 
-\subsection*{Total Mass}
+\begin{flushleft}
+	{\it Total Mass}
+\end{flushleft}
 Suppose an astrophysicist is trying to model a spherically symmetric star and calculates \emph{density} of the star as the function of distance from its center: $r\rightarrow\rho_r$. The total mass of the star can then be evaluated as the sum of masses of all spherical shells with thickness $\delta r$:
 \[
 M = \int \delta V\rho_r=\int 4\pi r^2\delta r\rho_r\,.
 \]
 For a given function $\rho_r$ this summation will result in a number -- star's total mass. Such mapping $\rho_r\rightarrow M$ is an example of a functional.
 
-\subsection*{Total Fuel}
+\begin{flushleft}
+	{\it Total Fuel}
+\end{flushleft}
 Consider a car moving on a straight highway between two points $A$ and $B$. The amount of fuel the engine consumes at a given moment depends on the speed of the car at that moment and can be described by the function $\mu_v$. Suppose the position of the car as the function of time $x_t$ is known and are looking for the total fuel consumed during the travel. This can be done in three steps. 
 
 First, we find the speed of the car as the function of time by applying the operator $\partial_t$ to $x_t$: $v_t=\partial_{t}x$. Second, we find the fuel consuption rate $\mu$  as the function of time by plugging $v_t$ into $\mu_v$: $f_t = \mu(v_t)$. Finally, we can find the total amount of consumed fuel as the sum
@@ -188,8 +199,10 @@ F = \int \delta t\mu(\partial_t x)\,.
 \]
 This formula encodes a recipe for mapping any function $x_t$ into a number $F$ -- an example of a functional.
 
-\subsection*{Total Action}
-A body in a "freely fall" is moving with constant acceleration due to the force of gravity. Its speed increases as the body approaches the ground. If the body starts at rest at height $H$, its position along the vertical $y$ axis depends on time as $y_t=H-gt^2/2$ and the velocity changes according to the equation $v=-gt$.
+\begin{flushleft}
+	{\it Total Action}
+\end{flushleft}
+A body in a "free fall" is moving with constant acceleration due to the force of gravity. Its speed increases as the body approaches the ground. If the body starts at rest at height $H$, its position along the vertical $y$ axis depends on time as $y_t=H-gt^2/2$ and the velocity changes according to the equation $v=-gt$.
 
 The potenital energy $E_p=mgy$ of the body decreases, while its kinetic energy $E_k=mv^2/2$ grows. The total mechanical energy $E=E_p+E_k$ remains fixed according to the law of energy conservation. Thus, the potential energy of the body is transformed into the kinetic energy.
 
@@ -224,8 +237,9 @@ Here we used $v_m=gT=\sqrt{2Hg}$ -- the maximal speed of the body at the end of 
 \end{exercise}
 
 
-
-\subsection*{Assorted Examples}
+\begin{flushleft}
+	{\it Assorted Examples}
+\end{flushleft}
 Examples of functionals given above involve evaluation of sums in order to find  \emph{total quantities} of various kinds:
 \[
 Q = \int \delta x f_x\,.
