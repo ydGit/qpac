@@ -2,7 +2,7 @@
 
 \chapter{Mathematics}\label{ch:Mathematics}
 
-\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools} used in quantum theory do not differ significantly from the ones used in classical physics.
+\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics.
 
 \begin{myprereq}{Prerequisite Knowledge}
 	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
@@ -15,24 +15,21 @@
 	\end{itemize}	
 \end{myprereq}
 
-\section{Numberlikes}
-Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}. The concept of a number became increasingly less intuitive, more abstract and powerful.
-
-Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but allow more powerful manipulations and can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
-
-The essential characteristic of numbers is the ability to \emph{add} two of them, to get a third number:
-\[
-x\,\boxplus\, y = z\,.
-\]
 
 
 \section{Functions}
 
-The idea of a function is a very basic one. Essentially, function is an unambiguous rule, an algorithm, which associates a certain value $y$ (\emph{result} or \emph{output} of a function) with every meaningful \emph{input} value $x$ (\emph{argument} of a function). 
+The idea of a function is a very basic one. Essentially, function is an unambiguous \emph{rule}, an \emph{algorithm}, which associates a certain value $y$ (\emph{result} or \emph{output} of a function) with every meaningful \emph{input} value $x$ (\emph{argument} of a function). As an example, consider the following  function:
+\[
+y=\frac{1}{2x^2+5}\,.
+\]
+For any real number $x$ we can compute the value $y$ using only basic arithmetic operations. 
 
-Consider, for example, a function $\btc{sqrt}$ which computes a square root of a number: $y=\btc{sqrt}\,x$.
+Next consider a function $\btc{sqrt}$ which computes a square root of a number: $y=\btc{sqrt}\,x$. If we only work with real numbers, the range of meaningful inputs is reduced -- only non-negative input values $x$ are allowed. Another thing to notice is that now the function is simply given a name  $\btc{sqrt}$  and shows no structure -- it is not expressed in terms of other more basic operations. A few important functions are given names: 
+$\sin\,,\cos\,,\exp\,,\log\,,\btc{abs}$\footnote{Absolute value of a number -- its positive magnitude.} and several more. Of course, the square root of a number is traditionally written with a special sign -- called a \emph{surd}: $\btc{sqrt}\,x=\sqrt{x}$.
 
-
+\subsection{Function Boxes}
+The input-output view of functions leads to a helpful picture where a given function is represented as a box with an input and an output (or multiple inputs and even multiple outputs), as illustrated in Figure \ref{fig:functionAsBox}.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{functionAsBox}
@@ -49,7 +46,7 @@ Consider, for example, a function $\btc{sqrt}$ which computes a square root of a
 \end{figure}
 
 \subsection{Application Notation}
-The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses: $f(x)$. This rule is not absolute and is abandoned as soon as one uses functions in linear algebra.
+The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses: $f(x)$. This rule is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra.
 
 
 \subsection{Partial Application}
@@ -57,6 +54,41 @@ The box-view of functions leads to a simple, yet powerful, concept of a \emph{pa
 
 
 \subsection{Linearity}
+
+
+\section{Numberlikes}
+Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}\footnote{Octanions are not used widely enough in physics.}. The concept of a number became increasingly less intuitive, more abstract and powerful.
+
+Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but allow more powerful manipulations and can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
+
+
+\begin{flushleft}
+	{\it Addition}
+\end{flushleft}
+The essential characteristic of numbers is the ability to \emph{add} two of them to get another number:
+\[
+x\,\boxplus\, y = z\,.
+\]
+The addition operation satisfies two simple requirements
+\[
+x\,\boxplus\, y = y\,\boxplus\, x\quad\textrm{ -- commutativity}\,,
+\]
+and
+\[
+(x\,\boxplus\, y)\,\boxplus\, z = x\,\boxplus\, (y\,\boxplus\, z) \quad\textrm{ -- associativity}\,.
+\]
+
+
+Additivity is "contagious" and propagates to other mathematical objects which operate on "usual" numbers. For example, it is easy to give a constructive meaning to the following expression:
+\[
+f = \sin\boxplus\exp\,.
+\]
+Here we add two numeric functions to create a new function $f$. To describe this function we must specify what it does to all possible arguments. In this case it is simply
+\[
+f\,x=(\sin\, x)+(\exp\, x)\,.
+\]
+Thus, the ability to add numbers leads to the ability to \emph{add functions}. It must be emphasized, that in the expressions like $\sin\boxplus\exp$ we are not adding numerical values of the functions, we are adding functions -- completely different mathematical objects. Adding functions becomes very useful for certain function types called \emph{operators}, as explained in section \ref{sec:operators}.
+
 
 \section{Kalcoolus}
 
@@ -92,7 +124,7 @@ To arrive at the idea of vectors we will start with simple geometrical
 objects -- arrows in a plane, as illustrated in the Figure \ref{fig:arrowsSpace}.
 
 
-\section{Operators}
+\section{Operators}\label{sec:operators}
 
 To arrive at the idea of vectors we will start with simple geometrical
 objects -- arrows in a plane.
