@@ -38,7 +38,8 @@
 \contentsline {subsection}{\numberline {3.6.1}Super-operators}{35}{subsection.3.6.1}%
 \contentsline {section}{\numberline {3.7}Functionals}{36}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Spaces}{40}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Application: Circular Motion}{40}{section.3.9}%
+\contentsline {section}{\numberline {3.9}Functions As Vectors}{40}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Application: Circular Motion}{40}{section.3.10}%
 \contentsline {chapter}{\numberline {4}Classical Physics}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}System}{44}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Configuration}{46}{subsection.4.1.1}%
