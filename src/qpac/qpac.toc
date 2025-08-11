@@ -75,9 +75,10 @@
 \contentsline {subsection}{\numberline {5.6.4}Canonical Commutation}{78}{subsection.5.6.4}%
 \contentsline {section}{\numberline {5.7}Physical Realization of Qubits}{80}{section.5.7}%
 \contentsline {section}{\numberline {5.8}Interacting Qubits}{80}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Computational Basis}{80}{subsection.5.8.1}%
-\contentsline {subsection}{\numberline {5.8.2}Bell States}{81}{subsection.5.8.2}%
-\contentsline {subsection}{\numberline {5.8.3}GHZ State}{81}{subsection.5.8.3}%
+\contentsline {subsection}{\numberline {5.8.1}Joint State}{81}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Computational Basis}{81}{subsection.5.8.2}%
+\contentsline {subsection}{\numberline {5.8.3}Bell States}{81}{subsection.5.8.3}%
+\contentsline {subsection}{\numberline {5.8.4}GHZ State}{81}{subsection.5.8.4}%
 \contentsline {section}{\numberline {5.9}Quantum Field}{81}{section.5.9}%
 \contentsline {subsection}{\numberline {5.9.1}Quantum States of Light}{82}{subsection.5.9.1}%
 \contentsline {chapter}{\numberline {6}Applications}{83}{chapter.6}%
@@ -86,25 +87,26 @@
 \contentsline {subsubsection}{Atoms Can't Exist?}{88}{section*.43}%
 \contentsline {subsubsection}{Line Spectra Explained}{89}{section*.44}%
 \contentsline {subsubsection}{Spontaneous Emission and Cavity QED}{90}{section*.45}%
-\contentsline {subsection}{\numberline {6.1.2}Franck-Hertz Experiment}{90}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Franck-Hertz Experiment}{91}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}Stoke's Rule}{91}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Quantum Dots}{91}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Spontaneous Emission}{91}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Stimulated Emission}{91}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Lasers}{91}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Photoeffect}{91}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Black Body Radiation}{91}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Conductors}{92}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}Heat Capacity}{92}{subsection.6.8.1}%
-\contentsline {section}{\numberline {6.9}Entanglement}{92}{section.6.9}%
-\contentsline {chapter}{\numberline {7}Implications}{95}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Appendix}{97}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Physics}{97}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Black Body Radiation}{97}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Notation}{97}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Constants}{98}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Mathematics}{99}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Greek Alphabet}{99}{subsection.8.2.1}%
-\contentsline {chapter}{\numberline {9}Solutions}{101}{chapter.9}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{103}{section*.56}%
+\contentsline {section}{\numberline {6.2}Rydberg Atoms}{91}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Quantum Dots}{93}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Spontaneous Emission}{93}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Stimulated Emission}{93}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Lasers}{93}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Photoeffect}{93}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Black Body Radiation}{93}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Conductors}{94}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Heat Capacity}{94}{subsection.6.9.1}%
+\contentsline {section}{\numberline {6.10}Entanglement}{94}{section.6.10}%
+\contentsline {chapter}{\numberline {7}Implications}{97}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Appendix}{99}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Physics}{99}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Black Body Radiation}{99}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Notation}{99}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Constants}{100}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Mathematics}{101}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Greek Alphabet}{101}{subsection.8.2.1}%
+\contentsline {chapter}{\numberline {9}Solutions}{103}{chapter.9}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{105}{section*.59}%
 \contentsfinish 

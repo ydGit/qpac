@@ -419,16 +419,19 @@ Subtracting the latter equation from the former, we arrive at
 \]
 
 \section{Physical Realization of Qubits}
-Recall that harmonic oscillator is any physical system with Hamiltonian
+Recall that harmonic oscillator is \emph{any} physical system with the Hamiltonian in the form
 \[
 H = \frac{p^2}{2m}+\frac{kx^2}{2}\,.
 \] 
-Many concrete physical systems can be described using this Hamiltonian and thus provide specific \emph{realizations} of 
+Many physical systems can be described using this Hamiltonian and thus provide specific \emph{realizations} of 
 the oscillator model. Similarly, many concrete physical systems realize the idea of a qubit.
 
 \section{Interacting Qubits}\label{sec:InteractingQubits}
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
+Isolated quantum systems are idealizations. Interactions between systems are not only hard to  avoid, but are often desirable for practical purposes. We now turn our attention to the interaction between a pair of simplest quantum systems -- quantum qubits.
+
+\subsection{Joint State}
+Treating a pair of qubits as a single quantum system means assigning to it a state vector $\ket{\Psi}$.  It is called a \emph{joint state} vector.
+
 \[
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
