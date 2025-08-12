@@ -430,16 +430,80 @@ the oscillator model. Similarly, many concrete physical systems realize the idea
 Isolated quantum systems are idealizations. Interactions between systems are not only hard to  avoid, but are often desirable for practical purposes. We now turn our attention to the interaction between a pair of simplest quantum systems -- quantum qubits.
 
 \subsection{Joint State}
-Treating a pair of qubits as a single quantum system means assigning to it a state vector $\ket{\Psi}$.  It is called a \emph{joint state} vector.
+Treating a pair of qubits as a single quantum system implies describing the state of two qubits with a single state vector $\ket{\Psi}$.  It is called a \emph{joint state} vector and is used to describe the results of  measurements performed on a pair of qubits.
+
+To measure two separate parts of a single quantum system one may use two detectors. Each detector measures a single qubit and finds it in either state $\ket{0}$ or $\ket{1}$ with different probabilities. The results of a \emph{joint measurement} can be expressed as a linear combination of all possibilities:
+\[
+\ket{\Psi} = c_{00}\ket{0}\ket{0} + c_{01}\ket{0}\ket{1}+c_{10}\ket{1}\ket{0}+c_{11}\ket{1}\ket{1}\,.
+\]
+For example, if all results are equally probable, the state of the qubit-pair system can be written as follows:
+\[
+\ket{\Psi_0} = \left(\ket{0}\ket{0} + \ket{0}\ket{1}+\ket{1}\ket{0}+\ket{1}\ket{1}\right )/2\,.
+\]
+There are no \emph{correlations} between the measurements for this state. Two qubits are not only spatially separated, but also \emph{statistically unrelated}. In this case each qubit can be assigned its own state vector and the joint state $\ket{\Psi}$ is a product of two states:
+\[
+\ket{\Psi_0}=\ket{\psi}\ket{\phi}
+\]
+where $\ket{\psi}=\left(\ket{0}+\ket{1}\right)/\sqrt{2}$ and $\ket{\phi}=\left(\ket{0}+\ket{1}\right)/\sqrt{2}$.
+
+Whenever the results from two detectors are correlated, the separation of a qubit pair into independent parts becomes impossible. The state $\ket{\Psi}$ then can't be factorized: $\ket{\Psi}\ne \ket{\psi}\ket{\phi}$. Indeed, suppose the state is 
+\[
+\ket{\Psi_1} = \left(\ket{0}\ket{0} + \ket{1}\ket{1}\right )/\sqrt{2}\,.
+\]
+Assuming that $\ket{\Psi}=\ket{\psi}\ket{\phi}$ and $\ket{\psi}=a\ket{0}+b\ket{1}$ and $\ket{\phi}=c\ket{0}+d\ket{1}$, we get four requirements for the coefficients $a,\,b,\, c$ and $d$:
+\begin{align*}
+	ac & = 1/\sqrt{2}\,, & ad=0\\
+	bd & = 1/\sqrt{2}\,, & bc=0\,.
+\end{align*}
+These requirements can't be satisfied, because $a$ and $d$ can't be zero, while their product must be zero (similarly $b$ and $c$). 
+
+The state $\ket{\Psi_1} = \left(\ket{0}\ket{0} + \ket{1}\ket{1}\right )/\sqrt{2}$ is an example of \emph{entangled} state of a qubit pair. It illustrates a peculiar quantum situation when the complete knowledge about the joint system does not mean complete knowledge of its "parts". In other words, in a strongly \emph{correlated system} there are no independent parts which can be described with their own individual state vectors. Qubit pair acts as \emph{one inseparable whole}.
+
+\begin{exercise}
+	Suppose a qubit pair is in the state 
+	\[
+	\ket{\Psi_2} = \left(\ket{0}\ket{1} + \ket{1}\ket{0}\right )/\sqrt{2}\,.
+	\]
+	Show that this state can't be written as the product state:
+	\[
+	\ket{\Psi_2} \ne \ket{\psi}\ket{\phi}\,.
+	\]
+\end{exercise}
+
+
+
+\subsection{Creating Entanglement}
+How do qubits become \emph{entangled}? Let's show that an interaction between qubits, responsible for the transfer of energy from the first qubit to the second, can, in certain scenarios, lead to an entangled state. The mechanism described below is universal in the sense that it works for any two interacting quantum systems, not just a pair of qubits.
+
+Energy exchange between two qubits implies the following transition:
+\[
+\ket{1}\ket{0}\quad\longrightarrow\quad\ket{0}\ket{1}\,.
+\]
+This is a process in which the first qubit is initially excited, and the second qubit is in the ground state, but in the end the first qubit drops into the ground state, while the second qubit becomes excited. Mathematically, this transition is described by a product of operators:
+\[
+\op{T}_1 = \op{\sigma}_1\otimes \op{\sigma}^\plus_2 = \op{\sigma}_1\op{\sigma}^\plus_2\,.
+\]
+
+Interaction leading to an energy exchange between two qubits can be 
 
 \[
-\ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
+\op{H}=\op{H}_1\op{I}_2+\op{I}_1\op{H}_2+\epsilon\left(\op{\sigma}_1\op{\sigma}^\plus_2+\op{\sigma}^\plus_1\op{\sigma}_2\right)\,.
 \]
+
+\begin{mybio}{Where is Energy?}
+	When a qubit pair is entangled, neither qubit has definite energy. However, the system as a whole does have a certain energy. How is this energy "divided" between the qubits?
+\end{mybio}
+
+
 \subsection{Computational Basis}
+The four joint states of a qubit pair
 \[
-\ket{\Upsilon}_1 = \ket{0}\ket{0},\,\ket{\Upsilon}_2 = \ket{0}\ket{1},\,
-\ket{\Upsilon}_3 = \ket{1}\ket{0},\,\ket{\Upsilon}_4 = \ket{1}\ket{1}\,.
+\ket{\Upsilon}_1 = \ket{0}\ket{0},\,\,\ket{\Upsilon}_2 = \ket{0}\ket{1},\,\,
+\ket{\Upsilon}_3 = \ket{1}\ket{0},\,\,\ket{\Upsilon}_4 = \ket{1}\ket{1}\
 \]
+are called \emph{computational basis}.
+
+
 Q: Are there other states, which are also basis and product? Smth like
 \[
 \ket{\Xi}=\ket{+}\ket{+}\,.
