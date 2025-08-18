@@ -470,7 +470,37 @@ The state $\ket{\Psi_1} = \left(\ket{0}\ket{0} + \ket{1}\ket{1}\right )/\sqrt{2}
 	\]
 \end{exercise}
 
+\subsection{Computational Basis}
+The four joint states of a qubit pair
+\[
+\ket{\Upsilon_1} = \ket{0}\ket{0},\,\,\ket{\Upsilon_2} = \ket{0}\ket{1},\,\,
+\ket{\Upsilon_3} = \ket{1}\ket{0},\,\,\ket{\Upsilon_4} = \ket{1}\ket{1}\
+\]
+are called \emph{computational basis}. It is often used in the field of quantum information processing.
+Each state of the computational basis has the form of a product of states of separate qubits. State vectors of the computational basis are \emph{not entangled}.
 
+A general state of a qubit pair can be expanded in the computational basis:
+\[
+\ket{\Psi} = \int c_i\ket{\Upsilon_i}\,.
+\]
+A general operator representing processes involving qubit pair can also be written using computational basis:
+\[
+	\op{A}=\int a_{ij}\ketbra{\Upsilon_i}{\Upsilon_j}\,.
+\]
+For example, transition operator describing the transfer of energy from the first qubit to the second takes the form $\op{T}_{12}=\ketbra{\Upsilon_2}{\Upsilon_3}$.
+
+\begin{exercise}
+	Write general form of Hamiltonian of a qubit pair in the computational basis. 
+	
+	\[
+	\op{H}=\int h_{ij}\ketbra{\Upsilon_i}{\Upsilon_j}\,.
+	\]
+\end{exercise}
+
+Q: Are there other states, which are also basis and product? Smth like
+\[
+\ket{\Xi}=\ket{+}\ket{+}\,.
+\]
 
 \subsection{Creating Entanglement}
 How do qubits become \emph{entangled}? Let's show that an interaction between qubits, responsible for the transfer of energy from the first qubit to the second, can, in certain scenarios, lead to an entangled state. The mechanism described below is universal in the sense that it works for any two interacting quantum systems, not just a pair of qubits.
@@ -481,48 +511,126 @@ Energy exchange between two qubits implies the following transition:
 \]
 This is a process in which the first qubit is initially excited, and the second qubit is in the ground state, but in the end the first qubit drops into the ground state, while the second qubit becomes excited. Mathematically, this transition is described by a product of operators:
 \[
-\op{T}_1 = \op{\sigma}_1\otimes \op{\sigma}^\plus_2 = \op{\sigma}_1\op{\sigma}^\plus_2\,.
+\op{T}_{12} = \op{\sigma}_1\otimes \op{\sigma}^\plus_2 = \op{\sigma}_1\op{\sigma}^\plus_2\,.
 \]
-
-Interaction leading to an energy exchange between two qubits can be 
-
+The qubits are identical and there is no fundamental reason for the energy to flow only in one direction. Therefore, the exchange must be reversible and described not only by $\op{T}_{12}$, but also by the opposite process:
 \[
-\op{H}=\op{H}_1\op{I}_2+\op{I}_1\op{H}_2+\epsilon\left(\op{\sigma}_1\op{\sigma}^\plus_2+\op{\sigma}^\plus_1\op{\sigma}_2\right)\,.
+\op{T}_{21} = \op{\sigma}^\plus_1\otimes \op{\sigma}_2 = \op{\sigma}^\plus_1\op{\sigma}_2\,.
 \]
+
+Hamiltonian with interaction between two qubits can then be written as follows:
+\begin{equation}
+	\op{H}_\epsilon=\op{H}_1\op{I}_2+\op{I}_1\op{H}_2+\epsilon\left(\op{T}_{12}+\op{T}_{21}\right)\,,
+	\label{eq:qubitInteractionHamiltonian}
+\end{equation}
+where the parameter $\epsilon$ determines the strength of the interaction. Obviously, for $\epsilon=0$ there is no interaction between the qubits.
+
+\begin{exercise}
+	Show that the state $\ket{\Psi_2} = \left(\ket{0}\ket{1} + \ket{1}\ket{0}\right )/\sqrt{2}$ is the eigen-state of  the Hamiltonian (\ref{eq:qubitInteractionHamiltonian}). Find the eigen-value (energy) for this state.
+	
+	{\it Suggestion}: Use the fact that $E_1=E_0+\hbar\omega$. 
+\end{exercise}
+\begin{exercise}
+	Check whether the state $\ket{\Psi_3} = \left(\ket{0}\ket{1} - \ket{1}\ket{0}\right )/\sqrt{2}$ is the eigen-state of the Hamiltonian (\ref{eq:qubitInteractionHamiltonian}). 
+\end{exercise}
+\begin{exercise}
+	Find the result of the action of the Hamiltonian (\ref{eq:qubitInteractionHamiltonian}) on the state $\ket{1}\ket{0}$.
+\end{exercise}
+Now we can find how the state of the qubit pair changes from the initial $\ket{1}\ket{0}$ at time $t=0$ to an entangled state a moment later. Schr\"{o}dinger equation states
+\[
+\partial_t\,\ket{\Psi}=-\frac{\op{J}}{\hbar}\,\op{H}_\epsilon\,\ket{\Psi}\,.
+\]
+Therefore, after a time interval $\delta t$, the state evolves as
+\[
+\ket{\Psi}\quad\longrightarrow\quad \ket{\Psi}+\delta\ket{\Psi}
+\]
+where 
+\[
+\delta\,\ket{\Psi}=-\frac{\op{J}\delta t}{\hbar}\,\op{H}_\epsilon\,\ket{\Psi}\,.
+\]
+For $\ket{\Psi}=\ket{1}\ket{0}$ the right-hand side becomes
+\[
+\delta\,\ket{\Psi}=a\ket{1}\ket{0}+b\ket{0}\ket{1}\,,
+\]
+where 
+\[
+a = -\op{J}(2E_0/\hbar+\omega)\delta t\,,\quad b = -\op{J}\epsilon/\hbar\delta t\,.
+\]
+The key point is that due to the interaction term $\op{T}_{12}$ the initial state evolves into the superposition
+\[
+\ket{\Psi}=(1+a)\ket{1}\ket{0}+b\ket{0}\ket{1}
+\]
+which clearly has the form of an entangled state. Continuing this process, we will arrive, step by step, to a fully entangle state $\ket{\Psi_2} = \left(\ket{0}\ket{1} + \ket{1}\ket{0}\right )/\sqrt{2}$.
 
 \begin{mybio}{Where is Energy?}
 	When a qubit pair is entangled, neither qubit has definite energy. However, the system as a whole does have a certain energy. How is this energy "divided" between the qubits?
 \end{mybio}
 
 
-\subsection{Computational Basis}
-The four joint states of a qubit pair
-\[
-\ket{\Upsilon}_1 = \ket{0}\ket{0},\,\,\ket{\Upsilon}_2 = \ket{0}\ket{1},\,\,
-\ket{\Upsilon}_3 = \ket{1}\ket{0},\,\,\ket{\Upsilon}_4 = \ket{1}\ket{1}\
-\]
-are called \emph{computational basis}.
 
-
-Q: Are there other states, which are also basis and product? Smth like
-\[
-\ket{\Xi}=\ket{+}\ket{+}\,.
-\]
 
 \subsection{Bell States}
-\[
-\ket{\Phi}^{+}\,,\quad\ket{\Phi}^{-}\,,\quad
-\ket{\Psi}^{+}\,,\quad\ket{\Psi}^{-}\,.
-\]
+Among the bases for a qubit pair some stand out due to their special properties. One such basis is named after John Steward Bell. The basis vectors can be expressed in terms of the computational basis as follows:
+\begin{equation}
+	\ket{\Phi^{+}} = \frac{1}{\sqrt{2}}\left(\ket{\Upsilon_1}+\ket{\Upsilon_4}\right)\,,
+\end{equation}
+\begin{equation}
+	\ket{\Phi^{-}} = \frac{1}{\sqrt{2}}\left(\ket{\Upsilon_1}-\ket{\Upsilon_4}\right)\,,
+\end{equation}
+\begin{equation}
+	\ket{\Psi^{+}} = \frac{1}{\sqrt{2}}\left(\ket{\Upsilon_2}+\ket{\Upsilon_3}\right)\,,
+\end{equation}
+\begin{equation}
+	\ket{\Psi^{-}} = \frac{1}{\sqrt{2}}\left(\ket{\Upsilon_2}-\ket{\Upsilon_3}\right)\,,
+\end{equation}
+Each state vector of the Bell states basis corresponds to an entangled state. In fact, such states are \emph{maximally entangled}, in contrast with the computational basis.
+
+\begin{exercise}
+	Express computational basis in terms of the Bell states.
+\end{exercise}
+\begin{exercise}
+	Express qubit pair Hamiltonian in terms of the operators built from Bell states.
+\end{exercise}
 
 
 \subsection{GHZ State}\label{sec:GHZState}
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
+The idea of entangled quantum systems can be naturally extended beyond a simple pair. If we are working with three qubits, their joint states can be written using a computational basis
 \[
-\ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
+\ket{000}\,,\ket{001}\,,\ket{010}\,,\ket{011}\,,\ket{100}\,,\ket{101}\,,\ket{110}\,,\ket{111}\,.
+\]
+Each state from this basis is a product state and corresponds to a statistically independent (not entangled) states. Fully entangled states are possible, as one such state--GHZ state-- is named after Daniel Greenberger, Michael Horne, and Anton Zeilinger. It has a simple form:
+\[
+\ket{GHZ}=\frac{\ket{000}+\ket{111}}{\sqrt{2}}\,.
 \]
 
+\subsection{Qat States}
+Macroscopical systems, such as crystals, rocks, tables, animals, planets, and so on, contain an enormous number of "parts": molecules, atoms, protons and electrons. Such systems are extremely complex and their quantum description is challenging. However, researchers are constantly improving the techniques to create \emph{macroscopic quantum states} -- quantum states of systems with macroscopically large number of parts. Such quantum systems are sometimes called \emph{macroscopic Schr\"{o}dinger's cat states}. We will call them \emph{qat states}.
+
+Although a single biological cell does not exhibit quantum properties, let's model it as a qubit, with the states $\ket{0}$ and $\ket{1}$ representing a "dead" and "alive" cell, respectively. A
+body of a cat will have about $M=10^{10}$ cells, and the state of $M$ qubits can be written as a superposition of $2^M$ computational basis vectors. Two extreme states have simple structure:
+\[
+\ket{A}=\ket{111\ldots 1}=\ket{1}^{\otimes M}\,\,\textrm{ -- all cells are alive (alive cat)},
+\]
+\[
+\ket{D}=\ket{000\ldots 0}=\ket{0}^{\otimes M}\,\,\textrm{ -- all cells are dead (dead cat)}.
+\]
+\begin{exercise}
+	What does the following state correspond to:
+	\[
+	\ket{B} = \ket{0111\ldots 1}\,?
+	\]
+	
+	
+	How many cells need to be "alive" for the cat to be considered alive?
+\end{exercise}
+
+The following qat state is very interesting:
+\[
+\ket{S} = \frac{\ket{A}+\ket{D}}{\sqrt{2}}\,.
+\]
+
+\subsubsection*{Dead or Alive?}
+Erwin Schr\"{o}dinger first discussed such a state in his 1935 paper XXX, using a cat as an example. Today the term "Schr\"{o}dinger's cat" is one of the most recognized expressions from quantum physics. What is not usually mentioned, is the purpose of Schr\"{o}dinger's example.
 
 \section{Quantum Field}\label{sec:QuantumField}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
@@ -556,7 +664,7 @@ Array of equations:
   \ldots
 \end{eqnarray}
 
-\subsection{Quantum States of Light}
+\section{Quantum States of Light}
 
 \section*{Chapter Highlights}
 {\setstretch{1.5}\chhc
