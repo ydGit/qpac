@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnyps7mtue02v"]
+
+[ext_resource type="PackedScene" uid="uid://ispckjnj0343" path="res://detector.tscn" id="1_c4r1f"]
+[ext_resource type="PackedScene" uid="uid://5mwwla5s8ld7" path="res://scenes/source.tscn" id="2_0egtg"]
+[ext_resource type="PackedScene" uid="uid://dacbh41cyy6fu" path="res://scenes/detectorRight.tscn" id="3_bgkjo"]
+[ext_resource type="PackedScene" uid="uid://c7lw1phguoxd4" path="res://scenes/control_panel.tscn" id="4_7wq4p"]
+
+[node name="experiment" type="Node2D"]
+
+[node name="source" parent="." instance=ExtResource("2_0egtg")]
+position = Vector2(810, 303)
+
+[node name="detector" parent="." instance=ExtResource("1_c4r1f")]
+position = Vector2(224, 306)
+
+[node name="detector2" parent="." instance=ExtResource("3_bgkjo")]
+position = Vector2(1387, 308)
+
+[node name="controlPanel" parent="." instance=ExtResource("4_7wq4p")]
