@@ -140,6 +140,11 @@ and
 \[
 \ketbra{\phi}{\phi}\,.
 \]
+\begin{example}
+	Consider an operator that transforms the state $\ket{0}$ into a linear combination $\ket{+}=(\ket{0}+\ket{1})/\sqrt{2})$ and the state $\ket{1}$ into a linear combination $\ket{-}=(\ket{0}-\ket{1})/\sqrt{2})$.
+	
+	It is called \emph{Hadamard} operator and has the following matrix representation.
+\end{example}
 
 \subsection{Super-operators}
 
@@ -334,17 +339,22 @@ and
 
 
 \section{Bundling}
+A pair of vectors can be combined in a variety of ways. Addition of two vectors returns the third vector, while scalar product returns a number. Other useful methods of combining vectors result in more advanced mathematical objects, such as, for example, tensors. One simple approach to combining vectors to create complex objects uses the idea of \emph{bundling}.
 
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane.
-\[
-\braket{\phi}{\phi}
-\]
-and
-\[
-\ketbra{\phi}{\phi}\,.
-\]
+When a pair of vectors is bundled, the original vectors are not lost, they become incorporated in a more complex mathematical object. It may sound complicated, but the idea can be expressed simply as follows: \emph{Keep original vectors together in some some sort of a bundle.}
 
+The simpest bundle is a pair. Given two vectors of the same type $\ket{a}$ and $\ket{b}$ we can bundle them into a pair: $\mathcal{P}=(\ket{a}, \ket{b})$.
+
+\[
+\ketbra{a}{b}\,.
+\]
+\begin{exercise}
+	Write Hadamard operator in terms of the tensor product of vectors $\ket{0}$, $\ket{1}$, $\ket{+}$ and $\ket{-}$.
+	
+	\[
+	\op{H} = \ketbra{+}{0}+\ketbra{-}{1}\,.
+	\]
+\end{exercise}
 
 \section{Functions As Vectors}
 

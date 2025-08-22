@@ -27,16 +27,86 @@ based on two vectors:
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
 
+\section{Fundamental Randomness}
+
+
+
 \section{Quantum State}\label{sec:QuantumState}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
 based on two vectors:
 \[
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
+
+\subsection{Superposition}
+Suppose we measure the energy of a quantum system (e.g. a hydrogen atom) and find that it takes on discrete values $E_1$, $E_2$, $E_3$, and so on. A distinct quantum state $\ket{e_1}$, $\ket{e_2}$, $\ket{e_3}$, and so on, is associated with each energy value.
+
+If a long series of measurements always yields the same energy value $E_k$, we conclude that the system was prepared in the state of \emph{definite} energy $\ket{e_k}$. If the results of a long series of measurements are random, then the initial state of atoms can not be the state of a definite energy. In practice, a long series of measurements of \emph{identically prepared} atoms reveals certain \emph{statistical} pattern. Specifically, for a number of measurement $N$, the energy $E_1$ results in $N_1$ random outcomes, the energy $E_2$ results in $N_2$ random outcomes and so on. One can speak of the \emph{probability} of obtaining the result $E_1$, defined as the \emph{relative frequency} $p_1=N_1/N$ of occurences of $E_1$; similary for other results. Generally, the probability of obtaining the result $E_k$ is $p_k=N_k/N$. 
+
+If the probabilities $(p_1, p_2, p_3,\ldots, p_k)$ are
+ \emph{reproducible} (the same set of probabilities in different repeated long series of measurements), then the state of system can be characterized by the combination of energy values and their probabilities:
+ \[
+ \ket{\xi}\,\,\longrightarrow\,\, \lbrace(E_1, p_1), (E_2, p_2), (E_3, p_3), \ldots, (E_k, p_k)\rbrace\,.
+ \]
+If there is a one-to-one correspondence $E_k\leftrightarrow\ket{e_k}$ between the energy and the state, then the state $\ket{\xi}$ can be said to be \emph{determined} by (or is a function of) the set of pairs $(p_i,\ket{e_i})$:
+\[
+\ket{\xi}\,\,\longleftrightarrow\,\, \lbrace(p_1, \ket{e_1}), (p_2, \ket{e_2}), (p_3, \ket{e_3}), \ldots, (p_k, \ket{e_k})\rbrace\,.
+\]
+The \emph{simplest} function that constructs one vector from other vectors is a \emph{linear combination}. We can try using such a function to express the state $\ket{\xi}$ in terms of the states with definite energy $\ket{e_i}$ as follows:
+\[
+\ket{\xi} = p_1\ket{e_1}+p_2\ket{e_2}+p_3\ket{e_3}+\ldots p_k\ket{e_k}\,.
+\]
+There is no guarantee that this approach will be effective. In fact, the expression given above is \emph{not the one} used in quantum theory, but it is not far from the "proper" quantum form.
+
+\emph{Every} state can be viewed as a linear combination -- called \emph{superposition} -- of some other states:
+\[
+\ket{\psi} = c_1\ket{\phi_1}+c_2\ket{\phi_2}+\ldots+c_k\ket{\phi_k}\,.
+\]
+This is analogous to the representation of arrow-vectors in terms of some basis. 
+
+\subsubsection*{Born Rule}
+
+
 \subsection{States Overlap}
 \[
 \braket{\psi}{\phi}.
 \]
+
+\subsection{Pure and Mixed States}
+
+\subsubsection{State Purification}
+It is possible to "upgrade" a mixed state of a quantum sustem $S$ given by a density operator $\op{\rho}$ to a pure state $\ket{\Psi}$. The mathematical procedure is called \emph{purification}. Physically, the operation means finding a larger system $S_L$ which contains $S$ as its "part" and can be described using a pure state vector $\ket{\Psi}$.
+
+Purification can always be achieved. One natural choice of a "larger" quantum system $S_L$ can be a system consisting of a pair of $S$-like systems. As an example, a mixed state of a qubit can be purified to a state of qubit pair.
+
+
+\subsection{Fidelity}
+When the state of a quantum system cannot be described using a state vector $\ket{\psi}$, we need to use a more general approach -- \emph{state operator} or \emph{density operator} $\op{\rho}$.
+
+How do we compare two states $\op{\rho}$ and $\op{\sigma}$ for similarity? A useful measure of similarity in this case is called \emph{fidelity} and has the following definition:
+\[
+\mathcal{F}\,(\op{\rho}\,,\op{\sigma}) = \mathtt{Tr}\sqrt{\sqrt{\op{\rho}}\,\,\op{\sigma}\,\sqrt{\op{\rho}}}\,.
+\]
+
+This complicated definition captures almost the same idea as the scalar product. In fact, for pure states $\op{\rho}=\ketbra{\psi}{\psi}$ and $\op{\sigma}=\ketbra{\phi}{\phi}$ it returns the absolute value of the scalar product $|\braket{\psi}{\phi}|$.
+
+Using fidelity allows comparing pure states and mixed states. Indeed, for a pure state $\op{\rho}=\ketbra{\psi}{\psi}$ (a projector) the square root is $\op{\rho}$, and 
+\[
+\op{\rho}\op{\sigma}\op{\rho}=\bra{\psi}\op{\sigma}\ket{\psi}\op{\rho}\,.
+\]
+Taking the square root of the last expression gives
+\[
+\alpha\op{\rho}\,,
+\]
+where $\alpha=\sqrt{\bra{\psi}\op{\sigma}\ket{\psi}}$ is a number. Finally, using the fact that $\mathtt{Tr}\,\op{\rho}=1$, we obtain
+\[
+\mathcal{F}\,(\op{\rho}\,,\op{\sigma}) =\sqrt{\bra{\psi}\op{\sigma}\ket{\psi}}\,.
+\]
+Recall that $\bra{\psi}\op{\sigma}\ket{\psi}$ is the expectation value of the operator $\op{\sigma}$ in the state $\ket{\psi}$.
+
+\begin{exercise}
+	Prove that the definition of fidelity implies that it is symmetric in its arguments.
+\end{exercise}
 
 \section{Quantum Dynamics}\label{sec:QuantumDynamics}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
