@@ -1,0 +1,112 @@
+[gd_scene load_steps=12 format=3 uid="uid://ispckjnj0343"]
+
+[ext_resource type="Script" uid="uid://dee030uxgsj4" path="res://detector.gd" id="1_ahxdv"]
+[ext_resource type="Texture2D" uid="uid://baxsklb7j25po" path="res://sprites/detector.png" id="1_wpqia"]
+[ext_resource type="Texture2D" uid="uid://dqp22uutu4us6" path="res://sprites/knob.png" id="2_f0fga"]
+[ext_resource type="Texture2D" uid="uid://rd6w8komslv0" path="res://sprites/light_red.png" id="3_hhqiw"]
+[ext_resource type="Texture2D" uid="uid://rjm3pvdxcckh" path="res://sprites/light_green.png" id="4_a10lm"]
+[ext_resource type="Script" uid="uid://bq4adqd3wkncv" path="res://particleDetectorArea2D.gd" id="6_qcjtc"]
+[ext_resource type="AudioStream" uid="uid://hetdxy0gk1yn" path="res://sound/switch2.wav" id="7_00ikh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wc4p"]
+size = Vector2(42, 137)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5nsi"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8q7tg"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mfw6u"]
+radius = 24.0208
+
+[node name="detector" type="Node2D"]
+script = ExtResource("1_ahxdv")
+
+[node name="body" type="Sprite2D" parent="."]
+texture = ExtResource("1_wpqia")
+
+[node name="knob" type="Sprite2D" parent="."]
+position = Vector2(28, 42)
+rotation = -0.785398
+texture = ExtResource("2_f0fga")
+
+[node name="light_red" type="Sprite2D" parent="."]
+position = Vector2(-130, -63)
+texture = ExtResource("3_hhqiw")
+
+[node name="light_green" type="Sprite2D" parent="."]
+position = Vector2(-130, 66)
+texture = ExtResource("4_a10lm")
+
+[node name="particleDetectorArea2D" type="Area2D" parent="."]
+script = ExtResource("6_qcjtc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="particleDetectorArea2D"]
+position = Vector2(174, -2)
+shape = SubResource("RectangleShape2D_0wc4p")
+
+[node name="setting1" type="Area2D" parent="."]
+
+[node name="s1CollisionShape2D" type="CollisionShape2D" parent="setting1"]
+position = Vector2(-51, -68)
+shape = SubResource("CircleShape2D_n5nsi")
+
+[node name="setting2" type="Area2D" parent="."]
+
+[node name="s2CollisionShape2D" type="CollisionShape2D" parent="setting2"]
+position = Vector2(28, -92)
+shape = SubResource("CircleShape2D_8q7tg")
+
+[node name="setting3" type="Area2D" parent="."]
+
+[node name="s3CollisionShape2D" type="CollisionShape2D" parent="setting3"]
+position = Vector2(104, -67)
+shape = SubResource("CircleShape2D_mfw6u")
+
+[node name="audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_00ikh")
+
+[node name="red1Count" type="Label" parent="."]
+offset_left = -76.0
+offset_top = -170.0
+offset_right = -36.0
+offset_bottom = -144.0
+text = "0"
+
+[node name="green1Count" type="Label" parent="."]
+offset_left = -71.0
+offset_top = 147.0
+offset_right = -31.0
+offset_bottom = 173.0
+text = "0"
+
+[node name="red2Count" type="Label" parent="."]
+offset_left = 3.0
+offset_top = -171.0
+offset_right = 43.0
+offset_bottom = -145.0
+text = "0"
+
+[node name="green2Count" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 147.0
+offset_right = 41.0
+offset_bottom = 173.0
+text = "0"
+
+[node name="red3Count" type="Label" parent="."]
+offset_left = 85.0
+offset_top = -170.0
+offset_right = 125.0
+offset_bottom = -144.0
+text = "0"
+
+[node name="green3Count" type="Label" parent="."]
+offset_left = 83.0
+offset_top = 147.0
+offset_right = 123.0
+offset_bottom = 173.0
+text = "0"
+
+[connection signal="body_entered" from="particleDetectorArea2D" to="particleDetectorArea2D" method="_on_body_entered"]

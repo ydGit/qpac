@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ylfo40ri621p"]
+
+[ext_resource type="Script" uid="uid://b0y5kqxbe8vi7" path="res://scenes/particle.gd" id="1_3l35m"]
+[ext_resource type="Texture2D" uid="uid://n6m6qd3u21on" path="res://sprites/particle.png" id="1_b5lsi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nwn8r"]
+radius = 27.0185
+
+[node name="particle" type="Node2D"]
+script = ExtResource("1_3l35m")
+
+[node name="particleSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.609091, 0.609091)
+texture = ExtResource("1_b5lsi")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="particleSprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="particleSprite/CharacterBody2D"]
+shape = SubResource("CircleShape2D_nwn8r")
+
+[node name="stateLabel" type="Label" parent="."]
+visible = false
+offset_left = -15.0
+offset_top = 17.0
+offset_right = 20.0
+offset_bottom = 43.0
+text = "RRR"

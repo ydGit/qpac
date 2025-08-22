@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://5mwwla5s8ld7"]
+
+[ext_resource type="Script" uid="uid://d4fu56mnk0jbe" path="res://scenes/source.gd" id="1_1iuj7"]
+[ext_resource type="Texture2D" uid="uid://crltjksygf3e" path="res://sprites/sourceBody.png" id="1_3wqvx"]
+[ext_resource type="Texture2D" uid="uid://ctu6vtx15g6k5" path="res://sprites/sourceButton.png" id="2_fob52"]
+[ext_resource type="Script" uid="uid://cc5sa02fgitv8" path="res://scenes/button.gd" id="4_ryfc4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jms2y"]
+size = Vector2(75, 61)
+
+[node name="source" type="Node2D"]
+script = ExtResource("1_1iuj7")
+
+[node name="body" type="Sprite2D" parent="."]
+texture = ExtResource("1_3wqvx")
+
+[node name="emitter_left" type="Node2D" parent="."]
+position = Vector2(-104, 0)
+
+[node name="emitter_right" type="Node2D" parent="."]
+position = Vector2(104, 0)
+
+[node name="button" type="Sprite2D" parent="."]
+texture = ExtResource("2_fob52")
+script = ExtResource("4_ryfc4")
+
+[node name="collider" type="Area2D" parent="button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="button/collider"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_jms2y")

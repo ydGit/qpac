@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7lw1phguoxd4"]
+
+[ext_resource type="Texture2D" uid="uid://dup6ffbdxpw6r" path="res://sprites/controlPanel.png" id="1_qm57x"]
+[ext_resource type="Texture2D" uid="uid://dhbfar455kooh" path="res://sprites/save.png" id="2_cbdl7"]
+[ext_resource type="Texture2D" uid="uid://cq2213y4s6dtw" path="res://sprites/reset.png" id="3_8f6wb"]
+
+[node name="controlPanel" type="Node2D"]
+
+[node name="board" type="Sprite2D" parent="."]
+position = Vector2(803, 723)
+scale = Vector2(0.876136, 0.673267)
+texture = ExtResource("1_qm57x")
+
+[node name="saveButton" type="Sprite2D" parent="."]
+position = Vector2(303, 715)
+scale = Vector2(0.611888, 0.611888)
+texture = ExtResource("2_cbdl7")
+
+[node name="Label" type="Label" parent="saveButton"]
+offset_left = -281.097
+offset_top = 70.2742
+offset_right = -238.097
+offset_bottom = 96.2742
+text = "RESET"
+
+[node name="resetButton" type="Sprite2D" parent="."]
+position = Vector2(140, 719)
+scale = Vector2(0.528571, 0.528571)
+texture = ExtResource("3_8f6wb")
+
+[node name="Label" type="Label" parent="resetButton"]
+offset_left = 293.243
+offset_top = 75.6757
+offset_right = 336.243
+offset_bottom = 101.676
+text = "SAVE"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 352.0
+offset_top = 667.0
+offset_right = 462.0
+offset_bottom = 781.0
+text = "SAVE"
+icon = ExtResource("2_cbdl7")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
