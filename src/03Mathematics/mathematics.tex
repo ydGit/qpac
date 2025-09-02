@@ -48,6 +48,16 @@ The input-output view of functions leads to a helpful picture where a given func
 \subsection{Application Notation}
 The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses: $f(x)$. This rule is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra.
 
+In this book we will use a uniform rule for function application: \emph{Function and its argument are separated by a space. Only structured arguments are surrounded by parentheses. Simple arguments are written as is.} For example, we will always write
+\[
+\sin\,x\,,\quad \exp\, x\,,\quad \textrm{abs}\,x 
+\]
+and so on. Without confusion, we can even write 
+\[
+\cos\frac{\phi}{3}\,,\quad\log\sqrt{y}\,.
+\]
+However, we will always use parentheses in the expressions like $\tan (\alpha+\beta)$, to avoid confusion with another valid expression $\tan \alpha+\beta=(\tan \alpha)+\beta$.
+
 
 \subsection{Partial Application}
 The box-view of functions leads to a simple, yet powerful, concept of a \emph{partially applied} function.
@@ -339,7 +349,7 @@ and
 
 
 \section{Bundling}
-A pair of vectors can be combined in a variety of ways. Addition of two vectors returns the third vector, while scalar product returns a number. Other useful methods of combining vectors result in more advanced mathematical objects, such as, for example, tensors. One simple approach to combining vectors to create complex objects uses the idea of \emph{bundling}.
+A pair of vectors can be combined in a variety of ways. For example, adding two vectors returns the third vector, while scalar product returns a number. Other useful methods of combining vectors result in more advanced mathematical objects, such as, for example, tensors. One simple approach to combining vectors to create complex objects uses the idea of \emph{bundling}.
 
 When a pair of vectors is bundled, the original vectors are not lost, they become incorporated in a more complex mathematical object. It may sound complicated, but the idea can be expressed simply as follows: \emph{Keep original vectors together in some some sort of a bundle.}
 
