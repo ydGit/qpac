@@ -46,24 +46,62 @@ The input-output view of functions leads to a helpful picture where a given func
 \end{figure}
 
 \subsection{Application Notation}
-The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses: $f(x)$. This rule is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra.
+The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses around the argument, like so: $f(x)$. This rule, howevers, is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra. For example, when an operator $\op{f}$ is applied to a vector $\ket{x}$, we would write $\op{f}\,\ket{x}$, without the parentheses. 
 
-In this book we will use a uniform rule for function application: \emph{Function and its argument are separated by a space. Only structured arguments are surrounded by parentheses. Simple arguments are written as is.} For example, we will always write
+In this book we will use a uniform rule for function application: \emph{Function and its argument are separated by a space. Only structured arguments are surrounded by parentheses. Simple arguments are written without parentheses.} Thus, we will always write
 \[
-\sin\,x\,,\quad \exp\, x\,,\quad \textrm{abs}\,x 
+\sin\,x\,,\quad \exp\, x\,,\quad \textrm{abs}\,x\,, 
 \]
-and so on. Without confusion, we can even write 
+and so on. We can even write -- without any confusion -- expressions like
 \[
 \cos\frac{\phi}{3}\,,\quad\log\sqrt{y}\,.
 \]
-However, we will always use parentheses in the expressions like $\tan (\alpha+\beta)$, to avoid confusion with another valid expression $\tan \alpha+\beta=(\tan \alpha)+\beta$.
+However, we will always use parentheses in the expressions similar to
+\[
+	\tan (\alpha+\beta)\,,
+\]
+to avoid confusion with another valid expression: $\tan \alpha+\beta=(\tan \alpha)+\beta$.
 
+\subsection{Multi-Input Functions}
+Function of a single argument are the most familiar kind. However, functions with two inputs are also widely used. The simplest example is the function of two arguments (\emph{binary function}):
+\[
+\btc{add}\,x\,y = x + y\,.
+\]
+On the left-hand side the function is written using so-called \emph{prefix notation}, where the name precedes the arguments. On the right-hand side the same function is written using a more conventional \emph{infix notation}, in which a special symbol is placed between two arguments. Other examples if binary functions can be given:
+\[
+\btc{mul}\,x\,y = x * y=xy\,,
+\]
+\[
+\btc{pow}\,x\,n = x^\wedge n =x^n\,,
+\]
+\[
+\btc{max}\,x\,y = x\,\textrm{if}\,x>y,\,\textrm{otherwise}\,y\,.
+\]
+Note that the infix notation works only for binary functions and special symbols (like "$+$") exist only for small number of them. In short, infix notation, although convenient, lacks generality needed for more powerful and abstract mathematics.
+
+Any formula expressing a physical quantity can be viewed as a function with multiple inputs. Consider Newton's law for gravitational attraction between two point-like bodies. The force is given by
+\[
+F = G\frac{Mm}{r^2}\,.
+\]
+Assuming that the gravitational constant $G$ is a fixed number, the expression for the force depends on three arguments -- two masses and the distance between them. 
+\begin{exercise}
+	Consider a \emph{ternary function} (function of three arguments):
+	\[
+	f\,M\,m\,r=Mm/r^2\,.
+	\]
+	Express it purely in terms of the binary function \btc{mul}.
+\end{exercise}
 
 \subsection{Partial Application}
 The box-view of functions leads to a simple, yet powerful, concept of a \emph{partially applied} function.
 
 
 \subsection{Linearity}
+Some functions are simpler than others. Among the simplest kinds of functions, \emph{linear functions} are of special importance. Such functions have the following properties:
+\[
+f\,(x+y) = (f\, x)+(f\,y)\quad\textrm{and}\quad f\,(ax)=a(f\, x)\,.
+\]
+These requirements are called \emph{linearity conditions}.
 
 
 \section{Numberlikes}
