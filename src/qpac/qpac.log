@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  8 SEP 2025 10:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  12 SEP 2025 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2990,7 +2990,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 734.
 ) (../06Applications/applications.tex [96]
 Chapter 6.
-<pics/chapterImageApplications.pdf, id=1731, 427.81808pt x 86.28212pt>
+<pics/chapterImageApplications.pdf, id=1723, 427.81808pt x 86.28212pt>
 File: pics/chapterImageApplications.pdf Graphic file (type pdf)
 <use pics/chapterImageApplications.pdf>
 Package pdftex.def Info: pics/chapterImageApplications.pdf  used on input line 
@@ -3013,14 +3013,14 @@ LaTeX Warning: Command \r invalid in math mode on input line 48.
 
 LaTeX Warning: Command \r invalid in math mode on input line 48.
 
-<../06Applications/pics//hydrogenAtom.pdf, id=1749, 252.14091pt x 220.62747pt>
+<../06Applications/pics//hydrogenAtom.pdf, id=1742, 252.14091pt x 220.62747pt>
 File: ../06Applications/pics//hydrogenAtom.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtom.pdf>
 Package pdftex.def Info: ../06Applications/pics//hydrogenAtom.pdf  used on inpu
 t line 69.
 (pdftex.def)             Requested size: 151.2857pt x 132.37749pt.
 [98 <../06Applications/pics//hydrogenAtom.pdf>]
-<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1763, 317.52397pt x 203.543
+<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1756, 317.52397pt x 203.543
 69pt>
 File: ../06Applications/pics//hydrogenAtomOrbits.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtomOrbits.pdf>
@@ -3071,7 +3071,7 @@ Underfull \vbox (badness 1314) has occurred while \output is active []
 
  [103]
 Package mdframed Info: Not enough space on this page on input line 286.
-<../06Applications/pics//cavityQED.pdf, id=1963, 348.69095pt x 126.4336pt>
+<../06Applications/pics//cavityQED.pdf, id=1956, 348.69095pt x 126.4336pt>
 File: ../06Applications/pics//cavityQED.pdf Graphic file (type pdf)
 <use ../06Applications/pics//cavityQED.pdf>
 Package pdftex.def Info: ../06Applications/pics//cavityQED.pdf  used on input l
@@ -3086,7 +3086,7 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 305--307
 Underfull \vbox (badness 7981) has occurred while \output is active []
 
  [104 <../06Applications/pics//cavityQED.pdf>]
-<../06Applications/pics//franckHertzExperiment.pdf, id=2019, 328.62866pt x 386.
+<../06Applications/pics//franckHertzExperiment.pdf, id=2012, 328.62866pt x 386.
 77528pt>
 File: ../06Applications/pics//franckHertzExperiment.pdf Graphic file (type pdf)
 
@@ -3148,7 +3148,7 @@ File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
-<../09Solutions/pics//defaultFigureTemplate.pdf, id=2757, 348.69095pt x 126.433
+<../09Solutions/pics//defaultFigureTemplate.pdf, id=2750, 348.69095pt x 126.433
 6pt>
 File: ../09Solutions/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../09Solutions/pics//defaultFigureTemplate.pdf>
@@ -3234,10 +3234,10 @@ dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
 ype1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
 lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on qpac.pdf (119 pages, 2040735 bytes).
+Output written on qpac.pdf (119 pages, 2038297 bytes).
 PDF statistics:
- 3420 PDF objects out of 3580 (max. 8388607)
- 2704 compressed objects within 28 object streams
+ 3412 PDF objects out of 3580 (max. 8388607)
+ 2699 compressed objects within 27 object streams
  409 named destinations out of 1000 (max. 500000)
  148254 words of extra memory for PDF output out of 154059 (max. 10000000)
 
