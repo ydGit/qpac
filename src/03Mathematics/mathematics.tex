@@ -89,25 +89,50 @@ Assuming that the gravitational constant $G$ is a fixed number, the expression f
 	\[
 	f\,M\,m\,r=Mm/r^2\,.
 	\]
-	Express it purely in terms of the binary function \btc{mul}.
+	Express it purely in terms of the binary function \btc{mul} and the unary function \btc{inv}.
+	\label{exe:ternaryFunction}
 \end{exercise}
 
 \subsection{Partial Application}
-The box-view of functions leads to a simple, yet powerful, concept of a \emph{partially applied} function.
+The box-view of functions leads to a simple, yet powerful, concept of a \emph{partially applied} function. A function of multiple arguments is called partially applied if not all its "inputs" are "filled" (i.e. assigned fixed values). 
 
+Consider, for instance, the ternary function from the Exercsie \ref{exe:ternaryFunction}. Suppose we study how two specific bodies,with masses $M=10$ and $m=1$, interact gravitationally . Then the force $F$ between these bodies is a unary function $F_r$ of the distance $r$:
+\[
+F_r = G*(f\,10\,1\,r) = 10G/r^2\,.
+\]
+Here we partially applied the ternary function $f$ to only two arguments, leaving the third argument $r$ a free parameter. As the result of such partial application we obtained a unary function of the distance $r$ between two boides.
+
+Let's consider another example of partial application. This illustration might seem trivial, but it will help understand the role of partial application in the case of \emph{dual} objects, such as ket and bra vectors of quantum theory. First, we write a product of two numbers using prefix notation: $\btc{mul}\,x\,y$. Then, partially apply the binary function \btc{mul} to some number, say $3$. This results in a unary function \btc{trp} which simply triples the value of its argument:
+\[
+f_y = \btc{trp}\,y=3y\,.
+\] 
 
 \subsection{Linearity}
-Some functions are simpler than others. Among the simplest kinds of functions, \emph{linear functions} are of special importance. Such functions have the following properties:
+Some functions are simpler than others. For example, a \emph{symmetric} function has the same value for $x$ and $-x$: $f\,x=f\,(-x)$. A general function does not have such a property, and in this sense symmetric functions are simpler than a general function.
+
+Among the simplest kinds of functions, \emph{linear functions} are of special importance. Such functions have the following properties:
 \[
 f\,(x+y) = (f\, x)+(f\,y)\quad\textrm{and}\quad f\,(ax)=a(f\, x)\,.
 \]
 These requirements are called \emph{linearity conditions}.
 
+\begin{exercise}
+	Check whether the function \btc{trp} is a linear function.
+\end{exercise}
+
+For numeric functions, the linearity conditions are very restricting. Linear numeric functions all have the same form:
+\[
+f_a\,x=a*x\,,
+\]
+for some number $a$. Thus, for each number $a$ there corresponds a linear numeric function $f_a$ and its action on any argument $x$ is a simple multiplication by the number $a$.
+
+The simuation becomes less trivial when we consider linear functions whose arguments are not simple numbers (e.g. vectors, operators, or even functions).
+
 
 \section{Numberlikes}
-Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}\footnote{Octanions are not used widely enough in physics.}. The concept of a number became increasingly less intuitive, more abstract and powerful.
+Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}\footnote{Octanions are not used in physics widely enough to be discussed here.}. The concept of a number became increasingly less intuitive, more abstract and powerful.
 
-Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but allow more powerful manipulations and can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
+Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but which also allow more powerful manipulations and thus can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
 
 
 \begin{flushleft}
@@ -140,8 +165,81 @@ Thus, the ability to add numbers leads to the ability to \emph{add functions}. I
 \begin{flushleft}
 	{\it Multiplication}
 \end{flushleft}
-Repeated addition of numbers leads to the idea of multiplication.
+Repeated addition of numbers leads to the idea of multiplication. For "normal" numbers mutiplication has two properties analogous to addition:
+\[
+x\,*\, y = y\,*\, x\quad\textrm{ -- commutativity}\,,
+\]
+and
+\[
+(x\,*\, y)\,*\, z = x\,*\, (y\,*\, z) \quad\textrm{ -- associativity}\,.
+\]
+Furthermore, mutiplication and addition possess \emph{distributivity}:
+\[
+x\,*\, (y\,+\,z)=x\,*\, y\,+x\,*\, z\,.
+\]
 
+The ability to add "normal" numbers allows one to introduce \emph{multiplication of functions}. Indeed, we can give a constructive meaning to an expression 
+\[
+f = \sin\boxtimes\exp\,.
+\]
+It must be emphasized again: this is not a multiplication of the numeric values of the functions $\sin$ and $\exp$, it is the mutliplication of the functions themselves. 
+To find the value of a unary function $f$, we simply write
+\[
+f\,x=(\sin\,x)*(\exp\,x)=y\,*\, z\,.
+\]
+Now on both sides of this equality we have "normal" numbers: On the left-hand side we have the value $f\,x$ of a unary function $f$ applied to the numeric argument $x$, on the right-hand side we have to numeric values $y=\sin\,x$ and $z=\exp\,x$ multiplied in a "usual" way.
+
+The example given above can be generalized to an arbitrary pair of unary numeric functions $f$ and $h$. It is not difficult to convince yourself that the "product" $f\,\boxtimes\, h$ is commutative, associative, and is also distributive with respect to the "addition":
+\[
+f\,\boxtimes\, (h\,\boxplus\, g) = (f\,\boxtimes\, h)\,\boxplus\,(f\,\boxtimes\, g)
+\]
+for three unary numeric functions $f$, $h$, and $g$. In other words, unary numeric functions can be made to behave like numbers. One can view functions and manipulate them as objects on their own, without referring to their arguments.
+\begin{mybio}{Point-free Notation}
+	Manipulating functions without explicitely writing their arguments is known as \emph{argument-free notation} or \emph{point-free notation}. It is a useful practice and is common in quantum theory.
+\end{mybio}
+
+\begin{flushleft}
+	{\it Composition}
+\end{flushleft}
+Functions, and their "brothers" operators, allow an additional way to combine two function in order to create another one. It is called \emph{composition} or, sometimes, \emph{sequencing} of two functions. Let's illustrate the idea using the familiar functions $\sin$ and $\exp$. We can "create" (define) a function 
+$f$ which acts on its input argument in the following way:
+\[
+f\,x=\sin\,(\exp\, x)\,.
+\]
+We first apply the function $\exp$ to the input argument $x$ to obtain a numeric value $y=\exp\, x$, and then apply the function $\sin$ to $y$. We applied two functions in sequence. A special notation exists for composition. We write $f = \sin\circ\exp$.
+
+Unlike addition and multiplication, \emph{composition is not commutative}:
+\[
+\sin\circ\exp\ne\exp\circ\sin\quad\textrm{because}\quad\sin\,(\exp\, x) \ne \exp\,(\sin\, x)\,.
+\]
+However, \emph{composition is associative.} Given three functions $f$, $h$, and $g$ we can combined them in two different orders, specified by the parentheses:
+\[
+(f\circ h)\circ g = f\circ(h\circ g)\,.
+\]
+Both sides of this equality represent the same value $f\,(h\, (g\, x))$: We first evaluate $y=g\, x$, then feed it into $h$ to find $z=h\,y$, and finally input it as the argument to $f$.
+
+\begin{exercise}
+	Check whether composition is distributive with respect to an "addition" of functions.
+\end{exercise}
+
+\begin{mybio}{Composition In Quantum Physics}
+	Composition is an extremely powerful way to combine functions. Composition has special significance for \emph{linear operators} -- linear functions operating on non-numeric arguments (e.g. on vectors). 
+	
+	In quantum theory different operators represent different measurement operations, such as  measurement of position, momentum, energy, angular momentum, spin, and so on. Only \emph{linear operators} are used in quantum theory. These operators act on special vectors.
+	
+	Like any two functions, two quantum operators $\op{A}$ and $\op{B}$ can be composed:
+	\[
+	\op{C} = \op{A}\circ\op{B}\,.
+	\]
+	It is customary to drop the infix composition sign and simply write $\op{C} = \op{A}\op{B}$.
+	
+	An operator can be composed with itself. In this case a special notation exists to avoid long and clumsy expressions:
+	\[
+		\op{A}\circ\op{A}=\op{A}\op{A}=\op{A}^2\,.
+	\]
+	In general, the expression $\op{A}^n$ represents the operator $\op{A}$ composed with itself $n$ times.
+	
+\end{mybio}
 
 \section{Kalcoolus}
 
