@@ -1,6 +1,1 @@
-res://scenes/detectorRight.tscn
-res://scenes/experiment.tscn
-res://scenes/source.tscn
-res://scenes/particle.tscn
-res://detector.tscn
-res://scenes/control_panel.tscn
+res://scenes/lightsource.tscn
