@@ -19,7 +19,7 @@ use table-like structure called \emph{matrix}.
 \subsection{Notation}
 \input{../08Appendix/course_notation}
 
-\subsection{Constants}
+\subsection{Physical Constants}
 \input{../08Appendix/physical_constants}
 
 
@@ -34,4 +34,71 @@ use table-like structure called \emph{matrix}.
 
 \subsection{Greek Alphabet}
 \input{../08Appendix/greek_alphabet}
+
+\subsection{Available Environments}
+Coloredboxed environment, with \textbackslash coloredboxed\{color\}\{ text \}:
+\[
+\colorboxed{red}{E=mc^2}.
+\]
+
+Bold text command inside math mode is \textbackslash btc\{ txt\}:
+
+\[
+\btc{max}\,x\,y
+\]
+
+Bold text with emphasis (italic) is done with \textbackslash bem\{text\}:
+\bem{example of a very important piece of text}.
+
+
+
+Grey bullet: \textbackslash tus:
+\tus\tus\tus\tus
+
+Quantum state is \textbackslash qs: $\qs{\psi}$ or better use ket and bra commands: $\ket{\phi}$ and $\bra{\psi}$.
+
+Bracket and ketbra combinations using a single command: $\braket{\psi}{\phi}$ and $\ketbra{\psi}{\phi}$.
+
+Operators are set with \textbackslash op\{name\}:
+$\op{\rho}=\ketbra{\psi}{\psi}$.
+
+\[
+\oop{\rho} \ne \op{\rho}
+\]
+
+\subsubsection{Environments}
+
+Prerequisite environment \textbackslash myprereq\{text\}:
+\begin{myprereq}{Prerequisites}
+	One, two, and three.
+\end{myprereq}
+
+
+Example environment \textbackslash myExample\{text\}:
+\begin{myExample}
+	This is a perfect example.
+\end{myExample}
+
+Analogy environment \textbackslash analogy\{text\}:
+\begin{analogy}
+	Consider the following analogy: A and B.
+\end{analogy}
+
+Definition environment \textbackslash mydef\{text\}:
+\begin{mydef}{Kinetic Energy}
+	Kinetic energy is the energy due to motion.
+\end{mydef}
+
+Reminder environment \textbackslash myrem\{text\}:
+\begin{myrem}{Kinetic Energy}
+	Recall that $E_k=mv^2/2$.
+\end{myrem}
+
+Bio environment \textbackslash mybio\{text\}:
+\begin{mybio}{Max Planck}
+	The full name of Max Planck is Max Karl Ernst Ludwig Planck.
+\end{mybio}
+
+\section{Temporary Stuff}
+Work in progress sections will be kep here.
 

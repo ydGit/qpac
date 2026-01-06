@@ -685,7 +685,18 @@ addtohook={%
 \newcommand{\ms}[1]{\overset{\rightharpoonup}{#1}}
 %\newcommand{\op}[1]{\overset{\land}{#1}}
 %\newcommand{\op}[1]{\overset{\sqfrown}{#1}}
-\newcommand{\op}[1]{\widehat{#1}}  % operator hat
+\newcommand{\oop}[1]{\overset{\wedge}{#1}}
+
+% new \oset macro:
+\makeatletter
+\newcommand{\oset}[3][0ex]{%
+	\mathrel{\mathop{#3}\limits^{
+			\vbox to#1{\kern-2\ex@
+				\hbox{$\scriptstyle#2$}\vss}}}}
+\makeatother
+
+%\newcommand{\op}[1]{\oset[.15ex]{\wedge}{#1}}
+\newcommand{\op}[1]{\oset[-.4ex]{\widehat{\phantom{x}}}{#1}}
 
 \newcommand{\proj}[1]{\uuline{#1}}  % projector
 \newcommand{\projop}[1]{\op{\proj{#1}}}  % projector operator
