@@ -127,6 +127,7 @@
 \contentsline {subsection}{\numberline {8.2.2}Available Environments}{118}{subsection.8.2.2}%
 \contentsline {subsubsection}{Environments}{118}{section*.58}%
 \contentsline {section}{\numberline {8.3}Temporary Stuff}{119}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Facts About Light}{119}{subsection.8.3.1}%
 \contentsline {chapter}{\numberline {9}Solutions}{121}{chapter.9}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{123}{section*.63}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{123}{section*.68}%
 \contentsfinish 
