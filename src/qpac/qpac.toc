@@ -8,9 +8,8 @@
 \contentsline {subsection}{\numberline {1.4.1}Indirect Experience}{22}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Abstract Mathematics}{22}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Inadequate Language}{23}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Concepts}{23}{subsection.1.4.4}%
-\contentsline {section}{\numberline {1.5}Quantum Versus Classical}{23}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Quantum Puzzle}{24}{section.1.6}%
+\contentsline {section}{\numberline {1.5}Quantum Versus Classical}{25}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Quantum Enigma}{25}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Physics}{27}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Goals and Methods}{27}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Common Sense}{28}{section.2.2}%

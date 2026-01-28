@@ -157,56 +157,56 @@ Concepts of classical physics, especially when applied to macroscopic objects, c
 
 The problem then becomes two-fold. First, we need give up our non-quantum intution. Remember, our intution and conceptual pictures are rooted in macroscopic reality. We interact with the latter using our macroscopic organs and instruments which are unable to capture subtle non-classical features of the world. 
 
-Second, we need to develop new intution and set of "pictures"/models which would be adequate for quantum world. While doing so, we must be careful not to "contaminate" this new way of thinking with old  
+Second, we need to develop new intution and set of "pictures"/models which would be adequate for quantum world. While doing so, we must be careful not to "contaminate" this new way of thinking with old concepts. 
 
 \subsection{Abstract Mathematics}
-To illustrate the concepts of functions, operators, their structures and
-properties, we will be using 
+The mathematics used in modern physics is becoming increasingly more abstract. It is the price to pay for the powerful and general tools which are indespensible for expressing most advanced results of physics, either  classical or quantum.
+
+Quantum physics does not use any special mathematical methods which would make it more challenging than classical physics. Of course, a student learning quantum theory might struggle with the heavy use of operators, complex vectors,  Hilbert spaces, commutators, matrices and so on. The difficulty, however, is not due to the quantum nature of the subject, since nearly all these mathematical concepts and tools could be found in other -- non-quantum -- areas of mathematical physics.
+
+\begin{mybio}{Alfred Whitehead on Abstract Mathematics}
+	Nothing is more impressive than the fact that as mathematics withdrew increasingly into the upper regions of ever greater extremes of abstract thought, it returned back to earth with a corresponding growth of importance for the analysis of concrete fact. ...The paradox is now fully established that the utmost abstractions are the true weapons with which to control our thought of concrete fact
+	
+	{\it Mathematics as an Element in the History of Thought, Ch. 2, p. 46}
+\end{mybio}
+
+Surprisingly, current mathematical framework of quantum physics is the simplest possible. Quantum theory is \emph{linear}, meaning that it is based on the \emph{superposition principle} and uses the \emph{simplest} kinds of operators -- \emph{linear operators}. It must be noted that the linearity is not exclusive to quantum theory, as, for example,  classical electrodynamics is also a linear theory.
+
 
 \subsection{Inadequate Language}
-To illustrate the concepts of functions, operators, their structures and
-properties, we will be using schematics\index{Schematic} like the one
+Perhaps the biggest barrier on the path to mastering quantum physics is... \emph{ordinary language}. It has developed to communicate everyday experiences and emotions, but subtle natural phenomena are far removed from either of those.
 
+\begin{mybio}{Bertrand Russell On Ordinary Language}
+Ordinary language is totally unsuited for expressing what physics really asserts, since the words of everyday life are not sufficiently abstract. Only mathematics and mathematical logic can say as little as the physicist means to say.
+
+{\it The Scientific Outlook (1931)}
+\end{mybio}
+
+\begin{mybio}{Werner Heisenberg On Ordinary Language}
+	It is not surprising that our language should be incapable of describing the processes occurring within the atoms, for, as has been remarked, it was invented to describe the experiences of daily life, and these consist only of processes involving exceedingly large numbers of atoms. Furthermore, it is very difficult to modify our language so that it will be able to describe these atomic processes, for words can only describe things of which we can form mental pictures, and this ability, too, is a result of daily experience.
+	
+	{\it Principle of Quantum Theory (1930), Introductory, p. 11}
+\end{mybio}
+ 
+To capture deep and nuanced laws of nature, we must use a language of adequate power, built with new words and symbols completely foreign to common intuition and simple mental pictures. In other words, the adequate language has to be \emph{abstract}, \emph{purposefully developed}, and most likely \emph{unintuitive} to an untrained mind.
+ 
 \begin{remark}
 	Constructing new languages is a standard task in the field of computer science. New languages are regularly proposed to better describe computational tasks in a specific domain. For example, a separate language exists for working with database requests.
 	
 	In this field, a \emph{domain specific language} is usually developed to address problems 
 	
-	A language is considered good if it does not allow constructing meaningless or harmful statements. For example, a language can be such that one is unable to define a set of sets which are do not contain themselves. 
+	A language is considered good if it does not allow constructing meaningless or harmful statements. For example, if a language allows definition of a set of sets which are not elements of themselves, the this language will be plagued with the famous Russell paradox.  
 	
 	Natural human language is notoriously bad for formulating precise and abstract results of science.
 \end{remark}
 
-The Encyclopedia of Mathematics
-\footnote{\url{https://encyclopediaofmath.org/wiki/Tensor_on_a_vector_space}}
-provides the following definition:
-
-%\begin{tcolorbox}[colback=white!85!ocre, title=Tensors Definition 1]
-\begin{mydef}{Example of mydef environment}\\
-  \small
-Tensor\index{Tensor} on a vector space $V$ over a field $k$ is an element $t$ of the
-vector space
-\begin{equation*}
-	T^{p,q} (V) = (\otimes^p V)\otimes (\otimes^q V^*)\,,
-\end{equation*}
-where $V^*=\textrm{Hom}(V, k)$ is the dual space of $V$.
-\label{tcb:tensorDefinition1}
-\end{mydef}
-%\end{tcolorbox}
-To understand this defintion we first need to understand what
-\emph{vector space}\index{Vector!space} is, what \emph{field} is, what \emph{dual} means,
-and what is going on with superscripts and circles (e.g., in
-$\otimes^q$).
-
-\subsection{Concepts}
-To illustrate the concepts of functions, operators, their structures and
-properties, we will be using schematics\index{Schematic} like the one
-
+\begin{myrem}{Particles}
+	Particles are excitations of quantum fields. They correspond to irreducible unitary representations of Lorentz group. Fields are operator-valued vector functions defined over Minkowski space and transformed simply under the action of the Poincare group.
+\end{myrem}
+Learning this language is the key to success. 
 
 \section{Quantum Versus Classical}
-Sometimes to illustrate mathematical concepts and \emph{relations between them}\index{Relations},
-we will use diagrams. Diagrams are helpful in highlighting
-some general features of \emph{mathematical structures}\index{Mathematical!structure}.
+When do we have to use quantum physics? Where is the border between quantum and classical phenomena?
 
 \begin{figure}[htbp]
   \centering
@@ -219,31 +219,27 @@ some general features of \emph{mathematical structures}\index{Mathematical!struc
   \label{fig:diagrams}
 \end{figure}
 
-A particular property of a car-point
-can then be represented using an arrow that connects the car-point to
-another point in the relevant set. We say that such an arrow \emph{maps}\index{Map}
-points of one set into another set. The Figure\ref{fig:diagrams}(b)
-shows three maps: $\textrm{\bf mlg}$ gives the mileage for each car from the
-set $\Lambda$, $\textrm{\bf clr}$ gives the color for each car, and
-$\textrm{\bf smk}$ compares whether two cars have the same make.
 
-%\begin{tcolorbox}[colback=white!85!ocre, title=Problem]
-\begin{exercise}
-Extend the diagram from the Figure \ref{fig:diagrams}(b), adding a set
-of different car makes (e.g., Ford, Toyota, Fiat, etc.) Come up with a
-mapping from this set into the Boolean set $B$.
-\label{exe:carMakesSet}
-\end{exercise}
-%\end{tcolorbox}
+\section{Quantum Enigma}
+There are many adjectives that can be applied to quantum physics. It is tremendously successful, impactful,  fascinating, and intellectually rewarding. It also appears to be the "least understood" part of physics.
 
-\section{Quantum Puzzle}
+\begin{mybio}{What is Quantum Mechanics?}
+	In 1968 in a German town Lindau, 480 young scientists met with 20 Nobel Laureates in Physics  -- the founders and major contributors to quantum physics. By this time the theory of quantum physics was fully formulated and applied to many important problems. One of the paticipating Nobel Laureates -- Willis E. Lamb Jr -- wrote:
+	
+	"A remarkable feature of the 1968 conference of Nobel prize winners in physics at Lindau is that it was possible for me to ask such question in the presence of two of the founders of quantuam mechancis, Werner Heisenberg and P. A. M. Dirac, more than 30 years after the discovery, in a lecture attended by 400 students who had recently begun their study of the subject." 
+\end{mybio}
+
+By 1968 nearly all fundamental papers and  many great textbooks on quantum physics had been written, including the books by the founders of quantum mechanics. Didn't those works define what quantum mechanics was?
+
+By now quantum physics has demonstrated even greater success. And yet the question "What is Quantum Mechanics?" is still routinely asked in many books and articles. We are still puzzled by this enigmatic omni-tool that we discovered.
+
+
+There are many challenges still.
+
 "In summary, in the span of less than two decades, photonic quantum information science has matured immensely. [...]. The number of photons simultaneously used in experiments has grown, from 2 to 4 up to 12"
 (Appl. Phys. Rev. 6, 041303 (2019); doi: 10.1063/1.5115814)
 
 
-To illustrate the concepts of functions, operators, their structures and
-properties, we will be using schematics\index{Schematic} like the one
-shown in the Figure \ref{fig:schematicExample}.
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=1.0]{defaultFigureTemplate}
@@ -252,10 +248,6 @@ shown in the Figure \ref{fig:schematicExample}.
   \label{fig:schematicExample}
 \end{figure}
 
-A simple schematic element is represented as a box with inputs
-and outputs. A box can have a name (label) which describes what the
-function does to its input.  The number of inputs and
-outputs can vary depending on the complexity of a function.
 
 \
 
