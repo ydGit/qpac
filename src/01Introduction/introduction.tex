@@ -15,7 +15,7 @@
 \lettrine[lines=2]{\color{darkocre}Q}{uantum physics is a century-old branch of physics. Its success} is unparalleled and yet quantum physics is unfinished in one sense: There is no clear and widely adopted consensus on what some of quantum ideas "really mean."
 
 \section{What Is Quantum Physics?}
-There are many characterizations of quantum physics.  In essence, quantum physics is the part of physics which focuses on \emph{quantum systems} -- physical systems showing \emph{quantum behavior}. So, what effects or phenomena are quantum?
+There are many characterizations of quantum physics.  In essence, quantum physics is the part of physics which focuses on \emph{quantum systems} -- physical systems showing \emph{quantum behavior}. So, what effects or phenomena are quantum and which ones are non-quantum (also called \emph{classical})?
 
 
 \section{Brief Historical Context}
@@ -63,7 +63,7 @@ At the end of the 19th century, black body radiation was actively studied both e
 	\emph{"Thus, this so-called Normal Spectral Energy Distribution represents something absolute, and since I had always regarded the search for the absolute as the lofties goal of all scientific activity, I eagerly set to work."}
 	
 	\[
-	\delta E = \rho\delta \nu = \frac{8\pi h\nu^3\delta\nu}{c^3}\frac{1}{e^{h\nu/kT}-1}\,.
+	\frac{\delta E}{\delta \nu} \propto \frac{\nu^3}{e^{a\nu}-1}\,,\,\quad a = h/kT\,.
 	\]
 \end{mybio}
 
@@ -85,7 +85,8 @@ As explained in the Section XX, Max Planck used nearly the same approach as Bolt
 
 
 \subsection{Three Ages of Quantum}
-The evolution of quantum science and technology can be roughly divided into three stages: (a) "Old quantum physics" (b) modern quantum physics, and (c) information-age quantum physics (see Figure \ref{fig:quantumTechnologyEvolution}).
+The evolution of quantum science and technology can be roughly divided into three stages: (a) "Old quantum physics" (b) modern quantum physics, and (c) information-age quantum physics (see Figure \ref{fig:quantumTechnologyEvolution}). Each stage is defined by the type of quantum systems in the focus of research and technology. 
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{quantumTechnologyEvolution}
@@ -94,35 +95,39 @@ The evolution of quantum science and technology can be roughly divided into thre
 \end{figure}
 
 
-
 \subsubsection*{Old Quantum Physics}
+Observations of early quantum phenomena, such as atomic spectra or photoeffect, involved  very large number of particles (atoms, photons, electrons; see Figure \ref{fig:quantumTechnologyEvolution}(a)). Addressing single particles seemed unrealistic in practice. This made the probabilistic nature of quantum theory even more similar to classical statistical mechanics.
+
 
 \subsubsection*{Modern Quantum Physics}
+A new age of quantum physics began when it became possible to study behavior and interaction between individual particles: atoms and field excitations (e.g. photons). A whole new field, called  cavity quantum electrodynamics (CQED) was born. Figure \ref{fig:quantumTechnologyEvolution}(b) shows a schematic of a cavity formed by two mirrors, with a single atom inside the cavity. During this era a number of beautiful experiments, demonstrating purely quantum effects which were previously discussed only theoretically, have been performed. 
+
 
 \subsubsection*{Information Age}
+The next step was studying quantum behavior and interaction of several particles (Figure \ref{fig:quantumTechnologyEvolution}(c)). 
+The ability to produce and manipulate special \emph{multipartite quantum states} opened the doors into the age of \emph{quantum information science}. The role of \emph{entanglement} as a \emph{resource} for performing useful information processing tasks has been in the center of very active research.
+
+The potential of quantum physics for sending and processing of information became apparent early. Quantum effects offer unique opportunities for secure communication and ultra-fast computation of certain algorithms. Despite many advances in these areas, the challenge is still great, especially in building a universal quantum computer.
+
+\begin{mybio}{Slow Road to Quantum Computing}
+	The idea of using quantum effects for computational task has been suggested by Richard Feynman in 1982 paper \emph{Simulating Physics with Computers}.
+	
+	In an interview with Google's Director of Quantum Algorithms Ryan Babbush, Columbia university professor and the host of the World Science Festival Brian Green asked\footnote{World Science Festival talk {\it What They Rarely Reveal About Quantum Computing: Without an Algorithm, It's Hype}. Available online.}:
+	"What is the largest composite number that has been factored today with a quantum computer? " To which Ryan answered: "Oh, not a large one. [...]  Something like 15 or 25 or something." 	 
+\end{mybio}
+
+The challenge is to create and maintain entanglement of a larger number of quantum systems. 
+"In summary, in the span of less than two decades, photonic quantum information science has matured immensely. [...]. The number of photons simultaneously used in experiments has grown, from 2 to 4 up to 12"
+(Appl. Phys. Rev. 6, 041303 (2019))
 
 
 \section{Who Needs Quantum Physics?}
 
-In October of 1912, Albert Einstein\index{Einstein} wrote in a letter to his physicist
-friend Arnold Sommerfeld:
-\begin{mybio}{Example of mybio environment}
-  I am now exclusively occupied with the problem of gravitation theory
-and hope, with the help of a local mathematician friend, to overcome
-all the difficulties. One thing is certain, however, that never in my
-life have I been quite so tormented. A great respect for mathematics
-has been instilled within me, the subtler aspects of which, in my stupidity,
-I regarded until now as a pure luxury. Against this problem [of
-  gravitation] the original problem of the theory of relativity is
-child’s play.
-\end{mybio}
-In the period from 1905 to 1916 Einstein was feverishly working on the
-General Theory of Relativity\index{General relativity} -- the next
-best theory of gravity since
-Newton. The mathematics of general relativity is based on the calculus
-of tensors, created by Italian mathematicians Ricci-Curbastro and
-Levi-Civita roughly a decade before Einstein started working on the
-problem of gravity.
+Whether you want to contribute to the progress of science and technology, or just make sense of the most advanced knowledge of the world -- you will need familiarity with quantum physics. 
+
+Modern technologies are based on a very broad range of physical phenomena described both by classical and quantum physics. Anyone doing research or working in applied science and engineering would benefit from solid understanding of physical concepts and laws. The importance of quantum physics has grown steadily over the past hundred years. Today the knowledge and skills in quantum physics are key to success in such areas as quantum chemistry, laser physics, and quantum cryptography, to name a few.
+
+The knowledge of quantum physics is also important to anyone trying to simply appreciate modern understanding of the world. Quantum physics is the best picture of the univeres we have today. However, the message of quantum physics is so unusual and often subtle, that understanding it properly requires a careful study instead of a cursory glance through a popular literature.
 
 
 \section{Why is Quantum Physics Hard?}\label{sec:WhyQuantumHard}
@@ -221,7 +226,7 @@ When do we have to use quantum physics? Where is the border between quantum and 
 
 
 \section{Quantum Enigma}
-There are many adjectives that can be applied to quantum physics. It is tremendously successful, impactful,  fascinating, and intellectually rewarding. It also appears to be the "least understood" part of physics.
+There are many adjectives that can be applied to quantum physics. It is tremendously successful, impactful,  fascinating, and intellectually rewarding. It also seems mysterous and "least understood" part of physics.
 
 \begin{mybio}{What is Quantum Mechanics?}
 	In 1968 in a German town Lindau, 480 young scientists met with 20 Nobel Laureates in Physics  -- the founders and major contributors to quantum physics. By this time the theory of quantum physics was fully formulated and applied to many important problems. One of the paticipating Nobel Laureates -- Willis E. Lamb Jr -- wrote:
@@ -229,15 +234,9 @@ There are many adjectives that can be applied to quantum physics. It is tremendo
 	"A remarkable feature of the 1968 conference of Nobel prize winners in physics at Lindau is that it was possible for me to ask such question in the presence of two of the founders of quantuam mechancis, Werner Heisenberg and P. A. M. Dirac, more than 30 years after the discovery, in a lecture attended by 400 students who had recently begun their study of the subject." 
 \end{mybio}
 
-By 1968 nearly all fundamental papers and  many great textbooks on quantum physics had been written, including the books by the founders of quantum mechanics. Didn't those works define what quantum mechanics was?
+By 1968 most foundational papers and  many great textbooks on quantum physics had been written, including the books by Dirac and Heisenberg. Didn't those works define what quantum mechanics was?
 
-By now quantum physics has demonstrated even greater success. And yet the question "What is Quantum Mechanics?" is still routinely asked in many books and articles. We are still puzzled by this enigmatic omni-tool that we discovered.
-
-
-There are many challenges still.
-
-"In summary, in the span of less than two decades, photonic quantum information science has matured immensely. [...]. The number of photons simultaneously used in experiments has grown, from 2 to 4 up to 12"
-(Appl. Phys. Rev. 6, 041303 (2019); doi: 10.1063/1.5115814)
+By now quantum physics has demonstrated even greater success, but the questions like "What is Quantum Mechanics?" are still routinely raised in many books and articles. We are still puzzled by this enigmatic omni-tool that we discovered.
 
 
 \begin{figure}[htbp]
