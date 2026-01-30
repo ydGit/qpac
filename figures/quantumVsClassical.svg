@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.1051419in"
+   height="2.0603786in"
+   viewBox="0 0 53.470604 52.333615"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="quantumVsClassical.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.217761"
+     inkscape:cx="150.57054"
+     inkscape:cy="126.17469"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-57.122623,-43.39765)">
+    <rect
+       style="fill:#c6bff0;fill-opacity:1;stroke:none;stroke-width:0.352928;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="46.570606"
+       height="45.115273"
+       x="62.059498"
+       y="45.73299"
+       rx="0"
+       ry="0" />
+    <path
+       id="rect2"
+       style="fill:#bfe8f0;stroke-width:0.352928;stroke-linejoin:round"
+       d="m 62.042555,45.735739 c 0,0 3.30658,23.390149 13.243519,33.32709 9.936939,9.936943 33.327086,11.788187 33.327086,11.788187 H 62.042555 Z"
+       sodipodi:nodetypes="czccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:22.8324px;font-family:serif;-inkscape-font-specification:serif;fill:#89afc5;stroke:#f1f1f1;stroke-width:0.212326;stroke-linejoin:round"
+       x="63.150909"
+       y="88.617546"
+       id="text434"><tspan
+         sodipodi:role="line"
+         id="tspan432"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.0418px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#030607;fill-opacity:1;stroke:none;stroke-width:0.212327"
+         x="63.150909"
+         y="88.617546">Quantum</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.246549;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       d="M 60.925768,91.003658 H 109.71771"
+       id="path2512"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.09056px;font-family:serif;-inkscape-font-specification:serif;fill:#89afc5;stroke:#f1f1f1;stroke-width:0.246549;stroke-linejoin:round"
+       x="100.97768"
+       y="95.155319"
+       id="text3390"><tspan
+         sodipodi:role="line"
+         id="tspan3388"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.09056px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#030607;fill-opacity:1;stroke:none;stroke-width:0.24655"
+         x="100.97768"
+         y="95.155319">action</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.09056px;font-family:serif;-inkscape-font-specification:serif;fill:#89afc5;stroke:#f1f1f1;stroke-width:0.246549;stroke-linejoin:round"
+       x="-62.206043"
+       y="59.990837"
+       id="text1"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.09056px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#030607;fill-opacity:1;stroke:none;stroke-width:0.24655"
+         x="-62.206043"
+         y="59.990837">decoherence</tspan></text>
+    <path
+       id="rect4"
+       style="fill:#bff0c6;fill-opacity:1;stroke-width:0.352928;stroke-linejoin:round"
+       d="m 62.023115,45.690368 h 46.570615 v 45.115261 c 0,0 -12.616164,-17.736176 -20.432114,-25.315232 C 80.345664,57.911341 62.023115,45.690368 62.023115,45.690368 Z"
+       sodipodi:nodetypes="ccczc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.246549;stroke-linejoin:round;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       d="M 61.87289,92.241844 V 44.273164"
+       id="path3249"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:22.8324px;font-family:serif;-inkscape-font-specification:serif;fill:#89afc5;stroke:#f1f1f1;stroke-width:0.212326;stroke-linejoin:round"
+       x="90.840988"
+       y="55.910038"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.0418px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#030607;fill-opacity:1;stroke:none;stroke-width:0.212327"
+         x="90.840988"
+         y="55.910038">Classical</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22.8324px;font-family:serif;-inkscape-font-specification:serif;fill:#89afc5;stroke:#f1f1f1;stroke-width:0.212326;stroke-linejoin:round"
+       x="71.598373"
+       y="72.193672"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.0418px;font-family:'Iowan Old Style';-inkscape-font-specification:'Iowan Old Style, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#030607;fill-opacity:1;stroke:none;stroke-width:0.212327"
+         x="71.598373"
+         y="72.193672">Semi-classical</tspan></text>
+  </g>
+</svg>
