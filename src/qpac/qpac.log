@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  30 JAN 2026 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  5 FEB 2026 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1665,7 +1665,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./qpac.aux)
+ (./qpac.aux
+
+LaTeX Warning: Label `sec:System' multiply defined.
+
+)
 \openout1 = `qpac.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -1686,7 +1690,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count511
 \scratchdimen=\dimen349
@@ -1877,7 +1881,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 5.
+(Font)              scaled to size 10.0pt on input line 6.
  [5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.en
 c} <./pics/chapterImageDefault.pdf>]
 (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -1885,21 +1889,21 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-7.
+9.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/10
 .95'
-(microtype)             (new value: 10.95pt) on input line 37.
+(microtype)             (new value: 10.95pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/8'
 
-(microtype)             (new value: 8.0pt) on input line 37.
+(microtype)             (new value: 8.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/6'
 
-(microtype)             (new value: 6.0pt) on input line 37.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+(microtype)             (new value: 6.0pt) on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1908,7 +1912,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1919,65 +1923,65 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/10.9
 5'
-(microtype)             (new value: 10.95pt) on input line 37.
+(microtype)             (new value: 10.95pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 37.
+(microtype)             (new value: 8.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 37.
+(microtype)             (new value: 6.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/10.9
 5'
-(microtype)             (new value: 10.95pt) on input line 37.
+(microtype)             (new value: 10.95pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 37.
+(microtype)             (new value: 8.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 37.
+(microtype)             (new value: 6.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/10.9
 5'
-(microtype)             (new value: 10.95pt) on input line 37.
+(microtype)             (new value: 10.95pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 37.
+(microtype)             (new value: 8.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 37.
+(microtype)             (new value: 6.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/10.9
 5'
-(microtype)             (new value: 10.95pt) on input line 37.
+(microtype)             (new value: 10.95pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/8'
-(microtype)             (new value: 8.0pt) on input line 37.
+(microtype)             (new value: 8.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/6'
-(microtype)             (new value: 6.0pt) on input line 37.
+(microtype)             (new value: 6.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/10
 '
-(microtype)             (new value: 10.0pt) on input line 37.
+(microtype)             (new value: 10.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/7'
 
-(microtype)             (new value: 7.0pt) on input line 37.
+(microtype)             (new value: 7.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/5'
 
-(microtype)             (new value: 5.0pt) on input line 37.
+(microtype)             (new value: 5.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 37.
+(microtype)             (new value: 10.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 37.
+(microtype)             (new value: 7.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 37.
+(microtype)             (new value: 5.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 37.
+(microtype)             (new value: 10.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 37.
+(microtype)             (new value: 7.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 37.
+(microtype)             (new value: 5.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 37.
+(microtype)             (new value: 10.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 37.
+(microtype)             (new value: 7.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 37.
+(microtype)             (new value: 5.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/10'
-(microtype)             (new value: 10.0pt) on input line 37.
+(microtype)             (new value: 10.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/7'
-(microtype)             (new value: 7.0pt) on input line 37.
+(microtype)             (new value: 7.0pt) on input line 39.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/5'
-(microtype)             (new value: 5.0pt) on input line 37.
+(microtype)             (new value: 5.0pt) on input line 39.
  [6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local
 /texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/local/tex
 live/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [7] [8])
@@ -1987,67 +1991,81 @@ live/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [7] [8])
  [9] [10
 
 ]
-(../00Preface/acknowledgement.tex
+(../00Preface/personal.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1.
+(Font)              scaled to size 12.0pt on input line 3.
+<../00Preface/pics//author.pdf, id=530, 614.295pt x 794.97pt>
+File: ../00Preface/pics//author.pdf Graphic file (type pdf)
+<use ../00Preface/pics//author.pdf>
+Package pdftex.def Info: ../00Preface/pics//author.pdf  used on input line 7.
+(pdftex.def)             Requested size: 127.19308pt x 164.59535pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 10.
-) [11{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.
-enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.e
-nc}] [12
-
-]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 24.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 24.
+ [11{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.e
+nc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.en
+c}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/
+usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc} <../0
+0Preface/pics//author.pdf>])
+(../00Preface/acknowledgement.tex) [12]
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
-Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 174.
+Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 176.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
  (../00Preface/preface.tex
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
- [13]
+ [13
+
+]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 12.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
-Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/9'
-
-(microtype)             (new value: 9.0pt) on input line 21.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 21.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 21.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 21.
-Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/9'
-(microtype)             (new value: 9.0pt) on input line 21.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 21.
-Package mdframed Info: mdframed works in twoside mode on input line 22.
+Package mdframed Info: mdframed works in twoside mode on input line 18.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 22.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 22.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 22.
+(mdframed)              on input line 18.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 22.
+(Font)              scaled to size 10.0pt on input line 18.
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 22.
+ut line 18.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 10.95pt on input line 22.
-)
-(../01Introduction/introduction.tex [14{/usr/local/texlive/2023/texmf-dist/font
-s/enc/dvips/fontawesome/fontawesometwo.enc}{/usr/local/texlive/2023/texmf-dist/
-fonts/enc/dvips/libertine/lbtn_ki75ao.enc}]
+(Font)              scaled to size 10.95pt on input line 18.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 30.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 30.
+Package microtype Info: Fixing zero \fontdimen 6 for font `OMX/MnSymbolE/m/n/9'
+
+(microtype)             (new value: 9.0pt) on input line 30.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 30.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 30.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 30.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 30.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 30.
+Package mdframed Info: mdframed works in twoside mode on input line 31.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 31.
+
+[14{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomet
+wo.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75a
+o.enc}]) (../01Introduction/introduction.tex [15] [16
+
+]
 Chapter 1.
-<pics/chapterImageIntroduction.pdf, id=547, 426.6246pt x 86.4745pt>
+<pics/chapterImageIntroduction.pdf, id=580, 426.6246pt x 86.4745pt>
 File: pics/chapterImageIntroduction.pdf Graphic file (type pdf)
 <use pics/chapterImageIntroduction.pdf>
 Package pdftex.def Info: pics/chapterImageIntroduction.pdf  used on input line 
@@ -2068,132 +2086,133 @@ Overfull \hbox (8.67386pt too wide) in paragraph at lines 15--16
 [][]
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 23.
+[17 <./pics/chapterImageIntroduction.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 36.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 23.
-[15
-
- <./pics/chapterImageIntroduction.pdf>]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 38.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 38.
-<../01Introduction/pics//spectraTypes.pdf, id=565, 323.61465pt x 345.26219pt>
-File: ../01Introduction/pics//spectraTypes.pdf Graphic file (type pdf)
-<use ../01Introduction/pics//spectraTypes.pdf>
-Package pdftex.def Info: ../01Introduction/pics//spectraTypes.pdf  used on inpu
-t line 41.
-(pdftex.def)             Requested size: 323.61386pt x 345.26134pt.
-
-Overfull \hbox (5.62628pt too wide) in paragraph at lines 41--42
- [][] 
- []
-
-[16] [17 <../01Introduction/pics//spectraTypes.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 60.
+(mdframed)              on input line 36.
+Package mdframed Info: mdframed works in twoside mode on input line 54.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 60.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 61.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 61.
- [18]
-Package mdframed Info: mdframed works in twoside mode on input line 79.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 79.
- [19{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}]
-<../01Introduction/pics//quantumTechnologyEvolution.pdf, id=669, 257.03772pt x 
-96.96172pt>
-File: ../01Introduction/pics//quantumTechnologyEvolution.pdf Graphic file (type
- pdf)
-<use ../01Introduction/pics//quantumTechnologyEvolution.pdf>
-Package pdftex.def Info: ../01Introduction/pics//quantumTechnologyEvolution.pdf
-  used on input line 92.
-(pdftex.def)             Requested size: 257.03708pt x 96.96147pt.
- [20 <../01Introduction/pics//quantumTechnologyEvolution.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 112.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
- [21]
-Package mdframed Info: mdframed works in twoside mode on input line 136.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 136.
- [22]
-Package mdframed Info: mdframed works in twoside mode on input line 154.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 154.
+(mdframed)              on input line 54.
 LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
-nput line 154.
+nput line 54.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesome
+) [18]
+Package mdframed Info: Not enough space on this page on input line 60.
+Package mdframed Info: mdframed works in twoside mode on input line 72.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 72.
+ [19{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesome
 three.enc}]
-Package mdframed Info: mdframed works in twoside mode on input line 172.
+Package mdframed Info: mdframed works in twoside mode on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 172.
-Package mdframed Info: mdframed works in twoside mode on input line 184.
+(mdframed)              on input line 84.
+Package mdframed Info: mdframed works in twoside mode on input line 90.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 184.
-[24]
-Package mdframed Info: mdframed works in twoside mode on input line 190.
+(mdframed)              on input line 90.
+ [20]
+Package mdframed Info: mdframed works in twoside mode on input line 108.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 190.
-Package mdframed Info: mdframed works in twoside mode on input line 208.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 208.
- [25]
-<../01Introduction/pics//quantumVsClassical.pdf, id=730, 152.13861pt x 148.9035
+(mdframed)              on input line 108.
+ [21]
+<../01Introduction/pics//quantumVsClassical.pdf, id=617, 152.13861pt x 148.9035
 6pt>
 File: ../01Introduction/pics//quantumVsClassical.pdf Graphic file (type pdf)
 <use ../01Introduction/pics//quantumVsClassical.pdf>
 Package pdftex.def Info: ../01Introduction/pics//quantumVsClassical.pdf  used o
-n input line 222.
+n input line 122.
 (pdftex.def)             Requested size: 152.13823pt x 148.90318pt.
-Package mdframed Info: mdframed works in twoside mode on input line 227.
+Package mdframed Info: mdframed works in twoside mode on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 227.
- [26 <../01Introduction/pics//quantumVsClassical.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 232.
+(mdframed)              on input line 127.
+Package mdframed Info: mdframed works in twoside mode on input line 132.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 232.
-Package mdframed Info: mdframed works in twoside mode on input line 239.
+(mdframed)              on input line 132.
+ [22 <../01Introduction/pics//quantumVsClassical.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 139.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 239.
-<../01Introduction/pics//defaultFigureTemplate.pdf, id=745, 348.69095pt x 126.4
+(mdframed)              on input line 139.
+<../01Introduction/pics//defaultFigureTemplate.pdf, id=633, 348.69095pt x 126.4
 336pt>
 File: ../01Introduction/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 
 <use ../01Introduction/pics//defaultFigureTemplate.pdf>
 Package pdftex.def Info: ../01Introduction/pics//defaultFigureTemplate.pdf  use
-d on input line 252.
+d on input line 152.
 (pdftex.def)             Requested size: 348.69008pt x 126.43327pt.
 
-Overfull \hbox (30.7025pt too wide) in paragraph at lines 252--254
+Overfull \hbox (30.7025pt too wide) in paragraph at lines 152--154
  [][] 
  []
 
-[27]) (../02Physics/physics.tex [28 <../01Introduction/pics//defaultFigureTempl
-ate.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <../01Introduction/pics//defaultFigureTemplate.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 161.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 161.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 176.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 176.
+<../01Introduction/pics//spectraTypes.pdf, id=669, 323.61465pt x 345.26219pt>
+File: ../01Introduction/pics//spectraTypes.pdf Graphic file (type pdf)
+<use ../01Introduction/pics//spectraTypes.pdf>
+Package pdftex.def Info: ../01Introduction/pics//spectraTypes.pdf  used on inpu
+t line 179.
+(pdftex.def)             Requested size: 323.61386pt x 345.26134pt.
+
+Overfull \hbox (5.62628pt too wide) in paragraph at lines 179--180
+ [][] 
+ []
+
+[24] [25 <../01Introduction/pics//spectraTypes.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 198.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 198.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 199.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 6.0pt on input line 199.
+ [26]
+Package mdframed Info: mdframed works in twoside mode on input line 217.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 217.
+ [27{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}
+] [28]
+<../01Introduction/pics//quantumTechnologyEvolution.pdf, id=778, 257.03772pt x 
+96.96172pt>
+File: ../01Introduction/pics//quantumTechnologyEvolution.pdf Graphic file (type
+ pdf)
+<use ../01Introduction/pics//quantumTechnologyEvolution.pdf>
+Package pdftex.def Info: ../01Introduction/pics//quantumTechnologyEvolution.pdf
+  used on input line 249.
+(pdftex.def)             Requested size: 257.03708pt x 96.96147pt.
+ [29 <../01Introduction/pics//quantumTechnologyEvolution.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 269.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 269.
+ [30]) (../02Physics/physics.tex
+[31] [32
+
+]
 Chapter 2.
-<pics/chapterImageNumbers.pdf, id=784, 430.85435pt x 86.25154pt>
+<pics/chapterImageNumbers.pdf, id=827, 430.85435pt x 86.25154pt>
 File: pics/chapterImageNumbers.pdf Graphic file (type pdf)
 <use pics/chapterImageNumbers.pdf>
 Package pdftex.def Info: pics/chapterImageNumbers.pdf  used on input line 3.
@@ -2206,7 +2225,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 14.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 14.
-<../02Physics/pics//defaultFigureTemplate.pdf, id=786, 348.69095pt x 126.4336pt
+<../02Physics/pics//defaultFigureTemplate.pdf, id=829, 348.69095pt x 126.4336pt
 >
 File: ../02Physics/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../02Physics/pics//defaultFigureTemplate.pdf>
@@ -2223,77 +2242,85 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
 
-LaTeX Warning: Reference `fig:schematicRelationNtoN' on page 29 undefined on in
+LaTeX Warning: Reference `fig:schematicRelationNtoN' on page 33 undefined on in
 put line 48.
 
-[29
-
- <./pics/chapterImageNumbers.pdf>]
-<../02Physics/pics//commonSensePerception.pdf, id=806, 348.69095pt x 126.4336pt
+[33 <./pics/chapterImageNumbers.pdf>]
+<../02Physics/pics//commonSensePerception.pdf, id=849, 348.69095pt x 126.4336pt
 >
 File: ../02Physics/pics//commonSensePerception.pdf Graphic file (type pdf)
 <use ../02Physics/pics//commonSensePerception.pdf>
 Package pdftex.def Info: ../02Physics/pics//commonSensePerception.pdf  used on 
-input line 59.
+input line 60.
 (pdftex.def)             Requested size: 348.69008pt x 126.43327pt.
 
-Overfull \hbox (30.7025pt too wide) in paragraph at lines 59--60
+Overfull \hbox (30.7025pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 64.
+Package mdframed Info: mdframed works in twoside mode on input line 65.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 64.
-[30 <../02Physics/pics//defaultFigureTemplate.pdf> <../02Physics/pics//commonSe
+(mdframed)              on input line 65.
+[34 <../02Physics/pics//defaultFigureTemplate.pdf> <../02Physics/pics//commonSe
 nsePerception.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../02Physics/pics//commonSen
 sePerception.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >]
-Package mdframed Info: mdframed works in twoside mode on input line 77.
+Package mdframed Info: mdframed works in twoside mode on input line 80.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 77.
-<../02Physics/pics//evolutionOperatorBox.pdf, id=845, 313.71973pt x 85.50029pt>
+(mdframed)              on input line 80.
+ [35]
+<../02Physics/pics//stateAsKnowledge.pdf, id=894, 271.00511pt x 137.09618pt>
+File: ../02Physics/pics//stateAsKnowledge.pdf Graphic file (type pdf)
+<use ../02Physics/pics//stateAsKnowledge.pdf>
+Package pdftex.def Info: ../02Physics/pics//stateAsKnowledge.pdf  used on input
+ line 99.
+(pdftex.def)             Requested size: 271.00444pt x 137.09583pt.
+Package mdframed Info: mdframed works in twoside mode on input line 105.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 105.
+ [36 <../02Physics/pics//stateAsKnowledge.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 119.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 119.
+<../02Physics/pics//evolutionOperatorBox.pdf, id=918, 313.71973pt x 85.50029pt>
 
 File: ../02Physics/pics//evolutionOperatorBox.pdf Graphic file (type pdf)
 <use ../02Physics/pics//evolutionOperatorBox.pdf>
 Package pdftex.def Info: ../02Physics/pics//evolutionOperatorBox.pdf  used on i
-nput line 94.
+nput line 136.
 (pdftex.def)             Requested size: 313.71895pt x 85.50006pt.
- [31{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}
-] [32 <../02Physics/pics//evolutionOperatorBox.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 146.
+ [37{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}
+] [38 <../02Physics/pics//evolutionOperatorBox.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 188.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 146.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-<../02Physics/pics//stateAsKnowledge.pdf, id=893, 271.00511pt x 137.09618pt>
-File: ../02Physics/pics//stateAsKnowledge.pdf Graphic file (type pdf)
-<use ../02Physics/pics//stateAsKnowledge.pdf>
-Package pdftex.def Info: ../02Physics/pics//stateAsKnowledge.pdf  used on input
- line 161.
-(pdftex.def)             Requested size: 271.00444pt x 137.09583pt.
-Package mdframed Info: mdframed works in twoside mode on input line 167.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 167.
-<../02Physics/pics//measurementStages.pdf, id=894, 283.48503pt x 125.94499pt>
+(mdframed)              on input line 188.
+<../02Physics/pics//measurementStages.pdf, id=959, 283.48503pt x 125.94499pt>
 File: ../02Physics/pics//measurementStages.pdf Graphic file (type pdf)
 <use ../02Physics/pics//measurementStages.pdf>
 Package pdftex.def Info: ../02Physics/pics//measurementStages.pdf  used on inpu
-t line 177.
+t line 199.
 (pdftex.def)             Requested size: 283.48433pt x 125.94467pt.
 
-[34 <../02Physics/pics//stateAsKnowledge.pdf>] [35 <../02Physics/pics//measurem
-entStages.pdf>]) (../03Mathematics/mathematics.tex [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Package mdframed Info: mdframed works in twoside mode on input line 213.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 213.
+
+[40 <../02Physics/pics//measurementStages.pdf>] [41])
+(../03Mathematics/mathematics.tex [42]
 Chapter 3.
-<pics/chapterImageArrows.pdf, id=936, 428.83844pt x 86.2986pt>
+<pics/chapterImageArrows.pdf, id=988, 428.83844pt x 86.2986pt>
 File: pics/chapterImageArrows.pdf Graphic file (type pdf)
 <use pics/chapterImageArrows.pdf>
 Package pdftex.def Info: pics/chapterImageArrows.pdf  used on input line 3.
@@ -2311,22 +2338,22 @@ Package mdframed Info: mdframed works in twoside mode on input line 7.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
-[37
+[43
 
  <./pics/chapterImageArrows.pdf>]
-<../03Mathematics/pics//functionAsBox.pdf, id=955, 174.22812pt x 196.94778pt>
+<../03Mathematics/pics//functionAsBox.pdf, id=1007, 174.22812pt x 196.94778pt>
 File: ../03Mathematics/pics//functionAsBox.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//functionAsBox.pdf>
 Package pdftex.def Info: ../03Mathematics/pics//functionAsBox.pdf  used on inpu
 t line 35.
 (pdftex.def)             Requested size: 174.22769pt x 196.94728pt.
-<../03Mathematics/pics//functionTypes.pdf, id=956, 316.56473pt x 173.23593pt>
+<../03Mathematics/pics//functionTypes.pdf, id=1008, 316.56473pt x 173.23593pt>
 File: ../03Mathematics/pics//functionTypes.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//functionTypes.pdf>
 Package pdftex.def Info: ../03Mathematics/pics//functionTypes.pdf  used on inpu
 t line 43.
 (pdftex.def)             Requested size: 316.56395pt x 173.2355pt.
- [38 <../03Mathematics/pics//functionAsBox.pdf>] [39 <../03Mathematics/pics//fu
+ [44 <../03Mathematics/pics//functionAsBox.pdf>] [45 <../03Mathematics/pics//fu
 nctionTypes.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 87.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2335,18 +2362,18 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [46]
 Package mdframed Info: mdframed works in twoside mode on input line 119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 119.
 
-[41] [42] [43]
+[47] [48] [49]
 Package mdframed Info: mdframed works in twoside mode on input line 197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 197.
- [44]
+ [50]
 Package mdframed Info: mdframed works in twoside mode on input line 221.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2376,7 +2403,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 247.
 
-<../03Mathematics/pics//arrowsAndVectors.pdf, id=1094, 111.89343pt x 83.28656pt
+<../03Mathematics/pics//arrowsAndVectors.pdf, id=1147, 111.89343pt x 83.28656pt
 >
 File: ../03Mathematics/pics//arrowsAndVectors.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics//arrowsAndVectors.pdf>
@@ -2386,294 +2413,288 @@ nput line 258.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
+ [51]
 
-LaTeX Warning: Reference `fig:arrowsSpace' on page 46 undefined on input line 2
+LaTeX Warning: Reference `fig:arrowsSpace' on page 52 undefined on input line 2
 77.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 6.0pt on input line 292.
-[46 <../03Mathematics/pics//arrowsAndVectors.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 313.
+[52 <../03Mathematics/pics//arrowsAndVectors.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 325.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 313.
+(mdframed)              on input line 325.
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
+[53]
 
-LaTeX Warning: Reference `sec:ComponentTransformation' on page 47 undefined on 
-input line 345.
+LaTeX Warning: Reference `sec:ComponentTransformation' on page 54 undefined on 
+input line 357.
 
-[47]
-Package mdframed Info: mdframed works in twoside mode on input line 348.
+Package mdframed Info: mdframed works in twoside mode on input line 360.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 348.
- [48{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}
-] [49]
-Package mdframed Info: mdframed works in twoside mode on input line 425.
+(mdframed)              on input line 360.
+[54] [55]
+Package mdframed Info: mdframed works in twoside mode on input line 437.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 425.
-Package mdframed Info: mdframed works in twoside mode on input line 442.
+(mdframed)              on input line 437.
+ [56]
+Package mdframed Info: mdframed works in twoside mode on input line 454.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 442.
- [50{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}
+(mdframed)              on input line 454.
+Package mdframed Info: mdframed works in twoside mode on input line 472.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 472.
+ [57{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}
 ]
-Package mdframed Info: Not enough space on this page on input line 449.
-Package mdframed Info: mdframed works in twoside mode on input line 460.
+Package mdframed Info: mdframed works in twoside mode on input line 511.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 460.
- [51]
-Package mdframed Info: mdframed works in twoside mode on input line 499.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 499.
- [52]
-Underfull \vbox (badness 1968) has occurred while \output is active []
+(mdframed)              on input line 511.
+ [58] [59] [60]) (../04ClassicalPhysics/classicalphysics.tex
+[61] [62
 
- [53])
-(../04ClassicalPhysics/classicalphysics.tex [54]
+]
 Chapter 4.
-<pics/chapterImageOperators.pdf, id=1161, 428.76743pt x 86.28516pt>
+<pics/chapterImageOperators.pdf, id=1221, 428.76743pt x 86.28516pt>
 File: pics/chapterImageOperators.pdf Graphic file (type pdf)
 <use pics/chapterImageOperators.pdf>
 Package pdftex.def Info: pics/chapterImageOperators.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.26448pt.
 Package lettrine.sty Info: Targeted height = 18.57677pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}T);
+(lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}G);
 (lettrine.sty)             reported on input line 19.
-Package mdframed Info: mdframed works in twoside mode on input line 28.
+
+Overfull \hbox (3.20921pt too wide) in paragraph at lines 19--20
+[][]\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) ,
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 28.
-<../04ClassicalPhysics/pics//defaultFigureTemplate.pdf, id=1162, 348.69095pt x 
+(mdframed)              on input line 21.
+<../04ClassicalPhysics/pics//defaultFigureTemplate.pdf, id=1222, 348.69095pt x 
 126.4336pt>
 File: ../04ClassicalPhysics/pics//defaultFigureTemplate.pdf Graphic file (type 
 pdf)
 <use ../04ClassicalPhysics/pics//defaultFigureTemplate.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//defaultFigureTemplate.pdf 
- used on input line 42.
+ used on input line 35.
 (pdftex.def)             Requested size: 348.69008pt x 126.43327pt.
 
-Overfull \hbox (30.7025pt too wide) in paragraph at lines 42--46
+Overfull \hbox (30.7025pt too wide) in paragraph at lines 35--39
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55
-
- <./pics/chapterImageOperators.pdf>]
-<../04ClassicalPhysics/pics//systemExamples.pdf, id=1180, 314.91695pt x 314.628
+[63 <./pics/chapterImageOperators.pdf>]
+<../04ClassicalPhysics/pics//systemExamples.pdf, id=1239, 314.91695pt x 314.628
 3pt>
 File: ../04ClassicalPhysics/pics//systemExamples.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//systemExamples.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//systemExamples.pdf  used o
-n input line 56.
+n input line 49.
 (pdftex.def)             Requested size: 314.91617pt x 314.62752pt.
- [56 <../04ClassicalPhysics/pics//defaultFigureTemplate.pdf>] [57 <../04Classic
+ [64 <../04ClassicalPhysics/pics//defaultFigureTemplate.pdf>] [65 <../04Classic
 alPhysics/pics//systemExamples.pdf>]
-<../04ClassicalPhysics/pics//coupledSystem.pdf, id=1251, 255.09113pt x 203.7220
+<../04ClassicalPhysics/pics//coupledSystem.pdf, id=1311, 255.09113pt x 203.7220
 3pt>
 File: ../04ClassicalPhysics/pics//coupledSystem.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//coupledSystem.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//coupledSystem.pdf  used on
- input line 110.
+ input line 103.
 (pdftex.def)             Requested size: 255.09048pt x 203.72153pt.
 
-Underfull \vbox (badness 5260) has occurred while \output is active []
-
- [58]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59 <../04ClassicalPhysics/pics//coupledSystem.pdf>]
-<../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf, id=1292, 140.46991pt 
+[66 <../04ClassicalPhysics/pics//coupledSystem.pdf>] [67]
+<../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf, id=1352, 140.46991pt 
 x 140.18353pt>
 File: ../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf Graphic file (typ
 e pdf)
 <use ../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pd
-f  used on input line 176.
+f  used on input line 169.
 (pdftex.def)             Requested size: 140.46954pt x 140.18318pt.
-<../04ClassicalPhysics/pics//Oscillator.pdf, id=1293, 184.68765pt x 68.9489pt>
+<../04ClassicalPhysics/pics//Oscillator.pdf, id=1353, 184.68765pt x 68.9489pt>
 File: ../04ClassicalPhysics/pics//Oscillator.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//Oscillator.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//Oscillator.pdf  used on in
-put line 191.
+put line 184.
 (pdftex.def)             Requested size: 166.21735pt x 62.05342pt.
- [60 <../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf>] [61 <../04Class
-icalPhysics/pics//Oscillator.pdf>]
+ [68 <../04ClassicalPhysics/pics//degreeOfFreedomPendulum.pdf> <../04ClassicalP
+hysics/pics//Oscillator.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../04ClassicalPhysics/pics//
+Oscillator.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>] [69]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 275.
+(Font)              scaled to size 10.95pt on input line 268.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' in size <10.95> not
  available
 (Font)              Font shape `T1/LinuxBiolinumT-TLF/b/sl' tried instead on in
-put line 275.
+put line 268.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/sl' will be
-(Font)              scaled to size 10.95pt on input line 275.
+(Font)              scaled to size 10.95pt on input line 268.
 
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/b/it' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 275.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 268.
 
-[62] [63]
-<../04ClassicalPhysics/pics//newtonianStateEvolution.pdf, id=1353, 520.04414pt 
+[70] [71]
+<../04ClassicalPhysics/pics//newtonianStateEvolution.pdf, id=1412, 520.04414pt 
 x 390.01501pt>
 File: ../04ClassicalPhysics/pics//newtonianStateEvolution.pdf Graphic file (typ
 e pdf)
 <use ../04ClassicalPhysics/pics//newtonianStateEvolution.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//newtonianStateEvolution.pd
-f  used on input line 355.
+f  used on input line 348.
 (pdftex.def)             Requested size: 338.02469pt x 253.50674pt.
 
-Overfull \hbox (20.03711pt too wide) in paragraph at lines 355--359
+Overfull \hbox (20.03711pt too wide) in paragraph at lines 348--352
  [][] 
  []
 
-[64] [65 <../04ClassicalPhysics/pics//newtonianStateEvolution.pdf>] [66]
-Overfull \hbox (1.7568pt too wide) in paragraph at lines 432--433
+[72 <../04ClassicalPhysics/pics//newtonianStateEvolution.pdf>] [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+Overfull \hbox (1.7568pt too wide) in paragraph at lines 425--426
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) The main dif-fer-ence be-tween New-to
 -nian and Hamil-to-nian ap-proaches,
  []
 
-
-Underfull \vbox (badness 2103) has occurred while \output is active []
-
- [67]
-Package mdframed Info: mdframed works in twoside mode on input line 440.
+Package mdframed Info: mdframed works in twoside mode on input line 433.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 440.
-Package mdframed Info: mdframed works in twoside mode on input line 452.
+(mdframed)              on input line 433.
+Package mdframed Info: mdframed works in twoside mode on input line 445.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 452.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [68]
-[69]
-Overfull \hbox (2.1956pt too wide) in paragraph at lines 493--494
+(mdframed)              on input line 445.
+[75] [76]
+Overfull \hbox (2.1956pt too wide) in paragraph at lines 486--487
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) The left side of the last equa-tion i
 s a two-component vec-tor $\OMX/MnSymbolE/m/n/10.95 à\OML/lmm/m/it/10.95 @[] []
 ; @[] []\OMX/MnSymbolE/m/n/10.95 ç$\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) .
  []
 
 
-Underfull \vbox (badness 1769) has occurred while \output is active []
+Underfull \vbox (badness 3514) has occurred while \output is active []
 
- [70]
-Package mdframed Info: mdframed works in twoside mode on input line 523.
+ [77]
+Package mdframed Info: mdframed works in twoside mode on input line 516.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 523.
-Package mdframed Info: mdframed works in twoside mode on input line 544.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 544.
+(mdframed)              on input line 516.
 
-[71]
-Package mdframed Info: mdframed works in twoside mode on input line 560.
+[78]
+Package mdframed Info: mdframed works in twoside mode on input line 537.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 560.
- [72]
-Package mdframed Info: mdframed works in twoside mode on input line 593.
+(mdframed)              on input line 537.
+Package mdframed Info: mdframed works in twoside mode on input line 553.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 593.
- [73]
-<../04ClassicalPhysics/pics//lagrange_vertical.pdf, id=1444, 462.52798pt x 346.
+(mdframed)              on input line 553.
+ [79]
+Package mdframed Info: mdframed works in twoside mode on input line 586.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 586.
+ [80]
+<../04ClassicalPhysics/pics//lagrange_vertical.pdf, id=1497, 462.52798pt x 346.
 89601pt>
 File: ../04ClassicalPhysics/pics//lagrange_vertical.pdf Graphic file (type pdf)
 
 <use ../04ClassicalPhysics/pics//lagrange_vertical.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//lagrange_vertical.pdf  use
-d on input line 643.
+d on input line 636.
 (pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-Overfull \hbox (5.77979pt too wide) in paragraph at lines 643--647
+Overfull \hbox (5.77979pt too wide) in paragraph at lines 636--640
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
- [74 <../04ClassicalPhysics/pics//lagrange_vertical.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75]
-Underfull \hbox (badness 10000) in paragraph at lines 700--706
+ [81]
+[82 <../04ClassicalPhysics/pics//lagrange_vertical.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 693--699
 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 706.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+Package mdframed Info: mdframed works in twoside mode on input line 699.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 706.
-<../04ClassicalPhysics/pics//systemDescriptions.pdf, id=1471, 208.83281pt x 190
+(mdframed)              on input line 699.
+<../04ClassicalPhysics/pics//systemDescriptions.pdf, id=1530, 208.83281pt x 190
 .59738pt>
 File: ../04ClassicalPhysics/pics//systemDescriptions.pdf Graphic file (type pdf
 )
 <use ../04ClassicalPhysics/pics//systemDescriptions.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//systemDescriptions.pdf  us
-ed on input line 719.
+ed on input line 712.
 (pdftex.def)             Requested size: 208.83228pt x 190.59691pt.
-Package mdframed Info: mdframed works in twoside mode on input line 724.
+Package mdframed Info: mdframed works in twoside mode on input line 717.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 724.
+(mdframed)              on input line 717.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76 <../04ClassicalPhysics/pics//systemDescriptions.pdf>]
-Package mdframed Info: Not enough space on this page on input line 742.
-<../04ClassicalPhysics/pics//threeMechanics.pdf, id=1511, 450.3638pt x 336.1531
+[84 <../04ClassicalPhysics/pics//systemDescriptions.pdf>]
+<../04ClassicalPhysics/pics//threeMechanics.pdf, id=1570, 450.3638pt x 336.1531
 pt>
 File: ../04ClassicalPhysics/pics//threeMechanics.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics//threeMechanics.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics//threeMechanics.pdf  used o
-n input line 747.
+n input line 740.
 (pdftex.def)             Requested size: 315.2525pt x 235.30556pt.
- [77])
-(../05QuantumPhysics/quantumphysics.tex [78 <../04ClassicalPhysics/pics//threeM
-echanics.pdf>]
+
+Underfull \vbox (badness 1281) has occurred while \output is active []
+
+ [85 <../04ClassicalPhysics/pics//threeMechanics.pdf>])
+(../05QuantumPhysics/quantumphysics.tex [86]
 Chapter 5.
-<pics/chapterImageTensors.pdf, id=1579, 429.01144pt x 86.2211pt>
+<pics/chapterImageTensors.pdf, id=1638, 429.01144pt x 86.2211pt>
 File: pics/chapterImageTensors.pdf Graphic file (type pdf)
 <use pics/chapterImageTensors.pdf>
 Package pdftex.def Info: pics/chapterImageTensors.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.14838pt.
 Package lettrine.sty Info: Targeted height = 18.57677pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}T);
+(lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}W);
 (lettrine.sty)             reported on input line 4.
-Package mdframed Info: mdframed works in twoside mode on input line 12.
+
+Overfull \hbox (3.34402pt too wide) in paragraph at lines 4--5
+[][]
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 7.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 12.
-[79
+(mdframed)              on input line 7.
+[87
 
- <./pics/chapterImageTensors.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 60.
+ <./pics/chapterImageTensors.pdf>] [88]
+Package mdframed Info: mdframed works in twoside mode on input line 59.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 60.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [80]
-Package mdframed Info: Not enough space on this page on input line 66.
+(mdframed)              on input line 59.
+ [89]
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-95.
+94.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -2682,62 +2703,58 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [81]
-Package mdframed Info: mdframed works in twoside mode on input line 114.
+Package mdframed Info: mdframed works in twoside mode on input line 113.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 114.
-
-Underfull \vbox (badness 3029) has occurred while \output is active []
-
- [82{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}]
-Package mdframed Info: mdframed works in twoside mode on input line 153.
+(mdframed)              on input line 113.
+ [90{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}]
+Package mdframed Info: mdframed works in twoside mode on input line 152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 153.
-Package mdframed Info: mdframed works in twoside mode on input line 156.
+(mdframed)              on input line 152.
+Package mdframed Info: mdframed works in twoside mode on input line 155.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 156.
-Package mdframed Info: mdframed works in twoside mode on input line 160.
+(mdframed)              on input line 155.
+Package mdframed Info: mdframed works in twoside mode on input line 159.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 160.
+(mdframed)              on input line 159.
 
 Underfull \vbox (badness 6691) has occurred while \output is active []
 
- [83]
-Package mdframed Info: Not enough space on this page on input line 162.
-Package mdframed Info: mdframed works in twoside mode on input line 164.
+ [91]
+Package mdframed Info: Not enough space on this page on input line 161.
+Package mdframed Info: mdframed works in twoside mode on input line 163.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 164.
-<../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf, id=1619, 323.61462pt
+(mdframed)              on input line 163.
+<../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf, id=1679, 323.61462pt
  x 101.5264pt>
 File: ../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf Graphic file (ty
 pe pdf)
 <use ../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf>
 Package pdftex.def Info: ../05QuantumPhysics/pics//qubitNumberOperatorMeaning.p
-df  used on input line 177.
+df  used on input line 176.
 (pdftex.def)             Requested size: 323.61383pt x 101.52614pt.
 
-Overfull \hbox (5.62625pt too wide) in paragraph at lines 177--178
+Overfull \hbox (5.62625pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
 
 Underfull \vbox (badness 3158) has occurred while \output is active []
 
- [84 <../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf>]
-<../05QuantumPhysics/pics//phaseSpaceQuantum.pdf, id=1639, 313.0569pt x 142.897
+ [92 <../05QuantumPhysics/pics//qubitNumberOperatorMeaning.pdf>]
+<../05QuantumPhysics/pics//phaseSpaceQuantum.pdf, id=1698, 313.0569pt x 142.897
 84pt>
 File: ../05QuantumPhysics/pics//phaseSpaceQuantum.pdf Graphic file (type pdf)
 <use ../05QuantumPhysics/pics//phaseSpaceQuantum.pdf>
 Package pdftex.def Info: ../05QuantumPhysics/pics//phaseSpaceQuantum.pdf  used 
-on input line 209.
+on input line 208.
 (pdftex.def)             Requested size: 313.05614pt x 142.89749pt.
- [85]
-Overfull \hbox (7.41507pt too wide) in paragraph at lines 230--231
+ [93]
+Overfull \hbox (7.41507pt too wide) in paragraph at lines 229--230
 \T1/LinuxLibertineT-TLF/m/n/10.95 (-20) For any quan-tum sys-tem with de-screte
  en-ergy states $\OML/lmm/m/it/10.95 E[]; E[]; E[]; [] ; E[] []$
  []
@@ -2745,145 +2762,145 @@ Overfull \hbox (7.41507pt too wide) in paragraph at lines 230--231
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86 <../05QuantumPhysics/pics//phaseSpaceQuantum.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 256.
+ [94 <../05QuantumPhysics/pics//phaseSpaceQuantum.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 255.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 256.
- [87]
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+(mdframed)              on input line 255.
+ [95]
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 298.
+Package mdframed Info: mdframed works in twoside mode on input line 297.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 298.
+(mdframed)              on input line 297.
 
 Underfull \vbox (badness 5771) has occurred while \output is active []
 
- [88]
-Package mdframed Info: mdframed works in twoside mode on input line 306.
+ [96]
+Package mdframed Info: mdframed works in twoside mode on input line 305.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 306.
-Package mdframed Info: mdframed works in twoside mode on input line 310.
+(mdframed)              on input line 305.
+Package mdframed Info: mdframed works in twoside mode on input line 309.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 310.
-Package mdframed Info: mdframed works in twoside mode on input line 322.
+(mdframed)              on input line 309.
+Package mdframed Info: mdframed works in twoside mode on input line 321.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 322.
-Package mdframed Info: mdframed works in twoside mode on input line 325.
+(mdframed)              on input line 321.
+Package mdframed Info: mdframed works in twoside mode on input line 324.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 325.
+(mdframed)              on input line 324.
 
-[89]
-Package mdframed Info: mdframed works in twoside mode on input line 332.
+[97]
+Package mdframed Info: mdframed works in twoside mode on input line 331.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 332.
- [90]
-Package mdframed Info: mdframed works in twoside mode on input line 388.
+(mdframed)              on input line 331.
+ [98]
+Package mdframed Info: mdframed works in twoside mode on input line 387.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 388.
- [91]
-Package mdframed Info: mdframed works in twoside mode on input line 410.
+(mdframed)              on input line 387.
+ [99]
+Package mdframed Info: mdframed works in twoside mode on input line 409.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 410.
- [92]
-Package mdframed Info: mdframed works in twoside mode on input line 443.
+(mdframed)              on input line 409.
+ [100]
+Package mdframed Info: mdframed works in twoside mode on input line 442.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 443.
-Package mdframed Info: mdframed works in twoside mode on input line 450.
+(mdframed)              on input line 442.
+Package mdframed Info: mdframed works in twoside mode on input line 449.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 450.
-Package mdframed Info: mdframed works in twoside mode on input line 453.
+(mdframed)              on input line 449.
+Package mdframed Info: mdframed works in twoside mode on input line 452.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 453.
- [93]
-Package mdframed Info: mdframed works in twoside mode on input line 466.
+(mdframed)              on input line 452.
+ [101]
+Package mdframed Info: mdframed works in twoside mode on input line 465.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 466.
+(mdframed)              on input line 465.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94]
-[95]
-Package mdframed Info: mdframed works in twoside mode on input line 539.
+ [102]
+[103]
+Package mdframed Info: mdframed works in twoside mode on input line 538.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 539.
- [96]
-Package mdframed Info: mdframed works in twoside mode on input line 569.
+(mdframed)              on input line 538.
+ [104]
+Package mdframed Info: mdframed works in twoside mode on input line 568.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 569.
+(mdframed)              on input line 568.
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
- [97]
-Package mdframed Info: mdframed works in twoside mode on input line 605.
+ [105]
+Package mdframed Info: mdframed works in twoside mode on input line 604.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 605.
-Package mdframed Info: mdframed works in twoside mode on input line 610.
+(mdframed)              on input line 604.
+Package mdframed Info: mdframed works in twoside mode on input line 609.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 610.
-Package mdframed Info: mdframed works in twoside mode on input line 613.
+(mdframed)              on input line 609.
+Package mdframed Info: mdframed works in twoside mode on input line 612.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 613.
+(mdframed)              on input line 612.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
-Overfull \hbox (23.10072pt too wide) in paragraph at lines 639--641
+ [106]
+Overfull \hbox (23.10072pt too wide) in paragraph at lines 638--640
 \T1/LinuxLibertineT-TLF/m/n/10.95 (-20) we will ar-rive, step by step, to a ful
 ly en-tan-gle state $\OMX/MnSymbolE/m/n/10.95 S[]e \U/MnSymbolD/m/n/10.95 ^^@ [
 ] \OMX/MnSymbolE/m/n/10.95 ~[]$\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) . 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 642.
+Package mdframed Info: mdframed works in twoside mode on input line 641.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 642.
-[99]
-Package mdframed Info: mdframed works in twoside mode on input line 665.
+(mdframed)              on input line 641.
+[107]
+Package mdframed Info: mdframed works in twoside mode on input line 664.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 665.
-Package mdframed Info: mdframed works in twoside mode on input line 668.
+(mdframed)              on input line 664.
+Package mdframed Info: mdframed works in twoside mode on input line 667.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 668.
+(mdframed)              on input line 667.
 
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
- [100]
-Package mdframed Info: mdframed works in twoside mode on input line 694.
+ [108]
+Package mdframed Info: mdframed works in twoside mode on input line 693.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 694.
-Package mdframed Info: mdframed works in twoside mode on input line 728.
+(mdframed)              on input line 693.
+Package mdframed Info: mdframed works in twoside mode on input line 727.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 728.
+(mdframed)              on input line 727.
 
-[101]
-Package mdframed Info: Not enough space on this page on input line 734.
-) (../06Applications/applications.tex [102]
+[109]
+Package mdframed Info: Not enough space on this page on input line 733.
+) (../06Applications/applications.tex [110]
 Chapter 6.
-<pics/chapterImageApplications.pdf, id=1783, 427.81808pt x 86.28212pt>
+<pics/chapterImageApplications.pdf, id=1842, 427.81808pt x 86.28212pt>
 File: pics/chapterImageApplications.pdf Graphic file (type pdf)
 <use pics/chapterImageApplications.pdf>
 Package pdftex.def Info: pics/chapterImageApplications.pdf  used on input line 
@@ -2897,7 +2914,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 9.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 9.
-[103
+[111
 
  <./pics/chapterImageApplications.pdf>]
 
@@ -2906,14 +2923,14 @@ LaTeX Warning: Command \r invalid in math mode on input line 48.
 
 LaTeX Warning: Command \r invalid in math mode on input line 48.
 
-<../06Applications/pics//hydrogenAtom.pdf, id=1801, 252.14091pt x 220.62747pt>
+<../06Applications/pics//hydrogenAtom.pdf, id=1859, 252.14091pt x 220.62747pt>
 File: ../06Applications/pics//hydrogenAtom.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtom.pdf>
 Package pdftex.def Info: ../06Applications/pics//hydrogenAtom.pdf  used on inpu
 t line 69.
 (pdftex.def)             Requested size: 151.2857pt x 132.37749pt.
-[104 <../06Applications/pics//hydrogenAtom.pdf>]
-<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1815, 317.52397pt x 203.543
+[112 <../06Applications/pics//hydrogenAtom.pdf>]
+<../06Applications/pics//hydrogenAtomOrbits.pdf, id=1874, 317.52397pt x 203.543
 69pt>
 File: ../06Applications/pics//hydrogenAtomOrbits.pdf Graphic file (type pdf)
 <use ../06Applications/pics//hydrogenAtomOrbits.pdf>
@@ -2923,7 +2940,7 @@ n input line 94.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105 <../06Applications/pics//hydrogenAtomOrbits.pdf>]
+ [113 <../06Applications/pics//hydrogenAtomOrbits.pdf>]
 
 LaTeX Warning: Command \r invalid in math mode on input line 118.
 
@@ -2934,10 +2951,10 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
+ [114]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107]
+ [115]
 Package mdframed Info: mdframed works in twoside mode on input line 205.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2949,7 +2966,7 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108]
+ [116]
 Package mdframed Info: Not enough space on this page on input line 234.
 Package mdframed Info: mdframed works in twoside mode on input line 272.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2962,42 +2979,40 @@ Package mdframed Info: mdframed detected package amsthm
 
 Underfull \vbox (badness 1314) has occurred while \output is active []
 
- [109]
+ [117]
 Package mdframed Info: Not enough space on this page on input line 286.
-<../06Applications/pics//cavityQED.pdf, id=2016, 348.69095pt x 126.4336pt>
+<../06Applications/pics//cavityQED.pdf, id=2074, 348.69095pt x 126.4336pt>
 File: ../06Applications/pics//cavityQED.pdf Graphic file (type pdf)
 <use ../06Applications/pics//cavityQED.pdf>
 Package pdftex.def Info: ../06Applications/pics//cavityQED.pdf  used on input l
-ine 305.
+ine 326.
 (pdftex.def)             Requested size: 348.69008pt x 126.43327pt.
 
-Overfull \hbox (30.7025pt too wide) in paragraph at lines 305--307
+Overfull \hbox (30.7025pt too wide) in paragraph at lines 326--328
  [][] 
  []
 
-
-Underfull \vbox (badness 7981) has occurred while \output is active []
-
- [110 <../06Applications/pics//cavityQED.pdf>]
-<../06Applications/pics//franckHertzExperiment.pdf, id=2070, 328.62866pt x 386.
+[118]
+<../06Applications/pics//franckHertzExperiment.pdf, id=2082, 328.62866pt x 386.
 77528pt>
 File: ../06Applications/pics//franckHertzExperiment.pdf Graphic file (type pdf)
 
 <use ../06Applications/pics//franckHertzExperiment.pdf>
 Package pdftex.def Info: ../06Applications/pics//franckHertzExperiment.pdf  use
-d on input line 318.
+d on input line 339.
 (pdftex.def)             Requested size: 328.62784pt x 386.77434pt.
 
-Overfull \hbox (10.64026pt too wide) in paragraph at lines 318--319
+Overfull \hbox (10.64026pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 328.
+[119 <../06Applications/pics//cavityQED.pdf>] [120 <../06Applications/pics//fra
+nckHertzExperiment.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 349.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 328.
-[111] [112 <../06Applications/pics//franckHertzExperiment.pdf>] [113] [114]
-[115]) (../07Implications/implications.tex [116]
+(mdframed)              on input line 349.
+ [121] [122] [123]) (../07Implications/implications.tex [124]
 Chapter 7.
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
@@ -3011,9 +3026,9 @@ Package mdframed Info: mdframed works in twoside mode on input line 8.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 8.
-[117
+[125
 
-]) (../08Appendix/appendix.tex [118]
+]) (../08Appendix/appendix.tex [126]
 Chapter 8.
 File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 <use pics/chapterImageDefault.pdf>
@@ -3023,14 +3038,14 @@ Package lettrine.sty Info: Targeted height = 18.57677pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 18.57668pt (\color {darkocre}W);
 (lettrine.sty)             reported on input line 6.
-(../08Appendix/course_notation.tex [119
+(../08Appendix/course_notation.tex [127
 
 ]) (../08Appendix/physical_constants.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 1--24
 
  []
 
-[120] (../08Appendix/greek_alphabet.tex [121])
+[128] (../08Appendix/greek_alphabet.tex [129])
 Package mdframed Info: mdframed works in twoside mode on input line 72.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3043,7 +3058,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 83.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 83.
- [122]
+ [130]
 Package mdframed Info: mdframed works in twoside mode on input line 88.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -3060,7 +3075,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 114.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 114.
- [123]
+ [131]
 Package mdframed Info: Not enough space on this page on input line 116.
 Package mdframed Info: mdframed works in twoside mode on input line 118.
 Package mdframed Info: mdframed detected package amsthm 
@@ -3070,8 +3085,8 @@ Package mdframed Info: mdframed works in twoside mode on input line 134.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 134.
- [124])
-(../09Solutions/solutions.tex [125] [126
+ [132])
+(../09Solutions/solutions.tex [133] [134
 
 ]
 Chapter 9.
@@ -3080,10 +3095,10 @@ File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 3.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
 
-LaTeX Warning: Reference `exe:carMakesSet' on page 127 undefined on input line 
+LaTeX Warning: Reference `exe:carMakesSet' on page 135 undefined on input line 
 7.
 
-<../09Solutions/pics//defaultFigureTemplate.pdf, id=2833, 348.69095pt x 126.433
+<../09Solutions/pics//defaultFigureTemplate.pdf, id=2891, 348.69095pt x 126.433
 6pt>
 File: ../09Solutions/pics//defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../09Solutions/pics//defaultFigureTemplate.pdf>
@@ -3109,7 +3124,7 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 24--27
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 27.
-[127 <../09Solutions/pics//defaultFigureTemplate.pdf>]) [128]
+[135 <../09Solutions/pics//defaultFigureTemplate.pdf>]) [136]
 runsystem(makeindex qpac.idx)...executed safely (allowed).
 
  (./qpac.ind
@@ -3118,7 +3133,7 @@ File: pics/chapterImageDefault.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 1.
 (pdftex.def)             Requested size: 433.62pt x 87.3036pt.
 )
-[129
+[137
 
 
 
@@ -3129,15 +3144,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'qpac.run.xml'.
 \openout1 = `qpac.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50773 strings out of 476025
- 993447 string characters out of 5790016
+ 50834 strings out of 476025
+ 994605 string characters out of 5790016
  1878388 words of memory out of 5000000
- 69223 multiletter control sequences out of 15000+600000
+ 69259 multiletter control sequences out of 15000+600000
  805918 words of font info for 574 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,19n,99p,1173b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3163,10 +3181,10 @@ fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
 public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 tt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on qpac.pdf (129 pages, 2064193 bytes).
+Output written on qpac.pdf (137 pages, 4390247 bytes).
 PDF statistics:
- 3510 PDF objects out of 3580 (max. 8388607)
- 2778 compressed objects within 28 object streams
- 443 named destinations out of 1000 (max. 500000)
- 145747 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 3580 PDF objects out of 3580 (max. 8388607)
+ 2832 compressed objects within 29 object streams
+ 464 named destinations out of 1000 (max. 500000)
+ 145776 words of extra memory for PDF output out of 154059 (max. 10000000)
 

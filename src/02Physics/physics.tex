@@ -50,9 +50,10 @@ sets? What kind of diagrams would you draw?
 \end{exercise}
 
 \section{Common Sense}
-Mathematics is a remarkably effective and universal discipline, its
-methods and
-results can be applied in a wide range of fields.
+Common sense and basic logic play crucial role in physics. 
+
+Entitites, separability, properties, aspects.
+
 \subsection{Detached Observer}
 \begin{figure}[htbp]
 	\centering
@@ -65,6 +66,47 @@ results can be applied in a wide range of fields.
 	Is it possible to separate an object from its properties?
 \end{mybio}
 
+
+
+
+
+\section{Classical and Quantum}
+Classical and quantum physics have many similarities. For example, both employ such basic ideas as: \emph{system, state, dynamics, interaction, measurement, observer, information, probability}. These concepts do not describe any specific phenomena or intstruments, but rather represent elements of a framework used to \emph{think the world}.
+
+To a student, the similarities might make quantum physics seem less foreign, but they also may hinder the understanding of truly and purely quantum features. The more we learn and understand quantum physics, the clearer it becomes that the \emph{meaning} of the basic concepts is often different.
+
+The interconnection between the classical and quantum physics goes beyond shared concepts and mathematical tools. Some physicists pointed out that quantum physics \emph{can't stand on its own}.
+
+\begin{mybio}{Lev Landau On Classical and Quantum}
+	Deep connection between the classical and quantum physics is emphasized by Lev Landau in the third volume of theoretical physics "Quantum Mechanics":
+	
+	"
+	Usually a more general theory can be formulated in a way logically independent from the less general limiting case. Thus, relativistic mechanics can be formulated based on its own principles, without any reference to Newtonian mechanics. The basic assumptions of quantum mechanics, though, fundamentally can't be formulated without the reference to classical mechanics.
+	"
+	
+	{\it Quantum Mechanics: Non-relativistic theory, Chapter 1, Section 1}
+\end{mybio}
+
+\section{System}\label{sec:System}
+A part of nature that can be clearly isolated and studied is called a \emph{physical system}. An electron, an atom, a molecule, a crystal, a pendulum, a comet, a star – these are examples of physical systems of various degrees of complexity.
+
+In quantum physics the concept of a system is expanded to include not only "physical objects" but also some \emph{aspects of their behavior}. Thus, for the same physical entity (e.g. mode of electromagnetic field), we can focus on its polarization and treat it as a quantum system, disregarding its behavior in time and space. In other words, a separate \emph{degree of freedom} can be viewed as quantum system. Another example is the spin of an electron trapped inside a tiny volume. Electrons have special degree of freedom called \emph{spin}. If quantum experiment focuses on manipulating spin, then the latter can be treated as a distinct quantum system.
+
+\section{State}
+State is a very important concept in physics. It means \emph{complete} but \emph{minimal} knowledge about  possible behavior of a given system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{stateAsKnowledge}
+	\caption{State is a minimal and complete knowledge about a physical system.}
+	\label{fig:stateAsKnowledge}
+\end{figure}
+By \emph{minimal} knowledge we mean that if position of particle $x$ is known, there is no need to know $x^3$ or any other one-to-one function of position. We only need to know and keep track of the \emph{essential} information.
+
+\begin{mybio}{Completeness}
+	How can we be sure that the information about a system is complete? Can there be some "hidden" information, unaccessible (may be yet, or even potentially forever) to us and yet affecting the behavior of a system?
+	
+	The question of completeness is an important one. In the context of quantum physics it was raised for the first time by Albert Einstein, Boris Podolsky, and Nathan Rosen in 1935.
+\end{mybio}
 
 \section{Deterministic Evolution}
 The completeness of a state is a very strong constraint. Not only it means "everything there is to know at a given moment", but also "know state now -- know state always." The latter is an expression of \emph{determinism}: the complete knowledge of a system is fully determined at all times once an initial state is known. However, state by itself  is not sufficient to satisfy the latter requirement, it must be supplemented by the so called \emph{dynamical equations}. These equations are specific to a physical system and encapsulate the laws that govern internal interactions. EXAMPLE?
@@ -118,7 +160,7 @@ In physics the states are represented using numbers, vectors, functions, and sim
 \]
 
 Depending on a particular representation of the state, the evolution function $U$ might be a "usual" function, an operator, or something else entirely. Regardless of what the exact \emph{type} of $U$ is, its job is always the same -- map initial state $\xi_i$ at time $t$ into the final state $\xi_f$ at time $t+\Delta t$.
- 
+
 For $\Delta t = 0$ the evolution function $U$ must be a simple \emph{identity} function:
 \[
 U_0 = I\,.
@@ -150,26 +192,6 @@ The equation (\ref{eq:SchrodingerTypeEq}) is a general form of state evolution e
 	\]
 \end{mybio}
 
-
-\section{Classical and Quantum}
-Classical and quantum physics have many similarities and this might hinder the understanding of truly and purely quantum features.
-
-\section{State}
-State is a very important concept in physics. It means \emph{complete} but \emph{minimal} knowledge about  possible behavior of a given system.
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[scale=1.0]{stateAsKnowledge}
-	\caption{State is a minimal and complete knowledge about a physical system.}
-	\label{fig:stateAsKnowledge}
-\end{figure}
-By \emph{minimal} knowledge we mean that if position of particle $x$ is known, there is no need to know $x^3$ or any other one-to-one function of position. We only need to know and keep track of the \emph{essential} information.
-
-\begin{mybio}{Completeness}
-	How can we be sure that the information about a system is complete? Can there be some "hidden" information, unaccessible (may be yet, or even potentially forever) to us and yet affecting the behavior of a system?
-	
-	The question of completeness is an important one. In the context of quantum physics it was raised for the first time by Albert Einstein, Boris Podolsky, and Nathan Rosen in 1935.
-\end{mybio}
-
 \section{Measurement}
 Measurement is the source of our knowledge about the world. This is true for both classical and quantum physics. 
 \begin{figure}[htbp]
@@ -188,12 +210,13 @@ Classical physics predicts a continuous decay of unstable configuration of charg
 \section{Particles}
 Modern understanding of the particle concept is significantly more nuanced than simple "point-like object with certain physical attributes". Instead, particles are defined based on quantum behavior of corresponding \emph{physical fields}. Quantum behavior of electromagnetic field corresponds to photons, and quantum behavior of electron-positron field corresponds to electrons (and their anti-particles).
 
-
-INSERT QUOTE FROM MY SLIDES.
+\begin{myrem}{Particles}
+	Particles are excitations of quantum fields. They correspond to irreducible unitary representations of Lorentz group. Fields are operator-valued vector functions defined over Minkowski space and transformed simply under the action of the Poincare group.
+\end{myrem}
 
 
 \subsection{Photons And Electrons}
-Two types of fundamental elementary particles that will be discussed in this book are photons and electrons.
+Two types of fundamental elementary particles that will be discussed in this book are photons and electrons. Electronics, optics, and the physics of light-matter interaction cover a tremendous range of problems and provide an excellent playground for learning quantum physics.
 
 
 \section{Avalanche Detectors}

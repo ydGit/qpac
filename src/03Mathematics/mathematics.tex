@@ -46,7 +46,7 @@ The input-output view of functions leads to a helpful picture where a given func
 \end{figure}
 
 \subsection{Application Notation}
-The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses around the argument, like so: $f(x)$. This rule, howevers, is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra. For example, when an operator $\op{f}$ is applied to a vector $\ket{x}$, we would write $\op{f}\,\ket{x}$, without the parentheses. 
+The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses around the argument, like so: $f(x)$. This rule, however, is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra. For example, when an operator $\op{f}$ is applied to a vector $\ket{x}$, we would write $\op{f}\,\ket{x}$, without the parentheses. 
 
 In this book we will use a uniform rule for function application: \emph{Function and its argument are separated by a space. Only structured arguments are surrounded by parentheses. Simple arguments are written without parentheses.} Thus, we will always write
 \[
@@ -293,6 +293,18 @@ and
 	
 	It is called \emph{Hadamard} operator and has the following matrix representation.
 \end{example}
+
+Operators can be used to solve problems that do not have solutions in terms of real numbers. For example:
+\[
+\op{A}+\op{B} = 6\op{I}\,\textrm{ and }\, \op{A}\op{B}=36\op{I}\,.
+\]
+To simplify this problem we can first rescale the operators, introducing
+\[
+\op{a} = \op{A} / 6\,\textrm{ and }\, \op{b} = \op{B}/6\,.
+\]
+\[
+\op{a}+\op{b} = \op{I}\,\textrm{ and }\, \op{a}\op{b}=\op{I}\,.
+\]
 
 \subsection{Super-operators}
 

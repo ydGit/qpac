@@ -1,12 +1,7 @@
 \graphicspath{{../05QuantumPhysics/pics/}}
 
 \chapter{Quantum Physics}\label{ch:QuantumPhysics}
-\lettrine[lines=2]{\color{darkocre}T}{he} first type of operators -- and
-corresponding tensors -- that we encountered has a simple type:
-\[
-\op{L}\,\vec{a} = \vec{b}\,.
-\]
-It is a linear unary function mapping vectors into vectors.
+\lettrine[lines=2]{\color{darkocre}W}{e are now ready to take the previously developed concepts}  and tools into the realm of quantum phenomena. Firstly, we will upgrade our understanding of \emph{system} and \emph{state} to the quantum level. Then we will see how the concepts of dynamics can be applied to quantum systems in general. Finally, we will do a detailed analysis of quantum dynamics of simplest and yet most important quantum systems: \emph{qubit} and \emph{quantum oscillator}. The latter will lead to the concents of \emph{quantum field}. We will also discuss the core quantum concept of \emph{entanglement}.
 
 
 \begin{myprereq}{Prerequisite Knowledge}
@@ -32,11 +27,15 @@ based on two vectors:
 
 
 \section{Quantum State}\label{sec:QuantumState}
+State is the fundamental concept of quantum theory. It is the source of all \emph{predictions} about the results of \emph{any} possible measurement. Classical state of a system tells us what the values of various quantites \emph{certainly are}, while quantum state tells us what the results of an arbitrary measurement \emph{will be} and \emph{with what probability}.
+
 We are looking for a binary operator $\op{\sigma}$ that yields a number
 based on two vectors:
 \[
 \ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
 \]
+
+
 
 \subsection{Superposition}
 Suppose we measure the energy of a quantum system (e.g. a hydrogen atom) and find that it takes on discrete values $E_1$, $E_2$, $E_3$, and so on. A distinct quantum state $\ket{e_1}$, $\ket{e_2}$, $\ket{e_3}$, and so on, is associated with each energy value.
@@ -201,9 +200,9 @@ The path which the state vector $\ket{\xi}=(x,p)$ follows in phase space is an e
 \[
 H=\frac{\omega}{2\pi}A\,.
 \]
-The area $A$ is a physical quantity with the units of action.
+The area $A$ is a physical quantity with the units of \emph{action}.
 
-As shown in Figure \ref{fig:phaseSpaceQuantum}(a), areas in phase space have the smallest size limited by the elementary quantum of action $h$ -- known as Planck constant. The quantization of action and, consequently, the quantization of phase-space area, has two important implications for harmic oscillator.
+As shown in Figure \ref{fig:phaseSpaceQuantum}(a), areas in phase space have the smallest size limited by the elementary quantum of action $h$ -- known as Planck constant. The quantization of action and, consequently, the quantization of phase-space area, has two important implications for harmonic oscillator.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{phaseSpaceQuantum}

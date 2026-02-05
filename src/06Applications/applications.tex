@@ -284,6 +284,27 @@ for $n=2$ as
 	in mind, especially if we want to understand the phenomenon of
 	\emph{spontaneous emission}.
 \end{mybio}
+
+\subsection{Landau Levels and Magnetic Flux Quantization*}
+The simple semi-classical approach to quantization used for hydrogen atom can be applied to another interesting quantum effect appearing when electrons are moving in a strong magnetic field.
+
+\[
+qvB = \frac{mv^2}{r}\,\to\, qBr=mv
+\]
+
+\[
+qBr^2 = mvr = n\hbar\,.
+\]
+Thus, the radius can only be $r_n=r_1\sqrt{n}$ where $r_1=\sqrt{\hbar/qB}$. Kinetic energy is $E_n = E_1 n$ where
+$E_1 = q\hbar B/2m$.
+
+The quantity $\Phi=\pi r^2 B$ is called \emph{magnetic flux} -- a measure of the "flow" of magnetic field $B$ throught the area $\pi r^2$. In terms of magnetic flux, the quantization condition becomes
+\[
+\Phi = n\Phi_0\,,
+\]
+where $\Phi_0=h/2e$ is known as \emph{elementary magnetic flux quantum}. It is the smallest step magnetic flux can change by.
+
+
 \subsubsection{Spontaneous Emission and Cavity QED}
 According to Schrodinger equation, an hydrogen atom with electron in any
 statioary state $\qs{\Psi_n}$ with energy $E_n$ will remain in this
@@ -299,7 +320,7 @@ many modes-oscillators.
 
 Interaction of atom-like quantum systems (qubits, quantum dots, atoms)
 with quantum states of electromagnetic field is the focus of an exctiting
-area of research called \emph{Cavity Quantum Electrodynamics} or \emph{cavity QED}.
+area of research called \emph{Cavity Quantum Electrodynamics} or \emph{cavity QED} (CQED).
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{cavityQED}
@@ -336,7 +357,7 @@ Stoke's rule.
 When an atom has outer electron(s) excited into states with high excitation number  $n$, it is called a \emph{Rydberg atom}(CHECK!). Such atoms are of great importance for experiments of quantum physics.
 
 \section{Quantum Dots}
-Quantum dots can be viewed as \emph{artificial atoms} -- human-made physical structures designed to confine electrons in tiny volumes. As the result, quantum states of the trapped electrons form a discrete set not unlike the states of a hydrogen atom. \emph{Examples:???}
+Quantum dots are physical structures designed to confine electrons in tiny volumes. They are human-made and can be viewed as \emph{artificial atoms}. As the result of confinement, quantum states of the trapped electrons form a discrete set not unlike the states of a hydrogen atom. \emph{Examples:???}
 
 To illustrate the idea, consider an idealized case of an electron confined in one dimension in a region between $x=0$ and $x=L$.
 
@@ -410,42 +431,10 @@ Entanglement can be viewed as a \emph{physical resource} of purely quantum natur
 E_n = -\frac{E_i}{n^2}\,.
 \]
 \subsection{Teleportation}
-In quantum physics \emph{teleportation} means instant creation of a desired quantum state at a far away place. It important to understand that quantum teleportation does not imply sending objects or energy instanteneously from one place to another.
+In quantum physics \emph{teleportation} means creation of a given quantum state at a far away place. It important to understand that quantum teleportation does not imply sending objects or energy instanteneously from one place to another.
 
 \subsection{Entanglement And Measurement}
-
-\subsubsection*{$\delta$-Notation}\index{Notation!delta}
-When a quantity $x$ changes by a tiny amount, we will denote the
-change using small Greek letter $\delta$ (delta) as follows:
-\[
-\colorboxed{red}{\delta x\textrm{ - tiny change of } x.}
-\]
-A convenient way to write all components of a second rank tensor is to
-use table-like structure called \emph{matrix}\index{Matrix}:
-\[
-F^{\mu\nu}=
-\begin{pmatrix}
-  F^{00} & F^{01} & F^{02} & F^{03}\\
-  F^{10} & F^{11} & F^{12} & F^{13}\\
-  F^{20} & F^{21} & F^{22} & F^{23}\\
-  F^{30} & F^{31} & F^{32} & F^{33}
-\end{pmatrix}\,.
-\]
-In the matrix, the first index $\mu$ of $F^{\mu\nu}$ corresponds to
-the row, while the second index $\nu$ corresponds to the column. Both
-rows and columns are enumerated from $0$ to $3$.
-
-Using matrix form, we can write the electromagnetic tensor in terms
-of the electric and magnetic fields:
-\[
-F^{\mu\nu}=
-\begin{pmatrix}
-  0 & -\mathcal{E}^1 & -\mathcal{E}^2 & -\mathcal{E}^3\\
-  \mathcal{E}^1 & 0 & -\mathcal{B}^3 & \mathcal{B}^2\\
-  \mathcal{E}^2 & \mathcal{B}^3 & 0 & -\mathcal{B}^1\\
-  \mathcal{E}^3 & -\mathcal{B}^2 & \mathcal{B}^1 & 0
-\end{pmatrix}\,.
-\]
+Entanglement -- a purely quantum effect -- plays the central role in the measurement process.
 
 
 \section*{Chapter Highlights}
