@@ -2,7 +2,7 @@
 
 \chapter{Mathematics}\label{ch:Mathematics}
 
-\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics.
+\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics. This fact, of course, does not make them any easier, but it is important to remember that there is no special mathematics that makes quantum physics extra challenging.
 
 \begin{myprereq}{Prerequisite Knowledge}
 	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
@@ -242,9 +242,64 @@ Both sides of this equality represent the same value $f\,(h\, (g\, x))$: We firs
 \end{mybio}
 
 \section{Kalcoolus}
-Quantum theory uses many mathematical tools. 
+Quantum theory uses many mathematical tools, including linear algebra and calculus. In this book we won't need the full power of the latter. Instead, we will use "kids menu calculus" or "kalcoolus" -- a small set of simple calculus-related tools sufficient to express most of the equations of quantum theory. We will begin by discussing kalcoolus variants of \emph{differentiation} and \emph{integration}.
 
 \subsection{$\Delta-\delta-\partial$ Notation}
+Imagine we are tracking time from the moment we wake up at 6 a.m. to the moment we go to bed 16 hours later. Every event $E$ during the day is assigned a certain time $t_E$. We can ask how much time elapsed between two events. If the first event happens right after we wake up and the second at noon, then we write the time interval as
+\[
+\Delta\, t = t_2 - t_1\,.
+\]
+This is an example of $\Delta$-notation for \emph{sizable change} of any variable, in this case it is time.
+
+Now consider an eye-blink, where we close the eyes at $t_1$ and open them at $t_2$. In this case we write
+\[
+\delta\, t = t_2 - t_1\,,
+\]
+using $\delta$-notation to emphasize that the time interval is tiny.
+
+Suppose we are monitoring the temperature outside by looking at a thermometer. For each moment of time $t$ we can specify the measured temperature $f_t$. The temperature in the morning and the temperature at noon can be quite different, so we use $\Delta$-notation:
+\[
+\Delta f=f_{t_2} - f_{t_1}=f(t_2)-f(t_1)=f(t_1+\Delta t)-f(t_1)\,.
+\]
+For the tiny time interval the change of temperature is also expected to be tiny. Physically this means that there are no extreme events causing rapid jumps in temperature. Mathematically, this means that the function $f$ is \emph{continuous}. In such cases we use $\delta$-notation:
+\[
+\delta f=f(t_1+\delta t)-f(t_1)\,.
+\]
+Such relation can be written for any moment of time $t$:
+\[
+\delta f=f(t+\delta t)-f(t)\,.
+\]
+
+Often it is important to know \emph{how quickly} a value is changing. For example, we can speak of the  \emph{rate of change} of temperature with respect to time:
+\[
+\frac{\delta f}{\delta t} = \frac{f(t+\delta t)-f(t)}{\delta t}\,.
+\]
+Instead of the fractions, we will use $\partial$-notation:
+\[
+\partial_t\,f=\frac{\delta f}{\delta t}\,.
+\]
+
+The notation just introduced can be applied to \emph{any} function of \emph{any} variable or \emph{any} number of variables. It is general, relatively simple, and efficient.
+\begin{exercise}
+	Given the kinetic energy of a moving body is $E = mv^2/2$, write our fully the meaning of the following expressions: $\partial_m\, E$ and $\partial_v\, E$.
+\end{exercise}
+
+\begin{mybio}{Derivative}
+	The rigorous mathematical notion of derivative is used when we want to be absolutely sure that we are dealing with a unique value for the rate of change. To arrive at this unique value, one would analyze the result of making the change $\delta x$ of the variable $x$ ever smaller, and prove that the ratio
+	\[
+		\frac{f(x+\delta x)-f(x)}{\delta x}
+	\] 
+	is approaching a unique value.
+	
+	For simplicity and practical purposes, we will use the rate of change $\partial_x f$, remembering that
+	\[
+	\textrm{derivative} = \partial_x f + \textrm{error}\,.
+	\]
+\end{mybio}
+
+\begin{mybio}{Full Differential}
+	If you are wondering why don't we use $df$ instead of $\delta\,f$
+\end{mybio}
 
 \subsection{Bernouli Sums}
 
