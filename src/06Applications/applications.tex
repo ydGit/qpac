@@ -1,11 +1,8 @@
 \graphicspath{{../06Applications/pics/}}
 
 \chapter{Applications}\label{ch:Applications}
-\lettrine[lines=2]{\color{darkocre}W}{e} are now ready to appreciate
-how tensors are used in ``real life''. In this chapter we will
-encounter examples of
-tensors that are used in mathematics, physics, and engineering. 
-
+\lettrine[lines=2]{\color{darkocre}Q}{uantum physics can be successfully applied to a wide variety} of problems in science and technology. In this chapter we will study several examples demonstrating how quantum effects can be explained using the concepts and tools discussed in the previous chapters. We will first start with principle of action quantization, applying to the spectra of atoms and atom-like structures. Then we will learn how atomic systems can interact with electromagnetic field, leading to such important effects as spontaneous and stimulated emissions which are at the core of the laser operation. At the end of the chapter we will examine the \emph{entanglement} as a \emph{resource} for quantum information processing tasks.
+  
 \begin{myprereq}{Prerequisite Knowledge}
 	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
 	
@@ -48,18 +45,18 @@ distances in atomic world:
 d_H \approx 1\, \r{A}\,\qquad \r{A}\textrm{ngstrom } = 10^{-10}\, (m)\,.
 \]
 
-\begin{tcolorbox}[colback=white!85!ocre, title=$\circledast\,$Illustration]
+\begin{remark}
 	If every person on earth had a hydrogen atom and placed it in a single
 	row next to each other, then the resulting chain would be about a
 	meter long.
-\end{tcolorbox}
+\end{remark}
 
-\begin{tcolorbox}[colback=white!85!ocre, title=\r{A}ngstrom]
+\begin{mybio}{\r{A}ngstrom}
 	Angstrom is a convenient unit for measuring distances between atoms
 	inside solid bodies. For example, copper atoms are about 2.8 \r{A} in
 	diameter and are arranged in a crystal with the distance between the
 	nearest neighbors $d\approx 3.6$ \r{A}.
-\end{tcolorbox}
+\end{mybio}
 
 To see how those values for the ionization energy and atomic radius
 appear, let us consider the following model of the atom, shown in the
@@ -141,7 +138,7 @@ Although this is a big number, it is much smaller than the speed of
 light; we are therefore justified in using Newtonian mechanics and not
 taking relativity into account.
 
-\begin{tcolorbox}[colback=white!85!ocre, title=$\circledast\,$Fun Fact]
+\begin{mybio}{Quantization in Astronomy}
 	The ``quantization'' of orbit radius can be found even for planets in
 	solar system. If we denote the distance between the earth and the sun
 	as $A$ (called \emph{astronomical unit}), then the distances to
@@ -151,7 +148,7 @@ taking relativity into account.
 	\]
 	This relation is known as \emph{Titius-Bode} law. It works remarkably
 	well for all planets from Venus ($n=0$) to Uranus ($n=6$).
-\end{tcolorbox}
+\end{mybio}
 
 How strong is the electron attracted to the nucleus? The Coulomb force
 between the charges is
@@ -166,11 +163,8 @@ The value of $F_1$ is
 \[
 F_1 = 8.24\times 10^{-8}\,(N)
 \]
-This is a tiny force on the human scale of forces.
-\begin{tcolorbox}[colback=white!85!ocre, title=$\circledast\,$Fun Fact]
-	Even a baby ant has enough force to tear a hydrogen atom apart with
-	its bare hands!
-\end{tcolorbox}
+This is a tiny force on the human scale of forces. Even a baby ant has enough force to tear a hydrogen atom apart with its "bare hands"!
+
 Although the force acting on the electron is small on a human scale,
 the acceleration ($a=v^2/r$) it produces is very large (on the human
 scale, compare to $g$). This is due to extreme lightness of the
@@ -369,12 +363,20 @@ E_n = -\frac{E_i}{n^2}\,.
 \]
 
 \section{Spontaneous Emission}
+When an excited atom is left alone, it must remain in the excited state \emph{forever}. This follows from the Schrodinger's equation:
 \[
-\ketbra{\alpha}{\beta}
+i\hbar \partial_t\,\ket{\psi}=\op{H}\ket{\psi}
 \]
+If $\op{H}\ket{\psi}=E_n\ket{\psi}$ we get
 \[
-E_n = -\frac{E_i}{n^2}\,.
+\partial_t\,\ket{\psi}=\beta\ket{\psi}\,,\textrm{ where } \beta = \frac{-iE_n}{\hbar}\,.
 \]
+The solution to this equation is 
+\[
+\ket{\psi_t} = e^{\beta t}\ket{\psi_0}=e^{-iE_n/\hbar}\ket{n}\,.
+\]
+
+However, atoms placed in the best isolation allowed by an experiment, inevitably transition to the lowest (ground) energy state, emitting energy in the form of EMF excitation. The process is random and resembles a radioactive decay.
 
 \section{Stimulated Emission}
 \[
@@ -385,6 +387,18 @@ E_n = -\frac{E_i}{n^2}\,.
 \]
 
 \section{Lasers}
+Laser is a device that produces a special kind of light --\emph{monochromatic} and  \emph{coherent} electromagnetic radiation.
+Monochromatic means "single color" or single wavelength. Coherent means capable of interference, which implies stable \emph{phase}.
+
+ Laser can be described on several levels: classical, semiclassical, and quantum.
+
+Any laser has three main components: 
+\begin{enumerate}
+	\item \emph{Cavity} to create mode.
+	\item \emph{Gain medium} to amplify signal.
+	\item \emph{Pump} to keep energy flowing into the gain medium.
+\end{enumerate}
+
 From the standpoint of quantum physics, lasers are special \emph{sources of excitation of electromagnetic field}. Laser's operation is based on the effect of {\bf L}ight {\bf A}mplification by the {\bf S}timulated {\bf E}mission of {\bf R}adiation (LASER).
 \[
 \ketbra{\alpha}{\beta}
@@ -394,8 +408,27 @@ E_n = -\frac{E_i}{n^2}\,.
 \]
 
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{laser}
+	\caption{(a); (b)}
+	\label{fig:laser}
+\end{figure}
+
+
 
 \section{Photoeffect}
+The phenomena related to photoelectric effect, or photoeffect, are so important that three separate Nobel prizes have been awarded to people who contributed to their discovery, explanation, and confirmation. 
+\begin{mybio}{Noberl Prizes for Photoeffect}
+	The first Nobel prize was given to Philipp Eduard Anton von Lenard in 1905 for {\it "for his work on cathode rays"} (CHECK DETAILS!). The second Nobel prize was awarded to Albert Einstein in 1921 {\it "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect"}. The third Nobel prize was awarded to Robert Millikan in 1923 for {\it "for his work on the elementary charge of electricity and on the photoelectric effect"}.
+\end{mybio}
+An EMF excitation -- a photon -- with frequency $\nu$ and energy $E=h\nu$ can impart its energy to an electron bound inside a material (e.g. metal). If the energy is sufficient to free the electron, it can escape with the kinetic energy
+\[
+E = h\nu - W\,,
+\]
+where $W$ is the energy which a \emph{free electron} needs to move outside of a material. $W$ is called a \emph{work function} and it is a number specific to a material. 
+
+
 \[
 \ketbra{\alpha}{\beta}
 \]
@@ -431,7 +464,10 @@ Entanglement can be viewed as a \emph{physical resource} of purely quantum natur
 E_n = -\frac{E_i}{n^2}\,.
 \]
 \subsection{Teleportation}
-In quantum physics \emph{teleportation} means creation of a given quantum state at a far away place. It important to understand that quantum teleportation does not imply sending objects or energy instanteneously from one place to another.
+In quantum physics \emph{teleportation} means a "transfer" of a quantum state to a distant location. 
+In the process of teleportation the original quantum state is "erased" in one place and "reconstructed" at a target location.
+
+It important to understand that quantum teleportation does not imply sending \emph{objects}, \emph{energy}, or a \emph{signal} instanteneously from one place to another. Quantum teleportation has nothing to do with the popular sci-fi notion of object teleportation.
 
 \subsection{Entanglement And Measurement}
 Entanglement -- a purely quantum effect -- plays the central role in the measurement process.

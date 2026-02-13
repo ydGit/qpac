@@ -242,7 +242,7 @@ Both sides of this equality represent the same value $f\,(h\, (g\, x))$: We firs
 \end{mybio}
 
 \section{Kalcoolus}
-Quantum theory uses many mathematical tools, including linear algebra and calculus. In this book we won't need the full power of the latter. Instead, we will use "kids menu calculus" or "kalcoolus" -- a small set of simple calculus-related tools sufficient to express most of the equations of quantum theory. We will begin by discussing kalcoolus variants of \emph{differentiation} and \emph{integration}.
+Quantum theory uses many mathematical tools, including linear algebra and calculus. In this book the full power of the latter won't be need. Instead, we will use "kids menu calculus" or "kalcoolus" -- a small set of simple calculus-related tools sufficient to express most of the equations of quantum theory. We will begin by discussing kalcoolus variants of \emph{derivative} and \emph{integral}.
 
 \subsection{$\Delta-\delta-\partial$ Notation}
 Imagine we are tracking time from the moment we wake up at 6 a.m. to the moment we go to bed 16 hours later. Every event $E$ during the day is assigned a certain time $t_E$. We can ask how much time elapsed between two events. If the first event happens right after we wake up and the second at noon, then we write the time interval as
@@ -255,7 +255,7 @@ Now consider an eye-blink, where we close the eyes at $t_1$ and open them at $t_
 \[
 \delta\, t = t_2 - t_1\,,
 \]
-using $\delta$-notation to emphasize that the time interval is tiny.
+using $\delta$-notation to emphasize that the time interval is \emph{tiny}.
 
 Suppose we are monitoring the temperature outside by looking at a thermometer. For each moment of time $t$ we can specify the measured temperature $f_t$. The temperature in the morning and the temperature at noon can be quite different, so we use $\Delta$-notation:
 \[
@@ -281,11 +281,11 @@ Instead of the fractions, we will use $\partial$-notation:
 
 The notation just introduced can be applied to \emph{any} function of \emph{any} variable or \emph{any} number of variables. It is general, relatively simple, and efficient.
 \begin{exercise}
-	Given the kinetic energy of a moving body is $E = mv^2/2$, write our fully the meaning of the following expressions: $\partial_m\, E$ and $\partial_v\, E$.
+	Given the kinetic energy of a moving body is $E = mv^2/2$, write out fully the meaning of the following expressions: $\partial_m\, E$ and $\partial_v\, E$.
 \end{exercise}
 
 \begin{mybio}{Derivative}
-	The rigorous mathematical notion of derivative is used when we want to be absolutely sure that we are dealing with a unique value for the rate of change. To arrive at this unique value, one would analyze the result of making the change $\delta x$ of the variable $x$ ever smaller, and prove that the ratio
+	The rigorous mathematical notion of derivative is used when we want to be absolutely sure that we are dealing with a unique value for the rate of change. To arrive at this unique value, one would analyze the result of making the change $\delta x$ of the variable $x$ gradually ever smaller, and prove that the ratio
 	\[
 		\frac{f(x+\delta x)-f(x)}{\delta x}
 	\] 
@@ -293,20 +293,40 @@ The notation just introduced can be applied to \emph{any} function of \emph{any}
 	
 	For simplicity and practical purposes, we will use the rate of change $\partial_x f$, remembering that
 	\[
-	\textrm{derivative} = \partial_x f + \textrm{error}\,.
+	\textrm{derivative} = \partial_x f + \textrm{small error}\,.
 	\]
 \end{mybio}
 
 \begin{mybio}{Full Differential}
-	If you are wondering why don't we use $df$ instead of $\delta\,f$
+	Readers familiar with calculus might be wondering why don't we write $df$ instead of $\delta f$.
 \end{mybio}
 
-\subsection{Bernouli Sums}
+\subsection{Bernoulli Sums}
+A Swiss mathematician Jacob Bernoulli, who worked at the end of the 17th century, made many  important contributions to mathematics. In his 1713 book "The Art of Conjecturing" he presented formulas for the "sum of powers":
+\[
+\int n = \frac{1}{2}nn+\frac{1}{2}n\,,
+\]
+\[
+\int nn = \frac{1}{3}n^3+\frac{1}{2}nn+\frac{1}{6}n\,,
+\]
+and so on up to the power of $n^{10}$, and gave a general expression for $\int n^c$.  
+
+The summation sign used by Bernoulli was introduced by his contemporary --  a German mathematician Gottfried Leibniz. The sign is just the first letter of the word \emph{'Sum'}, written in accordance with the rules of that time. For example, a 1661 astronomy reference book {\it "Astronomia Carolina"}, contains a section titled {\it Of the $\int\textrm{\!\!\!econd}$ Inequality of the Moon}.
+
+History aside, notation is a matter of convention. In this book we will use Leibniz summation sign for "regular" sums, like Bernoulli, as well as for "special" sums used to express \emph{integrals}.
+
+\begin{myExample}
+	Using Leibniz summation sign, we can say that "sizable change is the sum of many tiny changes" by writing the following expression:
+	\[
+	\Delta x = \int \delta x
+	\]
+	The right-hand side stands for a long expression $\delta x + \delta x + \ldots + \delta x$.
+	
+\end{myExample}
 
 \section{Arrows}
+Before we introduce the concepts of \emph{vectors}, \emph{vector spaces}, and \emph{operators} acting on vectors, we will examine an introductory model for vectors based on \emph{arrows} -- directed line segments, as illustrated in Figure \ref{fig:arrowsAndVectors}.
 
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane, as illustrated in the Figure \ref{fig:arrowsAndVectors}.
 
 \begin{figure}[htbp]
   \centering
@@ -319,17 +339,167 @@ Symbolically, we will denote vectors by placing an arrow over letters:
 \[
 \vec{a}\,,\vec{b}\,,\vec{c}\,,\ldots\,,\vec{\alpha}\,,\vec{\beta}\,.
 \]
+However, not all vectors behave like arrows. Futhermore, to introduce the basic notation of quantum theory as early as possible, we will switch to what is known as \emph{Dirac notation} for vectors.
 
 \subsection{Dirac Notation}
+Instead of placing an arrow on top of a letter, we enclose the letter between a pair of symbols as follows:
+\[
+\vec{a}\to\ket{a}\,.
+\]
+The advantages of this notation accumulate and become more apparent the longer we study quantum physics.
 
-\subsection{Basis and Bases}
-Given a basis, it become immediately apparent that it is not unique. Indeed, at least the order of basis arrows is not fixed. Also, if $\vec{e}_1$ is independent of $\vec{e}_2$, then so is $2\vec{e}_1$.
+\subsection{Arrow Algebra}
+Arrows are \emph{numberlike} -- they can be added and multiplied, and the rules for addition and multiplication resemble those of regular numbers. However, arrows allow a richer set of operations compared to numbers. For example, there are three different types of multiplication for any pair of arrows, depending on the type of the final result: 1) a number; 2) another arrow; 3) more complex geometric figures like a piece of a plane. We will mainly focus on the first type, called \emph{scalar product}, and the thrid one, called \emph{tensor product}.
 
+\subsection{Bases}
+Consider a pair of non-parallel arrows $\ket{a}$ and $\ket{b}$, arranged for convenience tail-to-tail. Their sum yields the third arrow $\ket{c}$:
+\[
+\ket{c} = \ket{a} + \ket{b} = 1\ket{a}+1\ket{b}\,.
+\]
+The numbers in front of $\ket{a}$ and $\ket{b}$ are called \emph{components} of the arrow $\ket{c}$ \emph{relative} to $\ket{a}$ and $\ket{b}$. By varying these numbers, while keeping the arrows $\ket{a}$ and $\ket{b}$ fixed, we can \emph{obtain any arrow in a plane}. In other words, any arrow $\ket{v}$ can be written as
+\[
+\ket{v} = v_a\ket{a}+v_b\ket{b}\,.
+\]
+Here, again, the pair of numbers $(v_a, v_b)$ represent components of $\ket{v}$ relative to $\ket{a}$ and $\ket{b}$. 
+
+Non-parallel arrows $\ket{a}$ and $\ket{b}$ are \emph{independent}, in the sense that neither can be expressed in terms of the other. In contrast, the arrow $\ket{v} = v_a\ket{a}+v_b\ket{b}$ is not independent from $\ket{a}$ and $\ket{b}$. Thus, the set of arrows $\lbrace \ket{a}, \ket{b}, \ket{v} \rbrace$ is not independent. For arrows in a plane, the number of independent arrows can not be more than two -- matching the dimensionality of the plane.
+
+The set of $n$ independent arrows is called \emph{basis} for the $n$-dimensional space in consideration. Any set of $m < n$ independent arrows will be \emph{incomplete} and insufficient to serve as a basis. In essense, basis is a set of "building blocks" for all possible arrows. The set of "building blocks" must be rich enough to build up anything else (\emph{complete set}), and it does not need any redundant elements (\emph{independent set}).
+
+Basis in not unique, as we can easily show. Given basis $\ket{a}$ and $\ket{b}$, we can  rotate and scale each arrow separately, to obtain arrows $\ket{\alpha}$ and $\ket{\beta}$:
+\[
+\ket{a}\to\ket{\alpha}\,\textrm{ and }\,\ket{b}\to\ket{\beta}\,.
+\]
+As long as $\ket{\alpha}\nparallel\ket{\beta}$, they can be used as basis.
+\begin{exercise}
+	Consider $\ket{+} = \ket{a} + \ket{b}\,\textrm{ and }\,\ket{-}=\ket{a}-\ket{b}\,.$
+	Prove that if $\ket{+}=\lambda\ket{-}$ then $\ket{b}=\mu\ket{a}$. Find $\mu$.
+\end{exercise}
+As the previous exercise shows, the arrows $\ket{+}$ and $\ket{-}$ are independent and can be used as basis.
+\begin{exercise}
+	Given $\ket{v}=\ket{a}+2\ket{b}$, express it in the $\lbrace \ket{+},\ket{-}\rbrace$ basis:
+	\[
+		\ket{v}=v_{+}\ket{+}+v_{-}\ket{-}\,.
+	\]
+	Find $v_{+}$ and $v_{-}$.
+\end{exercise}
+
+\subsection{Normalized Bases}
+Vectors are sometimes defined as mathematical quantities with \emph{magnitude} and \emph{direction}. This implies that a meaningful notion of \emph{length} (magnitude) can be assinged to vectors. For arrows this is obvious, while for other types of vector-like quantities might be not so. 
+
+The length of a vector is called its \emph{norm}. Vectors with unit length are called \emph{normalized}. Any vector can be "scaled" to have a unit length. Indeed, given a vector $\ket{a}$ with length $a$, we get a normalized vector as follows:
+\[
+\ket{u} = \frac{\ket{a}}{a}\,.
+\]
+When doing calculations, it is convenient to normalize all basis vectors. This results in \emph{normalized basis}.
 
 \section{Scalar Product}
+The first way to multiply two vectors that we will study is called \emph{scalar product}. In this operation two vectors are combined to yield a number (a.k.a \emph{scalar}):
+\[
+\ket{a}\cdot\ket{b} = x\,.
+\]
+Here we followed traditional \emph{infix notation} using "$\cdot$" as an analogue of "$*$" for numbers. Soon we will learn the usefulness of \emph{prefix notation} for scalar product and its relation to operators, but for now we will keep writing scalar product of vectors similar to numbers.
 
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane, as illustrated in the Figure \ref{fig:arrowsSpace}.
+Guided by simplicity, we expect scalar product to satisfy two basic algebraic laws:
+\[
+\ket{a}\cdot\ket{b}  = \ket{b}\cdot\ket{a}\,\textrm{  -- commutativity}\,. 
+\]
+\[
+(\ket{a}+\ket{b})\cdot\ket{c}=\ket{a}\cdot\ket{c}+\ket{b}\cdot\ket{c}\,\textrm{ -- distributivity }.
+\]
+Let's apply the last requirement to a vector $2\ket{a}$, representing it as $\ket{a}+\ket{a}$:
+\[
+(2\ket{a})\cdot\ket{b}=(\ket{a}+\ket{a})\cdot\ket{b}=\ket{a}\cdot\ket{b}+\ket{a}\cdot\ket{b}=2(\ket{a}\cdot\ket{b})\,.
+\]
+Thus, we see that one more requirement is both natural and helpful:
+\[
+(x\ket{a})\cdot\ket{b}=x(\ket{a}\cdot\ket{b})\,.
+\]
+We can formulate this last result as a rule: "scalars can be pulled outside."
+
+\subsection{Products of Basis Vectors}
+Combining scalar product with the representation of vectors in a \emph{normalized} basis $\lbrace 
+\ket{u_1}, \ket{u_2}\rbrace$ leads to important insights. Consider two vectors:
+\[
+\ket{a}=a_1\ket{u_1}+a_2\ket{u_2}\,\textrm{ and }\,\ket{b}=b_1\ket{u_1}+b_2\ket{u_2}\,.
+\]
+Scalar product $\ket{a}\cdot\ket{b}$ can be calculated step-by-step, first expanding $\ket{a}$:
+\[
+\ket{a}\cdot\ket{b} = a_1\ket{u_1}\cdot\ket{b}+a_2\ket{u_2}\cdot\ket{b}\,.
+\]
+Then, expanding $\ket{b}$, we obtain:
+\[
+\ket{a}\cdot\ket{b}=a_1b_1\ket{u_1}\cdot\ket{u_1}+a_1b_2\ket{u_1}\cdot\ket{u_2}+a_2b_1\ket{u_2}\cdot\ket{u_1}+a_2b_2\ket{u_2}\cdot\ket{u_2}\,.
+\]
+Using the commutativity $\ket{u_1}\cdot\ket{u_2}=\ket{u_2}\cdot\ket{u_1}$, we can slightly simplify the last expression:
+\[
+\ket{a}\cdot\ket{b}=a_1b_1\ket{u_1}\cdot\ket{u_1}+(a_1b_2+a_2b_1)\ket{u_1}\cdot\ket{u_2}+a_2b_2\ket{u_2}\cdot\ket{u_2}\,.
+\]
+If the scalar products of all basis vectors are known, we can calculate scalar product of any pair of vectors. We reduced the problem to defining the scalar product of a pair of unit-length vectors:
+\[
+\ket{u_1}\cdot\ket{u_1}\,,\ket{u_2}\cdot\ket{u_2}\,,\textrm{ and }\ket{u_1}\cdot\ket{u_2}\,.
+\]
+
+The only difference between two unit-length vectors $\ket{u_1}$ and $\ket{u_2}$ is their orientation. Since there is no preferred direction in the plane, we can only speak of the \emph{mutual orientation} of the pair of vectors. A convenient measure of the mutual orientation is the \emph{angle between} corresponding arrows. We are, therefore, led to the following candidate for the scalar product:
+\[
+\ket{u_1}\cdot\ket{u_2} = f_\theta\,,
+\]
+where $\theta$ is the angle between $\ket{u_1}$ and $\ket{u_2}$, measured counterclockwise from $\ket{u_1}$ to $\ket{u_2}$. At this point, the only thing we can say about the function $f$ is that it is  continuous and periodic in its argument $\theta$. Let's examine two simple candidates -- trigonometric functions $\cos\theta$ and $\sin\theta$.
+
+\subsection{Scalar Product Meaning}
+Once the scalar product of two unit vectors is defined, we can ask what intuitive interpretation can be given to a scalar product in general. To this end, let's take a pair of normalized vectors $\ket{u_1}$ and $\ket{u_2}$ and scale them to an arbitrary lengths:
+\[
+\ket{u_1}\,\to\,\ket{a}=a\ket{u_1}\,\textrm{ and }\,\ket{u_2}\,\to\,\ket{b}=b\ket{u_2}\,.
+\]
+Scalar product of $\ket{a}$ and $\ket{b}$ is then simply
+\[
+\ket{a}\cdot\ket{b} = abf_\theta\,.
+\]
+The factor $ab$ -- the product of two lengths -- suggests that the scalar product is related to area, as illustrated in Figure \ref{fig:scalarProductMeaning}. 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{scalarProductMeaning}
+	\caption{Two way to interpret scalar product of two vectors.}
+	\label{fig:scalarProductMeaning}
+\end{figure}
+
+If we note that the vector $\ket{b}$ can be written as the sum of two parts:
+\[
+\ket{b}=\ket{b_\parallel}+\ket{b_\perp}\,,
+\]
+ one parallel to the vector $\ket{a}$ and the other perpendicular to it, then two different interpretations can be given. First, if $f=\sin$, then the scalar product
+\[
+\ket{a}\cdot\ket{b} = ab\sin\theta
+\]
+would correspond to the area of a parallelogram built on two vectors $\ket{a}$ and $\ket{b}$ or the area of a rectangle built on two vectors $\ket{a}$ and $\ket{b_\perp}$. This approach is fruitful and it is used in a more advanced version of the product of two vectors, related to \emph{tensor product} as discussed later.
+
+The second simple option corresponds to $f=\cos$ and the scalar product
+\[
+\ket{a}\cdot\ket{b} = ab\sin\theta\,.
+\]
+It is the area of the rectangle built on two vectors $\ket{a}$ and $\ket{b_\parallel}$. 
+
+\begin{mybio}{Fidelity, Alignment, and Overlap}
+	Scalar product of unit vectors can be viewed as the measure of their "alignment" or "overlap". This interpretation is useful in quantum theory, where vectors are used to represent states of quantum systems. 
+\end{mybio}
+
+\subsection{Orthonormal Bases}
+The choice of basis vectors is dictated by their usefulness in a given problem. In many cases it is convenient to use basis vectors which have unit length and which are \emph{mutually orthogonal}:
+\[
+\ket{u_1}\cdot\ket{u_1}=1=\ket{u_2}\cdot\ket{u_2}\,\textrm{ and }\,\ket{u_1}\cdot\ket{u_2}=0\,.
+\]
+In this case scalar product of any two vectors 
+\[
+\ket{a}=a_1\ket{u_1}+a_2\ket{u_2}\,\textrm{ and }\,\ket{b}=b_1\ket{u_1}+b_2\ket{u_2}\,.
+\]
+takes on a very simple form:
+\[
+\ket{a}\cdot\ket{b}=a_1b_1+a_2b_2\,.
+\]
+Although we arrived at this result analysing only two-dimensional case, it is easily generalized to any number of dimensions. For an $n$-dimensional case we would have the following expression for the scalar product
+\[
+\ket{a}\cdot\ket{b}=\int a_ib_i\,,\quad  i=\overline{1,n}\,.
+\]
 
 
 \section{Operators}\label{sec:operators}
