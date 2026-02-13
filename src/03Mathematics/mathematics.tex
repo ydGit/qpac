@@ -503,51 +503,12 @@ Although we arrived at this result analysing only two-dimensional case, it is ea
 
 
 \section{Operators}\label{sec:operators}
-
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane.
+Operators are functions of a particular kind. A "usual" function, like $\cos$, \emph{transforms} a number into another number, while an operator $\op{T}$ transforms a vector into another vector:
 \[
-\braket{\phi}{\phi}
+\op{T}\,\ket{a} = \ket{b}\,.
 \]
-and
-\[
-\ketbra{\phi}{\phi}\,.
-\]
-\begin{example}
-	Consider an operator that transforms the state $\ket{0}$ into a linear combination $\ket{+}=(\ket{0}+\ket{1})/\sqrt{2})$ and the state $\ket{1}$ into a linear combination $\ket{-}=(\ket{0}-\ket{1})/\sqrt{2})$.
-	
-	It is called \emph{Hadamard} operator and has the following matrix representation.
-\end{example}
-
-Operators can be used to solve problems that do not have solutions in terms of real numbers. For example:
-\[
-\op{A}+\op{B} = 6\op{I}\,\textrm{ and }\, \op{A}\op{B}=36\op{I}\,.
-\]
-To simplify this problem we can first rescale the operators, introducing
-\[
-\op{a} = \op{A} / 6\,\textrm{ and }\, \op{b} = \op{B}/6\,.
-\]
-\[
-\op{a}+\op{b} = \op{I}\,\textrm{ and }\, \op{a}\op{b}=\op{I}\,.
-\]
-
-\subsection{Super-operators}
-
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation:
-\[
-F\,\vec{a}=\vec{b}\:.
-\]
-Often a ``hat'' is placed on top of an operator\footnote{In Quantum
-	Mechanics, for example.}, to emphasize that it is different from
-numeric function:
-\[
-\colorboxed{red}{
-	\op{F}\,\vec{a}=\vec{b}\:.
-}
-\]
-
-\begin{mybio}{Simple Operators}\\
+It is better to consider examples.
+\begin{mybio}{Example Operators}\\
 	It is easy to come up with examples of operators:
 	
 	\begin{itemize}
@@ -555,48 +516,135 @@ numeric function:
 		
 		\item Unit operator (or \emph{identity} operator), such that
 		\[
-		\op{I}\,\vec{a}=\vec{a}\,.
+		\op{I}\,\ket{a}=\ket{a}\,.
 		\]
 		
 		\item ``Zeroing'' operator that maps every vector into a zero
 		vector:
 		\[
-		\op{0}\, \vec{a} = \vec{0}\,.
+		\op{0}\, \ket{a} = \ket{0}\,.
 		\]
+		
+		\item ``Flipping'' operator that changes a vector into its opposite:
+		vector:
+		\[
+		\op{F}\, \ket{a} = -\ket{a}\,.
+		\]
+		
+		\item ``Orthogonal'' operator that makes any vector perpendicular to its original direction. In other words, it rotates the original vector by $90$ degrees counter-clockwise, leaving the length the same:
+		\[
+		\op{J}\, \ket{a} = \ket{b}\,,\textrm{ such that }\, b=a\,\textrm{ and }\,\ket{a}\cdot\ket{b}=0\,.
+		\]
+		Here $a$ and $b$ are the lengths of the vectors.
+		
+		\item ``Normalizing'' operator that turns an arbitrary vector into a normalized vector with the same direction:
+		\[
+		\op{N}\, \ket{a} = \ket{a}/a\,.
+		\]
+		
+		\item Rotation operators that perform a rotation of a vector by a specified angle $\theta$:
+		\[
+		\op{R}_\theta\, \ket{a} = \ket{b}\,,\textrm{ such that }\, a=b\,,\textrm{ and } \,\ket{a}\cdot\ket{b}=a^2\cos\theta\,.
+		\]
+		Special cases of these operators are $\op{F}=\op{R}_\pi$, $\op{J}=\op{R}_{\pi/2}$ and $\op{I}=\op{R}_0$.
+		
+		\item Scaling operators that change the length of a given vector by a specified factor:
+		\[
+		\op{S}_x\, \ket{a} = x\ket{a}\,.
+		\]
+		Special cases of these operators are $\op{F}=\op{S}_{-1}$, $\op{I}=\op{S}_1$, and $\op{0}=\op{S}_0$.
 		
 	\end{itemize}
 \end{mybio}
 
+\subsection{Operator Algebra}
+Since operators are functions, we can manipulate them like functions. In particular, we can use them as objects in their own right, which can be added or composed. Indeed, if we can add vectors, we can give useful meaning to the sum of operators:
+\[
+\op{T} = \op{I} + \op{J} + \op{S}_2\,.
+\]
+To fully describe an operator, we must find how it acts \emph{on any} vector. In this example we get
+\[
+\op{T}\,\ket{a} = \op{I}\,\ket{a} + \op{J}\,\ket{a} + \op{S}_2\,\ket{a}=\ket{a}+\ket{b}+2\ket{a}=3\ket{a}+\ket{b}\,,
+\]
+where the vector $\ket{b}$ is orthogonal to $\ket{a}$, while having the same length.
 
-To fully describe an operator, we must describe how it acts \emph{on
-	every} arrow. 
+Operators can be multiplied by "usual" numbers, and they can be composed.
 
-\begin{flushleft}
-	{\bf Examples}
-\end{flushleft}
-Let us take a closer look at a couple of operators. While studying
-these examples we must keep in mind that the relations between
-components are \emph{specific to basis} and will change if we change the
-basis. The question of how exactly the relation between components
-changes will be addressed later in Section
-\ref{sec:ComponentTransformation} for the simplest types of operators.
 
+\subsection{Linear Operators}
+Among the simplest non-trivial operators are \emph{linear operators}. As mentioned earlier, linear functions satisfy two conditions:
+\[
+\op{T}\,(\ket{a}+\ket{b}) = \op{T}\,\ket{a}+\op{T}\,\ket{b}\,,
+\]
+and
+\[
+\op{T}\,(x\ket{a}) = x\op{T}\,\ket{a}\,.
+\]
+Thus, operator action distributes over a sum, and numbers can be pulled outside.
+
+To define a linear operator, we need only to describe how it affects basis vectors. Indeed, if an arbitrary vector $\ket{a}$ is represented in some basis, we can write
+\[
+\op{T}\,\ket{a} = \op{T}\,(a_1\ket{u_1}+a_2\ket{u_2}) = \op{T}\,(a_1\ket{u_1})+\op{T}\,(a_2\ket{u_2})\,,
+\]
+and then pull numbers outside to obtain:
+\[
+\op{T}\,\ket{a} = a_1\op{T}\,\ket{u_1}+a_2\op{T}\ket{u_2}\,.
+\]
+We only need to know $\ket{t_1}=\op{T}\,\ket{u_1}$ and $\ket{t_2}=\op{T}\ket{u_2}$, so that 
+\[
+\op{T}\,\ket{a}=a_1\ket{t_1}+a_2\ket{t_2}\,,\quad \op{T}\,\ket{b}=b_1\ket{t_1}+b_2\ket{t_2}\,,\textrm{ and so on}.
+\]
+Now both $\ket{t_1}$ and $\ket{t_2}$ are vectors and can be represented in the same basis as $\ket{a}$:
+\[
+\ket{t_1}=T_{11}\ket{u_1}+T_{12}\ket{u_2}\,,
+\]
+and
+\[
+\ket{t_2}=T_{21}\ket{u_1}+T_{22}\ket{u_2}\,.
+\]
+The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{components of an operator} in a given basis. It is crucial to remember that these components are specific to a basis. If we decide to change to a different basis, components of all vectors and operators will change.
 
 \begin{mybio}{Matrix}
-	Here is an example of matrix:
+	Components of a linear operator in a given basis are often written as square table, called \emph{matrix}:
 	\[
-	\op{S} =
+	\op{T} =
 	\begin{pmatrix}
-		S_{11} & S_{12}\\
-		S_{21} & S_{22}
-	\end{pmatrix} =
-	\begin{pmatrix}
-		\alpha & 0\\
-		0 & \alpha
+		T_{11} & T_{12}\\
+		T_{21} & T_{22}
 	\end{pmatrix}\,.
 	\]
-	Similar approach can be used to find the components of any linear operator.
+	We emphasize again: If we change to a different basis, components of the operators will change, and the matrix will look different. Sometimes matrices are convenient for computations, but they are rarely used in this book.
 \end{mybio}
+
+\begin{example}
+	Consider an operator that transforms the state $\ket{0}$ into a linear combination $\ket{+}=(\ket{0}+\ket{1})/\sqrt{2})$ and the state $\ket{1}$ into a linear combination $\ket{-}=(\ket{0}-\ket{1})/\sqrt{2})$.
+	
+	It is called \emph{Hadamard} operator and has the following matrix representation.
+\end{example}
+
+\begin{mybio}{Numbers On Steroids}
+	Operators can be used to solve problems that do not have solutions in terms of real numbers. For example:
+	\[
+	\op{A}+\op{B} = 6\op{I}\,\textrm{ and }\, \op{A}\op{B}=36\op{I}\,.
+	\]
+	To simplify this problem we can first rescale the operators, introducing
+	\[
+	\op{a} = \op{A} / 6\,\textrm{ and }\, \op{b} = \op{B}/6\,.
+	\]
+	\[
+	\op{a}+\op{b} = \op{I}\,\textrm{ and }\, \op{a}\op{b}=\op{I}\,.
+	\]
+	
+\end{mybio}
+
+\subsection{Super-operators*}
+An idea of a function is quite general, it implies mapping one value to another, or calculting result given a certain input. Given a number, a function can yield another number, or given a vector a function can produce another vector. In the latter case we call the function an \emph{operator}.  
+
+In the mathematical toolset of both classical and quantum physics there are functions of \emph{higher order} in the sense that they can act on functions or operators. For example,  a \emph{super-operator} is a mapping from any operator $\op{T}$ into another operator. Although it sounds abstract, it is not a complicated idea. Indeed, all we need is a rule that finds some operator $\op{B}$ given an operator $\op{A}$. One non-trivial rule can be stated as follows: Given an operator $\op{A}$, apply it twice:
+\[
+\op{A}\quad\overset{\mathcal{F}}{\longrightarrow}\quad\op{B}=\op{A}\circ\op{A}\,.
+\]
+Since the composition of two operators is again an operator, this is a satisfactory definition.
 
 
 \section{Functionals}
@@ -699,29 +747,95 @@ For $f=\sin$ we obtain $\mathcal{R}\,\sin\approx 1.1479$.
 \end{exercise}
 
 \section{Spaces}
+In mathematics and physics the concept of \emph{space} becomes more abstract, in comparison with the intuitive view of space as a "container for things." Space in mathematical sense is more akin to how people understand space in expressions like "space of ideas", "space of solutions", "color space", "design space", "parameter space", and so on.
 
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane.
-\[
-\braket{\phi}{\phi}
-\]
-and
-\[
-\ketbra{\phi}{\phi}\,.
-\]
+First of all, space is a set of mathematical objects of similar nature. For example, all numbers, or all arrows considered as one single entity, can be viewed as space. Second, unlike a simple set, space has some \emph{structure}, some \emph{relations} between its elements. For example, there might some sense of direction, or distance, or simply continuity. Advanced spaces, used in mathematical physics, have quite a lot of structure, with distances, angles, algebraic operations, and even with operations required for calculus.
+
+We will be mainly using \emph{vector spaces}, understood as rich collections of all vectors, endowed with addition and multiplication operations, as defined earlier.
 
 \section{Duality}
+Many mathematical concepts have very natural "companions", related in the spirit of mirror images or "yin-yang." In this kind of relationship both "companions" are on equal footing, neither concept is preferred, neither is basic while the other is derived. This situation is called \emph{duality}.
 
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane.
+Scalar product of vectors leads to two interesting and useful dualities. The first duality deals with vectors and results in \emph{dual vectors}, while the second duality deals with operators and gives the notion of \emph{adjoint operators}.
+
+\subsection{Dual Vectors}
+To arrive at dual vectors we can start with scalar product, written using a \emph{prefix notation}:
 \[
-\braket{\phi}{\phi}
+\lbrack\cdot\rbrack\,\ket{a}\,\ket{b} = x\,.
 \]
-and
+Here we introduced a binary operator (function of two vector arguments) that maps a pair of vectors into a number.
+
+The next step is to consider the operator $\lbrack\cdot\rbrack$ \emph{partially applied} to the first argument only:
 \[
-\ketbra{\phi}{\phi}\,.
+\lbrack\cdot\rbrack\,\ket{a}\tus\,.
+\]
+Although here we denoted "an empy slot" with a grey circle $\tus$, it is unnecessary and can be dropped. Furthermore, we will use Dirac notation for the mathematical object that results from the partial application of scalar product, writing it as follows:
+\[
+\bra{a} = \lbrack\cdot\rbrack\,\ket{a}\,.
+\]
+Such an object can be written for \emph{every} vector:
+\[
+\bra{b} = \lbrack\cdot\rbrack\,\ket{b}\,,\quad
+\bra{c} = \lbrack\cdot\rbrack\,\ket{c}\,,\quad\textrm{ and so on.}
 \]
 
+A beautiful thing about this whole construction is that it gives us \emph{new kinds of vectors}. Also, it teaches us a lesson that vectors can be viewed as functions, revealing a connection between the two concepts.
+
+It is easy to demonstrate that $\bra{a}$ is a linear function. Recall that a function with two arguments, when partially applied, becomes a function of a single argument. Therefore, since $\lbrack\cdot\rbrack$ is the function of two vector arguments, $\bra{a}$ must be the function of just one vector argument. Moreover, since $\lbrack\cdot\rbrack$ is linear in both arguments, $\bra{a}$ must be linear in its single argument. More explicitely:
+\[
+\bra{a}\,(\ket{b}+\ket{c})=\bra{a}\ket{b}+\bra{a}\ket{c}\,.
+\]
+To check this equality, we first replace $\bra{a}$ with its definition, then switch to the infix notation, and use the distributivity of scalar product.
+\begin{exercise}
+	Prove the equalities:
+	\[
+	\bra{a}\,(\ket{b}+\ket{c})=\bra{a}\ket{b}+\bra{a}\ket{c}\,,
+	\]
+	and
+	\[
+	\bra{a}\,(x\ket{b})=x\bra{a}\ket{b}\,.
+	\]
+\end{exercise}
+\begin{mybio}{Bra, Ket, and Braket}
+	In Dirac notation the application of $\bra{a}$ to $\ket{b}$ is written in a less noisy way:
+	\[
+	\braket{a}{b}\,.
+	\]
+	The whole expression is called \emph{bracket}, while $\bra{a}$ is called \emph{bra vector}, and $\ket{b}$ is called \emph{ket vector}.
+\end{mybio}
+
+Now how can we show that the collection of objects $\bra{a}$, $\bra{b}$, $\bra{c}$ and so on forms a vector space? To be a vector an object must behave like one, demonstrating all properties that fully define vector. We will examine whether bra-vectors can be added, and whether they can be expanded in some basis.
+
+Can $\bra{a}$ and $\bra{b}$ be added? Of course they can, because they are functions over "addable things" (over vectors), and the meaning of $\bra{v}=\bra{a}+\bra{b}$ is simple:
+\[
+\braket{v}{c}=\braket{a}{c}+\braket{b}{c}\,.
+\]
+For similar reasons, any $\bra{a}$ can be multiplied by "usual" numbers, so that the expressions like
+\[
+\bra{w} = x\bra{a}+y\bra{b}
+\]
+have a straightforward interpretation.
+
+Since there is exists a basis in the ket-vector space, there is one in the bra-space. Indeed, suppose we have $\ket{a}=a_1\ket{u_1}+a_2\ket{u_2}$ and we use the linearity of the scalar product in its first argument:
+\[
+\bra{a} = \lbrack\cdot\rbrack\,(a_1\ket{u_1}+a_2\ket{u_2})=a_1(\lbrack\cdot\rbrack\,\ket{u_1})+
+a_2(\lbrack\cdot\rbrack\,\ket{u_2})\,.
+\]
+Since
+\[
+\lbrack\cdot\rbrack\,\ket{u_1} = \bra{u_1}\,,\quad\textrm{ and }\quad\lbrack\cdot\rbrack\,\ket{u_2} = \bra{u_2}\,,
+\]
+we conclude that any bra-vector can be expanded in terms of some other bra-vector, just like ket-vectors are expanded in some basis:
+\[
+\bra{a} = a_1\bra{u_1}+a_2\bra{u_2}\,.
+\]
+In summary, if we need a bra-basis, we can use ket-basis and partially apply the scalar product operator to each ket-basis vector. 
+
+To rigirously prove that both ket-vectors and bra-vectors are indeed vectors, we must investigate how their components change when we change bases. The only challenge this task presents is its tediousness (REF TO MY BOOK).
+
+From now on we will recognize that to every ket-vector $\ket{a}$ there corresponds a \emph{dual} bra-vector $\bra{a}$. We must keep in mind that this duality has been generated by the operation of scalar product. Once a vector space has scalar product defined, we get a dual vector space "for free." Such dual vector spaces turn out extremely useful in quantum theory, as we will soon see.
+
+\subsection{Adjoint Operators}
 
 \section{Bundling}
 A pair of vectors can be combined in a variety of ways. For example, adding two vectors returns the third vector, while scalar product returns a number. Other useful methods of combining vectors result in more advanced mathematical objects, such as, for example, tensors. One simple approach to combining vectors to create complex objects uses the idea of \emph{bundling}.
