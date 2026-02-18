@@ -959,16 +959,92 @@ U^\dagger_{12} = U_{21}\,,U^\dagger_{23} = U_{32}\,,\quad\textrm{ and so on.}
 The concepts of conjugation and adjoint operator, discussed above, have interesting and powerful representations in terms of \emph{tensor product} -- the topic of the next section.
 
 
-\section{Bundling}
-A pair of vectors can be combined in a variety of ways. For example, adding two vectors returns the third vector, while scalar product returns a number. Other useful methods of combining vectors result in more advanced mathematical objects, such as, for example, tensors. One simple approach to combining vectors to create complex objects uses the idea of \emph{bundling}.
+\section{Tensor Product}
+A pair of vectors can be combined in a variety of ways, yielding results of different kinds, see Figure \ref{fig:vectorOperations}. 
+Two familiar operations of vector addition and scalar product are close analogs of numeric addition and multiplication, respectively. Addition "glues" two vectors into the third vector, scalar product "fuses" two vectors into a number. There exists one more method of "bundling" vectors which results not in a number or yet another vector, but in a more advanced mathematical objects called \emph{tensor}. Tensors are closely related to operators and we will focus on this aspect of tensor product. 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{vectorOperations}
+	\caption{Three basic operation with vectors: a) Scalar product; b) vector sum; c) tensor product.}
+	\label{fig:vectorOperations}
+\end{figure}
 
-When a pair of vectors is bundled, the original vectors are not lost, they become incorporated in a more complex mathematical object. It may sound complicated, but the idea can be expressed simply as follows: \emph{Keep original vectors together in some some sort of a bundle.}
-
-The simpest bundle is a pair. Given two vectors of the same type $\ket{a}$ and $\ket{b}$ we can bundle them into a pair: $\mathcal{P}=(\ket{a}, \ket{b})$.
-
+We start with a pair of ket-vectors $\ket{a}$ and $\ket{b}$ and try "bundling" them in a way that resembles multiplication. Denoting this new operation $\otimes$, we want to have 
 \[
-\ketbra{a}{b}\,.
+\ket{a}\otimes\left(\ket{b}+\ket{c}\right)=\ket{a}\otimes\ket{b}+\ket{a}\otimes\ket{c}\,,
 \]
+and
+\[
+(x\ket{a})\otimes(y\ket{b})=xy\ket{a}\otimes\ket{b}\,.
+\]
+The last requirement indicates that this new type of product has the nature of an area, since it is proportional to the product of the lengths of two vectors. Thus, it can't be another vector, but must be a construction of different kind that we will call \emph{tensor}, and the product $\ket{a}\otimes\ket{b}$ -- a \emph{tensor product}. 
+
+Using the arrow model of vectors, we can consider as a possible candidate a "blade" -- a piece of plane swept by "sliding" the vector $\ket{a}$ along the vector $\ket{b}$, as illustrated in Figure \ref{fig:vectorOperations}(c). This geometric object has "magnitude" or size, defined by the area of the blade, and it has direction or orientation. This approach is used in geometric algebra, where the \emph{outer product} is defined along these lines.
+
+The geometric representation of product $\ket{a}\otimes\ket{b}$ might be appealing, but not at all required. Furthermore, it might even be unhelpful when we would like to generalize the operation to the product of other vector types:
+\[
+\ket{a}\otimes\bra{b}\,,\quad \bra{a}\otimes\ket{b}\,,\quad\textrm{ or }\quad\bra{a}\otimes\bra{a}\,.
+\]
+In other words, we should not constrain ourselves by reliance on a geometric intuition. How then do we interpret these various products? Well, one simple \emph{operational} criterion helps: A mathematical object is defined by \emph{what it does} and \emph{how it is used}. Let's study the two most important cases of tensor products.
+
+\subsection{Ket-Ket}
+The first tensor product is made of two ket-vectors:
+\[
+\op{P} = \ket{a}\otimes\ket{b}\,.
+\]
+In quantum theory, where ket-vectors "store" the information of all possible measurement (\emph{state} of a quantum system), the product is used to describe a \emph{joint system}, in which two distinct parts, say $A$ and $B$, can be identified and measured by different measuring devices.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{ketketExample}
+	\caption{Joint measurement of two systems.}
+	\label{fig:ketketExample}
+\end{figure}
+
+
+Let's study an example, shown in Figure \ref{fig:ketketExample}. Imagine that we measure the value of some discrete quantity (quantized energy of an atom, for instance) using identical devices in different locations, corresponding to the systems $A$ and $B$. Suppose that in each trial the value of energy is measured to be either 1, or 2, or 3 \emph{randomly}. Then, after many trials of measuring the energy of the system $A$, we may summarize the statistics as follows:
+\[
+\ket{a}=a_1\ket{1}+a_2\ket{2}+a_3\ket{3}\,,
+\]
+where $a_i=N_i/N$ is the \emph{probability} to obtain the result $i$, expressed as the ratio of the number of times $N_i$ the value $i$ appeared in a series of $N$ measurements. Similarly, after many trials of measuring the energy of the system $B$, we may summarize the statistics as an expression:
+\[
+\ket{b}=b_1\ket{1}+b_2\ket{2}+b_3\ket{3}\,,
+\]
+with the similar meaning of the coefficients $b_i$.
+
+Now we can write the summary of observation of two systems joined together:
+\[
+\op{P} = \ket{a}\otimes\ket{b}=a_1b_1 \ket{1}\otimes\ket{1}+a_1b_2 \ket{1}\otimes\ket{2}+\ldots a_3b_3 \ket{3}\otimes\ket{3}\,.
+\]
+From the probability theory it is known (see SECTION X) that the numbers $p_{ij}=a_ib_j$ give the probability to measure the value $\ket{i}$ in the experiment on the system $A$, while getting the value $\ket{j}$ in the measurement performed on $B$.
+
+It might seem like unnecessary complication to use the tensor product expressions like
+\[
+\op{P} = \int p_{ij}\ket{i}\otimes\ket{j}
+\]
+instead of keeping separate vectors $\ket{a}$ and $\ket{b}$. But if we try to use individual vectors $\ket{a}$ and $\ket{b}$ when the results of joint measurements have the following statistics:
+\[
+\op{P}_0 = \frac{1}{2} \ket{1}\otimes\ket{1}+\frac{1}{2} \ket{2}\otimes\ket{2}\,,
+\]
+we discover that no $\ket{a}$ and $\ket{b}$ satisfy the requirement $\op{P}_0=\ket{a}\otimes\ket{b}$.
+\begin{exercise}
+	Prove that the assumption 
+	\[
+	\op{P}_0=\ket{a}\otimes\ket{b}
+	\]
+	leads to contraditions and, therefore, can not be true.	
+\end{exercise}
+The information encoded in the tensor product $\op{P}_0$ is an example of \emph{strongly correlated} behavior. In this example, it says that whenever system $A$ is found (randomly!) with the energy $1$, the same energy is measured on the system $B$; similarly for the energy $2$. Effects like these are of great interest in quantum theory, and the operation of tensor product is indispensable for describing such phenomena.
+
+
+\subsection{Ket-Bra}
+
+\begin{mybio}{Economical Notation}
+	Instead of writing $\ket{a}\otimes\ket{b}$ we will often write $\ket{a}\ket{b}$. Instead of $\ket{a}\otimes\bra{b}$ we will often write $\ket{a}\bra{b}$.
+\end{mybio}
+
+\subsection{Tensor Product of Operators}
+
+
 \begin{exercise}
 	Write Hadamard operator in terms of the tensor product of vectors $\ket{0}$, $\ket{1}$, $\ket{+}$ and $\ket{-}$.
 	
@@ -978,16 +1054,7 @@ The simpest bundle is a pair. Given two vectors of the same type $\ket{a}$ and $
 \end{exercise}
 
 \section{Functions As Vectors}
-
-To arrive at the idea of vectors we will start with simple geometrical
-objects -- arrows in a plane.
-\[
-\braket{\phi}{\phi}
-\]
-and
-\[
-\ketbra{\phi}{\phi}\,.
-\]
+Perhaps surprisingly, but certain classes of functions, which are very useful in physics, have all characteristic of vectors. 
 
 \section{Application: Circular Motion}
 Let us examine how the concepts and tools discussed above can be applied to a simple case of circular motion.  
