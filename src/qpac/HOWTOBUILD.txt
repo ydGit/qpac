@@ -5,3 +5,7 @@
    do normal build
    open pdf in adobe. Print using Foxit PDF printer. Make sure the size is 6x9.
    Make sure that fonts are embedded.
+
+Or using Ghostscript
+
+gs -q -dNOPAUSE -dBATCH -dPDFSETTINGS=/prepress -sDEVICE=pdfwrite -sOutputFile=OUTPUT.pdf INPUT.pdf
