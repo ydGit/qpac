@@ -18,6 +18,29 @@ In this chapter we develop mathematical tools needed for quantum theory. This is
 \end{myprereq}
 
 
+\section{Randomness}
+Randomness is the opposite of certainty, \emph{determinism}, and complete predictability. Randomness (or \emph{indeterminism}) plays an essential part in quantum physics.
+
+Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies (measures) the qualitative notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a coin where the probability of tail is $1/2$, or the throw of a dice, where the probability of getting a face value divisable by 3 is $1/3$.
+
+In quantum physics probability of an event $E$ happening is understood as the \emph{relative frequency} or ratio of the number of occurences of the given event in $N$ trials:
+\[
+P_E = \frac{N_E}{N}\,,
+\]
+where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happens during an experiment.
+
+For example, suppose  we are measuring a week light with a detector capable of detecting  single photons. An arriving photon triggers the detector which produces a pulsed electronic signal, like a spike in the output voltage.
+
+Denoting $N$ the number of times the detector is triggered during an experiment. If $N_A$ is the number the detector $A$ is fired, then the probability of detecting a signal there is 
+\[
+P_A = \frac{N_A}{N}\,.
+\]
+?$N_A + N_B$ if both are working?
+
+
+\subsection{Schrodinger Student}
+In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
+
 
 \section{Functions}
 
@@ -1037,10 +1060,101 @@ The information encoded in the tensor product $\op{P}_0$ is an example of \emph{
 
 
 \subsection{Ket-Bra}
-
+The second type of tensor product involves one ket-vector and one bra-vector, "bundled" into a new object which behaves like an \emph{operator}, unlike braket used in scalar product. Given vectors $\ket{a}$ and $\bra{b}$, we can form a tensor product
+\[
+\op{P}=\ket{a}\otimes\bra{b}\,.
+\] 
 \begin{mybio}{Economical Notation}
 	Instead of writing $\ket{a}\otimes\ket{b}$ we will often write $\ket{a}\ket{b}$. Instead of $\ket{a}\otimes\bra{b}$ we will often write $\ket{a}\bra{b}$.
 \end{mybio}
+What does $\op{P}$ do? It can be used as an operator, acting on ket-vectors as follows:
+\[
+\op{P}\ket{c}=\ket{a}\otimes\bra{b}\ket{c}=\ket{a}\braket{b}{c}=x\ket{a}\,,
+\]
+where $x=\braket{b}{c}$ is a number. The operator $\ket{a}\otimes\bra{b}$ transforms any input vector into a vector parallel to $\ket{a}$. In other words, it \emph{projects} all vectors onto the direction specified by $\ket{a}$. Operators of this kind are sometimes called \emph{projectors}, but we will reserve this name for the operators of special form $\ket{a}\otimes\bra{a}$.
+\begin{exercise}
+	Suppose $\ket{a}\perp \ket{b}$ and $\op{P}=\ket{a}\otimes\bra{b}$. Find the result of $\op{P}\ket{a}$ .
+\end{exercise}
+\begin{mydef}{Projector}
+	A tensor product $\ket{a}\otimes\bra{a}$ is called \emph{projector}. It projects all vectors onto the direction specified by the vectors $\ket{a}$, while only scaling $\ket{a}$:
+	\[
+	\ket{a}\otimes\bra{a}\ket{a}=a^2\ket{a}\,.
+	\]
+\end{mydef}
+
+In quantum theory ket-vectors represent the state of a quantum system -- the information about all possible measurement results. Projectors like $\ket{a}\otimes\bra{b}$ describe the change of state $\ket{b}\to\ket{a}$, or \emph{transition} between states. 
+
+Another application of tensor products in quantum theory is representation of \emph{operators} in a choses basis. To see this, recall that every linear operator is fully specified once we know how it transforms basis vectors:
+\[
+\op{T}\ket{a}=\op{T}(a_1\ket{u_1}+a_2\ket{u_2})=a_1(\op{T}\ket{u_1})+a_2(\op{T}\ket{u_2})\,.
+\]
+If $\op{T}\ket{u_1}=\ket{t_1}$, then we can express it using tensor product $\op{P}_1=\ket{t_1}\otimes\bra{u_1}$. The transormation of $\ket{u_2}$ can be written similarly: $\op{P}_2=\ket{t_2}\otimes\bra{u_2}$. Since $\op{P}_1$ and $\op{P}_2$ are both operators, they can be multiplied by numbers and added to obtain another operator. The action of $\op{T}$ then becomes expressed as
+\[
+\op{T}\ket{a}=a_1\op{P}_1\ket{u_1}+a_2\op{P}_2\ket{u_2}=\op{P}_1(a_1\ket{u_1})+\op{P}_2(a_2\ket{u_2})\,.
+\] 
+Now since 
+\[
+\op{P}_1(a_1\ket{u_1})=\op{P}_1(a_1\ket{u_1}+a_2\ket{u_2})=\op{P}_1 \ket{a}\,,
+\]
+and
+\[
+\op{P}_2(a_2\ket{u_2})=\op{P}_2(a_1\ket{u_1}+a_2\ket{u_2})=\op{P}_2 \ket{a}\,,
+\]
+because of the orthogonality of the basis. For example:
+\[
+	\op{P}_1(a_2\ket{u_2})=a_2\ket{t_1}\otimes\bra{u_1}\ket{u_2}=0\,.
+\]
+
+The action of the operator $\op{T}$ becomes
+\[
+\op{T}\ket{a}=\op{P}_1\ket{a}+\op{P}_2\ket{a}=\left(\op{P}_1+\op{P}_2\right)\ket{a}\,.
+\]
+Now we can drop the input ket-vector, writing the operator in terms of the ket-bra tensor products:
+\[
+\op{T}=\ket{t_1}\otimes\bra{u_1}+\ket{t_2}\otimes\bra{u_2}\,.
+\]
+We can leave the expression as is or convert it into tensor product of only basis vectors. Recalling that 
+\[
+\ket{t_1}=T_{11}\ket{u_1}+T_{12}\ket{u_2}\,,\quad\textrm{ and }\quad \ket{t_2}=T_{21}\ket{u_1}+T_{22}\ket{u_2}\,,
+\]
+and using the linearity of the tensor product, we arrive at the following exression:
+\[
+\op{T}=T_{11}\ket{u_1}\bra{u_1}+T_{12}\ket{u_1}\bra{u_2}+
+T_{21}\ket{u_2}\bra{u_1}+T_{22}\ket{u_2}\bra{u_2}\,.
+\]
+Here we used the \emph{economical notation} for tensor product. It can be further compactified and generalized to any number of dimensions:
+\[
+\op{T}=\int T_{ij}\ket{u_i}\bra{u_j}\,,\quad i,j=\overline{1,n}\,.
+\]
+\subsection{Useful Ket-Bras}
+A unit operator $\op{I}$ plays an important role in many calculations. It can be represented as 
+\[
+\op{I}=\int\ketbra{u_i}{u_i}\,,\quad i=\overline{1,n}\,.
+\]
+It is easy to check this for $n=2$ explicitely:
+\[
+(\ketbra{u_1}{u_1}+\ketbra{u_1}{u_1})\ket{a}=\ket{u_1}\braket{u_1}{a}+\ket{u_2}\braket{u_2}{a}\,.
+\]
+The right-hand side is clearly the expansion of the ket-vector $\ket{a}$ in the basis $\ket{u_i}$:
+\[
+\ket{u_1}\braket{u_1}{a}+\ket{u_2}\braket{u_2}{a}=a_1\ket{u_1}+a_2\ket{u_2}=\ket{a}\,.
+\]
+\begin{mybio}{Completeness}
+	The expression
+	\[
+	\op{I}=\int\ketbra{u_i}{u_i}\,,\quad i=\overline{1,n}\,
+	\]
+	is called the \emph{completeness} statement of the set of basis vectors. It says that the set of orthonormal vectors is \emph{not missing} any vector necessary to construct all other vectors in the space. Indeed, if we omit even a single term $\ketbra{u_k}{u_k}$ in the sum $\int\ketbra{u_i}{u_i}$ then the term $a_k\ket{u_k}$ will be missing in the expansion
+	\[
+	\left(\int\ketbra{u_i}{u_i}\right)\ket{a}=a_1\ket{u_1}+\ldots+a_{k-1}\ket{u_{k-1}}+a_{k+1}\ket{u_{k+1}}+\ldots a_n\ket{u_n}\,.
+	\]
+\end{mybio}
+
+The operator $\op{J}$ that rotates vectors in a plane by 90 degrees counter-clockwise takes the basis ket-vector $\ket{u_1}$ into $\ket{u_2}$ and $\ket{u_2}$ into $(-\ket{u_1})$. Using tensor products $\op{J}$ can be written as follows:
+\[
+\op{J}=\ketbra{u_2}{u_1}-\ketbra{u_1}{u_2}\,.
+\]
+
 
 \subsection{Tensor Product of Operators}
 
@@ -1080,28 +1194,7 @@ where we introduced the angular speed $\omega=\partial_t\theta$. Finally, by app
 \op{J}\partial_t\ket{r}=-\omega\ket{r}\,.
 \]  
 
-\section{Randomness}
-Randomness is the opposite of certainty, \emph{determinism}, and complete predictability. Randomness (or \emph{indeterminism}) plays an essential part in quantum physics.
 
-Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies (measures) the qualitative notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a coin where the probability of tail is $1/2$, or the throw of a dice, where the probability of getting a face value divisable by 3 is $1/3$.
-
-In quantum physics probability of an event $E$ happening is understood as the \emph{relative frequency} or ratio of the number of occurences of the given event in $N$ trials:
-\[
-P_E = \frac{N_E}{N}\,,
-\]
-where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happens during an experiment.
-
- For example, suppose  we are measuring a week light with a detector capable of detecting  single photons. An arriving photon triggers the detector which produces a pulsed electronic signal, like a spike in the output voltage.
- 
- Denoting $N$ the number of times the detector is triggered during an experiment. If $N_A$ is the number the detector $A$ is fired, then the probability of detecting a signal there is 
- \[
- P_A = \frac{N_A}{N}\,.
- \]
- ?$N_A + N_B$ if both are working?
- 
- 
-\subsection{Schrodinger Student}
-In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
 
 
 \section*{Chapter Highlights}
