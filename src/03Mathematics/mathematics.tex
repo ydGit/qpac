@@ -316,7 +316,7 @@ The notation just introduced can be applied to \emph{any} function of \emph{any}
 	\] 
 	is approaching a unique value.
 	
-	For simplicity and practical purposes, we will use the rate of change $\partial_x f$, remembering that
+	For simplicity and practical purposes, we will use the rate of change $\partial_x f$, remembering that we are making a small error when compared to a rigorous derivative:
 	\[
 	\textrm{derivative} = \partial_x f + \textrm{small error}\,.
 	\]
@@ -360,7 +360,7 @@ Before we introduce the concepts of \emph{vectors}, \emph{vector spaces}, and \e
   \label{fig:arrowsAndVectors}
 \end{figure}
 
-Symbolically, we will denote vectors by placing an arrow over letters:
+A very common notation for vectors uses arrows over letters:
 \[
 \vec{a}\,,\vec{b}\,,\vec{c}\,,\ldots\,,\vec{\alpha}\,,\vec{\beta}\,.
 \]
@@ -369,7 +369,7 @@ However, not all vectors behave like arrows. Futhermore, to introduce the basic 
 \subsection{Dirac Notation}
 Instead of placing an arrow on top of a letter, we enclose the letter between a pair of symbols as follows:
 \[
-\vec{a}\to\ket{a}\,.
+\vec{a}\overset{\textrm{Dirac}}{\longrightarrow}\ket{a}\,.
 \]
 The advantages of this notation accumulate and become more apparent the longer we study quantum physics.
 
@@ -410,7 +410,7 @@ As the previous exercise shows, the arrows $\ket{+}$ and $\ket{-}$ are independe
 \end{exercise}
 
 \subsection{Normalized Bases}
-Vectors are sometimes defined as mathematical quantities with \emph{magnitude} and \emph{direction}. This implies that a meaningful notion of \emph{length} (magnitude) can be assinged to vectors. For arrows this is obvious, while for other types of vector-like quantities might be not so. 
+Vectors are sometimes defined as mathematical quantities with \emph{magnitude} and \emph{direction}. This implies that a meaningful notion of \emph{length} (magnitude) can be assinged to vectors. For arrows this is obvious, while for other types of vector-like quantities might be not so obvious. 
 
 The length of a vector is called its \emph{norm}. Vectors with unit length are called \emph{normalized}. Any vector can be "scaled" to have a unit length. Indeed, given a vector $\ket{a}$ with length $a$, we get a normalized vector as follows:
 \[
@@ -440,7 +440,10 @@ Thus, we see that one more requirement is both natural and helpful:
 \[
 (x\ket{a})\cdot\ket{b}=x(\ket{a}\cdot\ket{b})\,.
 \]
-We can formulate this last result as a rule: "scalars can be pulled outside."
+\begin{remark}
+	We can formulate this last result as a rule: \emph{"numbers can be pulled outside of scalar product."}
+\end{remark}
+
 
 \subsection{Products of Basis Vectors}
 Combining scalar product with the representation of vectors in a \emph{normalized} basis $\lbrace 
@@ -605,7 +608,10 @@ and
 \[
 \op{T}\,(x\ket{a}) = x\op{T}\,\ket{a}\,.
 \]
-Thus, operator action distributes over a sum, and numbers can be pulled outside.
+\begin{remark}
+	Thus, operator action distributes over a sum, and numbers can be pulled outside.
+\end{remark}
+
 
 To define a linear operator, we need only to describe how it affects basis vectors. Indeed, if an arbitrary vector $\ket{a}$ is represented in some basis, we can write
 \[
@@ -656,6 +662,7 @@ The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{compo
 	\[
 	\op{a} = \op{A} / 6\,\textrm{ and }\, \op{b} = \op{B}/6\,.
 	\]
+	Now the problem becomes a bit simpler:
 	\[
 	\op{a}+\op{b} = \op{I}\,\textrm{ and }\, \op{a}\op{b}=\op{I}\,.
 	\]
@@ -1155,8 +1162,42 @@ The operator $\op{J}$ that rotates vectors in a plane by 90 degrees counter-cloc
 \op{J}=\ketbra{u_2}{u_1}-\ketbra{u_1}{u_2}\,.
 \]
 
-
-\subsection{Tensor Product of Operators}
+The following exercise demonstrates how easy it is to find and adjoint of an operator in ket-bra form.
+\begin{exercise}
+	Given an operator $\op{T}=\ketbra{c}{d}$, show that its adjoint is $\op{T}^\dagger=\ketbra{d}{c}$\,.
+	Thus, there is a simple rule:
+	\[
+	\left(\ketbra{c}{d}\right)^\dagger = \ketbra{d}{c}\,.
+	\]
+\end{exercise}
+From the previous exercise follows that every projector operator $\op{\Pi}=\ketbra{a}{a}$ is its own adjoint:
+\[
+\op{\Pi}^\dagger=\op{\Pi}\,.
+\]
+Such operators are called \emph{self-adjoint}, they play an important role in quantum theory, representing measurements of various physical variables, such as position, momentum, energy, or angular momentum and others.
+\begin{mybio}{Hermitian Operators and Polynomials}
+	In quantum theory self-adjoint operators are called \emph{Hermitian operators}, after French mathematician Charles Hermite (1822 – 1901). Thus, in quantum theory, \emph{Hermitian operator} has the property
+	\[
+	\op{T}=\op{T}^\dagger\,.
+	\]
+	
+	
+	Among several mathematical concepts named after Hermite, there are \emph{Hermite polynomials}, which satisfy a simple recurrent relation:
+	\[
+	\textrm{H}_{n+1}=2x\textrm{H}_{n}-2n\textrm{H}_{n-1}\,,
+	\]
+	with the first two polynomials being $H_0=1$, $H_1=2x$. Hermite polynomials appear in the analysis of \emph{quantum harmonic oscillator.}
+	
+	Although Charles Hermit wrote about these polynomials in 1864, they were properly studied five years earlier by a Russian mathematician Pafnuty Chebyshev (or Tchebycheff), who also has polynomials named after him.
+	
+	\[
+	\op{D}=2x-\partial_x
+	\]
+	The first term raises the degree of a polynomial, while the second lowers it.
+	\[
+	H_n = \op{D}^n\,1\,.
+	\]
+\end{mybio}
 
 
 \begin{exercise}
@@ -1167,34 +1208,92 @@ The operator $\op{J}$ that rotates vectors in a plane by 90 degrees counter-cloc
 	\]
 \end{exercise}
 
+\begin{remark}
+	Conjugation rule:
+	\[
+	\ketbra{a}{b}\overset{\dagger}{\longleftrightarrow}\ketbra{b}{a}\,.
+	\]
+\end{remark}
+
+\subsection{Tensor Product of Operators}
+The idea of "bundling" can be extended to operators. Thus, given the operators $\op{A}$ and $\op{B}$, we can write their tensor product:
+\[
+\op{C}=\op{A}\otimes\op{B}\,.
+\]
+Such an operator expresses an action (measurement or interaction) on two parts of a \emph{composite} quantum system, e.g. two atoms in a molecule or two "beams of light" in a single experiment. To illustrate further, imagine we are studying two atoms, described by the state vectors $\ket{a}$  and $\ket{b}$, respectively. As explained above, the system of two independent atoms as one whole can be described using tensor product:
+\[
+\ket{\psi}=\ket{a}\otimes\ket{b}\,.
+\]
+Now if we perform some operation $\op{A}$ on the first atom, and some operation $\op{B}$ on the second atom in parallel, we can express this as follows:
+\[
+\op{C}\ket{\psi}=\left(\op{A}\otimes\op{B}\right)\left(\ket{a}\otimes\ket{b}\right)\,.
+\] 
+Since the atoms are assumed independent in this example, with the joint state being a tensor product, and the actions on each system is performed independently of each other, we will have the following final states of each system:
+\[
+\op{a}\quad\to\quad \op{A}\ket{a}\,,
+\]
+and
+\[
+\op{b}\quad\to\quad \op{B}\ket{b}\,.
+\]
+Therefore, the final state of the composite system becomes:
+\[
+\ket{\phi} = \left(\op{A}\ket{a}\right)\otimes\left(\op{B}\ket{b}\right)\,.
+\]
+We can summarize it all as a rule:
+\[
+\op{A}\otimes\op{B}\left(\ket{a}\otimes\ket{b}\right)= \op{A}\ket{a}\otimes\op{B}\ket{b}\,.
+\]
+To keep things simple we analyzed the case of two operators and two vectors, but the ideas can be generalized to any number of factors. We will do that when necessary.
+
+
 \section{Functions As Vectors}
-Perhaps surprisingly, but certain classes of functions, which are very useful in physics, have all characteristic of vectors. 
+Perhaps surprisingly, certain classes of functions, which are very useful in physics, have all characteristic of vectors. 
 
 \section{Application: Circular Motion}
 Let us examine how the concepts and tools discussed above can be applied to a simple case of circular motion.  
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{circularMotion}
+	\caption{Circular motion.}
+	\label{fig:circularMotion}
+\end{figure}
+Consider a  particle moving in a circle with the radius $R$, as shown in Figure \ref{fig:circularMotion}. If we choose the center of the circle as the reference point, we can specify the position of the particle using an arrow $\ket{r}$. During motion the direction of this arrow is constantly changing, but its length $R$ remains the same.  
 
-Consider a  particle moving in a circle with the radius $R$, as shown in Figure X. If we choose the center of the circle as the reference point, we can specify the position of the particle using an arrow $\ket{r}$. During motion the direction of this arrow is constantly changing, but its length $R$ remains the same.  
 
 After a short time interval $\delta t$, the position of the particle changes by $\delta\ket{r}$:
 \[
 \ket{r_t}\quad\rightarrow\quad \ket{r_{t+\delta t}} = \ket{r_t}+\delta\ket{r}\,.
 \]
 
-The length of the path covered by the particle during the time interval $\delta t$ can be approximated by the length of the arc  $\delta L=R\delta\theta=v\delta t$. The arrow $\delta\ket{r}$ can be written as $\delta L\ket{u}$ where $\ket{u}$ is the vector of unit length pointing in the direction of motion. This unit vector can be constructed from $\ket{r}$ by scaling it down by $R$ and then rotating counter-clockwise with the operator $\op{J}$: 
+The length of the path covered by the particle during the time interval $\delta t$ can be approximated by the length of the arc  $\delta L=R\delta\theta=v\delta t$. The arrow $\delta\ket{r}$ can be written as $\delta L\ket{u}$ where $\ket{u}$ is the unit length vector pointing in the direction of motion. This unit vector can be constructed from $\ket{r}$ by scaling the latter down by $R$ and then rotating counter-clockwise with the operator $\op{J}$: 
 \[
-\delta\ket{r}=R\delta\theta\op{J}\left(\frac{\ket{r}}{R}\right)\,.
+\ket{u}=\op{J}\left(\frac{\ket{r}}{R}\right)=\frac{1}{R}\op{J}\ket{r}\,.
 \]
-Since $\op{J}$ is a linear operator, the $R$ cancels and we can write
+We pulled the factor $1/R$ outside due to the linearity of $\op{J}$.
+Thus,
+\[
+\delta\ket{r}=R\delta\theta\frac{1}{R}\op{J}\ket{r}=\delta\theta\op{J}\ket{r}\,.
+\]
+The rate of change of the vector $\ket{r}$ with respect to time then becomes
 \[
 \frac{\delta\ket{r}}{\delta t}=\frac{\delta\theta}{\delta t}\op{J}\ket{r}\qquad\Longrightarrow\qquad
 \partial_t\ket{r}=\omega\op{J}\ket{r}\,,
 \]
-where we introduced the angular speed $\omega=\partial_t\theta$. Finally, by applying the $\op{J}$ operator to both sides of the last equation, we can cast it into the "Schrodinger" form:
+where we introduced the angular speed $\omega=\partial_t\theta$. Finally, by applying the $\op{J}$ operator to both sides of the last equation, we can cast it into the "Schr\"odinger" form:
 \[
 \op{J}\partial_t\ket{r}=-\omega\ket{r}\,.
 \]  
+We can make one more step, multiplying both sides by the fundamental physical constant $\hbar$ -- known as \emph{reduced Planck's constant}-- to obtain an equation very similar to Schr\"odinger equation:
+\[
+\op{J}\hbar\partial_t\ket{r}=-\hbar\omega\ket{r}\,,\quad \left(\textrm{compare: }i\hbar \partial_t\ket{\Psi}=\op{H}\ket{\Psi}\right)\,.
+\]
 
-
+\subsection{Solution}
+When the angular speed $\omega$ is constant, the equation of circular motion can be easily solved.  The simple solution will play an important part in quantum theory.
+\[
+\ket{r_t} = e^{\op{J}\omega t}\ket{r_0}\,.
+\]
 
 
 \section*{Chapter Highlights}
