@@ -1248,7 +1248,30 @@ To keep things simple we analyzed the case of two operators and two vectors, but
 
 
 \section{Functions As Vectors}
-Perhaps surprisingly, certain classes of functions, which are very useful in physics, have all characteristic of vectors. 
+Perhaps surprisingly, certain classes of functions, which are very useful in physics, have all characteristic of vectors.  As we showed, familiar numeric functions can be treated like numbers: they can be added and multiplied yielding new function. For example, we can write
+\[
+f = 2\cos + \frac{1}{3}\sin\,.
+\]
+(Reminder: This is an argument-free notation. When applied to a specific value $x$, this functions would return $f_x = 2\cos x + \frac{1}{3}\sin x\,.$)
+
+\emph{If} trigonometric functions $\cos$ and $\sin$ acted as "basis", then this expression could be viewed as a vector:
+\[
+\ket{f}=2\ket{\cos}+\frac{1}{3}\ket{\sin}\,.
+\]
+More generally, to convince ourselves that functions (at least some classes of functions) can be viewed as vectors, we need to find some such "basis" and find a way to express functions in the form:
+\[
+\ket{f} = c_1\ket{b_1}+c_2\ket{b_2}+\ldots+c_n\ket{b_n}\,.
+\]
+
+ Turns out, in many cases it is possible. We will consider a couple of most important and relatively simple examples: trigonometric functions and polynomials.
+
+\subsection{Fourier Series}
+
+\subsection{Taylor Series}
+
+\subsection{Analytic Functions}
+
+\subsection{Hilbert Spaces}
 
 \section{Application: Circular Motion}
 Let us examine how the concepts and tools discussed above can be applied to a simple case of circular motion.  
@@ -1266,11 +1289,10 @@ After a short time interval $\delta t$, the position of the particle changes by 
 \ket{r_t}\quad\rightarrow\quad \ket{r_{t+\delta t}} = \ket{r_t}+\delta\ket{r}\,.
 \]
 
-The length of the path covered by the particle during the time interval $\delta t$ can be approximated by the length of the arc  $\delta L=R\delta\theta=v\delta t$. The arrow $\delta\ket{r}$ can be written as $\delta L\ket{u}$ where $\ket{u}$ is the unit length vector pointing in the direction of motion. This unit vector can be constructed from $\ket{r}$ by scaling the latter down by $R$ and then rotating counter-clockwise with the operator $\op{J}$: 
+The length of the path covered by the particle during the time interval $\delta t$ can be approximated by the length of the arc  $\delta L=R\delta\theta=v\delta t$. The arrow $\delta\ket{r}$ can be written as $\delta L\ket{u}$ where $\ket{u}$ is the unit length vector pointing in the direction of motion. This unit vector can be constructed from $\ket{r}$ by first rotating the latter counter-clockwise with the operator $\op{J}$ and then scaling the result down by $R$: 
 \[
-\ket{u}=\op{J}\left(\frac{\ket{r}}{R}\right)=\frac{1}{R}\op{J}\ket{r}\,.
+\ket{u}=\frac{1}{R}\op{J}\ket{r}\,.
 \]
-We pulled the factor $1/R$ outside due to the linearity of $\op{J}$.
 Thus,
 \[
 \delta\ket{r}=R\delta\theta\frac{1}{R}\op{J}\ket{r}=\delta\theta\op{J}\ket{r}\,.
