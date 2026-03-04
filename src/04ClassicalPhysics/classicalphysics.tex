@@ -147,6 +147,10 @@ arbitrary coordinates completely specifying the configuration of a
 system. Generalized coordinates can be based on positions, angles, or
 some combinations of those.
 
+\subsection{Modes}
+Let's use the symple system of two coupled oscillators to explore an important concept of \emph{modes}.
+
+
 \subsection{Degrees of Freedom}
 \emph{Degree of freedom} is a separate independent motion of a
 mechanical system. Each independent motion corresponds to the change
@@ -366,7 +370,7 @@ of the oscillator -- periodic change of position and velocity with constant ampl
 
 \section{Dynamics}\label{sec:Dynamics}
 \emph{Dynamics} is the study of state evolution of various systems subject to known interactions. 
-Physical systems of interest can be mechanical, like the ones given in example above (WHERE? REF), or  "non-mechanical" like electromagnetic field or even gravitational field. One can also explore dynamics of quantum systems.
+Physical systems of interest can be mechanical, like the ones given in Section \ref{sec:System}, or  "non-mechanical" like electromagnetic field or even gravitational field. One can also explore dynamics of quantum systems.
  
 The central equation in dynamics describes the state change in time due to known \emph{laws of dynamics}:
 \[
@@ -753,10 +757,55 @@ Euler-Lagrange equation:
 \]
 
 \section{Field}\label{sec:Field}
-The \emph{field} concept is extremely important for modern physics, both classical and quantum.
+The \emph{field} concept is extremely important for modern physics, both classical and quantum. Without proper understanding of fields, it is impossible to appreciate the concept of a particle in current theories.
 
+In order to understand fields, we will consider their mathematical aspect first, starting with the simplest type -- \emph{scalar field}.
+Then we will see how the most fundamental physical systems can be described within the framework of fields.
 
+\subsection{Scalar Field}
+Imagine we want to describe how temperature varies inside a room, as shown in Figure \ref{fig:TemperatureRoom}. For simplicity, we assume we are interested in the area near the wall with a heater and a window. In this case at each point specified by a pair of coordinates $(x,y)$ we can assign a measured value of the temperature $T$. This results in a map
+\[
+(x, y)\quad\leftrightarrow\quad T
+\]
+or in a function $T(x,y)$. Since temperature is a simple number (a scalar), the function $T(x,y)$ is called \emph{scalar field}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{TemperatureRoom}
+	\caption{Temperature inside a room can be described using \emph{scalar field} $T(x,y)$.}
+	\label{fig:TemperatureRoom}
+\end{figure}
+
+\subsection{Vector Field}
+Next, suppose we study the motion of air in the vicinity of some surface. We can specify how fast and in what direction each "particle of air" or a tiny volume of air is moving at every point of interest, as shown in Figure \ref{fig:vectorField}. This way we obtain a map
+\[
+(x, y)\quad\leftrightarrow\quad \vec{v}
+\]
+or a \emph{vector-valued function} $\vec{v}(x,y)$. This is a typical example of a \emph{vector field}.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{vectorField}
+	\caption{The state of flow of air or water can be described using \emph{vector field} $\vec{v}(x,y)$ which assigns a velocity to each point.}
+	\label{fig:vectorField}
+\end{figure}
+
+\subsection{Tensor and Spinor Fields*}
+The examples of scalar and vector fields can be generalized to include any kind of fields. The core idea is that we are dealing with an \emph{extended system}, some "object occupying region of space" and we want to describe its properties at each point. This way we establish a map
+\[
+\textrm{point} \quad \leftrightarrow \quad \textrm{value}\,.
+\]
+The type of value determines the type of field. And what determines the type of value? It is the nature of the system and the specific properties of the physical object we want to study.
+
+For EMF one needs \emph{tensors} to describe the properties correctly. In other words, EMF is mathematically described as a \emph{tensor field}.
+
+For EPF one needs \emph{spinors} -- special "vector-like" objects that capture the properties of electrons related to spin. Put differently, EPF is mathematically described as a \emph{spinor field}.
+
+\subsection{Physical Fields}
 In physics, \emph{field} is a \emph{dynamical system} with infinite number of degrees of freedom. It's dynamics can be studied using either Lagrangian or Hamiltonian approach.
+
+
+
+
 
 \section{Ideal Versus Real}\label{sec:IdealVsReal}
 An action of an operator $F$ on arrows can be represented symbolically
