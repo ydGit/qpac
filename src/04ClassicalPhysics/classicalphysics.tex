@@ -148,7 +148,92 @@ system. Generalized coordinates can be based on positions, angles, or
 some combinations of those.
 
 \subsection{Modes}
-Let's use the symple system of two coupled oscillators to explore an important concept of \emph{modes}.
+Let's use a simple system of two coupled oscillators to explore an important concept of \emph{modes}. The system is illustrated in Figure (\ref{fig:coupledSystem})(a). To make the analysis simpler, we will assume identical masses and spring constants. Using the qoordinates $q_1$ and $q_2$ we can write the total energy of such a system as follows:
+\[
+E = E_1 + E_2 + E_i\,,
+\]
+where 
+\[
+E_1 = \frac{k q_1^2}{2}+\frac{m v_1^2}{2}\textrm{ and } E_2 = \frac{k q_2^2}{2}+\frac{m v_2^2}{2}
+\]
+are the energies of the "oscillators" without the middle coupling spring. Both $E_1$ and $E_2$ have potential energy of stretched spring and the kinetic energy of a moving body. The term $E_i$ represents \emph{interaction} or coupling between the oscillators, and equals to the potential energy of the stretched middle spring:
+\[
+E_i = \frac{k(q_1-q_2)^2}{2}\,.
+\]
+The velocities $v_1$ and $v_2$ are given by
+\[
+v_i = \partial_t q_i = \partial_t x_i\,,\quad i=\overline{1,2}\,.
+\]
+Now if we look at this problem from a different point of view, using generalized coordiates 
+\[
+Q_1 = q_1-q_2\quad\textrm{ and }\quad Q_2 = q_1 + q_2
+\]
+the situation will be a bit simpler. To demonstrate it, first express $q_1$ and $q_2$ in terms of $Q_1$ and $Q_2$:
+\[
+q_1 = (Q_1+Q_2)/2\,,\quad q_2 = (Q_2-Q_1)/2\,.
+\]
+The generalized velocities $U_i=\partial_t Q_i$ are simply
+\[
+U_1 = v_1-v_2\quad\textrm{ and }\quad U_2 = v_1 + v_2
+\]
+and, consequently
+\[
+v_1 = (U_1+U_2)/2\,,\quad v_2 = (U_2-U_1)/2\,.
+\]
+The potential energy of all three springs
+\[
+E_p = \frac{k}{2}\left\lbrack q_1^2 + q_2^2 + (q_1-q_2)^2\right\rbrack
+\]
+when expressed in terms of the new qoordinates $Q_i$ becomes:
+\[
+E_p = \frac{k_1 Q_1^2}{2} + \frac{k_2 Q_2^2}{2}
+\]
+where $k_1 = 3k/2$ and $k_2=k/2$. Note how this expression resembles two disconnected springs. The kinetic energy
+\[
+E_k = \frac{m}{2}\left\lbrack v_1^2 + v_2^2 \right\rbrack
+\]
+is transformed into 
+\[
+E_k = \frac{m/2}{2}\left\lbrack U_1^2 + U_2^2 \right\rbrack\,.
+\]
+The final result is the total mechanical energy, when expressed in $Q_i$ and $U_i$, looks as follows:
+\[
+E = \frac{k_1 Q_1^2}{2}+\frac{M_1 U_1^2}{2} + \frac{k_2 Q_2^2}{2}+\frac{M_2 U_2^2}{2}\,.
+\]
+But this looks exactly like two independent oscillators with different spring constants and oscillation frequencies. The frequency of the first oscillator is 
+\[
+\omega_1 = \sqrt{\frac{k_1}{M_1}} = \sqrt{3}\omega\,,
+\]
+and the frequency of the second oscillator is
+\[
+\omega_2 = \sqrt{\frac{k_1}{M_1}} = \omega\,,
+\]
+where $\omega = \sqrt{k/m}$ is the oscillation frequency of the original, unconnected oscillators.
+
+Oscillations with frequencies $\omega_1$ and $\omega_2$ represent distinct \emph{types of motion} or \emph{modes of oscillations}. To understand what they look like in terms of motion of the original bodies, imagine we excite only $Q_1$-type oscillation, with $Q_2$ remaining constant in time. In other words, we assume
+\[
+Q_1 = A_1\cos\omega_1 t\quad\textrm{and }\quad Q_2 = C\,.
+\]
+The constant $Q_2$ means that the "middle point" $Q_2/2 = (q_1+q_2)/2=(x_1+x_2)/2+(e_1-e_2)/2$ remains fixed. Oscillating $Q_1$ means that the distance between the bodies $x_2-x_1=(q_2-q_1)+(e_2-e_1)=-Q_1+(e_2-e_1)$ changes. The bodies periodically move away from each other, then stop, then move towards each other, then stop, and the process repeats.
+
+The second type of motion corresponds to $Q_1=C$, and $Q_2 = A_2\cos\omega_2 t$. The constant $Q_1$ means that the distance between the bodies is fixed and they both move as one whole, with the total mass $M=2m$. This "whole" system is pushed and pulled by two springs, which combine their forces, effectively acting as the spring with the constant $2k$. This results in the same oscillation frequency.
+
+In general, both modes can be excited and corresponding qoordinates will be changing in time as
+\[
+Q_1 = A_1\cos\omega_1 t + B_1\sin\omega_1 t\,,
+\]
+\[
+Q_2 = A_2\cos\omega_2 t + B_2\sin\omega_2 t\,.
+\]
+The original coordinates $x_1$ and $x_2$ are then given by
+\[
+x_1 = q_1 + e_1 = (Q_1+Q_2)/2 + e_1
+\]
+and
+\[
+x_2 = q_2 + e_1 = (Q_2-Q_1)/2 + e_2\,,
+\]
+which is simply a long sum of oscillations with various frequencies. Thus, in general, the motion of each individual body can not be characterized by any signle frequency $\Omega$.
 
 
 \subsection{Degrees of Freedom}
