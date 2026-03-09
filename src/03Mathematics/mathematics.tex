@@ -19,26 +19,52 @@ In this chapter we develop mathematical tools needed for quantum theory. This is
 
 
 \section{Randomness}
-Randomness is the opposite of certainty, \emph{determinism}, and complete predictability. Randomness (or \emph{indeterminism}) plays an essential part in quantum physics.
+Randomness is the opposite of predictability, certainty, and \emph{determinism}. Randomness (or \emph{indeterminism}) plays an essential part in classical and quantum physics.
 
-Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies (measures) the qualitative notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a coin where the probability of tail is $1/2$, or the throw of a dice, where the probability of getting a face value divisable by 3 is $1/3$.
+Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies or measures the notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a "fair" coin where the probability of tail is $1/2$. Or take another typical case: an ideal six-sided die. If we throw it 6 million times, and each side is equally likely to appear, we expect to see each value to come up 1 million times. Suppose we are interested in those cases when the face value is divisible by 3. That happes 2 million times, one million for 3 and another for 6. The chances that we will see such an event is therefore 2 out of 6 or 1/3.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{probabilitySixSidedDie}
+	\caption{Results of throwing a real six-sided die.}
+	\label{fig:probabilitySixSidedDie}
+\end{figure}
 
-In quantum physics probability of an event $E$ happening is understood as the \emph{relative frequency} or ratio of the number of occurences of the given event in $N$ trials:
-\[
-P_E = \frac{N_E}{N}\,,
-\]
-where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happens during an experiment.
+\begin{mydef}{Probability as Frequency}
+	Probability of an event $E$  can be defined as the \emph{relative frequency} or ratio of the number of times the event occured in a series of trials to the total number $N$ of trials:
+	\[
+	P_E = \frac{N_E}{N}\,,
+	\]
+	where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happened during an experiment.
+\end{mydef}
 
-For example, suppose  we are measuring a week light with a detector capable of detecting  single photons. An arriving photon triggers the detector which produces a pulsed electronic signal, like a spike in the output voltage.
+Let's consider a real experiment with a six-sided die, illustrated in Figure \ref{fig:probabilitySixSidedDie}. In this experiment a die has been first thrown 200 times, then again 200 times, and finally 1000 times. The histograms in the second column show how many time each face value appeared in a given series of throws. The plots in the first column correpond to the \emph{running value} of the probabillity that the face value is divisable by 3 (i.e. equals 3 or 6) has appeared (event $E_{3|6}$). The running value means that we recalculate the ratio $N_{3|6}/N$ with each throw. This explains large oscillations between 0 and 1 at the very begginning, when we either get or don't get the event $E$ in the first throw.
 
-Denoting $N$ the number of times the detector is triggered during an experiment. If $N_A$ is the number the detector $A$ is fired, then the probability of detecting a signal there is 
-\[
-P_A = \frac{N_A}{N}\,.
-\]
-?$N_A + N_B$ if both are working?
+The histrograms reveal that in relatively short experiments ($N<1000$) different face values might appear with significantly different probabilities, as if the die is not \emph{fair}. This also results in the probability of the event $E_{3|6}$ to differ appreciably from the "ideal" value of $1/3\approx 0.33$, shown as a horizontal line in the plots. It requires a longer series of throws to see that the die is pretty fair and the probability of the event $E_{3|6}$ is close to the ideal.
+
+\begin{myrem}{Irreversibility}
+	The throw of a die is a good example of what is required in an actual quantum experiment. When a die is hitting the surface of a table, it might bounce off several times before settling on a certain face. Whatever energy (kinetic of potential) the die had is now \emph{irreversibly} gone. If we had an ideal perfectly elastic materials, the die would endlessly keep bouncing up and down and we would not be able to complete a single observation.
+	
+	Every observation in physics has a certain \emph{finality}, caused by some \emph{irreversible process} that transfers energy and information to the observing "device" (e.g. camera or human eye and brain). We will be returning to this important point in other chapters.
+\end{myrem}
+
+\subsection{Ensembles and Series}
+In experiments with random outcomes we must deal with many trials. In each trial we observe a certain value $v_i\,,\,\, i=\overline{1,N}$. The sequence of values $v_1,\,v_2\,,v_3,\,\ldots,\,v_N$ is called an \emph{statistical ensemble} or a \emph{random series}.
 
 
-\subsection{Schrodinger Student}
+\subsection{Average and Variance}
+Two important characteristic of a random series are the \emph{average value} and the \emph{variance}. The former can often be linked to the most likely outcome, while the latter describes how large is the spread of values. Before we give formal definitions to these concepts, let's consider a specific example.
+
+Suppose we have 100 fair dice and toss them all at once. Denoting the sum total of face values as $V$, we can state that it can be anywhere from 100 to 600, although neither of these extreme values is likely.
+
+\subsection{Poissoinian Process}
+
+\subsection{Joint Measurement}
+
+\subsection{Marginals}
+
+\subsection{Correlations}
+
+\subsection{Schrodinger Students}
 In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
 
 
@@ -58,7 +84,7 @@ The input-output view of functions leads to a helpful picture where a given func
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{functionAsBox}
-	\caption{A function can be viewed as a box with input(s) and output(s).}
+	\caption{Function can be viewed as a closed box with an input and an output.}
 	\label{fig:functionAsBox}
 \end{figure}
 
