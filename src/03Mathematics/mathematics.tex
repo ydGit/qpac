@@ -52,11 +52,86 @@ In experiments with random outcomes we must deal with many trials. In each trial
 
 
 \subsection{Average and Variance}
-Two important characteristic of a random series are the \emph{average value} and the \emph{variance}. The former can often be linked to the most likely outcome, while the latter describes how large is the spread of values. Before we give formal definitions to these concepts, let's consider a specific example.
+Two important characteristics of a random series are the \emph{average value} and the \emph{variance}. The usefulness of these parameters comes from their ability to concisely describe the main features of a very rich set of random values. Average can often be linked to the most likely outcome, while variance describes how large is the spread of values around the average. 
 
-Suppose we have 100 fair dice and toss them all at once. Denoting the sum total of face values as $V$, we can state that it can be anywhere from 100 to 600, although neither of these extreme values is likely. But which value will be most likely?
+The meaning of average or expectation value is quite simple. Imagine we throw a big party for $M$ guests. Each guest can eat some number of candies, ranging from 0 to 10. Although we can't know this number in advance for each guest, we can still try to guess how many candies to purchase in order to satisfy all guest. Assuming that each guest "is the same" and can eat $N$ candies, we would buy $MN$ candies (perhaps more to be safe and guarantee that there will be enough candies for all). $N$ is the \emph{average} number of candies per guest. 
 
-\subsection{Poissoinian Process}
+Before we give formal definitions to these concepts, let's consider a specific example. 
+Suppose we have $M$ fair dice and toss them all at once. Denoting the sum total of face values as $V$, we can state that it can be anywhere from $M$ to $6M$, although neither of these extreme values is likely. But which value will be most likely? The total value $V$ is the sum of face value of each individual die:
+\[
+V = v_1 + v_2 + v_3 + \ldots + v_{M}\,.
+\]
+We can group terms according to their value and rewrite $V$  as
+\[
+V = 1\cdot n_1 + 2\cdot n_2 + 3\cdot n_3 + \ldots + \ldots 6\cdot n_6\,,
+\]
+where $n_k$ is the number of dice with the face value $k$. For identical fair dice the ratio $n_k/M$ is the same (1/6 in this particular case) and corresponds to the probability $p_k$ of getting the face value $k$ from a single die in a long series of throws.  Therefore, the total face value of $M$ dice can be written as follows:
+\[
+V = 1\cdot p_1 N + 2\cdot p_2 N + 3\cdot p_3 N + \ldots + \ldots 6\cdot p_6 N = N \avg{v}\,,
+\]
+where
+\[
+\avg{v} = 1\cdot p_1 + 2\cdot p_2 + 3\cdot p_3 + \ldots + \ldots 6\cdot p_6 
+\]
+is called \emph{average} of a face value. Another way to write average is
+\[
+\avg{v} = \frac{V}{N}\,.
+\]
+\begin{mydef}{Average Value}
+	Given a random series $v_1,\,v_2\,,v_3,\,\ldots,\,v_M$, the average value is defined as
+	\[
+	\avg{v} = \frac{v_1 + v_2 + v_3 + \ldots + v_{M}}{M}\,.
+	\]
+	If each outcome $v_k$  can take a value $u_i$ with a probability $p_i$, then the average can be written as
+	\[
+	\avg{v} = u_1 p_1 + u_2 p_2 + u_2 p_2 + \ldots + u_m p_m\,. 
+	\] 
+	Along with \emph{average value} the term \emph{expectation value} is often used. 
+\end{mydef}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{probabilityManyDice}
+	\caption{Results of throwing $M$ six-sided dice multiple times. The average and variance.}
+	\label{fig:probabilityManyDice}
+\end{figure}
+
+In Figure \ref{fig:probabilityManyDice} the results of simulations of throwing $M=10,50, 100$ six-sided balanced dice is shown. The horizontal axis corresponds to the total face value $V=v_1+\ldots+v_M$, while the vertical bars are proportional to the probability for a specific value to appear in a series of throws ($N=100000$ in this example).
+
+As immediately seen from the histograms, the extreme values $V_{min}=M$ and $V_{max}=6M$ are stupendously unlikely. The average value $\avg{V}$ in this example lies in the middle between the minimum and maximum and also has the highest probability to appear. There are deviations from the average in each trial, but the distribution of $V$ becomes seemingly narrower with increasing number of dice used. This is a curious feature of many processes that involve several random variables contributing to the final result.
+
+To characterize the deviations from the average we can use \emph{variance}. The idea is simple: Given a random series $V_1,\,V_2\,,V_3,\,\ldots,\,V_N$ we first calculate the average value $\avg{V}$. Then for each value $V_k$ we calculate its deviation from the average $\Delta V_k = V_k - \avg{V}$. Next we want to find what the average of this deviation. But we must be careful, since positive and negative deviations appear equally likely and will cancel each other. To get around this, we first square the deviation and only then find the average $\avg{(\Delta V)^2}$, obtaining \emph{variance}. We can give the following definition:
+\begin{mydef}{Variance}
+	Given a random series $v_1,\,v_2\,,v_3,\,\ldots,\,v_M$, with the average $\avg{v}$, the variance of the series is the measure of its spread around the average value, given by
+	\[
+	\textrm{Var}\, v = \avg{\left(v-\avg{v}\right)^2}\,.	
+	\]	
+\end{mydef}
+\begin{exercise}
+	Show that 
+	\[
+	\textrm{Var}\, v = \avg{v^2}-(\avg{v})^2\,,	
+	\]	
+	where $\avg{v^2}$ is the average value of $v^2$:
+	\[
+	\avg{v^2} = \frac{v^2_1 + v^2_2 + v^2_3 + \ldots + v^2_{M}}{M}\,.
+	\]
+\end{exercise}
+
+If $v$ is measured in meters, then the units for variance would be in meters squared. It is often convenient to characterize the spread around the average in the same units as the average. This can be done using \emph{deviation}:
+ \begin{mydef}{Deviation}
+ 	Given a random series $v_1,\,v_2\,,v_3,\,\ldots,\,v_M$, with the average $\avg{v}$ and variance $\textrm{Var}\,v$, the deviation of the series is the measure of its spread around the average value, given by
+ 	\[
+ 	\Delta v = \sqrt{\textrm{Var}\,v}\,.
+ 	\]	
+ \end{mydef}
+ \begin{remark}
+ 	\emph{Average} and \emph{deviation} are important and convenient characteristics of a random series. They often (but not always!) concisely capture two basic aspects of the random series of values: the most likely result and the spread around it.
+ \end{remark}
+
+
+\subsection{Poisson Series}
+A British mathematician, statistician, biologist, and geneticist Sir Ronald Aylmer Fisher, once said: \emph{"Among discontinuous distributions, the Poisson series is of first importance."} Indeed, it is simple and ubiquitous random series.
+
 
 \subsection{Joint Measurement}
 
@@ -66,6 +141,8 @@ Suppose we have 100 fair dice and toss them all at once. Denoting the sum total 
 
 \subsection{Schrodinger Students}
 In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
+
+\subsection{Fisher Distance}
 
 
 \section{Functions}
