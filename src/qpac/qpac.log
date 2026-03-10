@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  9 MAR 2026 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  9 MAR 2026 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3486,10 +3486,10 @@ Package logreq Info: Writing requests to 'qpac.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51290 strings out of 476025
- 1005936 string characters out of 5790016
+ 51277 strings out of 476025
+ 1005651 string characters out of 5790016
  1878388 words of memory out of 5000000
- 69551 multiletter control sequences out of 15000+600000
+ 69538 multiletter control sequences out of 15000+600000
  814576 words of font info for 599 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,19n,99p,1173b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3516,7 +3516,7 @@ public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lm
 r7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on qpac.pdf (185 pages, 5151436 bytes).
+Output written on qpac.pdf (185 pages, 5151497 bytes).
 PDF statistics:
  4964 PDF objects out of 5155 (max. 8388607)
  3913 compressed objects within 40 object streams
