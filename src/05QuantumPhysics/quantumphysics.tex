@@ -16,11 +16,26 @@ To fully understand the material of this chapter, readers should be comfortable 
 \end{myprereq}
 
 \section{Quantum System}\label{sec:QuantumSystem}
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
+In quantum theory a \emph{system} is understood more broadly than in classical physics. Take, for instance, a "two-body" system consisting of a star and a planet orbiting it. Neglecting the gravitational field, we can say that this is a two-part system which can be at any time described by a state
 \[
-\ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
+\ket{\xi} = \ket{star}\ket{planet}\,,
+\] 
+where $\ket{star}$ and $\ket{planet}$ are the states of the star and the planet, respectively. In addition to orbital motion, each part of this system can be rotating, and this rotation consitutes additional degree of freedom for each system. Therefore, the state of, for example, the planet has two components:
+\[
+\ket{planet}=\ket{orbital}\ket{spin}\,.
 \]
+The orbital part of the state is described by the position and momentum of the planet: $\ket{orbital}=(x, p)$. The degree of freedom related to the spinning is called \emph{intrinsic degree of freedom} as it is not directly responsible for the (outward) movement of the planet as a whole. In quantum physics such degree of freedom can be the focus of an experiment and can be considered a quantum system of its own right.
+
+
+As another example consider an hydrogen atom. Viewed as a classical system it has such parts as an electron, a positron, and an electromagnetic field. The electron, however, has an \emph{intrinsic degree of freedom} -- \emph{spin} -- which is fundamentally quantum and is unrelated to "spinning". When working with atoms we can affect both "orbital" and intrinsic states of the electron. However, the energy required to do that differs greatly for spin and for the "atom" (electron+positron+field). Thus, we can choose to manipulate spin only and treat this intrinsic degree of freedom as a quantum system in its own right.
+
+Finally, consider a light beam -- a special mode of electromagnetic field. Apart from spatial distribution of the power in the beam we must specify its polarization.
+
+
+These examples are not exghaustive, but hopefully sufficient to convey the idea of quantum system. We thus arrive at the following definition:
+\begin{mydef}{Quantum System}
+	A degree of freedom of a physical system can be considered a \emph{quantum system} if that degree of freedom exhibits quantum behavior.
+\end{mydef}
 
 \section{Fundamental Randomness}
 
@@ -113,6 +128,9 @@ Recall that $\bra{\psi}\op{\sigma}\ket{\psi}$ is the expectation value of the op
 \begin{exercise}
 	Prove that the definition of fidelity implies that it is symmetric in its arguments.
 \end{exercise}
+
+\section{Correspondence Principle}\label{sec:CorrespondencePrinciple}
+
 
 \section{Quantum Dynamics}\label{sec:QuantumDynamics}
 We are looking for a binary operator $\op{\sigma}$ that yields a number
@@ -709,36 +727,14 @@ The following qat state is very interesting:
 Erwin Schr\"{o}dinger first discussed such a state in his 1935 paper XXX, using a cat as an example. Today the term "Schr\"{o}dinger's cat" is one of the most recognized expressions from quantum physics. What is not usually mentioned, is the purpose of Schr\"{o}dinger's example.
 
 \section{Quantum Field}\label{sec:QuantumField}
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
+The state of electromagnetic field  is the linear superposition of modes. Electric part of it can be written as
 \[
-\ketbra{\sigma}{\sigma}\,\vec{a}\,\vec{b}=x\,.
+E = \iint E_{mp}\,,
 \]
-
-We are looking for a binary operator $\op{\sigma}$ that yields a number
-based on two vectors:
+where each mode $E_{mp}$ has certain polarization $\vec{e}_{mp}$ and spatial distribution $u_{mp}(\vec{r})$:
 \[
-\op{\sigma}\,\vec{a}\,\vec{b}=x\,.
+E_{mp} = \vec{e}_{mp} \op{a}_{mp} u_{mp}(\vec{r})\,.
 \]
-We will call this operator $\op{\sigma}$ \emph{dol}-operator\footnote{This is not a
-standard terminology. }, based on the key letters of the phrase
-``\underline{d}egree of \underline{o}ver\underline{l}ap''.
-
-\begin{myrem}{Reminder}
-When we say that an operator $\op{\Gamma}$ is given or known, we
-mean that we know how it acts on \emph{any vector} $\vec{a}$:
-\[
-\op{\Gamma}\,\vec{a} = x_a\,.
-\]
-\end{myrem}
-
-Array of equations:
-\begin{eqnarray}
-  \op{\Gamma}_1\,\vec{e}_1 & = & 1\,\\
-  \op{\Gamma}_1\,\vec{e}_2 & = & 0\,\\
-  \op{\Gamma}_1\,\vec{e}_3 & = & 0\,\\
-  \ldots
-\end{eqnarray}
 
 \section{Quantum States of Light}
 

@@ -76,6 +76,50 @@ Often a physical system is a body or several bodies interacting with each other 
 \end{enumerate}
 We will study oscillator and circular motion in great detail.
 
+
+
+\subsection{Oscillator}\label{sec:Oscillator}
+The model of an oscillator is extremely important. It appears in
+various guises in almost all physical theories. Let's study it in details.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.9]{Oscillator}
+	\caption{A mechanical model of an oscillator: A body attached to an
+		ideal spring.}
+	\label{fig:Oscillator}
+\end{figure}
+
+
+Consider a body with the mass $m$ is attached to a spring with the stiffness
+$k$. The body is allowed to move across a frictionless
+surface.  The force required to strech a spring by the amount $x$
+is given by the Hooke's law
+\[
+F=kx.
+\]
+This is the force applied \emph{to the spring}. The force created
+\emph{by the spring, and applied to the attached body}, is of equal
+magnitude but points in the opposite direction.
+
+When the body is displaced from its equilibrium position,
+by stretching or compressing the spring, and then released, it will
+undergo periodic motion. During this motion, the position, velocity,
+kinetic energy of the mody, and the potential energy of the spring
+will be constantly changing.
+
+To remind, the kinetic energy of a body is
+
+\[
+E_{k}=\frac{mv^{2}}{2}, \textrm{ or } K = \frac{p^2}{2m}\,.
+\]
+The potential energy of a spring, stretched or compressed by the
+amount $x$ is given by
+
+\[
+E_{p}=\frac{kx^{2}}{2}, \textrm{ or } \Pi = \frac{kq^2}{2}\,.
+\]
+
 \subsection{Configuration}
 In mechanics, \emph{configuration} means a formal way to describe the
 arrangement of a system at a given time.
@@ -147,6 +191,95 @@ arbitrary coordinates completely specifying the configuration of a
 system. Generalized coordinates can be based on positions, angles, or
 some combinations of those.
 
+\subsection{Modes}
+Let's use a simple system of two coupled oscillators to explore an important concept of \emph{modes}. The system is illustrated in Figure (\ref{fig:coupledSystem})(a). To make the analysis simpler, we will assume identical masses and spring constants. Using the qoordinates $q_1$ and $q_2$ we can write the total energy of such a system as follows:
+\[
+E = E_1 + E_2 + E_i\,,
+\]
+where 
+\[
+E_1 = \frac{k q_1^2}{2}+\frac{m v_1^2}{2}\textrm{ and } E_2 = \frac{k q_2^2}{2}+\frac{m v_2^2}{2}
+\]
+are the energies of the "oscillators" without the middle coupling spring. Both $E_1$ and $E_2$ have potential energy of stretched spring and the kinetic energy of a moving body. The term $E_i$ represents \emph{interaction} or coupling between the oscillators, and equals to the potential energy of the stretched middle spring:
+\[
+E_i = \frac{k(q_1-q_2)^2}{2}\,.
+\]
+The velocities $v_1$ and $v_2$ are given by
+\[
+v_i = \partial_t q_i = \partial_t x_i\,,\quad i=\overline{1,2}\,.
+\]
+Now if we look at this problem from a different point of view, using generalized coordiates 
+\[
+Q_1 = q_1-q_2\quad\textrm{ and }\quad Q_2 = q_1 + q_2
+\]
+the situation will be a bit simpler. To demonstrate it, first express $q_1$ and $q_2$ in terms of $Q_1$ and $Q_2$:
+\[
+q_1 = (Q_1+Q_2)/2\,,\quad q_2 = (Q_2-Q_1)/2\,.
+\]
+The generalized velocities $U_i=\partial_t Q_i$ are simply
+\[
+U_1 = v_1-v_2\quad\textrm{ and }\quad U_2 = v_1 + v_2
+\]
+and, consequently
+\[
+v_1 = (U_1+U_2)/2\,,\quad v_2 = (U_2-U_1)/2\,.
+\]
+The potential energy of all three springs
+\[
+E_p = \frac{k}{2}\left\lbrack q_1^2 + q_2^2 + (q_1-q_2)^2\right\rbrack
+\]
+when expressed in terms of the new qoordinates $Q_i$ becomes:
+\[
+E_p = \frac{k_1 Q_1^2}{2} + \frac{k_2 Q_2^2}{2}
+\]
+where $k_1 = 3k/2$ and $k_2=k/2$. Note how this expression resembles two disconnected springs. The kinetic energy
+\[
+E_k = \frac{m}{2}\left\lbrack v_1^2 + v_2^2 \right\rbrack
+\]
+is transformed into 
+\[
+E_k = \frac{m/2}{2}\left\lbrack U_1^2 + U_2^2 \right\rbrack\,.
+\]
+The final result is the total mechanical energy, when expressed in $Q_i$ and $U_i$, looks as follows:
+\[
+E = \frac{k_1 Q_1^2}{2}+\frac{M_1 U_1^2}{2} + \frac{k_2 Q_2^2}{2}+\frac{M_2 U_2^2}{2}\,.
+\]
+But this looks exactly like two independent oscillators with different spring constants and oscillation frequencies. The frequency of the first oscillator is 
+\[
+\omega_1 = \sqrt{\frac{k_1}{M_1}} = \sqrt{3}\omega\,,
+\]
+and the frequency of the second oscillator is
+\[
+\omega_2 = \sqrt{\frac{k_1}{M_1}} = \omega\,,
+\]
+where $\omega = \sqrt{k/m}$ is the oscillation frequency of the original, unconnected oscillators.
+
+Oscillations with frequencies $\omega_1$ and $\omega_2$ represent distinct \emph{types of motion} or \emph{modes of oscillations}. To understand what they look like in terms of motion of the original bodies, imagine we excite only $Q_1$-type oscillation, with $Q_2$ remaining constant in time. In other words, we assume
+\[
+Q_1 = A_1\cos\omega_1 t\quad\textrm{and }\quad Q_2 = C\,.
+\]
+The constant $Q_2$ means that the "middle point" $Q_2/2 = (q_1+q_2)/2=(x_1+x_2)/2+(e_1-e_2)/2$ remains fixed. Oscillating $Q_1$ means that the distance between the bodies $x_2-x_1=(q_2-q_1)+(e_2-e_1)=-Q_1+(e_2-e_1)$ changes. The bodies periodically move away from each other, then stop, then move towards each other, then stop, and the process repeats.
+
+The second type of motion corresponds to $Q_1=C$, and $Q_2 = A_2\cos\omega_2 t$. The constant $Q_1$ means that the distance between the bodies is fixed and they both move as one whole, with the total mass $M=2m$. This "whole" system is pushed and pulled by two springs, which combine their forces, effectively acting as the spring with the constant $2k$. This results in the same oscillation frequency.
+
+In general, both modes can be excited and corresponding qoordinates will be changing in time as
+\[
+Q_1 = A_1\cos\omega_1 t + B_1\sin\omega_1 t\,,
+\]
+\[
+Q_2 = A_2\cos\omega_2 t + B_2\sin\omega_2 t\,.
+\]
+The original coordinates $x_1$ and $x_2$ are then given by
+\[
+x_1 = q_1 + e_1 = (Q_1+Q_2)/2 + e_1
+\]
+and
+\[
+x_2 = q_2 + e_1 = (Q_2-Q_1)/2 + e_2\,,
+\]
+which is simply a long sum of oscillations with various frequencies. Thus, in general, the motion of each individual body can not be characterized by any signle frequency $\Omega$.
+
+
 \subsection{Degrees of Freedom}
 \emph{Degree of freedom} is a separate independent motion of a
 mechanical system. Each independent motion corresponds to the change
@@ -174,48 +307,6 @@ of freedom, in this example, equals 1.
 
 
 
-
-\section{Oscillator}\label{sec:Oscillator}
-The model of an oscillator is extremely important. It appears in
-various guises in almost all physical theories. Let's study it in details.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[scale=0.9]{Oscillator}
-	\caption{A mechanical model of an oscillator: A body attached to an
-		ideal spring.}
-	\label{fig:Oscillator}
-\end{figure}
-
-
-Consider a body with the mass $m$ is attached to a spring with the stiffness
-$k$. The body is allowed to move across a frictionless
-surface.  The force required to strech a spring by the amount $x$
-is given by the Hooke's law
-\[
-F=kx.
-\]
-This is the force applied \emph{to the spring}. The force created
-\emph{by the spring, and applied to the attached body}, is of equal
-magnitude but points in the opposite direction.
-
-When the body is displaced from its equilibrium position,
-by stretching or compressing the spring, and then released, it will
-undergo periodic motion. During this motion, the position, velocity,
-kinetic energy of the mody, and the potential energy of the spring
-will be constantly changing.
-
-To remind, the kinetic energy of a body is
-
-\[
-E_{k}=\frac{mv^{2}}{2}, \textrm{ or } K = \frac{p^2}{2m}\,.
-\]
-The potential energy of a spring, stretched or compressed by the
-amount $x$ is given by
-
-\[
-E_{p}=\frac{kx^{2}}{2}, \textrm{ or } \Pi = \frac{kq^2}{2}\,.
-\]
 
 
 \section{State}\label{sec:State}
@@ -366,7 +457,7 @@ of the oscillator -- periodic change of position and velocity with constant ampl
 
 \section{Dynamics}\label{sec:Dynamics}
 \emph{Dynamics} is the study of state evolution of various systems subject to known interactions. 
-Physical systems of interest can be mechanical, like the ones given in example above (WHERE? REF), or  "non-mechanical" like electromagnetic field or even gravitational field. One can also explore dynamics of quantum systems.
+Physical systems of interest can be mechanical, like the ones given in Section \ref{sec:System}, or  "non-mechanical" like electromagnetic field or even gravitational field. One can also explore dynamics of quantum systems.
  
 The central equation in dynamics describes the state change in time due to known \emph{laws of dynamics}:
 \[
@@ -753,15 +844,61 @@ Euler-Lagrange equation:
 \]
 
 \section{Field}\label{sec:Field}
-The \emph{field} concept is extremely important for modern physics, both classical and quantum.
+The \emph{field} concept is extremely important for modern physics, both classical and quantum. Without proper understanding of fields, it is impossible to appreciate the concept of a particle in current theories.
 
+In order to understand fields, we will consider their mathematical aspect first, starting with the simplest type -- \emph{scalar field}.
+Then we will see how the most fundamental physical systems can be described within the framework of fields.
 
+\subsection{Scalar Field}
+Imagine we want to describe how temperature varies inside a room, as shown in Figure \ref{fig:TemperatureRoom}. For simplicity, we assume we are interested in the area near the wall with a heater and a window. In this case at each point specified by a pair of coordinates $(x,y)$ we can assign a measured value of the temperature $T$. This results in a map
+\[
+(x, y)\quad\leftrightarrow\quad T
+\]
+or in a function $T(x,y)$. Since temperature is a simple number (a scalar), the function $T(x,y)$ is called \emph{scalar field}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{TemperatureRoom}
+	\caption{Temperature inside a room can be described using \emph{scalar field} $T(x,y)$.}
+	\label{fig:TemperatureRoom}
+\end{figure}
+
+\subsection{Vector Field}
+Next, suppose we study the motion of air in the vicinity of some surface. We can specify how fast and in what direction each "particle of air" or a tiny volume of air is moving at every point of interest, as shown in Figure \ref{fig:vectorField}. This way we obtain a map
+\[
+(x, y)\quad\leftrightarrow\quad \vec{v}
+\]
+or a \emph{vector-valued function} $\vec{v}(x,y)$. This is a typical example of a \emph{vector field}.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{vectorField}
+	\caption{The state of flow of air or water can be described using \emph{vector field} $\vec{v}(x,y)$ which assigns a velocity to each point.}
+	\label{fig:vectorField}
+\end{figure}
+
+\subsection{Tensor and Spinor Fields*}
+The examples of scalar and vector fields can be generalized to include any kind of fields. The core idea is that we are dealing with an \emph{extended system}, some "object occupying region of space" and we want to describe its properties at each point. This way we establish a map
+\[
+\textrm{point} \quad \leftrightarrow \quad \textrm{value}\,.
+\]
+The type of value determines the type of field. And what determines the type of value? It is the nature of the system and the specific properties of the physical object we want to study.
+
+For EMF one needs \emph{tensors} to describe the properties correctly. In other words, EMF is mathematically described as a \emph{tensor field}.
+
+For EPF one needs \emph{spinors} -- special "vector-like" objects that capture the properties of electrons related to spin. Put differently, EPF is mathematically described as a \emph{spinor field}.
+
+\subsection{Physical Fields}
 In physics, \emph{field} is a \emph{dynamical system} with infinite number of degrees of freedom. It's dynamics can be studied using either Lagrangian or Hamiltonian approach.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{fieldMechanicalModel}
+	\caption{Mechanical model of coupled oscillators can be used to describe physical fields, such as electromagnetic field or electron-positron field.}
+	\label{fig:fieldMechanicalModel}
+\end{figure}
+
 
 \section{Ideal Versus Real}\label{sec:IdealVsReal}
-An action of an operator $F$ on arrows can be represented symbolically
-as an equation.
-
+So far when discussing motion of various systems, we assumed that positions, velocities, or momenta and other quantities can be specified with arbitrary precision and, in the limit, absolutely accurately.
 
 
 \section*{Chapter Highlights}

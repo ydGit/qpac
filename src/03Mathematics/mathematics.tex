@@ -19,26 +19,52 @@ In this chapter we develop mathematical tools needed for quantum theory. This is
 
 
 \section{Randomness}
-Randomness is the opposite of certainty, \emph{determinism}, and complete predictability. Randomness (or \emph{indeterminism}) plays an essential part in quantum physics.
+Randomness is the opposite of predictability, certainty, and \emph{determinism}. Randomness (or \emph{indeterminism}) plays an essential part in classical and quantum physics.
 
-Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies (measures) the qualitative notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a coin where the probability of tail is $1/2$, or the throw of a dice, where the probability of getting a face value divisable by 3 is $1/3$.
+Mathematical description of randomness is based on the idea of \emph{probability}. Probability quantifies or measures the notion of \emph{likelyhood} of certain outcomes. A common example is the toss of a "fair" coin where the probability of tail is $1/2$. Or take another typical case: an ideal six-sided die. If we throw it 6 million times, and each side is equally likely to appear, we expect to see each value to come up 1 million times. Suppose we are interested in those cases when the face value is divisible by 3. That happes 2 million times, one million for 3 and another for 6. The chances that we will see such an event is therefore 2 out of 6 or 1/3.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{probabilitySixSidedDie}
+	\caption{Results of throwing a real six-sided die.}
+	\label{fig:probabilitySixSidedDie}
+\end{figure}
 
-In quantum physics probability of an event $E$ happening is understood as the \emph{relative frequency} or ratio of the number of occurences of the given event in $N$ trials:
-\[
-P_E = \frac{N_E}{N}\,,
-\]
-where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happens during an experiment.
+\begin{mydef}{Probability as Frequency}
+	Probability of an event $E$  can be defined as the \emph{relative frequency} or ratio of the number of times the event occured in a series of trials to the total number $N$ of trials:
+	\[
+	P_E = \frac{N_E}{N}\,,
+	\]
+	where $P_E$ is the probability of the event $E$, and $N_E$ is the number of times the event happened during an experiment.
+\end{mydef}
 
-For example, suppose  we are measuring a week light with a detector capable of detecting  single photons. An arriving photon triggers the detector which produces a pulsed electronic signal, like a spike in the output voltage.
+Let's consider a real experiment with a six-sided die, illustrated in Figure \ref{fig:probabilitySixSidedDie}. In this experiment a die has been first thrown 200 times, then again 200 times, and finally 1000 times. The histograms in the second column show how many time each face value appeared in a given series of throws. The plots in the first column correpond to the \emph{running value} of the probabillity that the face value is divisable by 3 (i.e. equals 3 or 6) has appeared (event $E_{3|6}$). The running value means that we recalculate the ratio $N_{3|6}/N$ with each throw. This explains large oscillations between 0 and 1 at the very begginning, when we either get or don't get the event $E$ in the first throw.
 
-Denoting $N$ the number of times the detector is triggered during an experiment. If $N_A$ is the number the detector $A$ is fired, then the probability of detecting a signal there is 
-\[
-P_A = \frac{N_A}{N}\,.
-\]
-?$N_A + N_B$ if both are working?
+The histrograms reveal that in relatively short experiments ($N<1000$) different face values might appear with significantly different probabilities, as if the die is not \emph{fair}. This also results in the probability of the event $E_{3|6}$ to differ appreciably from the "ideal" value of $1/3\approx 0.33$, shown as a horizontal line in the plots. It requires a longer series of throws to see that the die is pretty fair and the probability of the event $E_{3|6}$ is close to the ideal.
+
+\begin{myrem}{Irreversibility}
+	The throw of a die is a good example of what is required in an actual quantum experiment. When a die is hitting the surface of a table, it might bounce off several times before settling on a certain face. Whatever energy (kinetic of potential) the die had is now \emph{irreversibly} gone. If we had an ideal perfectly elastic materials, the die would endlessly keep bouncing up and down and we would not be able to complete a single observation.
+	
+	Every observation in physics has a certain \emph{finality}, caused by some \emph{irreversible process} that transfers energy and information to the observing "device" (e.g. camera or human eye and brain). We will be returning to this important point in other chapters.
+\end{myrem}
+
+\subsection{Ensembles and Series}
+In experiments with random outcomes we must deal with many trials. In each trial we observe a certain value $v_i\,,\,\, i=\overline{1,N}$. The sequence of values $v_1,\,v_2\,,v_3,\,\ldots,\,v_N$ is called an \emph{statistical ensemble} or a \emph{random series}.
 
 
-\subsection{Schrodinger Student}
+\subsection{Average and Variance}
+Two important characteristic of a random series are the \emph{average value} and the \emph{variance}. The former can often be linked to the most likely outcome, while the latter describes how large is the spread of values. Before we give formal definitions to these concepts, let's consider a specific example.
+
+Suppose we have 100 fair dice and toss them all at once. Denoting the sum total of face values as $V$, we can state that it can be anywhere from 100 to 600, although neither of these extreme values is likely.
+
+\subsection{Poissoinian Process}
+
+\subsection{Joint Measurement}
+
+\subsection{Marginals}
+
+\subsection{Correlations}
+
+\subsection{Schrodinger Students}
 In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
 
 
@@ -58,7 +84,7 @@ The input-output view of functions leads to a helpful picture where a given func
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{functionAsBox}
-	\caption{A function can be viewed as a box with input(s) and output(s).}
+	\caption{Function can be viewed as a closed box with an input and an output.}
 	\label{fig:functionAsBox}
 \end{figure}
 
@@ -1263,15 +1289,107 @@ More generally, to convince ourselves that functions (at least some classes of f
 \ket{f} = c_1\ket{b_1}+c_2\ket{b_2}+\ldots+c_n\ket{b_n}\,.
 \]
 
- Turns out, in many cases it is possible. We will consider a couple of most important and relatively simple examples: trigonometric functions and polynomials.
-
-\subsection{Fourier Series}
+ Turns out, in many cases it is possible. We will consider a couple of most important and relatively simple examples: polynomials and trigonometric functions. To illustrate the ideas we will use a moderately complicated function
+ \[
+ f_x = (1+x) e^{-x^3\sin x}\,,
+ \]
+ built from product and composition of polynomials, trigonometric, and exponential functions. The graph of $f_x$ is plotted in Figure \ref{fig:functionApproximation} using open circles. Two different ways to approximate this funciton in the range $\lbrack -2, 2\rbrack$ is demonstrated in parts (a) and (b). Let's take a closer look.
+ 
+ \begin{figure}[htbp]
+ 	\centering
+ 	\includegraphics[scale=1.0]{functionApproximation}
+ 	\caption{A function $f_x=(1+x)e^{-x^3\sin x}$ can approximated using polynomials or trigonometric functions.}
+ 	\label{fig:functionApproximation}
+ \end{figure}
 
 \subsection{Taylor Series}
+In a finite range of interest, it possible to represent a function using polynomials. The function $f_x$ defined above, behaves almost like the following polynomial of the 13th degree:
+\begin{eqnarray*}
+	P_x & = 1 + x + 0.107x^2 + 0.156x^3-1.565x^4-1.669x^5+\\&+1.27x^6+ 
+	1.362x^7-0.444x^8-0.484x^9+0.74x^{10}+\\
+	&+0.082x^{11}-0.005x^{12}-0.005x^{13}\,.
+\end{eqnarray*}
+Polynomial approximation works well for all functions which are "well-behaved" (smooth and not blowing up to infinity) in a finite range of interest. The smaller the range, the simpler the required polynomial becomes. This idea is illustrated in Figure \ref{fig:polynomialApproximation}. At the highest zoom level any function looks like a piece of straight line, described by a first degree polynomial $a_0+a_1x$. Expanding the range (zooming out), the function first starts to resemble a parabola, then cubic, and so on.
+ \begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{polynomialApproximation}
+	\caption{Many "well-behaved" functions can be described using polynomials when "zoomed in" on a finite range. The smaller the range of interest -- the lower the degree of the polynomial needed for accurate fit.}
+	\label{fig:polynomialApproximation}
+\end{figure}
 
-\subsection{Analytic Functions}
+It can be shown that given a function $f_x$, it can be approximated around some point of interest $x=a$ using a simple series:
+\[
+f_x \approx c_0 + c_1(x-a)+c_2(x-a)^2+\ldots+ c_n(x-a)^n 
+\]
+or more compactly
+\[
+f_x \approx \int c_i(x-a)^i\,,\quad i=\overline{1, n}\,.
+\]
+This series, first introduced by an English mathematician Brook Taylor in 1715, is called \emph{Taylor series}.
+
+As the result, the information about a function $f$ becomes "encoded" in a list of coefficients of the polynomial:
+\[
+f\quad\leftrightarrow\quad (c_0, c_1, c_2, \ldots, c_n)\,.
+\]
+The function can then be written similar to a vector with components $c_i$ and some basis $\ket{u_i}$ (polynomials in this case):
+\[
+\ket{f} = \int c_i\ket{u_i}\,,\quad i=\overline{1, n}\,.
+\]
+Like in the case of arrow-vectors, the basis is not unique. Let's examine another way to represent a function using $\sin$ and $\cos$.
+
+\begin{mybio}{Analytic Functions}
+	In order to absolutely precisely represent a well-behaved function $f$ using polynomials, one needs an \emph{infinite} number of coefficients:
+	\[
+	f\quad\leftrightarrow\quad (c_0, c_1, c_2, \ldots, c_n,\ldots)\,.
+	\]
+	If a function allows such representatation, it is called \emph{analytic function}. Analytic functions are of great value in mathematical physics, where they often describe very smooth physical behavior without jumps or infinities.
+\end{mybio}
+
+
+\subsection{Fourier Series}
+As shown in Figure \ref{fig:functionApproximation}(b), the same function $f_x=(1+x)e^{-x^3\sin x}$ can be well approximated using the following series:
+\begin{align*}
+	F_x = & \frac{954}{1000}+\frac{571}{1000}\cos x+\frac{4}{10}\sin x+\frac{34}{1000}\cos (2x)+\frac{212}{1000}\sin(2x)-\\
+	& -\frac{78}{1000}\cos (3x)-\frac{28}{1000}\sin(3x)-\frac{11}{1000}\cos (4x)-\frac{32}{1000}\sin (4x)\,.
+\end{align*}
+The similarity between $f_x$ and $F_x$ is only approximate and works for a limited range. 
+
+A French mathematician and physicist Joseph Fourier introduced these simple trigonometric series in his 1822 work \emph{"The Analytical Theory of Heat"}. They are known as \emph{Fourier series}, and are used to represent \emph{periodic} functions as an infinite sum
+\[
+F_x = \int \left\lbrack a_n\cos(n x)+b_n\sin(n x)\right\rbrack \,,\quad n=\overline{0,\infty}\,.
+\]
+ Non-periodic functions, such as $f_x$, can be represented either only approximately, or using $\cos$ and $\sin$ with summation over \emph{non-countable/continuous} index $n$. 
+ 
+ \begin{mybio}{Fourier Transform}
+ 	The operation of representing functions with either countable or continuous summation over trigonometric functions is called \emph{Fourier transform}. It is a very powerful mathematical tool, widely used in science and engineering.
+ 	
+ 	\[
+ 	\ket{f} =  \int \left\lbrack a_n\ket{\cos_n}+b_n\ket{\sin_n}\right\rbrack \,,\quad n=\overline{0,\infty}\,.
+ 	\]
+ \end{mybio}
+
+Again we have a situation when a function can be described compactly with a set of coefficients:
+\[
+f\quad\leftrightarrow\quad (a_0, a_1, b_1, a_2, b_2, \ldots, a_n, b_n)\,.
+\]
 
 \subsection{Hilbert Spaces}
+We saw indications that functions, being "numberlikes", also have vector properties and can be expanded in certain basis. A basis can be, in theory, \emph{infinite} (in numerical practice it is always finite):
+\[
+\ket{f} = \int c_i\ket{u_i}\,,\quad i=\overline{1, \infty}\,.
+\]
+In physical applications, including quantum theory, the coefficients and the basis have  well-defined meaning. For example, coefficients can represent \emph{amplitudes} of oscillations of a body, or powers in certain \emph{"communication channels"}, or some other physical property. These interpretations suggest, firstly, that each coefficient is finite, and secondly that there is some \emph{limit on their total sum}. For example, if the coefficients represent the amplitudes of oscillations with various frequencies, then the square of a coefficient $c_i$ would be related to the energy of an oscillation (See section YYY) and we would have
+\[
+\int |c_i|^2  = N < \infty\,
+\]
+as a mathematical statement that the total energy of an oscillating system is finite.
+
+The finite sum of the coefficients (or their squares) has an important consequence: it can be used to define a \emph{magnitude} (a "length") of a function as equal to the sum. This leads to a possibility of a \emph{scalar product} for a pair of functions and everything that the scalar product enables (e.g. dual spaces).
+
+Although not all functions have the nice properties described above, a great number of functions used in quantum theory do. These functions, taken as one whole set, form a \emph{space} with length and scalar product operation defined. A special feature of this space is that, in general, basis must be \emph{infinite}. Of course, in practice, and even in many special theoretical problems, a finite number of spaces is used.
+
+Vector spaces, endowed with scalar product, but requiring infinite bases, is called \emph{Hilbert space}, in honor of a German mathematician David Hilbert. Hilbert spaces are very important  mathematical tools in quantum theory.
+
 
 \section{Application: Circular Motion}
 Let us examine how the concepts and tools discussed above can be applied to a simple case of circular motion.  
@@ -1312,11 +1430,52 @@ We can make one more step, multiplying both sides by the fundamental physical co
 \]
 
 \subsection{Solution}
-When the angular speed $\omega$ is constant, the equation of circular motion can be easily solved.  The simple solution will play an important part in quantum theory.
+When the angular speed $\omega$ is constant, the equation of circular motion can be easily solved.  The simple solution will play an important part in quantum theory. To find it, we first recognize that, given  constant angular speed $\omega$, the angle swept by the vector $\ket{r}$ grows linearly with time: $\theta_t = \omega t$. Next, to obtain a position vector $\ket{r_t}$ we need to rotate the initial position vector $\ket{r_0}$ by the angle $\theta_t$:
+\[
+\ket{r_t}=\op{R}_\theta \ket{r_0}\,.
+\]
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{circularMotionSolution}
+	\caption{Circular motion.}
+	\label{fig:circularMotionSolution}
+\end{figure}
+As  illustrated in Figure \ref{fig:circularMotionSolution}(a), we can split a single rotation by the angle $\theta$ into a large number of rotations by a smal angle $\phi=\delta \theta=\theta /N$, where $N$ is the number of steps. Mathematically this is expressed as follows:
+\[
+\op{R}_\theta = \op{R}_\phi\circ\op{R}_\phi\circ\op{R}_\phi\circ\cdots\circ\op{R}_\phi
+\]
+or more compactly
+\[
+\op{R}_\theta = \op{R}^N_\phi\,.
+\]
+Each small rotation step can be described by a simple operator which is close to the identity operator:
+\[
+\op{R}_\phi = \op{1}+\op{G}\phi\,.
+\] 
+To see this, recall that rotating a vector $\ket{r}$ by a small angle $\phi$ adds to it a tiny vector $\delta\ket{r}$ which perpendicular to $\ket{r}$ and has the length equal to the length of the small arc, as shown in Figure  \ref{fig:circularMotionSolution}(b)(c):
+\[
+\op{R}_\phi\ket{r}=\ket{r}+\phi\op{J}\ket{r}\,.
+\]
+Thus, the operator of small step rotation is given by
+\[
+\op{R}_\phi = \op{1}+\phi\op{J}\,.
+\]
+Since $\phi=\delta\theta=\theta/N$, we obtain the rotation operator by the finite angle $\theta$:
+\[
+\op{R}_\theta = \left( \op{1}+\frac{\theta\op{J}}{N}\right)^N\,.
+\]
+The expression on the right is the approximation to the exponential function:
+\[
+e^x\approx (1+\frac{x}{N})^N\,,
+\]
+and when $N$ grows increasingly larger, the approximation becomes more exact. Finally, substituting $\theta=\omega t$, we arrive at the solution of the circular motion problem. The position vector $\ket{r_t}$ changes in time according to the equation
 \[
 \ket{r_t} = e^{\op{J}\omega t}\ket{r_0}\,.
 \]
-
+Let's remind ourselves that this is the solution to the equation of circular motion
+\[
+\op{J}\partial_t\ket{r}=-\omega\ket{r}\,.
+\]  
 
 \section*{Chapter Highlights}
 {\setstretch{1.5}\chhc
