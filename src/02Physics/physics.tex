@@ -217,10 +217,43 @@ Two types of fundamental elementary particles that will be discussed in this boo
 
 
 \section{Single Particle Detectors}
-The dominant way humans perceive the world is through the eyesight. 
+Detecting a single particle is a challenging task. The first time humans distinctly observed a single particle was in 1908 in an experiment performed by Rutherford and Geiger. 
 
-\subsection{Quantum Eyes}
-The first time physicists heard an effect due to a single particle (alpha-particle) was in 19xx in an experiment performed by Ernst Rutherford and Heiger.
+\subsection{Rutherford-Geiger Method}\label{subsec:RutherformGeiger}
+Rutherford and Geiger described their results in the paper \emph{"An Electrical Method of Counting the Number of alpha-Particles from Radio-active Substances"}. The idea of their experiment, schematically illustrated in Figure \ref{fig:RutherfordGeigerExperiment},  is as follows: Place a small amount of radioactive substance in vacuum and detect an effect of an extremely narrow "beam" or "ray" of radiation going in a specified direction. The effect Rutherford and Geiger used on to detect a single particle is based on \emph{avalanche amplification} of electron currents in a specially designed detector.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{RutherfordGeigerExperiment}
+	\caption{(a) Schematic of the Rutherford-Geiger experiment for detecting a single subatomic particle. (b) Current from the amplifier at various moments of time.}
+	\label{fig:RutherfordGeigerExperiment}
+\end{figure}
+
+\begin{mybio}{Amplification}
+	The avalanche amplification of the effects caused by a single subatomic particle is just one illustration of an important feature of observations and measurements of quantum systems: \emph{"the amplification of microscopic effects to the level of macroscopic observation,"}\footnote{{\it Quantum Kinematics and Dynamics}, Addendum {\it Non-selective measurements}, reproduced from the Proceedings of the National Academy of Sciences Vol 1. 45. pp. 1552-1553 (1959)} to borrow the phrase of an American theoretical physicist and Nobel Prize winner Julian Seymour Schwinger.
+	
+	The amplification, in one form or another, is necessary if we want to perform and discuss any quantum experiment. As Niels Bohr put it:
+	
+	\emph{"Here, it must above all be recognized that, however far  quantum effects transcend the  scope of  classical physical analysis, the account of the experimental arrangement and  the  record of  the  observations must always be
+		expressed in common language supplemented with the
+		terminology of  classical physics.  This  is  a  simple logical demand, since the word "experiment" can in
+		essence be used only in referring to a situation where we  can tell  others what we  have done and what we
+		have learned."}\footnote{{\it On the Notions of  Causality and Complementarity}, Science, 1950, Vol. 111}
+\end{mybio}
+
+
+\subsubsection*{Numbers}
+Rutherford and Geiger used radium as radioactive material. Radium atom contains 88 protons and 138 neutrons, with the total mass of the atom $m_{Ra}=3.77\times 10^{-22}$ gram. The sample of 1 gram would contain $N=10^{22}/3.33=2.65\times 10^{21}$ atoms. The most stable isotope of radium decays slowly, taking 1600 years for half of the atoms to decay. In one second a tiny fraction of  the half of gram would decay, specifically:
+\[
+N = \frac{2.65\times 10^{21}}{2}\times \frac{1}{1600\times 365\times 24\times 60 \times 60}=2.65\times 10^{10}\textrm{ atoms}.
+\]
+From their measurements, Rutherford and Geiger estimated that one gram of radium emits $N\approx 3.2\times 10^{10}$ alpha-particles.
+
+If every atomic decay resulted in an electron going through a wire, then we would have a small current of 
+\[
+I = \frac{Q}{t} = \frac{N q_e}{t} = \frac{3\times 10^{10}\times 1.6\times 10^{-19}}{1}=4.8\times 10^{-9}\,\textrm{A}\approx 5\,\textrm{nA}\,.
+\]
+Such current is easily measureable by modern instruments. However, Rutherford and Geiger were using much smaller amount of radium (1/10000 of gram!) and had to amplify the current two thousand times, making it easier to detect and strong enough to make audible "clicks."
+
 
 
 \section{Polarization and Spin}
