@@ -55,7 +55,7 @@ based on two vectors:
 \subsection{Superposition}
 Suppose we measure the energy of a quantum system (e.g. a hydrogen atom) and find that it takes on discrete values $E_1$, $E_2$, $E_3$, and so on. A distinct quantum state $\ket{e_1}$, $\ket{e_2}$, $\ket{e_3}$, and so on, is associated with each energy value.
 
-If a long series of measurements always yields the same energy value $E_k$, we conclude that the system was prepared in the state of \emph{definite} energy $\ket{e_k}$. If the results of a long series of measurements are random, then the initial state of atoms can not be the state of a definite energy. In practice, a long series of measurements of \emph{identically prepared} atoms reveals certain \emph{statistical} pattern. Specifically, for a number of measurement $N$, the energy $E_1$ results in $N_1$ random outcomes, the energy $E_2$ results in $N_2$ random outcomes and so on. One can speak of the \emph{probability} of obtaining the result $E_1$, defined as the \emph{relative frequency} $p_1=N_1/N$ of occurences of $E_1$; similary for other results. Generally, the probability of obtaining the result $E_k$ is $p_k=N_k/N$. 
+If a long series of measurements always yields the same energy value $E_k$, we conclude that the system was prepared in the state of \emph{definite} energy $\ket{e_k}$ (compare with EPR criterion of reality). If the results of a long series of measurements are random, then the initial state of atoms can not be the state of a definite energy. In practice, a long series of measurements of \emph{identically prepared} atoms reveals certain \emph{statistical} pattern. Specifically, for a number of measurement $N$, the energy $E_1$ results in $N_1$ random outcomes, the energy $E_2$ results in $N_2$ random outcomes and so on. One can speak of the \emph{probability} of obtaining the result $E_1$, defined as the \emph{relative frequency} $p_1=N_1/N$ of occurences of $E_1$; similary for other results. Generally, the probability of obtaining the result $E_k$ is $p_k=N_k/N$. 
 
 If the probabilities $(p_1, p_2, p_3,\ldots, p_k)$ are
  \emph{reproducible} (the same set of probabilities in different repeated long series of measurements), then the state of system can be characterized by the combination of energy values and their probabilities:
@@ -323,6 +323,12 @@ The first term in the expression for $\op{a}_\minus$ ensures that the vacuum sta
 \begin{exercise}
 	Evaluate (a) $\op{a}_\plus \,\ket{n}$; (b) $\op{a}_\minus \,\ket{n}$.
 \end{exercise}
+
+\begin{myrem}{Susskind-Glogower Operator}
+	The operator $\op{a}_\plus$ is known as \emph{Susskind-Glogower operator}.
+\end{myrem}
+
+
 Let's check whether $\op{a}_\plus\op{a}_\minus$ yields the number operator $\op{n}=\int k\ketbra{k}{k}$. Even without explicitely evaluating the composition $\op{a}_\plus\op{a}_\minus$ we can see that it is unlikely to contain the required factor $k$.
 \begin{exercise}
 	Show that $\op{a}_\plus\op{a}_\minus=\ketbra{1}{0}-\ketbra{0}{0}+\op{I}$.
