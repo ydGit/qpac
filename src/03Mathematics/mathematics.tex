@@ -130,10 +130,33 @@ If $v$ is measured in meters, then the units for variance would be in meters squ
 
 
 \subsection{Poisson Series}
-A British mathematician, statistician, biologist, and geneticist Sir Ronald Aylmer Fisher, once said: \emph{"Among discontinuous distributions, the Poisson series is of first importance."} Indeed, it is a simple and ubiquitous random series. It is used to describe occurences of failures and defects in industrial processes, distributions of plants and animals in different areas and periods of time, the number of photons received by the retina, number of birth in a hospital per day, a number of clicks in a radioctivity detectors, and many more phenomena.
+A British mathematician, statistician, biologist, and geneticist Sir Ronald Aylmer Fisher, once said: \emph{"Among discontinuous distributions, the Poisson series is of first importance."} Indeed, it is a simple and ubiquitous random series. It is used to describe occurrences of failures and defects in industrial processes, distributions of plants and animals in different areas and periods of time, the number of photons received by the retina, number of birth in a hospital per day, a number of clicks in a radioactivity detectors, and many more phenomena.
 
 We will examine this process in the case of Rutherford-Geiger experiment with radioactive decay of radium, as discussed in subsection \ref{subsec:RutherformGeiger}.
 
+\subsection{States And Hidden Variables}
+To make notation used in quantum physics feel less foreign we will introduce it early and in a more familiar setting. To this end, consider a scenario where a student, let's call her Alex, goes to a vending machine to buy a glass of juice. The machine offers three options: (1) A pure apple juice, (2) a pure orange juice, and (3) a 50/50 mix of both, as shown in Fig. \ref{fig:correlations}.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{correlations}
+	\caption{A juice vending machine.}
+	\label{fig:correlations}
+\end{figure}
+
+Suppose that each day for the whole year Alex chooses option 1. We can conclude almost with certainty that in future observations, Alex will choose option 1. We will say that Alex is in such a \emph{state} that, if confronted with a choice at the vending machine, he will always go with the option 1. Symbolically we will write the \emph{state} of Alex as $\ket{1}$.
+
+Imagine another student, let's name her Bella, who sometimes chooses option 1 and other times -- option 2 in an unpredictable (random) fashion. If both options are chosen equally frequently, we can say that Bella is in an \emph{uncertain state} and write it symbolically as follows: $\frac{1}{2}\ket{1}+\frac{1}{2}\ket{2}$. All this mathematical expression states is our ability to predict the results of future observations, based on the observations performed in the past.
+
+If students make up their minds right at the vending machine, being completely uncommitted prior, then calling the state of Bella \emph{uncertain} is justified. But another situation is possible: Bella approaches the machine already knowing what she wants that day and her mental state is quite certain in each transaction, however it is unknown to an outside observer. In other words, the factors that determine Bella's choice are \emph{hidden} for the outside observer. In quantum theory such factors are called \emph{hidden variables}.
+
+\begin{mybio}{Element Of Reality}
+	It is not hard to accept the fact that, in the examples considered above, Bella is undecided before she interacts with the vending machine. But it is harder to imagine that Alex is undecided every time and yet \emph{always} decides in favor of the apple juice. Such a certainty, the complete absence of randomness, forces us to think that there is \emph{something in the reality} that determines Alex's choice.
+	
+	Albert Einstein, Boris Podolsky, and Nathan Rosen suggested that
+	"{\it If, without in any way disturbing a system, we can predict with certainty (i.e., with probability equal to unity) the value of a physical quantity, then there exists an element of physical reality corresponding to this physical quantity. }"
+	
+	Thus, since we can, without asking Alex, predict with certainty the value of the option he chooses, there exists, according to Einstein, Podolsky, and Rosen an element of physical reality corresponding to Alex's choice.
+\end{mybio}
 
 \subsection{Joint Measurement}
 
