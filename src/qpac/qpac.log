@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  22 APR 2026 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  22 APR 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2403,12 +2403,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 121.
  [53]
-<../03Mathematics/pics/correlations.pdf, id=4093, 86.44038pt x 132.51257pt>
+<../03Mathematics/pics/correlations.pdf, id=4093, 176.53404pt x 132.81215pt>
 File: ../03Mathematics/pics/correlations.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/correlations.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/correlations.pdf  used on input 
 line 141.
-(pdftex.def)             Requested size: 86.44017pt x 132.51224pt.
+(pdftex.def)             Requested size: 176.5336pt x 132.81181pt.
 
 Overfull \hbox (1.33705pt too wide) in paragraph at lines 148--149
 []\T1/LinuxLibertineT-TLF/m/n/10.95 (-20) Imagine an-other stu-dent, let's name
@@ -2420,358 +2420,369 @@ Package mdframed Info: mdframed works in twoside mode on input line 152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 152.
+<../03Mathematics/pics/jointMeasurement.pdf, id=4099, 303.1454pt x 137.0639pt>
+File: ../03Mathematics/pics/jointMeasurement.pdf Graphic file (type pdf)
+<use ../03Mathematics/pics/jointMeasurement.pdf>
+Package pdftex.def Info: ../03Mathematics/pics/jointMeasurement.pdf  used on in
+put line 164.
+(pdftex.def)             Requested size: 303.14465pt x 137.06355pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <../03Mathematics/pics/correlations.pdf>]
-<../03Mathematics/pics/functionAsBox.pdf, id=5232, 174.22812pt x 196.94778pt>
+ [55 <../03Mathematics/pics/correlations.pdf>] [56 <../03Mathematics/pics/joint
+Measurement.pdf>]
+<../03Mathematics/pics/functionAsBox.pdf, id=7708, 174.22812pt x 196.94778pt>
 File: ../03Mathematics/pics/functionAsBox.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/functionAsBox.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/functionAsBox.pdf  used on input
- line 188.
+ line 194.
 (pdftex.def)             Requested size: 174.22769pt x 196.94728pt.
-<../03Mathematics/pics/functionTypes.pdf, id=5233, 316.56473pt x 173.23593pt>
+<../03Mathematics/pics/functionTypes.pdf, id=7709, 316.56473pt x 173.23593pt>
 File: ../03Mathematics/pics/functionTypes.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/functionTypes.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/functionTypes.pdf  used on input
- line 196.
+ line 202.
 (pdftex.def)             Requested size: 316.56395pt x 173.2355pt.
- [56] [57 <../03Mathematics/pics/functionAsBox.pdf> <../03Mathematics/pics/func
-tionTypes.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../03Mathematics/pics/functi
-onTypes.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->] [58]
-Package mdframed Info: mdframed works in twoside mode on input line 240.
+ [57 <../03Mathematics/pics/functionAsBox.pdf>] [58 <../03Mathematics/pics/func
+tionTypes.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 246.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 240.
+(mdframed)              on input line 246.
+
+Underfull \vbox (badness 1565) has occurred while \output is active []
+
  [59]
-Package mdframed Info: mdframed works in twoside mode on input line 272.
+Package mdframed Info: mdframed works in twoside mode on input line 278.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 272.
- [60] [61]
-Package mdframed Info: mdframed works in twoside mode on input line 350.
+(mdframed)              on input line 278.
+
+[60] [61] [62]
+Package mdframed Info: mdframed works in twoside mode on input line 356.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 350.
- [62]
-Package mdframed Info: Not enough space on this page on input line 352.
-Package mdframed Info: mdframed works in twoside mode on input line 374.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 374.
-Package mdframed Info: mdframed works in twoside mode on input line 378.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 378.
-Package mdframed Info: Not enough space on this page on input line 395.
+(mdframed)              on input line 356.
  [63]
-Package mdframed Info: Not enough space on this page on input line 395.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 400.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 400.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 400.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\partial' on input line 400.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 400.
-
-[64] [65]
-Package mdframed Info: mdframed works in twoside mode on input line 436.
+Package mdframed Info: mdframed works in twoside mode on input line 380.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 436.
-Package mdframed Info: mdframed works in twoside mode on input line 440.
+(mdframed)              on input line 380.
+Package mdframed Info: mdframed works in twoside mode on input line 384.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 440.
-Package mdframed Info: mdframed works in twoside mode on input line 453.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 453.
+(mdframed)              on input line 384.
 
-Underfull \vbox (badness 1533) has occurred while \output is active []
 
- [66]
-Package mdframed Info: mdframed works in twoside mode on input line 471.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\delta' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\partial' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 406.
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+Package mdframed Info: mdframed works in twoside mode on input line 442.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 471.
-<../03Mathematics/pics/arrowsAndVectors.pdf, id=5390, 294.01129pt x 247.3647pt>
+(mdframed)              on input line 442.
+Package mdframed Info: mdframed works in twoside mode on input line 446.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 446.
+Package mdframed Info: mdframed works in twoside mode on input line 459.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 459.
+
+[66]
+Package mdframed Info: mdframed works in twoside mode on input line 477.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 477.
+<../03Mathematics/pics/arrowsAndVectors.pdf, id=7863, 294.01129pt x 247.3647pt>
 
 File: ../03Mathematics/pics/arrowsAndVectors.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/arrowsAndVectors.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/arrowsAndVectors.pdf  used on in
-put line 486.
+put line 492.
 (pdftex.def)             Requested size: 294.01057pt x 247.36409pt.
 
-[67] [68 <../03Mathematics/pics/arrowsAndVectors.pdf>] [69]
-Package mdframed Info: mdframed works in twoside mode on input line 527.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+[68 <../03Mathematics/pics/arrowsAndVectors.pdf>] [69]
+Package mdframed Info: mdframed works in twoside mode on input line 533.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 527.
-Package mdframed Info: mdframed works in twoside mode on input line 532.
+(mdframed)              on input line 533.
+Package mdframed Info: mdframed works in twoside mode on input line 538.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 532.
+(mdframed)              on input line 538.
  [70{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolB.enc}
 ] [71]
-<../03Mathematics/pics/scalarProductMeaning.pdf, id=5427, 307.01964pt x 224.624
+<../03Mathematics/pics/scalarProductMeaning.pdf, id=7900, 307.01964pt x 224.624
 71pt>
 File: ../03Mathematics/pics/scalarProductMeaning.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/scalarProductMeaning.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/scalarProductMeaning.pdf  used o
-n input line 617.
+n input line 623.
 (pdftex.def)             Requested size: 307.01889pt x 224.62415pt.
  [72]
-Package mdframed Info: mdframed works in twoside mode on input line 638.
+Package mdframed Info: mdframed works in twoside mode on input line 644.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 638.
+(mdframed)              on input line 644.
  [73 <../03Mathematics/pics/scalarProductMeaning.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 667.
+Package mdframed Info: mdframed works in twoside mode on input line 673.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 667.
+(mdframed)              on input line 673.
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--669
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
 
  []
 
 [74]
-Underfull \vbox (badness 3271) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75]
-Package mdframed Info: mdframed works in twoside mode on input line 766.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 766.
-
 [76]
-Package mdframed Info: Not enough space on this page on input line 776.
+Package mdframed Info: mdframed works in twoside mode on input line 772.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 772.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 779.
-Package mdframed Info: mdframed works in twoside mode on input line 784.
+(Font)              scaled to size 6.0pt on input line 785.
+Package mdframed Info: mdframed works in twoside mode on input line 790.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 784.
- [77] [78{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS
-.enc}] [79]
-Package mdframed Info: mdframed works in twoside mode on input line 870.
+(mdframed)              on input line 790.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
+[78{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}]
+[79]
+Package mdframed Info: mdframed works in twoside mode on input line 876.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 870.
-Package mdframed Info: mdframed works in twoside mode on input line 887.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 887.
+(mdframed)              on input line 876.
  [80]
-Package mdframed Info: Not enough space on this page on input line 894.
-Package mdframed Info: mdframed works in twoside mode on input line 905.
+Package mdframed Info: mdframed works in twoside mode on input line 893.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 905.
+(mdframed)              on input line 893.
+Package mdframed Info: mdframed works in twoside mode on input line 911.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 911.
  [81] [82]
-Package mdframed Info: mdframed works in twoside mode on input line 949.
+Package mdframed Info: mdframed works in twoside mode on input line 955.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 949.
-Package mdframed Info: mdframed works in twoside mode on input line 959.
+(mdframed)              on input line 955.
+Package mdframed Info: mdframed works in twoside mode on input line 965.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 959.
+(mdframed)              on input line 965.
+
+Underfull \vbox (badness 3108) has occurred while \output is active []
+
  [83]
-<../03Mathematics/pics/adjointOperator.pdf, id=5500, 236.10796pt x 132.27774pt>
+<../03Mathematics/pics/adjointOperator.pdf, id=7973, 236.10796pt x 132.27774pt>
 
 File: ../03Mathematics/pics/adjointOperator.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/adjointOperator.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/adjointOperator.pdf  used on inp
-ut line 1001.
+ut line 1007.
 (pdftex.def)             Requested size: 236.10736pt x 132.2774pt.
 
-Underfull \vbox (badness 1320) has occurred while \output is active []
-
- [84]
-Package mdframed Info: mdframed works in twoside mode on input line 1013.
+[84]
+Package mdframed Info: mdframed works in twoside mode on input line 1019.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1013.
-Package mdframed Info: mdframed works in twoside mode on input line 1028.
+(mdframed)              on input line 1019.
+ [85 <../03Mathematics/pics/adjointOperator.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 1034.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1028.
-
-[85 <../03Mathematics/pics/adjointOperator.pdf>] [86]
-Package mdframed Info: mdframed works in twoside mode on input line 1063.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1063.
-<../03Mathematics/pics/dualOperators.pdf, id=5523, 268.401pt x 252.12013pt>
-File: ../03Mathematics/pics/dualOperators.pdf Graphic file (type pdf)
-<use ../03Mathematics/pics/dualOperators.pdf>
-Package pdftex.def Info: ../03Mathematics/pics/dualOperators.pdf  used on input
- line 1068.
-(pdftex.def)             Requested size: 268.40033pt x 252.1195pt.
+(mdframed)              on input line 1034.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87 <../03Mathematics/pics/dualOperators.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 1081.
+ [86]
+Package mdframed Info: mdframed works in twoside mode on input line 1069.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1081.
-Package mdframed Info: mdframed works in twoside mode on input line 1094.
+(mdframed)              on input line 1069.
+<../03Mathematics/pics/dualOperators.pdf, id=7996, 268.401pt x 252.12013pt>
+File: ../03Mathematics/pics/dualOperators.pdf Graphic file (type pdf)
+<use ../03Mathematics/pics/dualOperators.pdf>
+Package pdftex.def Info: ../03Mathematics/pics/dualOperators.pdf  used on input
+ line 1074.
+(pdftex.def)             Requested size: 268.40033pt x 252.1195pt.
+
+[87 <../03Mathematics/pics/dualOperators.pdf>]
+Package mdframed Info: mdframed works in twoside mode on input line 1087.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1094.
+(mdframed)              on input line 1087.
+Package mdframed Info: mdframed works in twoside mode on input line 1100.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1100.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [88]
-Package mdframed Info: mdframed works in twoside mode on input line 1113.
+Package mdframed Info: mdframed works in twoside mode on input line 1119.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1113.
-<../03Mathematics/pics/vectorOperations.pdf, id=5546, 215.41324pt x 172.12643pt
+(mdframed)              on input line 1119.
+<../03Mathematics/pics/vectorOperations.pdf, id=8019, 215.41324pt x 172.12643pt
 >
 File: ../03Mathematics/pics/vectorOperations.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/vectorOperations.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/vectorOperations.pdf  used on in
-put line 1125.
+put line 1131.
 (pdftex.def)             Requested size: 215.4127pt x 172.126pt.
 
-[89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+ [89]
+Underfull \vbox (badness 3168) has occurred while \output is active []
 
  [90 <../03Mathematics/pics/vectorOperations.pdf>]
-<../03Mathematics/pics/ketketExample.pdf, id=5566, 193.93382pt x 170.57635pt>
+<../03Mathematics/pics/ketketExample.pdf, id=8039, 193.93382pt x 170.57635pt>
 File: ../03Mathematics/pics/ketketExample.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/ketketExample.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/ketketExample.pdf  used on input
- line 1156.
+ line 1162.
 (pdftex.def)             Requested size: 193.93333pt x 170.57593pt.
  [91 <../03Mathematics/pics/ketketExample.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1193
 
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1187.
+Package mdframed Info: mdframed works in twoside mode on input line 1193.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1187.
-[92]
-Package mdframed Info: mdframed works in twoside mode on input line 1202.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1202.
-Package mdframed Info: mdframed works in twoside mode on input line 1210.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1210.
-Package mdframed Info: mdframed works in twoside mode on input line 1213.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1213.
+(mdframed)              on input line 1193.
 
+Underfull \vbox (badness 7981) has occurred while \output is active []
+
+ [92]
+Package mdframed Info: mdframed works in twoside mode on input line 1208.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1208.
+Package mdframed Info: mdframed works in twoside mode on input line 1216.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1216.
+Package mdframed Info: mdframed works in twoside mode on input line 1219.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1219.
+
+[93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93]
-[94]
-Package mdframed Info: mdframed works in twoside mode on input line 1277.
+ [94]
+Package mdframed Info: mdframed works in twoside mode on input line 1283.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1277.
+(mdframed)              on input line 1283.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
-Package mdframed Info: mdframed works in twoside mode on input line 1294.
+[95]
+Package mdframed Info: mdframed works in twoside mode on input line 1300.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1294.
-Package mdframed Info: mdframed works in twoside mode on input line 1306.
+(mdframed)              on input line 1300.
+Package mdframed Info: mdframed works in twoside mode on input line 1312.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1306.
-
-[96]
-Package mdframed Info: mdframed works in twoside mode on input line 1331.
+(mdframed)              on input line 1312.
+ [96]
+Package mdframed Info: mdframed works in twoside mode on input line 1337.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1331.
+(mdframed)              on input line 1337.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1342.
+(Font)              scaled to size 10.0pt on input line 1348.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1342.
+(Font)              scaled to size 7.0pt on input line 1348.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 1342.
+(Font)              scaled to size 5.0pt on input line 1348.
  [97]
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
  [98]
-<../03Mathematics/pics/functionApproximation.pdf, id=5623, 275.68468pt x 443.07
+<../03Mathematics/pics/functionApproximation.pdf, id=8096, 275.68468pt x 443.07
 347pt>
 File: ../03Mathematics/pics/functionApproximation.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/functionApproximation.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/functionApproximation.pdf  used 
-on input line 1402.
+on input line 1408.
 (pdftex.def)             Requested size: 275.68399pt x 443.07237pt.
-<../03Mathematics/pics/polynomialApproximation.pdf, id=5625, 267.43707pt x 289.
+<../03Mathematics/pics/polynomialApproximation.pdf, id=8098, 267.43707pt x 289.
 04553pt>
 File: ../03Mathematics/pics/polynomialApproximation.pdf Graphic file (type pdf)
 
 <use ../03Mathematics/pics/polynomialApproximation.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/polynomialApproximation.pdf  use
-d on input line 1417.
+d on input line 1423.
 (pdftex.def)             Requested size: 267.4364pt x 289.04482pt.
 
 [99] [100 <../03Mathematics/pics/functionApproximation.pdf>] [101 <../03Mathema
 tics/pics/polynomialApproximation.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 1442.
+Package mdframed Info: mdframed works in twoside mode on input line 1448.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1442.
+(mdframed)              on input line 1448.
 
-Overfull \hbox (9.24112pt too wide) in paragraph at lines 1462--1464
+Overfull \hbox (9.24112pt too wide) in paragraph at lines 1468--1470
 \T1/LinuxLibertineT-TLF/m/n/10.95 (-20) i-mately, or us-ing $[]$ and $[]$ with 
 sum-ma-tion over \T1/LinuxLibertineT-TLF/m/it/10.95 (-20) non-countable/continu
 ous
  []
 
 [102]
-Package mdframed Info: mdframed works in twoside mode on input line 1465.
+Package mdframed Info: mdframed works in twoside mode on input line 1471.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1465.
+(mdframed)              on input line 1471.
  [103]
-<../03Mathematics/pics/circularMotion.pdf, id=5827, 190.6874pt x 170.71655pt>
+<../03Mathematics/pics/circularMotion.pdf, id=8300, 190.6874pt x 170.71655pt>
 File: ../03Mathematics/pics/circularMotion.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/circularMotion.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/circularMotion.pdf  used on inpu
-t line 1500.
+t line 1506.
 (pdftex.def)             Requested size: 190.68692pt x 170.71613pt.
  [104 <../03Mathematics/pics/circularMotion.pdf>]
-<../03Mathematics/pics/circularMotionSolution.pdf, id=5836, 238.0311pt x 267.67
+<../03Mathematics/pics/circularMotionSolution.pdf, id=8309, 238.0311pt x 267.67
 1pt>
 File: ../03Mathematics/pics/circularMotionSolution.pdf Graphic file (type pdf)
 <use ../03Mathematics/pics/circularMotionSolution.pdf>
 Package pdftex.def Info: ../03Mathematics/pics/circularMotionSolution.pdf  used
- on input line 1541.
+ on input line 1547.
 (pdftex.def)             Requested size: 238.0305pt x 267.67033pt.
  [105]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2781,7 +2792,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 4.
-<pics/chapterImageOperators.pdf, id=5865, 428.76743pt x 86.28516pt>
+<pics/chapterImageOperators.pdf, id=8338, 428.76743pt x 86.28516pt>
 File: pics/chapterImageOperators.pdf Graphic file (type pdf)
 <use pics/chapterImageOperators.pdf>
 Package pdftex.def Info: pics/chapterImageOperators.pdf  used on input line 3.
@@ -2794,7 +2805,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 21.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
-<../04ClassicalPhysics/pics/defaultFigureTemplate.pdf, id=5866, 348.69095pt x 1
+<../04ClassicalPhysics/pics/defaultFigureTemplate.pdf, id=8339, 348.69095pt x 1
 26.4336pt>
 File: ../04ClassicalPhysics/pics/defaultFigureTemplate.pdf Graphic file (type p
 df)
@@ -2808,14 +2819,14 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 35--39
  []
 
 [109 <./pics/chapterImageOperators.pdf>]
-<../04ClassicalPhysics/pics/systemExamples.pdf, id=5884, 314.91695pt x 314.6283
+<../04ClassicalPhysics/pics/systemExamples.pdf, id=8357, 314.91695pt x 314.6283
 pt>
 File: ../04ClassicalPhysics/pics/systemExamples.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/systemExamples.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics/systemExamples.pdf  used on
  input line 49.
 (pdftex.def)             Requested size: 314.91617pt x 314.62752pt.
-<../04ClassicalPhysics/pics/Oscillator.pdf, id=5885, 184.68765pt x 68.9489pt>
+<../04ClassicalPhysics/pics/Oscillator.pdf, id=8358, 184.68765pt x 68.9489pt>
 File: ../04ClassicalPhysics/pics/Oscillator.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/Oscillator.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics/Oscillator.pdf  used on inp
@@ -2824,7 +2835,7 @@ ut line 87.
  [110 <../04ClassicalPhysics/pics/defaultFigureTemplate.pdf>] [111 <../04Classi
 calPhysics/pics/systemExamples.pdf>]
 [112 <../04ClassicalPhysics/pics/Oscillator.pdf>]
-<../04ClassicalPhysics/pics/coupledSystem.pdf, id=5976, 255.09113pt x 203.72203
+<../04ClassicalPhysics/pics/coupledSystem.pdf, id=8449, 255.09113pt x 203.72203
 pt>
 File: ../04ClassicalPhysics/pics/coupledSystem.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/coupledSystem.pdf>
@@ -2838,7 +2849,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [116]
-<../04ClassicalPhysics/pics/degreeOfFreedomPendulum.pdf, id=6026, 140.46991pt x
+<../04ClassicalPhysics/pics/degreeOfFreedomPendulum.pdf, id=8499, 140.46991pt x
  140.18353pt>
 File: ../04ClassicalPhysics/pics/degreeOfFreedomPendulum.pdf Graphic file (type
  pdf)
@@ -2865,7 +2876,7 @@ LaTeX Font Warning: Font shape `U/fontawesometwo/b/it' undefined
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [120]
-<../04ClassicalPhysics/pics/newtonianStateEvolution.pdf, id=6071, 520.04414pt x
+<../04ClassicalPhysics/pics/newtonianStateEvolution.pdf, id=8543, 520.04414pt x
  390.01501pt>
 File: ../04ClassicalPhysics/pics/newtonianStateEvolution.pdf Graphic file (type
  pdf)
@@ -2930,7 +2941,7 @@ Package mdframed Info: mdframed detected package amsthm
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [129]
-<../04ClassicalPhysics/pics/lagrange_vertical.pdf, id=6157, 462.52798pt x 346.8
+<../04ClassicalPhysics/pics/lagrange_vertical.pdf, id=8630, 462.52798pt x 346.8
 9601pt>
 File: ../04ClassicalPhysics/pics/lagrange_vertical.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/lagrange_vertical.pdf>
@@ -2952,7 +2963,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 790.
 [132]
-<../04ClassicalPhysics/pics/systemDescriptions.pdf, id=6191, 208.83281pt x 190.
+<../04ClassicalPhysics/pics/systemDescriptions.pdf, id=8663, 208.83281pt x 190.
 59738pt>
 File: ../04ClassicalPhysics/pics/systemDescriptions.pdf Graphic file (type pdf)
 
@@ -2965,7 +2976,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 808.
  [133 <../04ClassicalPhysics/pics/systemDescriptions.pdf>]
-<../04ClassicalPhysics/pics/threeMechanics.pdf, id=6231, 450.3638pt x 336.1531p
+<../04ClassicalPhysics/pics/threeMechanics.pdf, id=8704, 450.3638pt x 336.1531p
 t>
 File: ../04ClassicalPhysics/pics/threeMechanics.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/threeMechanics.pdf>
@@ -2976,7 +2987,7 @@ Package pdftex.def Info: ../04ClassicalPhysics/pics/threeMechanics.pdf  used on
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [134 <../04ClassicalPhysics/pics/threeMechanics.pdf>]
-<../04ClassicalPhysics/pics/TemperatureRoom.pdf, id=6294, 335.20355pt x 124.502
+<../04ClassicalPhysics/pics/TemperatureRoom.pdf, id=8767, 335.20355pt x 124.502
 24pt>
 File: ../04ClassicalPhysics/pics/TemperatureRoom.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/TemperatureRoom.pdf>
@@ -2989,14 +3000,14 @@ Overfull \hbox (17.21515pt too wide) in paragraph at lines 861--862
  []
 
 [135 <../04ClassicalPhysics/pics/TemperatureRoom.pdf>]
-<../04ClassicalPhysics/pics/vectorField.pdf, id=6345, 200.70879pt x 170.65901pt
+<../04ClassicalPhysics/pics/vectorField.pdf, id=8818, 200.70879pt x 170.65901pt
 >
 File: ../04ClassicalPhysics/pics/vectorField.pdf Graphic file (type pdf)
 <use ../04ClassicalPhysics/pics/vectorField.pdf>
 Package pdftex.def Info: ../04ClassicalPhysics/pics/vectorField.pdf  used on in
 put line 874.
 (pdftex.def)             Requested size: 200.70828pt x 170.65858pt.
-<../04ClassicalPhysics/pics/fieldMechanicalModel.pdf, id=6346, 308.53123pt x 22
+<../04ClassicalPhysics/pics/fieldMechanicalModel.pdf, id=8819, 308.53123pt x 22
 2.84654pt>
 File: ../04ClassicalPhysics/pics/fieldMechanicalModel.pdf Graphic file (type pd
 f)
@@ -3008,7 +3019,7 @@ sed on input line 894.
 /pics/fieldMechanicalModel.pdf>]) (../05QuantumPhysics/quantumphysics.tex [138]
 
 Chapter 5.
-<pics/chapterImageTensors.pdf, id=6625, 429.01144pt x 86.2211pt>
+<pics/chapterImageTensors.pdf, id=9098, 429.01144pt x 86.2211pt>
 File: pics/chapterImageTensors.pdf Graphic file (type pdf)
 <use pics/chapterImageTensors.pdf>
 Package pdftex.def Info: pics/chapterImageTensors.pdf  used on input line 3.
@@ -3070,7 +3081,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 181.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 181.
-<../05QuantumPhysics/pics/qubitNumberOperatorMeaning.pdf, id=6671, 323.61462pt 
+<../05QuantumPhysics/pics/qubitNumberOperatorMeaning.pdf, id=9144, 323.61462pt 
 x 101.5264pt>
 File: ../05QuantumPhysics/pics/qubitNumberOperatorMeaning.pdf Graphic file (typ
 e pdf)
@@ -3087,7 +3098,7 @@ Overfull \hbox (5.62625pt too wide) in paragraph at lines 194--195
 Underfull \vbox (badness 3158) has occurred while \output is active []
 
  [145 <../05QuantumPhysics/pics/qubitNumberOperatorMeaning.pdf>]
-<../05QuantumPhysics/pics/phaseSpaceQuantum.pdf, id=6690, 313.0569pt x 142.8978
+<../05QuantumPhysics/pics/phaseSpaceQuantum.pdf, id=9163, 313.0569pt x 142.8978
 4pt>
 File: ../05QuantumPhysics/pics/phaseSpaceQuantum.pdf Graphic file (type pdf)
 <use ../05QuantumPhysics/pics/phaseSpaceQuantum.pdf>
@@ -3252,7 +3263,7 @@ Underfull \vbox (badness 7925) has occurred while \output is active []
 
 ]
 Chapter 6.
-<pics/chapterImageApplications.pdf, id=6835, 427.81808pt x 86.28212pt>
+<pics/chapterImageApplications.pdf, id=9308, 427.81808pt x 86.28212pt>
 File: pics/chapterImageApplications.pdf Graphic file (type pdf)
 <use pics/chapterImageApplications.pdf>
 Package pdftex.def Info: pics/chapterImageApplications.pdf  used on input line 
@@ -3280,14 +3291,14 @@ Package mdframed Info: mdframed works in twoside mode on input line 54.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 54.
-<../06Applications/pics/hydrogenAtom.pdf, id=6852, 252.14091pt x 220.62747pt>
+<../06Applications/pics/hydrogenAtom.pdf, id=9325, 252.14091pt x 220.62747pt>
 File: ../06Applications/pics/hydrogenAtom.pdf Graphic file (type pdf)
 <use ../06Applications/pics/hydrogenAtom.pdf>
 Package pdftex.def Info: ../06Applications/pics/hydrogenAtom.pdf  used on input
  line 66.
 (pdftex.def)             Requested size: 151.2857pt x 132.37749pt.
 [166]
-<../06Applications/pics/hydrogenAtomOrbits.pdf, id=6859, 317.52397pt x 203.5436
+<../06Applications/pics/hydrogenAtomOrbits.pdf, id=9332, 317.52397pt x 203.5436
 9pt>
 File: ../06Applications/pics/hydrogenAtomOrbits.pdf Graphic file (type pdf)
 <use ../06Applications/pics/hydrogenAtomOrbits.pdf>
@@ -3337,7 +3348,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 273.
  [171]
-<../06Applications/pics/cavityQED.pdf, id=7069, 348.69095pt x 126.4336pt>
+<../06Applications/pics/cavityQED.pdf, id=9542, 348.69095pt x 126.4336pt>
 File: ../06Applications/pics/cavityQED.pdf Graphic file (type pdf)
 <use ../06Applications/pics/cavityQED.pdf>
 Package pdftex.def Info: ../06Applications/pics/cavityQED.pdf  used on input li
@@ -3352,7 +3363,7 @@ Overfull \hbox (30.7025pt too wide) in paragraph at lines 320--322
 Underfull \vbox (badness 7704) has occurred while \output is active []
 
  [172]
-<../06Applications/pics/franckHertzExperiment.pdf, id=7076, 328.62866pt x 386.7
+<../06Applications/pics/franckHertzExperiment.pdf, id=9549, 328.62866pt x 386.7
 7528pt>
 File: ../06Applications/pics/franckHertzExperiment.pdf Graphic file (type pdf)
 <use ../06Applications/pics/franckHertzExperiment.pdf>
@@ -3371,7 +3382,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 343.
  [175]
-<../06Applications/pics/laser.pdf, id=7815, 322.78836pt x 186.02876pt>
+<../06Applications/pics/laser.pdf, id=10288, 322.78836pt x 186.02876pt>
 File: ../06Applications/pics/laser.pdf Graphic file (type pdf)
 <use ../06Applications/pics/laser.pdf>
 Package pdftex.def Info: ../06Applications/pics/laser.pdf  used on input line 4
@@ -3479,8 +3490,8 @@ Package pdftex.def Info: pics/chapterImageDefault.pdf  used on input line 3.
 LaTeX Warning: Reference `exe:carMakesSet' on page 191 undefined on input line 
 7.
 
-<../09Solutions/pics/defaultFigureTemplate.pdf, id=7909, 348.69095pt x 126.4336
-pt>
+<../09Solutions/pics/defaultFigureTemplate.pdf, id=10382, 348.69095pt x 126.433
+6pt>
 File: ../09Solutions/pics/defaultFigureTemplate.pdf Graphic file (type pdf)
 <use ../09Solutions/pics/defaultFigureTemplate.pdf>
 Package pdftex.def Info: ../09Solutions/pics/defaultFigureTemplate.pdf  used on
@@ -3541,10 +3552,10 @@ Package logreq Info: Writing requests to 'qpac.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51651 strings out of 467525
- 1019258 string characters out of 5418982
- 1847136 words of memory out of 5000000
- 78378 multiletter control sequences out of 15000+600000
+ 51666 strings out of 467525
+ 1019805 string characters out of 5418982
+ 1847325 words of memory out of 5000000
+ 78392 multiletter control sequences out of 15000+600000
  932177 words of font info for 623 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,19n,107p,1177b,2314s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3571,10 +3582,10 @@ public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lm
 r7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr
 /local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/tex
 live/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on qpac.pdf (193 pages, 5705451 bytes).
+Output written on qpac.pdf (193 pages, 6056009 bytes).
 PDF statistics:
- 8764 PDF objects out of 8907 (max. 8388607)
- 6423 compressed objects within 65 object streams
- 613 named destinations out of 1000 (max. 500000)
- 156413 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 11237 PDF objects out of 12825 (max. 8388607)
+ 8013 compressed objects within 81 object streams
+ 614 named destinations out of 1000 (max. 500000)
+ 156418 words of extra memory for PDF output out of 184870 (max. 10000000)
 
