@@ -129,13 +129,9 @@ If $v$ is measured in meters, then the units for variance would be in meters squ
  \end{remark}
 
 
-\subsection{Poisson Series}
-A British mathematician, statistician, biologist, and geneticist Sir Ronald Aylmer Fisher, once said: \emph{"Among discontinuous distributions, the Poisson series is of first importance."} Indeed, it is a simple and ubiquitous random series. It is used to describe occurrences of failures and defects in industrial processes, distributions of plants and animals in different areas and periods of time, the number of photons received by the retina, number of birth in a hospital per day, a number of clicks in a radioactivity detectors, and many more phenomena.
-
-We will examine this process in the case of Rutherford-Geiger experiment with radioactive decay of radium, as discussed in subsection \ref{subsec:RutherformGeiger}.
 
 \subsection{States And Hidden Variables}
-To make notation used in quantum physics feel less foreign we will introduce it early and in a more familiar setting. To this end, consider a scenario where a student, let's call her Alex, goes to a vending machine to buy a glass of juice. The machine offers three options: (1) A pure apple juice, (2) a pure orange juice, and (3) a 50/50 mix of both, as shown in Fig. \ref{fig:correlations}.
+To make notation used in quantum physics feel less foreign we will introduce it early and in a more familiar setting. To this end, consider a scenario where a student, let's call him Alex, goes to a vending machine to buy a glass of juice. The machine offers two options: (1) A pure apple juice and (2) a pure orange juice, as shown in Fig. \ref{fig:correlations}.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{correlations}
@@ -150,13 +146,17 @@ Imagine another student, let's name her Bella, who sometimes chooses option 1 an
 If students make up their minds right at the vending machine, being completely uncommitted prior, then calling the state of Bella \emph{uncertain} is justified. But another situation is possible: Bella approaches the machine already knowing what she wants that day and her mental state is quite certain in each transaction, however it is unknown to an outside observer. In other words, the factors that determine Bella's choice are \emph{hidden} for the outside observer. In quantum theory such factors are called \emph{hidden variables}.
 
 \begin{mybio}{Element Of Reality}
-	It is not hard to accept the fact that, in the examples considered above, Bella is undecided before she interacts with the vending machine. But it is harder to imagine that Alex is undecided every time and yet \emph{always} decides in favor of the apple juice. Such a certainty, the complete absence of randomness, forces us to think that there is \emph{something in the reality} that determines Alex's choice.
+	It is not hard to accept the fact that, in the examples considered above, Bella is undecided before she interacts with the vending machine. But it is harder to imagine that Alex is undecided every time and yet \emph{always} decides in favor of the apple juice. Such a certainty, the complete absence of randomness, leads us to think that there is \emph{something in the reality} that determines Alex's choice.
 	
 	Albert Einstein, Boris Podolsky, and Nathan Rosen suggested that
 	"{\it If, without in any way disturbing a system, we can predict with certainty (i.e., with probability equal to unity) the value of a physical quantity, then there exists an element of physical reality corresponding to this physical quantity. }"
 	
 	Thus, since we can, without asking Alex, predict with certainty the value of the option he chooses, there exists, according to Einstein, Podolsky, and Rosen an element of physical reality corresponding to Alex's choice.
 \end{mybio}
+
+\begin{remark}
+	When we use the concept of the state, should we understand it as the state of the system, or our the state of "knowledge" about a system.
+\end{remark}
 
 \subsection{Joint Measurement}
 \begin{figure}[htbp]
@@ -165,15 +165,67 @@ If students make up their minds right at the vending machine, being completely u
 	\caption{Alex and Bella choose a juice at a vending machine.}
 	\label{fig:jointMeasurement}
 \end{figure}
+When a student chooses a drink we consider it an \emph{event}. We can speak about random events (random outcomes), their probabilities, expected values, and deviations. It is also possible to discuss two or more events in order to analyze possible connections between them. Suppose, for example, that Alex and Bella buy their drinks from different vending machines situated far apart, as illustrated in Fig. \ref{fig:jointMeasurement}. Their choices are recorded and later examined, either separately or \emph{jointly} (together).
 
-\subsection{Marginals}
+If we consider Alex and Bella as a single team, then their combined (\emph{joint}) choice can be considered a single event $E$. There are four different potential outcomes for each joint event: (1) Both Alex and Bella choose apple juice, $E=AA$, (2) Alex chooses apple juice, Bella chooses orange juice, $E=AO$, (3) Alex chooses orange juice, Bella -- apple, $E=OA$, and finally (4) both choose orange juice, $E=OO$. 
+
+Imagine we have a long observational record, from which we can calculate relative frequency of each of the four possible outcomes: $AA\to p_1$, $AO\to p_2$, $OA\to p_3$, and $OO\to p_4$.  Similar to the notation used to represent a state of a single person, we can write the general state of the "team" as follows:
+\[
+p_1\ket{11} + p_2\ket{12} + p_3\ket{21} + p_4\ket{22}\,,
+\]
+where $\ket{11}$ represents the situation when both Alex and Bell choose option 1 (apple juice) and $p_1$ is the probability of this outcome, $\ket{12}$ represents the situation when Alex chooses option 1 while Bell chooses option 2 with relative frequency $p_2$. Similarly for the remaining terms of the sum. For example, the case when Alex always chooses apple juice, while Bella vacillates between two equally appealing options would be described by the following state of the team (\emph{joint} state):
+\[
+\ket{T_1} = \frac{1}{2}\ket{11} + \frac{1}{2}\ket{12}\,.
+\]
+\begin{exercise}
+	Suppose the joint state of two students is described by the state
+	\[
+		\ket{T_0} = \frac{1}{2}\ket{11} + \frac{1}{2}\ket{22}\,.
+	\]
+	
+	What can we say about Alex? What can we say about Bella? How does this state compare to $\ket{T_1}$ given above? Can we distinguish between $\ket{T_0}$ and $\ket{T_1}$ observing Alex alone? Bella alone?
+\end{exercise}
 
 \subsection{Correlations}
+Analyzing the state $\ket{T_0}$ we conclude that Alex randomly chooses any juice with equal probability. The same can be said about Bella. However, despite both Alex and Bella acting randomly, there is certain connection between their behavior, which results in total coincidence of their choices and complete absence of cases when they choose different juice. This is an example of \emph{correlation} between random processes. 
+
+For the state $\ket{T_0}$ the correlation is very strong, complete, in fact. In other words, given $\ket{T_0}$ and observing only the behavior of Alex, we don't need to observe Bella, since her choices will "mirror" those of Alex as if she had no autonomy at all. If we observed Bella instead, we could predict the choices of Alex. Although random, the behaviors of Alex and Bella are \emph{not independent}, they are \emph{perfectly correlated}.
+\begin{exercise}
+	Consider the joint state given by
+	\[
+	\ket{T} = \frac{4}{10}\ket{11}+\frac{1}{10}\ket{12} + \frac{1}{10}\ket{12}+\frac{4}{10}\ket{22}\,.
+	\]
+	
+	What can we say about the behavior of Alex? Of Bella? Is there any correlation in their behavior?
+\end{exercise}
+
+It is easy to create a perfect correlation between Alex and Bella if they can communicate. For instance, if they meet and agree to choose the same juice on each day, then flip a coin to determine which one, then we would observe the behavior described by the state $\ket{T_0}$. 
+
+\subsection{Marginals}
+Sometimes, given the information about the "whole team", we want to deduce the information about its single member. For instance, given the joint state
+\[
+\ket{T} = \frac{1}{12}\ket{11} + \frac{1}{6}\ket{12} + \frac{1}{4}\ket{21}+\frac{1}{2}\ket{22}\,,
+\]
+we want to predict the behavior of Alex. To do so, we need to take a more "coarse-grained" view on the results of joint measurements (observations) and stop paying attention to what Bella is doing. In other words, we need to differentiate based only on the outcomes for Alex. Looking at $\ket{T}$, we see that Alex chooses apple juice in $N/12 + N/6=N/4$ cases out of $N$. The second option appears in $N/4+N/2=3N/4$ observations. Thus, we can describe the state of Alex as
+\[
+\ket{A} = \frac{1}{4}\ket{1}+\frac{3}{4}\ket{2}\,.
+\]
+Performing the same exercise for Bella, we obtain her state
+\[
+\ket{B} = \frac{1}{3}\ket{1} + \frac{2}{3}\ket{2}\,.
+\]
+The results we obtained for Alex or Bella are called \emph{marginal distributions}. These are probabilities obtained from \emph{joint distributions} by summing over terms that do not affect the outcome we want to focus on, like in the examples above. 
+\begin{exercise}
+	Using the state $\ket{T_0}$ defined above, find the states of Alex and Bella.
+\end{exercise}
+
+\subsection{States Likeness}
+
 
 \subsection{Schrodinger Students}
 In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
 
-\subsection{Fisher Distance}
+
 
 
 \section{Functions}
