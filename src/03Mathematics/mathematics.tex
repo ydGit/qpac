@@ -199,7 +199,7 @@ For the state $\ket{T_0}$ the correlation is very strong, complete, in fact. In 
 	What can we say about the behavior of Alex? Of Bella? Is there any correlation in their behavior?
 \end{exercise}
 
-It is easy to create a perfect correlation between Alex and Bella if they can communicate. For instance, if they meet and agree to choose the same juice on each day, then flip a coin to determine which one, then we would observe the behavior described by the state $\ket{T_0}$. 
+It is easy to create a perfect correlation between Alex and Bella if they can communicate. For instance, if they meet and agree to choose the same juice on each day. To make their choice random they flip a coin to determine the type of choice for that day. In this case we would observe the behavior described by the state $\ket{T_0}$. 
 
 \subsection{Marginals}
 Sometimes, given the information about the "whole team", we want to deduce the information about its single member. For instance, given the joint state
@@ -220,7 +220,36 @@ The results we obtained for Alex or Bella are called \emph{marginal distribution
 \end{exercise}
 
 \subsection{States Likeness}
+If the behavior of Alex is described as the state $\ket{A_0}=\ket{1}$, while the behavior of Bella as $\ket{B_0}=\ket{2}$, we can confidently say that there is a big difference between them. There is nothing in common in their choices, except their complete predictability.
 
+Suppose we have $\ket{A_1}=0.5\ket{1}+0.5\ket{2}$ and $\ket{B_1}=0.49\ket{1}+0.51\ket{2}$. Although these states are not the same, they do seem similar. It is useful to have some mathematical way to \emph{distinguish} such states, or, put differently, a quantitative measure of "likeness" of two states. Such a numeric function would have two inputs -- states $\ket{A}$ and $\ket{B}$ -- and it would produce a number representing how much in common the behaviors of Alex and Bell have. Given some such function, we could write using typical mathematical notation resembling a product($x*y$):
+\[
+\ket{A_0}\lozenge\ket{B_0}=0\quad\textrm{ and }\quad \ket{A_1}\lozenge\ket{B_1}\approx 1\,.
+\]
+The first equations says that there is nothing in common between Alex and Bella -- their preferences are completely different. The second equation states that the behaviors of both are nearly identical, with almost 100\% likeness\footnote{ We can measure "likeness" on the scale from 0 to 1, or from 0 to 100\%.}.
+
+\begin{myrem}{Likeness and Correlation}
+	We must not confuse correlation and similarity of states.
+\end{myrem}
+
+The choice of the "likeness" function is a matter of convention. It is dictated, foremost, by convenience which it brings into calculations. The only constraints for any candidate function should express "reasonable behavior." For instance, the measure of likeness ranges from zero to unity, and any state is completely similar to itself:
+\[
+	0 \le \ket{A}\lozenge\ket{B}\le 1\quad\textrm{ and }\quad \ket{A}\lozenge\ket{A}=1\,.
+\]
+We can also expect that the behavior of Alex resembles that of Bella's to the same degree as the behavior of latter resembles the behavior of the former. Symbolically: $\ket{A}\lozenge\ket{B}=\ket{B}\lozenge\ket{A}$. 
+
+The question of how to \emph{distinguish} random behaviors (states) was discussed as early as 1923\footnote{Fisher RA. XXI.—On the Dominance Ratio. Proceedings of the Royal Society of Edinburgh. 1923;42:321-341.} by Sir Ronald Aylmer Fisher -- a British mathematical statistician, working in the field of biology and genetics. Fisher's approach to represent random states using \emph{angular coordinates} instead of more directly measurable probabilities was more advantageous for statistical calculations and was later analyzed by many researchers, including quantum physicist. For example, one of the founders of quantum information theory, William Kent Wootters, emphasized\footnote{Wootters, W.K. (2013). Optimal Information Transfer and Real-Vector-Space Quantum Theory. arXiv: Quantum Physics, 21-43.} the connection between Fisher's approach and the information which can be obtained during any experiment, not just quantum.
+\begin{mybio}{Fisher Circle, Wootter Semicircle, and Bloch Sphere}
+	Let's briefly outline the basic idea behind representing states using square roots of probability: $\ket{A} = \sqrt{p_1}\ket{1}+\sqrt{p_2}\ket{2}$ instead of more intuitive $\ket{A} = p_1\ket{1}+ p_2\ket{2}$.
+	
+	Fisher was analyzing probability $p$ for a particular "value" of a gene to appear in a given population. In a simplest case the "value" was binary and the probability for the other "value" of the gene is simply $q=1-p$. Instead of probability $p$ Fisher introduced an angle variable $\theta$ such that $\cos\theta = 1 - 2p$. This is equivalent to noticing a similarity between the statistical and trigonometric identities: $p+q=1$ and $\sin^2\phi + \cos^2\phi=1$. Thus, introducing $p=\sin^2\frac{\theta}{2}$, Fisher was able to simplify many of his calculations. 
+	
+	The change of coordinates suggested by Fisher can be illustrated geometrically.
+\end{mybio}
+
+\begin{mybio}{State Multiplication}
+The advantage of using square roots of probabilities become even more evident when the mathematical operation of multiplication is extended to states.
+\end{mybio}
 
 \subsection{Schrodinger Students}
 In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
@@ -856,9 +885,9 @@ The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{compo
 \end{mybio}
 
 \subsection{Super-operators*}
-An idea of a function is quite general, it implies mapping one value to another, or calculting result given a certain input. Given a number, a function can yield another number, or given a vector a function can produce another vector. In the latter case we call the function an \emph{operator}.  
+An idea of a function is quite general, it implies mapping one value to another, or calculating result given a certain input. Given a number, a function can yield another number, or given a vector a function can produce another vector. In the latter case we call the function an \emph{operator}.  
 
-In the mathematical toolset of both classical and quantum physics there are functions of \emph{higher order} in the sense that they can act on functions or operators. For example,  a \emph{super-operator} is a mapping from any operator $\op{T}$ into another operator. Although it sounds abstract, it is not a complicated idea. Indeed, all we need is a rule that finds some operator $\op{B}$ given an operator $\op{A}$. One non-trivial rule can be stated as follows: Given an operator $\op{A}$, apply it twice:
+In the mathematical tool-set of both classical and quantum physics there are functions of \emph{higher order} in the sense that they can act on functions or operators. For example,  a \emph{super-operator} is a mapping from any operator $\op{T}$ into another operator. Although it sounds abstract, it is not a complicated idea. Indeed, all we need is a rule that finds some operator $\op{B}$ given an operator $\op{A}$. One non-trivial rule can be stated as follows: Given an operator $\op{A}$, apply it twice:
 \[
 \op{A}\quad\overset{\mathcal{F}}{\longrightarrow}\quad\op{B}=\op{A}\circ\op{A}\,.
 \]
