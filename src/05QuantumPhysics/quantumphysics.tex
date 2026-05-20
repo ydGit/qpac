@@ -1,7 +1,7 @@
 \graphicspath{{../05QuantumPhysics/pics/}}
 
 \chapter{Quantum Physics}\label{ch:QuantumPhysics}
-\lettrine[lines=2]{\color{darkocre}W}{e are now ready to take the previously developed concepts}  and tools into the realm of quantum phenomena. Firstly, we will upgrade our understanding of \emph{system} and \emph{state} to the quantum level. Then we will see how the concepts of dynamics can be applied to quantum systems in general. Finally, we will do a detailed analysis of quantum dynamics of simplest and yet most important quantum systems: \emph{qubit} and \emph{quantum oscillator}. The latter will lead to the concents of \emph{quantum field}. We will also discuss the core quantum concept of \emph{entanglement}.
+\lettrine[lines=2]{\color{darkocre}W}{e are now ready to take the previously developed concepts}  and tools into the realm of quantum phenomena. Firstly, we will upgrade our understanding of \emph{system} and \emph{state} to the quantum level. Then we will see how the concepts of dynamics can be applied to quantum systems in general. Finally, we will do a detailed analysis of quantum dynamics of simplest and yet most important quantum systems: \emph{qubit} and \emph{quantum oscillator}. The latter will lead to the concepts of \emph{quantum field}. We will also discuss the core quantum concept of \emph{entanglement}.
 
 
 \begin{myprereq}{Prerequisite Knowledge}
@@ -20,7 +20,7 @@ In quantum theory a \emph{system} is understood more broadly than in classical p
 \[
 \ket{\xi} = \ket{star}\ket{planet}\,,
 \] 
-where $\ket{star}$ and $\ket{planet}$ are the states of the star and the planet, respectively. In addition to orbital motion, each part of this system can be rotating, and this rotation consitutes additional degree of freedom for each system. Therefore, the state of, for example, the planet has two components:
+where $\ket{star}$ and $\ket{planet}$ are the states of the star and the planet, respectively. In addition to orbital motion, each part of this system can be rotating, and this rotation constitutes additional degree of freedom for each system. Therefore, the state of, for example, the planet has two components:
 \[
 \ket{planet}=\ket{orbital}\ket{spin}\,.
 \]
@@ -32,7 +32,7 @@ As another example consider an hydrogen atom. Viewed as a classical system it ha
 Finally, consider a light beam -- a special mode of electromagnetic field. Apart from spatial distribution of the power in the beam we must specify its polarization.
 
 
-These examples are not exghaustive, but hopefully sufficient to convey the idea of quantum system. We thus arrive at the following definition:
+These examples are not exhaustive, but hopefully sufficient to convey the idea of quantum system. We thus arrive at the following definition:
 \begin{mydef}{Quantum System}
 	A degree of freedom of a physical system can be considered a \emph{quantum system} if that degree of freedom exhibits quantum behavior.
 \end{mydef}
@@ -42,7 +42,7 @@ These examples are not exghaustive, but hopefully sufficient to convey the idea 
 
 
 \section{Quantum State}\label{sec:QuantumState}
-State is the fundamental concept of quantum theory. It is the source of all \emph{predictions} about the results of \emph{any} possible measurement. Classical state of a system tells us what the values of various quantites \emph{certainly are}, while quantum state tells us what the results of an arbitrary measurement \emph{will be} and \emph{with what probability}.
+State is the fundamental concept of quantum theory. It is the source of all \emph{predictions} about the results of \emph{any} possible measurement. Classical state of a system tells us what the values of various quantities \emph{certainly are}, while quantum state tells us what the results of an arbitrary measurement \emph{will be} and \emph{with what probability}.
 
 We are looking for a binary operator $\op{\sigma}$ that yields a number
 based on two vectors:
@@ -55,7 +55,7 @@ based on two vectors:
 \subsection{Superposition}
 Suppose we measure the energy of a quantum system (e.g. a hydrogen atom) and find that it takes on discrete values $E_1$, $E_2$, $E_3$, and so on. A distinct quantum state $\ket{e_1}$, $\ket{e_2}$, $\ket{e_3}$, and so on, is associated with each energy value.
 
-If a long series of measurements always yields the same energy value $E_k$, we conclude that the system was prepared in the state of \emph{definite} energy $\ket{e_k}$ (compare with EPR criterion of reality). If the results of a long series of measurements are random, then the initial state of atoms can not be the state of a definite energy. In practice, a long series of measurements of \emph{identically prepared} atoms reveals certain \emph{statistical} pattern. Specifically, for a number of measurement $N$, the energy $E_1$ results in $N_1$ random outcomes, the energy $E_2$ results in $N_2$ random outcomes and so on. One can speak of the \emph{probability} of obtaining the result $E_1$, defined as the \emph{relative frequency} $p_1=N_1/N$ of occurences of $E_1$; similary for other results. Generally, the probability of obtaining the result $E_k$ is $p_k=N_k/N$. 
+If a long series of measurements always yields the same energy value $E_k$, we conclude that the system was prepared in the state of \emph{definite} energy $\ket{e_k}$ (compare with EPR criterion of reality). If the results of a long series of measurements are random, then the initial state of atoms can not be the state of a definite energy. In practice, a long series of measurements of \emph{identically prepared} atoms reveals certain \emph{statistical} pattern. Specifically, for a number of measurement $N$, the energy $E_1$ results in $N_1$ random outcomes, the energy $E_2$ results in $N_2$ random outcomes and so on. One can speak of the \emph{probability} of obtaining the result $E_1$, defined as the \emph{relative frequency} $p_1=N_1/N$ of occurrences of $E_1$; similarly for other results. Generally, the probability of obtaining the result $E_k$ is $p_k=N_k/N$. 
 
 If the probabilities $(p_1, p_2, p_3,\ldots, p_k)$ are
  \emph{reproducible} (the same set of probabilities in different repeated long series of measurements), then the state of system can be characterized by the combination of energy values and their probabilities:
@@ -96,7 +96,7 @@ This is analogous to the representation of arrow-vectors in terms of some basis.
 \subsection{Pure and Mixed States}
 
 \subsubsection{State Purification}
-It is possible to "upgrade" a mixed state of a quantum sustem $S$ given by a density operator $\op{\rho}$ to a pure state $\ket{\Psi}$. The mathematical procedure is called \emph{purification}. Physically, the operation means finding a larger system $S_L$ which contains $S$ as its "part" and can be described using a pure state vector $\ket{\Psi}$.
+It is possible to "upgrade" a mixed state of a quantum system $S$ given by a density operator $\op{\rho}$ to a pure state $\ket{\Psi}$. The mathematical procedure is called \emph{purification}. Physically, the operation means finding a larger system $S_L$ which contains $S$ as its "part" and can be described using a pure state vector $\ket{\Psi}$.
 
 Purification can always be achieved. One natural choice of a "larger" quantum system $S_L$ can be a system consisting of a pair of $S$-like systems. As an example, a mixed state of a qubit can be purified to a state of qubit pair.
 
@@ -228,7 +228,7 @@ As shown in Figure \ref{fig:phaseSpaceQuantum}(a), areas in phase space have the
 	\label{fig:phaseSpaceQuantum}
 \end{figure}
 
-First, every time an oscillator absorbs some energy $\Delta E$, the maximum deviation and the maximum momentum increase. The ellipsis in phase space increases its area. But since the area in phase space can't grow continiously--changes in discrete quanta $\delta A=h$--we must have discreete changes in energy. Second, the existence of the elementary quantum of action and the smallest are in phase space, require that the lowest energy state of harmonic oscillator is described not by a point in phase space, but by an elementary ellipsis such that $A_0=\delta x\delta p\propto h$. Putting these two ideas together, we conclude that the area of the ellipsis can be written as
+First, every time an oscillator absorbs some energy $\Delta E$, the maximum deviation and the maximum momentum increase. The ellipsis in phase space increases its area. But since the area in phase space can't grow continuously--changes in discrete quanta $\delta A=h$--we must have discrete changes in energy. Second, the existence of the elementary quantum of action and the smallest are in phase space, require that the lowest energy state of harmonic oscillator is described not by a point in phase space, but by an elementary ellipsis such that $A_0=\delta x\delta p\propto h$. Putting these two ideas together, we conclude that the area of the ellipsis can be written as
 \[
 A_n = A_0 + nh\,.
 \]
@@ -244,7 +244,7 @@ H=\hbar\omega(n + e_0)\,.
 \]
 
 \subsection{Hamiltonian Operator}
-For any quantum system with descrete energy states $E_0, E_1, E_2,\ldots, E_n\ldots$ the Hamiltonian operator can be written in terms of projectors:
+For any quantum system with discrete energy states $E_0, E_1, E_2,\ldots, E_n\ldots$ the Hamiltonian operator can be written in terms of projectors:
 \[
 \op{H}=\int E_k\ketbra{k}{k}\,,\quad k=0,1,2,\ldots,n\ldots 
 \]
@@ -334,7 +334,7 @@ Let's check whether $\op{a}_\plus\op{a}_\minus$ yields the number operator $\op{
 	Show that $\op{a}_\plus\op{a}_\minus=\ketbra{1}{0}-\ketbra{0}{0}+\op{I}$.
 \end{exercise}
 
-To find better operators for raising and lowering states of harmonic oscillator, we can taken a closer look at the qubit case. There we had $\op{\sigma}_\plus\,\ket{0}=1\ket{1}$ and $\op{\sigma}_\minus\,\ket{1}=1\ket{0}$\,. We explicitely added "1" in front of the final states, to highlight the following property of the $\op{\sigma}$-operators:
+To find better operators for raising and lowering states of harmonic oscillator, we can taken a closer look at the qubit case. There we had $\op{\sigma}_\plus\,\ket{0}=1\ket{1}$ and $\op{\sigma}_\minus\,\ket{1}=1\ket{0}$\,. We explicitly added "1" in front of the final states, to highlight the following property of the $\op{\sigma}$-operators:
 \[
 \op{\sigma}_\plus\,\ket{k}=\sqrt{k+1}\ket{k+1}\quad\textrm{ and } \op{\sigma}_\minus\,\ket{k}=\sqrt{k}\ket{k-1}\,.
 \]
@@ -350,7 +350,7 @@ Thus, we can "upgrade" the raising and lowering operators $\op{a}_\plus$ and $\o
 	\[
 	\op{a}_\plus\op{a}_\minus\,\ket{m}=m\ket{m}\quad m>0\,.
 	\]	
-	(b) Evalulate $\op{a}_\minus\op{a}_\plus\,\ket{m}$.
+	(b) Evaluate $\op{a}_\minus\op{a}_\plus\,\ket{m}$.
 \end{exercise}
 \begin{exercise}
 	(a) Show that 

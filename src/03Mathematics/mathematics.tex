@@ -2,7 +2,7 @@
 
 \chapter{Mathematics}\label{ch:Mathematics}
 
-\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics. This fact, of course, does not make them any easier, but it is important to remember that there is no special mathematics that makes quantum physics extra challenging.
+\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics. This fact, of course, does not make them any easier. However, it is important to remember that there is no special mathematics that makes quantum physics extra challenging.
 
 In this chapter we develop mathematical tools needed for quantum theory. This is an essential investment that will pay off when we start discussing quantum phenomena. Mathematics plays a vital role in quantum physics since it becomes the only guide in the field where intuition and simple mental pictures fail.
 
@@ -17,6 +17,47 @@ In this chapter we develop mathematical tools needed for quantum theory. This is
 	\end{itemize}	
 \end{myprereq}
 
+\section*{Noncommutativity}
+Before we start learning specific mathematical tools, it is essential to understand and appreciate one extremely powerful concept that sets apart advanced mathematics used in quantum physics. This is the concept of \emph{noncommutativity}.
+\begin{mydef}{Noncommutativity}
+	An operation $\bullet$ is \emph{noncommutative} if its result depends on the order of arguments:
+	\[
+		A\,\bullet\,B\ne B\,\bullet\,A\,.
+	\]
+	
+	{\it Example}: $x^\wedge y \ne y^\wedge x$.
+\end{mydef}
+Noncommutativity brings variety and power. It is a natural ingredient of human language where various combinations of same letters have very different meaning: {\bf post $\ne$ stop $\ne$ spot}. Furthermore, our actions and operations are often noncommutative, as we are reminded every time we dress up and go outside (in that order!) Obviously, the result of putting on socks and then shoes differs from doing it in reverse order. In short, noncommutativity is an essential feature of the world and our interactions with it. If mathematics is to adequately describe all that, it must have noncommutativity. 
+
+Usually, first introduction to algebra starts with addition, followed by multiplication. Both operations are \emph{commutative}: $x+y=y+x$ and $x*y=y*x$. Very quickly students learn about subtraction, division, and exponentiation ($x$ to the power of $y$) which lack commutativity. At even higher level, \emph{function composition} (discussed in Section \ref{sec:Numberlikes}) demonstrates the power of noncommutativity. Thus, noncommutativity is present in the "usual" mathematics of classical physics but at a higher level. The situation in quantum physics is fundamentally different!
+
+
+In quantum theory noncommutativity greets us at the door: even the basic quantities like position $x$ and momentum $p$ are now represented not by numbers, but by \emph{special mathematical objects}, called \emph{operators}, which, while extending and improving the concept of a number (see Fig. \ref{fig:numbersOperators} and section \ref{sec:Numberlikes}), lose the comfortable property of commuting.  To illustrate the point, consider the product $xp$, the physical meaning of which will be discussed later in section \ref{subsec:PhaseSpace}. In quantum theory we have
+\[
+xp\ne px\,.
+\] 
+The difference $xp-px$ is closely related to the most fundamental physical quantity called \emph{quantum of action}, discussed in section (XXX??). 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{numbersOperators}
+	\caption{Usual numbers are, in a certain sense, special case of \emph{linear operators} -- mathematical objects explored later in the book.}
+	\label{fig:numbersOperators}
+\end{figure}
+
+Not only position $x$ and momentum $p$ are "upgraded" from numbers to operators, but any function of them, like their product $xp$, or kinetic energy $E_k=p^2/2m$ or potential energy $E_p=kx^2/2$ and so on\footnote{We will learn how to understand a function of an operator later in the book.}, become operators too. In quantum theory any quantity that can be \emph{observed} (measured) is described by an operator instead of a number. 
+
+\begin{mybio}{Dirac on Quantum versus Classical Mechanics}
+	Paul Dirac, in \S 7 of his textbook {\it Principles of Quantum Mechanics} writes
+	
+	\emph{
+	"The different algebra for the dynamical variables is one of the most important ways in which quantum mechanics differs from classical mechanics."
+	}
+	
+	In mechanics, position $x$ and momentum $p$ are called \emph{dynamical variables}, since their change in time is governed by the \emph{dynamical laws} -- laws that involve forces (\emph{dynamis} -- "force" in Ancient Greek). The rules for manipulation of $x$ and $p$ , including addition and multiplication, are called \emph{algebra}. Classical physics relies on a commutative algebra where $x$ and $p$ are usual numbers and $xp=px$. But classical physics fails to explain quantum phenomena.
+\end{mybio}
+
+
+To summarize: Noncommutative mathematics more accurately captures the intricate quantum features of nature. It is the essential feature of quantum theory where noncommutativity is placed at the very foundation.
 
 \section{Randomness}
 Randomness is the opposite of predictability, certainty, and \emph{determinism}. Randomness (or \emph{indeterminism}) plays an essential part in classical and quantum physics.
@@ -155,7 +196,7 @@ If students make up their minds right at the vending machine, being completely u
 \end{mybio}
 
 \begin{remark}
-	When we use the concept of the state, should we understand it as the state of the system, or our the state of "knowledge" about a system.
+	When we use the concept of the state, should we understand it as the state of the system, or our the state of "knowledge" about a system?
 \end{remark}
 
 \subsection{Joint Measurement}
@@ -238,21 +279,42 @@ The choice of the "likeness" function is a matter of convention. It is dictated,
 \]
 We can also expect that the behavior of Alex resembles that of Bella's to the same degree as the behavior of latter resembles the behavior of the former. Symbolically: $\ket{A}\lozenge\ket{B}=\ket{B}\lozenge\ket{A}$. 
 
-The question of how to \emph{distinguish} random behaviors (states) was discussed as early as 1923\footnote{Fisher RA. XXI.—On the Dominance Ratio. Proceedings of the Royal Society of Edinburgh. 1923;42:321-341.} by Sir Ronald Aylmer Fisher -- a British mathematical statistician, working in the field of biology and genetics. Fisher's approach to represent random states using \emph{angular coordinates} instead of more directly measurable probabilities was more advantageous for statistical calculations and was later analyzed by many researchers, including quantum physicist. For example, one of the founders of quantum information theory, William Kent Wootters, emphasized\footnote{Wootters, W.K. (2013). Optimal Information Transfer and Real-Vector-Space Quantum Theory. arXiv: Quantum Physics, 21-43.} the connection between Fisher's approach and the information which can be obtained during any experiment, not just quantum.
+The problem of \emph{distinguishing} random behaviors (states) was discussed as early as 1923\footnote{Fisher RA. XXI.—On the Dominance Ratio. Proceedings of the Royal Society of Edinburgh. 1923;42:321-341.} by Sir Ronald Aylmer Fisher -- a British mathematical statistician, working in the field of biology and genetics. Fisher's approach to represent random states using \emph{angular coordinates} instead of more directly measurable probabilities was more advantageous for statistical calculations and was later analyzed by many researchers, including quantum physicist. For example, one of the founders of quantum information theory, William Kent Wootters, emphasized\footnote{Wootters, W.K. (2013). Optimal Information Transfer and Real-Vector-Space Quantum Theory. arXiv: Quantum Physics, 21-43.} the connection between Fisher's approach and the information which can be obtained during any experiment, not just quantum.
 \begin{mybio}{Fisher Circle, Wootter Semicircle, and Bloch Sphere}
-	Let's briefly outline the basic idea behind representing states using square roots of probability: $\ket{A} = \sqrt{p_1}\ket{1}+\sqrt{p_2}\ket{2}$ instead of more intuitive $\ket{A} = p_1\ket{1}+ p_2\ket{2}$.
+	Here we''' briefly outline the motivation behind representing states using square roots of probabilities: $\ket{A} = \sqrt{p_1}\ket{1}+\sqrt{p_2}\ket{2}$ instead of a more intuitive form $\ket{A} = p_1\ket{1}+ p_2\ket{2}$.
 	
-	Fisher was analyzing probability $p$ for a particular "value" of a gene to appear in a given population. In a simplest case the "value" was binary and the probability for the other "value" of the gene is simply $q=1-p$. Instead of probability $p$ Fisher introduced an angle variable $\theta$ such that $\cos\theta = 1 - 2p$. This is equivalent to noticing a similarity between the statistical and trigonometric identities: $p+q=1$ and $\sin^2\phi + \cos^2\phi=1$. Thus, introducing $p=\sin^2\frac{\theta}{2}$, Fisher was able to simplify many of his calculations. 
+	Fisher, focusing on statistical genetics, was analyzing probability $p$ for a particular "value" of a gene to appear in a given population. In a simplest case the "value" was assumed binary so the probability for the other "value" of the gene is simply $q=1-p$. Instead of probability $p$ Fisher introduced an angle variable $\theta$, defined by $\cos\theta = 1 - 2p$. This is equivalent to noticing the similarity between the statistical and trigonometric identities: $p+q=1$ and $\sin^2\phi + \cos^2\phi=1$. Thus, introducing $p=\sin^2\frac{\theta}{2}=(1-\cos\theta)/2$, Fisher was able to simplify many of his calculations. 
 	
-	The change of coordinates suggested by Fisher can be illustrated geometrically.
+	The change of coordinates suggested by Fisher can be illustrated geometrically in Fig. \ref{fig:fisherWootterBloch}. At first, each state written using probabilities $\ket{A} = p\ket{1}+ q\ket{2}$, can be depicted by an arrow or a point in the upper right part of the $(p,q)$ plane, as shown in Fig \ref{fig:fisherWootterBloch}(a). Since $p+q=1$, all states will belong to a straight segment connecting two "extreme" states $\ket{1}$ and $\ket{2}$. Using the angle $\theta$, defined by $p=\sin^2\frac{\theta}{2}$, each state takes the form $\ket{A} = \sin\frac{\theta}{2}\ket{1}+  \cos\frac{\theta}{2}\ket{2}$ and now corresponds to an arrow pointing to the semicircle in Fig. \ref{fig:fisherWootterBloch}(b).
+	
+	Construction similar to Fisher's was suggested by Wootters, with the only difference in the range of values for the angle. William Wootters considered change of coordinates $(p,q)\to(\cos^2\alpha, \sin^2\alpha)$. As the result, each state can be written as $\ket{A} = \cos\alpha\ket{1}+  \sin\alpha\ket{2}$ and represented using an arrow pointing to an arc of a circle in the top-right quadrant of Fig \ref{fig:fisherWootterBloch}(c).
+	
+	All three ways of representing states are equivalent and the choice is made based on convenience. Later we will learn one more powerful approach to represent states, based on \emph{operators}.  To close our discussion of geometrical representation of random states, we mention \emph{Bloch sphere} which is used to represent states of quantum systems -- known as  \emph{qubit} --  with two distinct "levels".  It is shown in Fig \ref{fig:fisherWootterBloch}(d) and can be understood as an extension of Fisher semicircle. The extension from semicircle to a sphere is needed because in quantum physics a general state of a two-level system is described by \emph{two angles} $\theta$ and $\phi$, as we will later learn.
 \end{mybio}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{fisherWootterBloch}
+	\caption{Different approaches to represent states in probability space.}
+	\label{fig:fisherWootterBloch}
+\end{figure}
 
-\begin{mybio}{State Multiplication}
-The advantage of using square roots of probabilities become even more evident when the mathematical operation of multiplication is extended to states.
-\end{mybio}
+\subsection{State Multiplication}
+The advantage of using square roots of probabilities when representing states becomes even more evident once we extend the mathematical operation of multiplication to states. The idea can be illustrated as follows. Consider a state $\ket{A}=\sqrt{p_1}\ket{1}+\sqrt{p_2}\ket{2}$. If we treat the "likeness" operation $\lozenge$ like a regular product, we obtain
+\[
+	\ket{A}\lozenge\ket{A}=p_1\ket{1}\lozenge\ket{1}+\sqrt{p_1p_2}\ket{1}\lozenge\ket{2}+
+	\sqrt{p_2p_1}\ket{2}\lozenge\ket{1}+p_2\ket{2}\lozenge\ket{2}\,.	
+\]
+Now $\ket{1}\lozenge\ket{1}=1=\ket{2}\lozenge\ket{2}$, while states $\ket{1}$ and $\ket{2}$ are completely distinct: $\ket{1}\lozenge\ket{2}=0=\ket{2}\lozenge\ket{1}$. Therefore,
+\[
+\ket{A}\lozenge\ket{A}=p_1+p_2=1\,
+\]
+as required.
 
-\subsection{Schrodinger Students}
-In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed an example of students.
+This example is just a quick preview of what can be gained by using alternative coordinates (e.g., angles $\theta$) together with \emph{linear operations} such as product. We will have a more extensive introduction into these ideas once we get to the basics of linear algebra in the following sections.
+
+
+%\subsection{Schrodinger Students}
+%In 1935 paper discussing quantum features, such as \emph{entanglement}, Erwin Schrodinger introduced his famous cat. He also discussed %an example of students.
 
 
 
@@ -369,7 +431,7 @@ for some number $a$. Thus, for each number $a$ there corresponds a linear numeri
 The simuation becomes less trivial when we consider linear functions whose arguments are not simple numbers (e.g. vectors, operators, or even functions).
 
 
-\section{Numberlikes}
+\section{Numberlikes}\label{sec:Numberlikes}
 Physics without numbers is unimaginable. But simple numbers, like \emph{natural numbers} 1, 2, 3, and so on are very limiting.  As the range of application of mathematics increased, numbers evolved from natural numbers, to \emph{whole} numbers, to \emph{fractions}, to \emph{real} numbers, and then to \emph{complex} numbers and to \emph{quaternions}\footnote{Octanions are not used in physics widely enough to be discussed here.}. The concept of a number became increasingly less intuitive, more abstract and powerful.
 
 Today mathematics offers several \emph{mathematical objects} which behave essentially like numbers, but which also allow more powerful manipulations and thus can be used in wider range of problems. Examples of such \emph{numberlikes} are \emph{vectors}, \emph{tensors}, and \emph{operators}. We will explore all these objects in this chapter and will see that these three concepts are actually closely related to each other (e.g. vectors are tensors, and tensors are operators!)
@@ -750,7 +812,7 @@ Operators are functions of a particular kind. A "usual" function, like $\cos$, \
 \[
 \op{T}\,\ket{a} = \ket{b}\,.
 \]
-It is better to consider examples.
+It is helpful to consider examples.
 \begin{mybio}{Example Operators}\\
 	It is easy to come up with examples of operators:
 	
