@@ -2,7 +2,8 @@
 	
 \chapter[Physics]{Physics}\label{ch:Physics}
 
-\lettrine[lines=2]{\color{darkocre}B}{efore starting the journey towards quantum physics it is} worth   taking a quick look at physics as a branch of science and see what basic assumptions, ideas, and tools lie at its foundation. Since quantum physics changes our understanding of nature and our relationship with it, we should get a better understanding of those physical concepts that get most affected.
+\lettrine[lines=2]{\color{darkocre}B}{efore starting the journey towards quantum physics it is} worth  taking a more general look at physics as a branch of science and identify those basic assumptions, ideas, concepts, and tools which lie at its foundation. Quantum physics changed physicists' understanding of nature and our relationship with it. As Niels Bohr put it: {\it "we are faced with the necessity of a radical revision of the foundation for description
+and explanation of physical phenomena."}\footnote{Niels Bohr {\it On the Notions of Causality and Complementarity}, Science, January 20, 1950, Vol 111 p. 51} To see and appreciate this necessity,  we should get a better understanding of those foundational concepts that get affected most.
 
 \begin{myprereq}{Prerequisite Knowledge}
 	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
@@ -16,33 +17,40 @@
 \end{myprereq}
 
 \section{Goals and Methods}
-Physics is a \emph{human} activity pursuing the following major goals: \emph{Describe}, \emph{explain}, and \emph{predict} phenomena comprising the observed world.
+\emph{Physics} is an activity of \emph{human community} pursuing the following major goals: \emph{Describe}, \emph{explain}, and \emph{predict} phenomena comprising the observed world. These goals might not seem lofty enough since they say nothing about the search for an absolute truth, the ultimate origins of the universe, or the true nature of reality. Admittedly, description, explanation, and prediction imply that someone is performing these activities and someone is benefiting from them. However, we must keep in mind how important the human element in physics is. The true nature of physical reality, if uncovered, will still be communicated by physicists to other \emph{people} in a human language, with the hope that the result will be appreciated and a noble use for new knowledge will be found.
 
-results can be applied in a wide range of fields. In part, the universality of mathematics
-stems from the \emph{general} and \emph{abstract} nature of mathematical
-concepts. Let us illustrate this using an example.
+Description and explanation can be beautiful, satisfying, and valuable but the real power of physics comes from its \emph{predictive ability}. Prediction is the ultimate test of any theory. 
+
+How do physicist achieve those goals?
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.0]{physicsMethods}
+	\caption{Physics \emph{community} uses experiment and theory to improve the picture of the world. Gradually, the experiments become more elaborate, more accurate, while theories become more abstract.}
+	\label{fig:physicsMethods}
+\end{figure}
+
+
+As history of science illustrates, we advance gradually, sometimes slower, sometimes more rapidly. 
+As physicists explore new domains, they meet phenomena that challenge initial assumptions, sometimes leading to a realization that usual tools and concepts become \emph{inadequate}. This is a \emph{very exciting situation}, a time when the picture of the world gets clarified and updated. In recent centuries there were two major events in physics when our worldview was shaken: Discoveries of relativity theory and quantum mechanics.
+
+\begin{mybio}{Feynman On Understanding Nature}
+	{\it Trying to understand the way nature works involves a most terrible test of human
+		reasoning ability. It involves subtle trickery, beautiful tightropes of logic on which one
+		has to walk in order not to make a mistake in predicting what will happen. The quantum
+		mechanical and the relativity ideas are examples of this.}
+\end{mybio}
+
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[scale=1.0]{defaultFigureTemplate}
-  \caption{49 objects can be arranged in a square 7x7. 48 objects can
-    be arranged as a rectangle of 6x8.}
-  \label{fig:numbersExampleGenerality}
+  \includegraphics[scale=1.0]{physicsConcepts}
+  \caption{Intuitive macroscopic concepts, such as \emph{object, particle, property, velocity} etc. have their \emph{domain of applicability}, outside of which there is no guarantee that they will work well.}
+  \label{fig:physicsConcepts}
 \end{figure}
 
-An astute farmer notices that 49 sacks of grains can be arranged
-in a square with each side having 7 sacks (see the Figure
-\ref{fig:numbersExampleGenerality}). When one sack is used up, the
-remaining 48 sacks can be arranged as a rectangle 6 by 8 sacks.
-
-
-\begin{exercise}\label{exe:relationsGeneral}
-Think how you would represent the generalized relations of the types
-given in the Figure \ref{fig:schematicRelationNtoN} at the level of
-sets? What kind of diagrams would you draw?
-\end{exercise}
-
-\section{Common Sense}
+\section{Common Sense and Common Language}
 Common sense and basic logic play crucial role in physics. 
 
 Entitites, separability, properties, aspects.
@@ -86,43 +94,59 @@ A part of nature that can be clearly isolated and studied is called a \emph{phys
 In quantum physics the concept of a system is expanded to include not only "physical objects" but also some \emph{aspects of their behavior}. Thus, for the same physical entity (e.g. mode of electromagnetic field), we can focus on its polarization and treat it as a quantum system, disregarding its behavior in time and space. In other words, a separate \emph{degree of freedom} can be viewed as quantum system. Another example is the spin of an electron trapped inside a tiny volume. Electrons have special degree of freedom called \emph{spin}. If quantum experiment focuses on manipulating spin, then the latter can be treated as a distinct quantum system.
 
 \section{State}
-State is a very important concept in physics. It means \emph{complete} but \emph{minimal} knowledge about  possible behavior of a given system.
+\emph{State} is a very important concept in physics. State of a system means \emph{complete} but \emph{minimal} knowledge about values of its various parameters and system's possible behavior.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{stateAsKnowledge}
 	\caption{State is a minimal and complete knowledge about a physical system.}
 	\label{fig:stateAsKnowledge}
 \end{figure}
-By \emph{minimal} knowledge we mean that if position of particle $x$ is known, there is no need to know $x^3$ or any other one-to-one function of position. We only need to know and keep track of the \emph{essential} information.
+By \emph{minimal} knowledge we mean that if position of particle $x$ is known, there is no need to know $x^3$ or any other one-to-one function of position. We only need to know and keep track of the \emph{essential} information. 
+
+As we'll see, mathematically state can be represented by a number, a pair of numbers, a function, or some other mathematical object, depending on a specific theory. If we denote some such mathematical representation of a state as $K$, then the completeness of a state can be symbolically expressed as a relation:
+\[
+K_0\, \overset{f}{\xrightarrow{\hspace*{2cm}}}\, v\,.
+\]
+This expression should be read as follows: Given a state $K$ at moment of time $t_0$, one can calculate the value $v$ of any meaningful physical parameter.
+
+\begin{myExample}
+	In Newtonian mechanics the state of a system is given by a pair "position and velocity": $K=(x, v)$. Consider, for instance, a body with mass $m$ attached to a spring with the spring constant $k$. From $K$ we can calculate the body's momentum $p=mv$, kinetic energy $E_k=mv^2/2$, and the potential energy of the spring: $E_p=kx^2/2$.
+\end{myExample}
 
 \begin{mybio}{Completeness}
-	How can we be sure that the information about a system is complete? Can there be some "hidden" information, unaccessible (may be yet, or even potentially forever) to us and yet affecting the behavior of a system?
+	How can we be sure that the information about a system is complete? Can there be some "hidden" information, inaccessible (may be yet, or even potentially forever) to us and yet affecting the behavior of a system?
 	
 	The question of completeness is an important one. In the context of quantum physics it was raised for the first time by Albert Einstein, Boris Podolsky, and Nathan Rosen in 1935.
 \end{mybio}
 
 \section{Deterministic Evolution}
-The completeness of a state is a very strong constraint. Not only it means "everything there is to know at a given moment", but also "know state now -- know state always." The latter is an expression of \emph{determinism}: the complete knowledge of a system is fully determined at all times once an initial state is known. However, state by itself  is not sufficient to satisfy the latter requirement, it must be supplemented by the so called \emph{dynamical equations}. These equations are specific to a physical system and encapsulate the laws that govern internal interactions. EXAMPLE?
+The completeness of a state is a very strong constraint. Not only it means \emph{"everything there is to know at a given moment"}, but also \emph{"know state now -- know state always."} The latter is an expression of \emph{determinism}: the complete knowledge of a system is fully determined at all times once an initial state is known. However, state by itself  is not sufficient to satisfy the latter requirement, it must be supplemented by the so called \emph{dynamical equations}. These equations are specific to a physical system and encapsulate the laws that govern internal interactions. EXAMPLE?
 
-Denoting the mathematical representation of the state as $\xi$, the evolution of the state between the moments of time $T=t$ and $T=t+\Delta t$ may be written as a functional dependence:
+Determinism can be expressed as the following relation:
+
 \[
-\xi_{t+\Delta t} = U_{t+\Delta t, t}\,\xi_t\,.
+K_0\, \overset{U}{\xrightarrow{\hspace*{2cm}}}\, K_1\,,
 \]
-For $\Delta t > 0$ we determine the future state, while for $\Delta t < 0$ we determine the state in the past (relative to the moment $t$).
+Here $K_0$ and $K_1$ are the states at the moments of time $t_0$ and $t_1$, respectively. The function $U$ calculates the state $K_1$ from the state $K_0$. It is sometimes said the the function $U$ \emph{evolves} the state $K_0$ into the state $K_t$, and the function $U$ is called the \emph{evolution function}.
+
 \begin{myExample}
-	For circular motion the state is the angle $\xi=\phi$, and the evolution is given by a simple formula
+	For a uniform circular motion the state is simply the angle $\phi$, and the evolution is given by a simple formula
 	\[
-	\phi_{t+\Delta t} = U_{t+\Delta t, t}\,\phi_t=\omega \Delta t + \phi_t\,.	
+	\phi_1 =\omega (t_1-t_0) + \phi_0\,.	
 	\]
-	Notice that in this case the evolution function depends on the time \emph{difference} $\Delta t$ and not on each moment of time separately:
-	\[
-	U_{t+\Delta t, t} = U_{\Delta t}\,.
-	\]
+	Notice that in this case the evolution function $U$ depends on the time \emph{difference} $t_1-t_0$ and not on each moment of time separately.
 \end{myExample}
-It must be emphasized again, that the final state $\xi_f=\xi_{t+\Delta t}$ is determined by two factors: the initial state $\xi_i=\xi_t$ and the laws of physics encoded in the evolution function $U_{t+\Delta t, t}$. 
-\[
-\xi_f\, \overset{U_{\Delta t}}{\xleftarrow{\hspace*{2cm}}}\, \xi_i
-\]
+
+\begin{myExample}
+	In Newtonian mechanics the state of a body is given by the pair $K=(x, v)$. For a body in free fall the state changes according to the equations
+	\[
+	v_1 = v_0 + g(t_1-t_0)\,,
+	\]
+	\[
+	x_1 = x_0 + v_0(t_1-t_0)+g(t_1-t_0)^2/2\,.
+	\]
+	Notice again, that the evolution function $U$ depends on the time \emph{difference} $t_1-t_0$ and not on each moment of time separately. Of course, in this case we have two evolution functions, one for the position, and the other for velocity.
+\end{myExample}
 
 \begin{figure}[htbp]
 	\centering
@@ -131,64 +155,12 @@ It must be emphasized again, that the final state $\xi_f=\xi_{t+\Delta t}$ is de
 	\label{fig:evolutionOperatorBox}
 \end{figure}
 
-The laws of physics are timeless\footnote{Technical term is \emph{time-translation invariant.}}, as illustrated by the Coulomb's law for the force between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
-\[
-U_{\tau, t}\,\xi_i  = U_{\tau', t'}\,\xi_i
-\]
-for \emph{any} initial state $\xi_i$, as long as $\tau'-t'=\tau-t=\Delta t$.
 
-Thus, for \emph{any} values of $t$ and $t'$, we have
-\[
-U_{t+\Delta t, t}  = U_{t'+\Delta t, t'}\,.
-\]
-This equation says that the evolution function $U$ becomes insensitive to the values $t$ and $t'$, and only depends on $\Delta t$ -- the time interval between the beginning and the end of evolution. Therefore, we can write the following connection between the states at different moments:
-\[
-\xi_{t+\Delta t} = U_{\Delta t}\,\xi_t\,.
-\]
-This connection holds \emph{for any moment of time} $t$ and time interval $\Delta t$.
-
-In physics the states are represented using numbers, vectors, functions, and similar mathematical objects. Common to all of these types of objects is a very basic property of "additivity" and "scalability". That is, one can -- at least formally -- add and subtract states, as well as multiply them by numbers. For example, for any two states $\xi_1$ and $\xi_2$, one can write  equations like
-\[
-\xi_3 = 2\xi_1 + 3\xi_2\qquad\textrm{ or }\qquad \Delta \xi = \xi_2 - \xi_1\,.
-\]
-
-Depending on a particular representation of the state, the evolution function $U$ might be a "usual" function, an operator, or something else entirely. Regardless of what the exact \emph{type} of $U$ is, its job is always the same -- map initial state $\xi_i$ at time $t$ into the final state $\xi_f$ at time $t+\Delta t$.
-
-For $\Delta t = 0$ the evolution function $U$ must be a simple \emph{identity} function:
-\[
-U_0 = I\,.
-\]
-Furthermore, for a continuous evolution, it is necessary for small changes in time $\delta t$ to produce small changes in the state $\delta \xi$:
-\[
-\xi_{t+\delta t} = U_{\delta t} \xi_t = \xi_t + \delta \xi\,.
-\] 
-For a continuous evolution of the state, the evolution function $U$ must be continuous. This implies that for small time intervals it produces small changes:
-\[
-U_{\delta t} \approx I + \delta U = I + G\delta t\,,
-\]
-where $G$ is called the \emph{generator} of state evolution. The meaning of the generator is clear from its definition -- it specifies how fast the state evolution happens: $G=\partial_t U$.
-
-In terms of the generator, the evolution equation can be written using the relations 
-\[
-\delta \xi = \xi_{t+\delta t} - \xi_t = \left(I + G\delta t\right)\xi_t - \xi_t = G\delta t\xi_t\,.
-\]
-Finally, dividing both sides by $\delta t$ and using the $\partial$-notation, we arrive at the Schrodinger-type of equation for the \emph{continuous} state evolution:
-\begin{equation}
-	\partial_t \xi = G\,\xi_t\,.
-	\label{eq:SchrodingerTypeEq}
-\end{equation}
-The equation (\ref{eq:SchrodingerTypeEq}) is a general form of state evolution equations used in physics. It appears in many cases where the dynamics of a system is described as a \emph{continuous deterministic evolution}. 
-\begin{mybio}{Deterministic Evolution Equations}
-	Equations similar to (\ref{eq:SchrodingerTypeEq}) can be found in many physical theories. In quantum theory it is Schrodinger equation, which can be written as follows:
-	\[
-	\partial_t\ket{\Psi} = -i\hat{H}\,\ket{\Psi}\,.
-	\]
-\end{mybio}
 
 \section{Measurement}
-State of a system is closely related to the \emph{knowledge} of its possible behavior. Where does that knowldege come from? In physics the primary source of quantative knowledge comes from experiments. Dutch experimental physicist Heike Kamerlingh Onnes, who received 1913 Nobel Prize in physics "for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium,"   put it as follows: \emph{Door meten tot weten} or \emph{Through measurement to knowing}.
+State of a system is closely related to the \emph{knowledge} of its possible behavior. Where does that knowledge come from? \emph{Door meten tot weten} or \emph{Through measurement to knowing} as dutch experimental physicist Heike Kamerlingh Onnes said. He received 1913 Nobel Prize in physics "for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium."
 
-Measurement is the source of our knowledge about the world. This is true for both classical and quantum physics. However, the role measurement plays in classical physics differs substantially from the role it plays in quantum physics. Let's examine the idea and process of measurement closer.
+In physics the primary source of quantitative knowledge comes from experiments. Measurement is the source of our knowledge about the world. This is true for both classical and quantum physics. However, the role measurement plays in classical physics differs substantially from the role it plays in quantum physics. Let's examine the idea and process of measurement closer.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{measurementStages}
@@ -257,7 +229,7 @@ Such current is easily measureable by modern instruments. However, Rutherford an
 
 
 \section{Polarization and Spin}
-Photons and electrons have certain characteristics which are not related to the "usual" motion through space with time. In technical jargon, they have \emph{non-spatiotemporal degrees of freedom}.
+Photons and electrons have certain characteristics which are not related to the "usual" motion through space with time. In technical jargon, they have \emph{non-spatiotemporal degrees of freedom}. The exact meaning of this phrase will be clarified in Chapter \ref{ch:ClassicalPhysics}.
 
 % ---------------------- Chapter Highlights -------------------------------
 \section*{Chapter Highlights}

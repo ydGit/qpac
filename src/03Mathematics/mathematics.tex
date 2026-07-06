@@ -2,9 +2,9 @@
 
 \chapter{Mathematics}\label{ch:Mathematics}
 
-\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from the ones used in classical physics. This fact, of course, does not make them any easier. However, it is important to remember that there is no special mathematics that makes quantum physics extra challenging.
+\lettrine[lines=2]{\color{darkocre}M}{athematical concepts and tools used in quantum theory are} not significantly different from those used in classical physics. This fact, of course, does not make them any easier. However, it is important to remember that \emph{there is no special mathematics that makes quantum physics extra challenging}.
 
-In this chapter we develop mathematical tools needed for quantum theory. This is an essential investment that will pay off when we start discussing quantum phenomena. Mathematics plays a vital role in quantum physics since it becomes the only guide in the field where intuition and simple mental pictures fail.
+In this chapter we develop mathematical tools needed for quantum theory. This is an essential investment that will pay off handsomely when we start discussing quantum phenomena. Mathematics plays a vital role in quantum physics since it becomes the only guide in the field where intuition and simple mental pictures fail.
 
 \begin{myprereq}{Prerequisite Knowledge}
 	To fully understand the material of this chapter, readers should be comfortable with the following concepts:
@@ -12,11 +12,15 @@ In this chapter we develop mathematical tools needed for quantum theory. This is
 	\begin{itemize}
 		\item \phantom{phantom}
 		\vspace{-0.5cm}
-		\item State
-		\item Dynamical equations
+		\item Basic algebraic operations.
+		\item Simple intuition about probabilities.
+		\item Plots and axes.
+		\item Familiarity with functions like $\sin\, x$, $\log\, x$.
+		\item Use of subscripts, as in $x_1$.
 	\end{itemize}	
 \end{myprereq}
 
+\newpage
 \section*{Noncommutativity}
 Before we start learning specific mathematical tools, it is essential to understand and appreciate one extremely powerful concept that sets apart advanced mathematics used in quantum physics. This is the concept of \emph{noncommutativity}.
 \begin{mydef}{Noncommutativity}
@@ -40,7 +44,7 @@ The difference $xp-px$ is closely related to the most fundamental physical quant
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{numbersOperators}
-	\caption{Usual numbers are, in a certain sense, special case of \emph{linear operators} -- mathematical objects explored later in the book.}
+	\caption{Usual numbers are, in a certain sense, special case of \emph{linear operators} -- powerful mathematical objects explored later in the book.}
 	\label{fig:numbersOperators}
 \end{figure}
 
@@ -171,7 +175,7 @@ If $v$ is measured in meters, then the units for variance would be in meters squ
 
 
 
-\subsection{States And Hidden Variables}
+\subsection{States And Hidden Variables}\label{subsec:statesHiddenVariables}
 To make notation used in quantum physics feel less foreign we will introduce it early and in a more familiar setting. To this end, consider a scenario where a student, let's call him Alex, goes to a vending machine to buy a glass of juice. The machine offers two options: (1) A pure apple juice and (2) a pure orange juice, as shown in Fig. \ref{fig:correlations}.
 \begin{figure}[htbp]
 	\centering
@@ -184,7 +188,7 @@ Suppose that each day for the whole year Alex chooses option 1. We can conclude 
 
 Imagine another student, let's name her Bella, who sometimes chooses option 1 and other times -- option 2 in an unpredictable (random) fashion. If both options are chosen equally frequently, we can say that Bella is in an \emph{uncertain state} and write it symbolically as follows: $\frac{1}{2}\ket{1}+\frac{1}{2}\ket{2}$. All this mathematical expression states is our ability to predict the results of future observations, based on the observations performed in the past.
 
-If students make up their minds right at the vending machine, being completely uncommitted prior, then calling the state of Bella \emph{uncertain} is justified. But another situation is possible: Bella approaches the machine already knowing what she wants that day and her mental state is quite certain in each transaction, however it is unknown to an outside observer. In other words, the factors that determine Bella's choice are \emph{hidden} for the outside observer. In quantum theory such factors are called \emph{hidden variables}.
+If students make up their minds right at the vending machine, being completely uncommitted prior, then calling the state of Bella \emph{uncertain} is justified. But another situation is possible: Bella approaches the machine already knowing what she wants that day and her mental state is quite certain in each transaction, however it is unknown to an outside observer. In other words, the factors that determine Bella's choice are \emph{hidden} to the outside observer. In quantum theory such factors are called \emph{hidden variables}.
 
 \begin{mybio}{Element Of Reality}
 	It is not hard to accept the fact that, in the examples considered above, Bella is undecided before she interacts with the vending machine. But it is harder to imagine that Alex is undecided every time and yet \emph{always} decides in favor of the apple juice. Such a certainty, the complete absence of randomness, leads us to think that there is \emph{something in the reality} that determines Alex's choice.
@@ -199,7 +203,7 @@ If students make up their minds right at the vending machine, being completely u
 	When we use the concept of the state, should we understand it as the state of the system, or our the state of "knowledge" about a system?
 \end{remark}
 
-\subsection{Joint Measurement}
+\subsection{Joint Measurement}\label{subsec:jointMeasurement}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{jointMeasurement}
@@ -343,12 +347,12 @@ The input-output view of functions leads to a helpful picture where a given func
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{functionTypes}
-	\caption{Several types of functions: (1); (2); (3); (4); (5).}
+	\caption{Several types of functions: (1)"Usual" numeric function that computes a number for each numeric input value; (2)Function on "arrows" (or vectors), that computes an arrow for each arrow input value; (3) Function that computes a number (e.g., length) of an input arrow; (4) Function that transforms an input function into another function; see example in text. (5). Function that computes a single number for an input function. See section \ref{sec:Functional} for examples.}
 	\label{fig:functionTypes}
 \end{figure}
 
 \subsection{Application Notation}
-The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses around the argument, like so: $f(x)$. This rule, however, is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra. For example, when an operator $\op{f}$ is applied to a vector $\ket{x}$, we would write $\op{f}\,\ket{x}$, without the parentheses. 
+The dominant rule for writing function $f$ applied to an argument $x$ uses parentheses around the argument, like so: $f(x)$. This rule, however, is \emph{not absolute} and is abandoned as soon as one uses functions in linear algebra. For example, when an operator\footnote{The concept of an operator will be explained in section \ref{sec:operators}.} $\op{f}$ is applied to a vector $\ket{x}$, we would write $\op{f}\,\ket{x}$, without the parentheses. 
 
 In this book we will use a uniform rule for function application: \emph{Function and its argument are separated by a space. Only structured arguments are surrounded by parentheses. Simple arguments are written without parentheses.} Thus, we will always write
 \[
@@ -409,7 +413,7 @@ Let's consider another example of partial application. This illustration might s
 f_y = \btc{trp}\,y=3y\,.
 \] 
 
-\subsection{Linearity}
+\subsection{Linearity}\label{subsec:linearity}
 Some functions are simpler than others. For example, a \emph{symmetric} function has the same value for $x$ and $-x$: $f\,x=f\,(-x)$. A general function does not have such a property, and in this sense symmetric functions are simpler than a general function.
 
 Among the simplest kinds of functions, \emph{linear functions} are of special importance. Such functions have the following properties:
@@ -599,9 +603,9 @@ The notation just introduced can be applied to \emph{any} function of \emph{any}
 	\]
 \end{mybio}
 
-\begin{mybio}{Full Differential}
-	Readers familiar with calculus might be wondering why don't we write $df$ instead of $\delta f$.
-\end{mybio}
+%\begin{mybio}{Full Differential}
+%	Readers familiar with calculus might be wondering why don't we write $df$ instead of $\delta f$.
+%\end{mybio}
 
 \subsection{Bernoulli Sums}
 A Swiss mathematician Jacob Bernoulli, who worked at the end of the 17th century, made many  important contributions to mathematics. In his 1713 book "The Art of Conjecturing" he presented formulas for the "sum of powers":
@@ -641,7 +645,7 @@ A very common notation for vectors uses arrows over letters:
 \[
 \vec{a}\,,\vec{b}\,,\vec{c}\,,\ldots\,,\vec{\alpha}\,,\vec{\beta}\,.
 \]
-However, not all vectors behave like arrows. Futhermore, to introduce the basic notation of quantum theory as early as possible, we will switch to what is known as \emph{Dirac notation} for vectors.
+However, not all vectors behave like arrows, so this suggestive notation is not universal. Furthermore, to introduce the basic notation of quantum theory as early as possible, we will switch to what is known as \emph{Dirac notation} for vectors. We already met with this notation when discussing probability in section \ref{subsec:statesHiddenVariables} and now is the time to extend the range of its application.
 
 \subsection{Dirac Notation}
 Instead of placing an arrow on top of a letter, we enclose the letter between a pair of symbols as follows:
@@ -785,7 +789,7 @@ The second simple option corresponds to $f=\cos$ and the scalar product
 It is the area of the rectangle built on two vectors $\ket{a}$ and $\ket{b_\parallel}$. 
 
 \begin{mybio}{Fidelity, Alignment, and Overlap}
-	Scalar product of unit vectors can be viewed as the measure of their "alignment" or "overlap". This interpretation is useful in quantum theory, where vectors are used to represent states of quantum systems. 
+	Scalar product of unit vectors can be viewed as the measure of their "alignment" or "overlap". This interpretation is useful in quantum theory, where vectors are used to represent states of quantum systems. Comparing two vectors means asking how similar or different two states are.
 \end{mybio}
 
 \subsection{Orthonormal Bases}
@@ -877,7 +881,7 @@ Operators can be multiplied by "usual" numbers, and they can be composed.
 
 
 \subsection{Linear Operators}
-Among the simplest non-trivial operators are \emph{linear operators}. As mentioned earlier, linear functions satisfy two conditions:
+Among the simplest non-trivial operators are \emph{linear operators}. As mentioned earlier in section \ref{subsec:linearity}, linear functions satisfy two conditions:
 \[
 \op{T}\,(\ket{a}+\ket{b}) = \op{T}\,\ket{a}+\op{T}\,\ket{b}\,,
 \]
@@ -925,9 +929,14 @@ The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{compo
 \end{mybio}
 
 \begin{example}
-	Consider an operator that transforms the state $\ket{0}$ into a linear combination $\ket{+}=(\ket{0}+\ket{1})/\sqrt{2})$ and the state $\ket{1}$ into a linear combination $\ket{-}=(\ket{0}-\ket{1})/\sqrt{2})$.
-	
-	It is called \emph{Hadamard} operator and has the following matrix representation.
+	Consider an operator that transforms the state $\ket{0}$ into a linear combination $\ket{+}=(\ket{0}+\ket{1})/\sqrt{2})$ and the state $\ket{1}$ into a linear combination $\ket{-}=(\ket{0}-\ket{1})/\sqrt{2})$. It is called \emph{Hadamard} operator and has the following matrix representation.
+	\[
+	\op{H} =
+	\begin{pmatrix}
+		\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+		\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
+	\end{pmatrix}\,.
+	\]
 \end{example}
 
 \begin{mybio}{Numbers On Steroids}
@@ -935,7 +944,7 @@ The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{compo
 	\[
 	\op{A}+\op{B} = 6\op{I}\,\textrm{ and }\, \op{A}\op{B}=36\op{I}\,.
 	\]
-	To simplify this problem we can first rescale the operators, introducing
+	To simplify this problem we can first re-scale the operators, introducing
 	\[
 	\op{a} = \op{A} / 6\,\textrm{ and }\, \op{b} = \op{B}/6\,.
 	\]
@@ -943,7 +952,18 @@ The four numbers $T_{11},\,T_{12},\,T_{21}$, and $T_{22}$ are called \emph{compo
 	\[
 	\op{a}+\op{b} = \op{I}\,\textrm{ and }\, \op{a}\op{b}=\op{I}\,.
 	\]
-	
+	We are looking for two operations with arrows in a plane such that two successive operations do not change any arrow (the second equation). Since an action of any operator on arrow rotates it and changes the length of the latter, the operator $\op{a}$ should cancel rotation and scaling done by $\op{b}$. For example, if $\op{b}$ scales arrow by a number $b$ and rotates by an angle $\beta$, the operator $\op{a}$ scales arrows by $a=1/b$ and performs rotation by $-\beta$ -- same magnitude but in the opposite direction.
+\end{mybio}
+\begin{exercise}
+	Show that $\op{a}$ and $\op{b}$ only rotate any arrow by an angle of $60^\circ$.
+\end{exercise}
+
+\begin{mybio}{Dirac Equation}
+	Paul Dirac discovered an equation that describes electron moving at any speed $v < c$ where $c$ is the speed of light. To make his equation work, he had to perform "linearization" of an older equation from quantum mechanics -- an operation that made his equation rely on linear operators instead of numeric coefficients. In short, his equation looked like this:
+	\[
+		(\op{A}p + \op{B}mc)\ket{\psi}=\ket{\phi}\,.
+	\]
+	Here $p$ is the momentum of an electron, $m$ is its mass. The exact meaning of $\ket{\psi}$ and $\ket{\phi}$ will be explained once we get to quantum theory in section \ref{sec:QuantumState}. For now it is important to appreciate the fact that Dirac's approached worked successfully once he switched from simple numbers to operators $a\to\op{A}$ and $b\to\op{B}$.
 \end{mybio}
 
 \subsection{Super-operators*}
@@ -956,7 +976,7 @@ In the mathematical tool-set of both classical and quantum physics there are fun
 Since the composition of two operators is again an operator, this is a satisfactory definition.
 
 
-\section{Functionals}
+\section{Functionals}\label{sec:Functional}
 Another important type of function is called \emph{functional}. A functional maps a function into a number. Let's consider several examples.
 
 \begin{flushleft}
@@ -1140,7 +1160,7 @@ we conclude that any bra-vector can be expanded in terms of some other bra-vecto
 \]
 In summary, if we need a bra-basis, we can use ket-basis and partially apply the scalar product operator to each ket-basis vector. 
 
-One last step is needed to rigirously prove that both ket-vectors and bra-vectors are indeed vectors: we must investigate how their components change when we change bases. The only challenge this task presents is its tediousness (REF TO MY BOOK).
+One last step is needed to rigirously prove that both ket-vectors and bra-vectors are indeed vectors: we must investigate how their components change when we change bases. The only challenge this task presents is its tediousness\footnote{See, for instance, {\it Tensors For Inquiring Minds} by Yury Deshko.}.
 
 From now on we will recognize that to every ket-vector $\ket{a}$ there corresponds a \emph{dual} bra-vector $\bra{a}$. We must remember that this duality is generated by the operation of scalar product. Once a vector space has scalar product defined, we get a dual vector space "for free." Such dual vector space turns out extremely useful in quantum theory, as we will soon see.
 
@@ -1192,19 +1212,25 @@ This procedure maps any $\bra{a}$ into some $\bra{c}$, as required. Let's examin
 \end{mybio}
 
 \subsection{Adjoint Operators}
-The notion of an \emph{adjoint} operator is very important in quantum theory. Before we define it, we'll explore the context in which adjoint operator is used.
+The notion of an \emph{adjoint} operator is very important in quantum theory. Adjoint operators replace the usual real numbers used as the values of physical quantities, like position, momentum, energy, angular momentum, to name a few.  Before give a definition of an adjoint operator, we'll explore the context in which adjoint operator is used.
 
 To begin, recall that a linear operator transforms an input vector into an output vector. For some operators such transformation is always \emph{reversible}: There exist another operator that can "cancel" the action of the first, as illustrated in Figure \ref{fig:dualOperators}(a), where the operator $\op{U}$ acts as the \emph{inverse} of the operator $\op{T}$:
 \[
 \op{U}\circ\op{T}=\op{I}\,.
 \]
-The inverse of an operator, if there exists one, is denoted using the negative power: $\op{U}=\op{T}^{-1}$. Not every operator has an inverse, with $\op{0}$ ("zeroing" operator) and $\op{N}$ (normalizing operator) being simple examples.
+The inverse of an operator, if there exists one, is denoted using the negative power: $\op{U}=\op{T}^{-1}$. Not every operator has an inverse, with $\op{0}$ ("zeroing" operator) and $\op{N}$ (normalizing operator) providing simple examples.
 
 Scalar product leads to more sophisticated relations between operators. One such relation, shown in Figure \ref{fig:dualOperators}(b), amounts to one operator being "inverse relative to the second input" of the scalar product. In simpler terms: \emph{Acting on both inputs changes nothing}. This can be expressed in the following equation:
 \[
 \ket{a}\cdot\ket{b}=(\op{T}\ket{a})\cdot(\op{U}\ket{b})\,.
 \]
-If this equality holds true for \emph{any} pair of vectors $\ket{a}$ and $\ket{b}$, then we will call the operator $\op{T}$ \emph{scalar-inverse} of the operator $\op{U}$. All rotation operators $\op{R}_\theta$ are scalar-inverse of themselves:
+If this equality holds true for \emph{any} pair of vectors $\ket{a}$ and $\ket{b}$, then we will call the operator $\op{T}$ \emph{scalar-inverse} of the operator $\op{U}$:
+\[
+\op{U}\,\overset{\lbrack \cdot \rbrack}{=\joinrel=}\,\op{T}^{-1}\,.
+\]
+
+
+All rotation operators $\op{R}_\theta$ are scalar-inverse of themselves:
 \[
 \ket{a}\cdot\ket{b}=(\op{R}_\theta\ket{a})\cdot(\op{R}_\theta\ket{b})\,.
 \]
@@ -1219,11 +1245,17 @@ Indeed, rotating both vectors by the same angle, does not change their mutual or
 	\label{fig:dualOperators}
 \end{figure}
 
-One more useful relation is generated by the scalar product. As illustrated in Figure \ref{fig:dualOperators}(c), this relation means that one operator, say $\op{T}$, achieves the same affect as the other operator (e.g. $\op{U}$), while acting on the second input of the binary scalar product operator $\lbrack\cdot\rbrack$. Symbollically we can write:
+One more useful relation is generated by the scalar product. As illustrated in Figure \ref{fig:dualOperators}(c), this relation means that one operator, say $\op{T}$, achieves the same affect as the other operator (e.g., $\op{U}$), while acting on the second input of the binary scalar product operator $\lbrack\cdot\rbrack$. Symbolically we can write:
 \[
 \ket{a}\cdot(\op{U}\ket{b})=(\op{T}\ket{a})\cdot\ket{b}\,.
 \]
-If this is true for all possible vectors, then we will call the operator $\op{T}$ \emph{scalar-equivalent} to the operator $\op{U}$.  A conventional name for the scalar-equivalent operator is \emph{adjoint}. From the definition given above it is clear that both the original operator $\op{U}$ and its adjoint $\op{T}$ act on the same ket-vector space. The adjoint of the operator $\op{U}$ is often denoted using "\emph{dagger}"-notation:
+If this is true for all possible vectors, then we will call the operator $\op{T}$ \emph{scalar-equivalent} to the operator $\op{U}$. 
+\[
+\op{U}\,\overset{\lbrack \cdot \rbrack}{=\joinrel=}\,\op{T}\,.
+\]
+
+
+ A conventional name for the scalar-equivalent operator is \emph{adjoint}. From the definition given above it is clear that both the original operator $\op{U}$ and its adjoint $\op{T}$ act on the same ket-vector space. The adjoint of the operator $\op{U}$ is often denoted using "\emph{dagger}"-notation:
 \[
 \op{T}=\op{U}^\dagger\,.
 \]
@@ -1299,7 +1331,7 @@ The first tensor product is made of two ket-vectors:
 \[
 \op{P} = \ket{a}\otimes\ket{b}\,.
 \]
-In quantum theory, where ket-vectors "store" the information of all possible measurement (\emph{state} of a quantum system), the product is used to describe a \emph{joint system}, in which two distinct parts, say $A$ and $B$, can be identified and measured by different measuring devices.
+In quantum theory, where ket-vectors "store" the information of all possible measurement (\emph{state} of a quantum system), the product is used to describe a \emph{joint system}, in which two distinct parts, say $A$ and $B$, can be identified and measured by different measuring devices. The situation is similar to the one described earlier in section \ref{subsec:jointMeasurement}. 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=1.0]{ketketExample}
@@ -1322,7 +1354,7 @@ Now we can write the summary of observation of two systems joined together:
 \[
 \op{P} = \ket{a}\otimes\ket{b}=a_1b_1 \ket{1}\otimes\ket{1}+a_1b_2 \ket{1}\otimes\ket{2}+\ldots a_3b_3 \ket{3}\otimes\ket{3}\,.
 \]
-From the probability theory it is known (see SECTION X) that the numbers $p_{ij}=a_ib_j$ give the probability to measure the value $\ket{i}$ in the experiment on the system $A$, while getting the value $\ket{j}$ in the measurement performed on $B$.
+From the probability theory it is known (see section \ref{subsec:jointMeasurement}) that the numbers $p_{ij}=a_ib_j$ give the probability to measure the value $\ket{i}$ in the experiment on the system $A$, while getting the value $\ket{j}$ in the measurement performed on $B$.
 
 It might seem like unnecessary complication to use the tensor product expressions like
 \[
@@ -1467,13 +1499,14 @@ Such operators are called \emph{self-adjoint}, they play an important role in qu
 	
 	Although Charles Hermit wrote about these polynomials in 1864, they were properly studied five years earlier by a Russian mathematician Pafnuty Chebyshev (or Tchebycheff), who also has polynomials named after him.
 	
-	\[
-	\op{D}=2x-\partial_x
-	\]
-	The first term raises the degree of a polynomial, while the second lowers it.
-	\[
-	H_n = \op{D}^n\,1\,.
-	\]
+	
+	%\[
+	%\op{D}=2x-\partial_x
+	%\]
+	%The first term raises the degree of a polynomial, while the second lowers it.
+	%\[
+	%H_n = \op{D}^n\,1\,.
+	%\]
 \end{mybio}
 
 
@@ -1733,12 +1766,5 @@ Let's remind ourselves that this is the solution to the equation of circular mot
   \it
 \begin{itemize}
 \item Arrows in a plane provide a simple model for vectors.
-\item Arrows can be manipulated in ways analogous to numbers: Two arrows
-  be added, an arrow can be ``scaled'' (stretched or compressed). Arrows form
-  an algebra.
-\item Basis is an extremely important concept. Basis is a set of
-  objects (arrows) that can be used to ``build'' all other similar
-  objects (arrows). At the same time, basis can not be used to build
-  itself -- basis arrows are independent.
 \end{itemize}
 }

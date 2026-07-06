@@ -108,16 +108,16 @@ Bio environment \textbackslash mybio\{text\}:
 \end{mybio}
 
 \section{Temporary Stuff}
-Work in progress sections will be kep here.
+Work in progress sections will be kept here.
 
 \subsection{Facts About Light}
 Our understanding of the physical nature of light is the result of several centuries of studies. Visible, infra-red or ultra-violet  light, and microwave or gamma radiation are all various manifestations of \emph{electro-magnetic field} (EMF). It is one of the most technologically important and well-understood fields. 
 
 \subsubsection*{Omnipresence}
-The first important fact about EMF is that it is truly ubiqutous: There is no place in the universe free from EMF. Yes, there are regions of space (and time) where EMF is not excited, but EMF is still present there in its "unexcited" form, called \emph{EMF-vacuum}. This vacuum state is an important quantum state of EMF. It is discussed in more details in Section XXX.
+The first important fact about EMF is that it is truly ubiquitous: There is no place in the universe free from EMF. Yes, there are regions of space (and time) where EMF is not excited, but EMF is still present there in its "unexcited" form, called \emph{EMF-vacuum}. This vacuum state is an important quantum state of EMF. It is discussed in more details in Section XXX.
 
 \subsubsection*{Localizability}
-The second important fact about EMF is its ability to be localized (concentrated) in finite regions of space, simetimes in small volumes. Put differently, EMF can be excited ("emitted") by relatively small "objects" (sources of EMF excitations) or absorbed by similar objects. Emission and absorption of light by atoms is a perfect example of this principle.
+The second important fact about EMF is its ability to be localized (concentrated) in finite regions of space, sometimes in small volumes. Put differently, EMF can be excited ("emitted") by relatively small "objects" (sources of EMF excitation) or absorbed by similar objects. Emission and absorption of light by atoms is a perfect example of this principle.
 
 \begin{myrem}{Localized Excitations}
 	We must clarify: It is the \emph{excitation of EMF} which is localizable, \emph{not} EMF. The latter is everywhere, always.
@@ -130,7 +130,7 @@ The second important fact about EMF is its ability to be localized (concentrated
 
 
 \subsubsection*{Energy-Momentum}
-Excitations of EMF propagate through space and possess the basic mechanical aspect -- \emph{energy-momentum}. When an atom emits a pulse of light it loses certain energy when and it also experiences a recoil, like a gun that fires a bullet. An EMF excitation carrying energy $E$ also carries momentum $p$. The two are related simply:
+Excitation of EMF propagates through space and possess the basic mechanical aspect -- \emph{energy-momentum}. When an atom emits a pulse of light it loses certain energy when and it also experiences a recoil, like a gun that fires a bullet. An EMF excitation carrying energy $E$ also carries momentum $p$. The two are related simply:
 \[
 E = pc\,,
 \]
@@ -155,7 +155,7 @@ E=h\nu = \frac{hc}{\lambda}\,.
 It is not yet known whether there are upper or lower \emph{physical limits} to the wavelength. There are mathematical limits: $0 < \lambda <\infty$.
 
 \subsubsection*{Timeless Law}
-The laws that describe the behavior of electromagnetic radition in space and time are expressed by the equations which show no preference to the direction of time flow.
+The laws that describe the behavior of electromagnetic radiation in space and time are expressed by the equations which show no preference to the direction of time flow.
 \[
 \partial_t\, F = G\,.
 \]
@@ -167,5 +167,90 @@ Lorentz force ($q\to -q$?)
 \subsubsection*{Modes}
 When discussing the excitations of various fields, including EMF, the concept of \emph{field modes} plays an extremely important role. There are modes related to orthogonal polarizations, non-overlapping propagation paths (spatial modes), frequency modes, temporal bin, temporal modes. 
 
-Familar picture of \emph{light beams} is actually based on modes.
+Familiar picture of \emph{light beams} is actually based on modes.
+
+\subsection*{Evolution Equation}
+NOTE: This has to be \emph{after} the notion of $\partial$ has been discussed.
+
+
+Denoting the mathematical representation of the state as $\xi$, the evolution of the state between the moments of time $T=t$ and $T=t+\Delta t$ may be written as a functional dependence:
+\[
+\xi_{t+\Delta t} = U_{t+\Delta t, t}\,\xi_t\,.
+\]
+For $\Delta t > 0$ we determine the future state, while for $\Delta t < 0$ we determine the state in the past (relative to the moment $t$).
+\begin{myExample}
+	For circular motion the state is the angle $\xi=\phi$, and the evolution is given by a simple formula
+	\[
+	\phi_{t+\Delta t} = U_{t+\Delta t, t}\,\phi_t=\omega \Delta t + \phi_t\,.	
+	\]
+	Notice that in this case the evolution function depends on the time \emph{difference} $\Delta t$ and not on each moment of time separately:
+	\[
+	U_{t+\Delta t, t} = U_{\Delta t}\,.
+	\]
+\end{myExample}
+It must be emphasized again, that the final state $\xi_f=\xi_{t+\Delta t}$ is determined by two factors: the initial state $\xi_i=\xi_t$ and the laws of physics encoded in the evolution function $U_{t+\Delta t, t}$. 
+\[
+\xi_f\, \overset{U_{\Delta t}}{\xleftarrow{\hspace*{2cm}}}\, \xi_i
+\]
+
+%\begin{figure}[htbp]
+%	\centering
+%	\includegraphics[scale=1.0]{evolutionOperatorBox}
+%	\caption{Evolution operator transforms an initial state into the final state in time $\Delta t$.}
+%	\label{fig:evolutionOperatorBox}
+%\end{figure}
+
+The laws of physics are timeless\footnote{Technical term is \emph{time-translation invariant.}}, as illustrated by the Coulomb's law for the force between charges $q$ and $Q$ at a distance $r$ apart: $F_C=k qQ/r^2$. The timeless nature of the physical laws requires that the same initial state $\xi_i$ evolves into the same final state $\xi_f$ regardless of when the evolution starts as long as the time interval between the beginning and the end of evolution is the same. Mathematically this is expressed as follows:
+\[
+U_{\tau, t}\,\xi_i  = U_{\tau', t'}\,\xi_i
+\]
+for \emph{any} initial state $\xi_i$, as long as $\tau'-t'=\tau-t=\Delta t$.
+
+Thus, for \emph{any} values of $t$ and $t'$, we have
+\[
+U_{t+\Delta t, t}  = U_{t'+\Delta t, t'}\,.
+\]
+This equation says that the evolution function $U$ becomes insensitive to the values $t$ and $t'$, and only depends on $\Delta t$ -- the time interval between the beginning and the end of evolution. Therefore, we can write the following connection between the states at different moments:
+\[
+\xi_{t+\Delta t} = U_{\Delta t}\,\xi_t\,.
+\]
+This connection holds \emph{for any moment of time} $t$ and time interval $\Delta t$.
+
+In physics the states are represented using numbers, vectors, functions, and similar mathematical objects. Common to all of these types of objects is a very basic property of "additivity" and "scalability". That is, one can -- at least formally -- add and subtract states, as well as multiply them by numbers. For example, for any two states $\xi_1$ and $\xi_2$, one can write  equations like
+\[
+\xi_3 = 2\xi_1 + 3\xi_2\qquad\textrm{ or }\qquad \Delta \xi = \xi_2 - \xi_1\,.
+\]
+
+Depending on a particular representation of the state, the evolution function $U$ might be a "usual" function, an operator, or something else entirely. Regardless of what the exact \emph{type} of $U$ is, its job is always the same -- map initial state $\xi_i$ at time $t$ into the final state $\xi_f$ at time $t+\Delta t$.
+
+For $\Delta t = 0$ the evolution function $U$ must be a simple \emph{identity} function:
+\[
+U_0 = I\,.
+\]
+Furthermore, for a continuous evolution, it is necessary for small changes in time $\delta t$ to produce small changes in the state $\delta \xi$:
+\[
+\xi_{t+\delta t} = U_{\delta t} \xi_t = \xi_t + \delta \xi\,.
+\] 
+For a continuous evolution of the state, the evolution function $U$ must be continuous. This implies that for small time intervals it produces small changes:
+\[
+U_{\delta t} \approx I + \delta U = I + G\delta t\,,
+\]
+where $G$ is called the \emph{generator} of state evolution. The meaning of the generator is clear from its definition -- it specifies how fast the state evolution happens: $G=\partial_t U$.
+
+In terms of the generator, the evolution equation can be written using the relations 
+\[
+\delta \xi = \xi_{t+\delta t} - \xi_t = \left(I + G\delta t\right)\xi_t - \xi_t = G\delta t\xi_t\,.
+\]
+Finally, dividing both sides by $\delta t$ and using the $\partial$-notation, we arrive at the Schrodinger-type of equation for the \emph{continuous} state evolution:
+\begin{equation}
+	\partial_t \xi = G\,\xi_t\,.
+	\label{eq:SchrodingerTypeEq}
+\end{equation}
+The equation (\ref{eq:SchrodingerTypeEq}) is a general form of state evolution equations used in physics. It appears in many cases where the dynamics of a system is described as a \emph{continuous deterministic evolution}. 
+\begin{mybio}{Deterministic Evolution Equations}
+	Equations similar to (\ref{eq:SchrodingerTypeEq}) can be found in many physical theories. In quantum theory it is Schrodinger equation, which can be written as follows:
+	\[
+	\partial_t\ket{\Psi} = -i\hat{H}\,\ket{\Psi}\,.
+	\]
+\end{mybio}
 
